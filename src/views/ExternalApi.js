@@ -6,7 +6,7 @@ import { getConfig } from "../config";
 import Loading from "../components/Loading";
 import CodeEditor from '@uiw/react-textarea-code-editor';
 import Sidebar from '../components/Sidebar'
-import Button from '@mui/material/Button';
+import MercButton1 from "../components/input/MercButton1";
 
 export const ExternalApiComponent = () => {
 
@@ -16,7 +16,7 @@ export const ExternalApiComponent = () => {
 
   return (
     <>
-      <Button variant="contained">Hello World</Button>
+      <MercButton1/>
 
       <CodeEditor
       value={code}

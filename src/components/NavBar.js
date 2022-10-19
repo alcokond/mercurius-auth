@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink as RouterNavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import MuiSidebar from "./MuiSidebar";
 
 import {
   Collapse,
@@ -38,11 +39,18 @@ const NavBar = () => {
   return (
     <div className="nav-container ">
       <Navbar className="bg-navbar" light expand="md">
+      {isAuthenticated && (
+        <MuiSidebar />
+        )}
         <Container>
+        
           <NavbarBrand className="logo-mercurius" />
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
+              
+              
+              
               <NavItem>
                 <NavLink
                   tag={RouterNavLink}

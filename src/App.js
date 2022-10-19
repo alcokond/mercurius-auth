@@ -11,6 +11,7 @@ import ExternalApi from "./views/ExternalApi";
 import { useAuth0 } from "@auth0/auth0-react";
 import history from "./utils/history";
 import Sidebar from "./components/Sidebar";
+import MuiSidebar from "./components/MuiSidebar";
 
 
 // styles
@@ -44,9 +45,9 @@ const App = () => {
     <Router history={history}>
       <div id="app" className="d-flex flex-column h-100">
         <NavBar />
-        {isAuthenticated && (
+        {/* {isAuthenticated && (
         <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
-        )}
+        )} */}
         <Container className="flex-grow-1 mt-5">
           <Switch>
             <Route path="/" exact component={Home} />

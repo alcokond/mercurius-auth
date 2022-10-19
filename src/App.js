@@ -10,12 +10,15 @@ import Profile from "./views/Profile";
 import ExternalApi from "./views/ExternalApi";
 import { useAuth0 } from "@auth0/auth0-react";
 import history from "./utils/history";
+import Sidebar from "./components/Sidebar";
+
 
 // styles
 import "./App.css";
 
 // fontawesome
 import initFontAwesome from "./utils/initFontAwesome";
+import { ProSidebarProvider } from "react-pro-sidebar";
 initFontAwesome();
 
 const App = () => {
@@ -29,10 +32,21 @@ const App = () => {
     return <Loading />;
   }
 
+  
+  const {
+    isAuthenticated,
+  } = useAuth0();
+  
+
+  
+
   return (
     <Router history={history}>
       <div id="app" className="d-flex flex-column h-100">
         <NavBar />
+        {isAuthenticated && (
+        <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
+        )}
         <Container className="flex-grow-1 mt-5">
           <Switch>
             <Route path="/" exact component={Home} />
@@ -40,6 +54,7 @@ const App = () => {
             <Route path="/codificacion" component={ExternalApi} />
           </Switch>
         </Container>
+        
         <Footer />
       </div>
     </Router>

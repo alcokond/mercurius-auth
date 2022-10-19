@@ -37,7 +37,7 @@ const NavBar = () => {
 
   return (
     <div className="nav-container ">
-      <Navbar className="bg-navbar" color="light" light expand="md">
+      <Navbar className="bg-navbar" light expand="md">
         <Container>
           <NavbarBrand className="logo-mercurius" />
           <NavbarToggler onClick={toggle} />
@@ -48,7 +48,8 @@ const NavBar = () => {
                   tag={RouterNavLink}
                   to="/"
                   exact
-                  activeClassName="router-link-exact-active"
+                  className="text-navbar"
+                  activeClassName="router-link-exact-active text-navbar"
                 >
                   Home
                 </NavLink>
@@ -57,11 +58,12 @@ const NavBar = () => {
                 <NavItem>
                   <NavLink
                     tag={RouterNavLink}
-                    to="/external-api"
+                    to="/codificacion"
                     exact
-                    activeClassName="router-link-exact-active"
+                    activeClassName="router-link-exact-active text-navbar"
+                    className="text-navbar"
                   >
-                    External API
+                    Codificación
                   </NavLink>
                 </NavItem>
               )}
@@ -75,7 +77,7 @@ const NavBar = () => {
                     className="btn-margin"
                     onClick={() => loginWithRedirect()}
                   >
-                    Log in
+                    Iniciar sesión
                   </Button>
                 </NavItem>
               )}
@@ -91,20 +93,12 @@ const NavBar = () => {
                   </DropdownToggle>
                   <DropdownMenu>
                     <DropdownItem header>{user.name}</DropdownItem>
-                    <DropdownItem
-                      tag={RouterNavLink}
-                      to="/profile"
-                      className="dropdown-profile"
-                      activeClassName="router-link-exact-active"
-                    >
-                      <FontAwesomeIcon icon="user" className="mr-3" /> Profile
-                    </DropdownItem>
+                    
                     <DropdownItem
                       id="qsLogoutBtn"
                       onClick={() => logoutWithRedirect()}
                     >
-                      <FontAwesomeIcon icon="power-off" className="mr-3" /> Log
-                      out
+                      <FontAwesomeIcon icon="power-off" className="mr-3" /> Cerrar sesión
                     </DropdownItem>
                   </DropdownMenu>
                 </UncontrolledDropdown>
@@ -119,7 +113,7 @@ const NavBar = () => {
                     block
                     onClick={() => loginWithRedirect({})}
                   >
-                    Log in
+                    Ingresar
                   </Button>
                 </NavItem>
               </Nav>
@@ -142,22 +136,13 @@ const NavBar = () => {
                   </span>
                 </NavItem>
                 <NavItem>
-                  <FontAwesomeIcon icon="user" className="mr-3" />
-                  <RouterNavLink
-                    to="/profile"
-                    activeClassName="router-link-exact-active"
-                  >
-                    Profile
-                  </RouterNavLink>
-                </NavItem>
-                <NavItem>
                   <FontAwesomeIcon icon="power-off" className="mr-3" />
                   <RouterNavLink
                     to="#"
                     id="qsLogoutBtn"
                     onClick={() => logoutWithRedirect()}
                   >
-                    Log out
+                    Log
                   </RouterNavLink>
                 </NavItem>
               </Nav>

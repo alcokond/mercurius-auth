@@ -1,27 +1,27 @@
 const contentData = [
   {
-    title: "Configure other identity providers",
+    title: "Misión",
     link: "https://auth0.com/docs/connections",
     description:
-      "Auth0 supports social providers as Facebook, Twitter, Instagram and 100+, Enterprise providers as Microsoft Office 365, Google Apps, Azure, and more. You can also use any OAuth2 Authorization Server."
+      "Otorgar  experiencias memorables en comunicación e interacción, destacando un estilo renovado y único."
   },
   {
-    title: "Enable Multifactor Authentication",
+    title: "Visión",
     link: "https://auth0.com/docs/multifactor-authentication",
     description:
-      "Add an extra layer of security by enabling Multi-factor Authentication, requiring your users to provide more than one piece of identifying information. Push notifications, authenticator apps, SMS, and DUO Security are supported."
+      "Mantener un estado de mejora continua para otorgar productos de calidad alineados al contexto actual, guiados a establecer innovación."
   },
   {
-    title: "Anomaly Detection",
+    title: "Principios",
     link: "https://auth0.com/docs/anomaly-detection",
     description:
-      "Auth0 can detect anomalies and stop malicious attempts to access your application. Anomaly detection can alert you and your users of suspicious activity, as well as block further login attempts."
+      "Otorgar  experiencias memorables en comunicación e interacción, destacando un estilo renovado y único."
   },
   {
-    title: "Learn About Rules",
+    title: "Identidad",
     link: "https://auth0.com/docs/rules",
     description:
-      "Rules are JavaScript functions that execute when a user authenticates to your application. They run once the authentication process is complete, and you can use them to customize and extend Auth0's capabilities."
+      "Nuestra meta es otorgar experiencias memorables en todos nuestros servicios, por esto, nos enfocamos en su innovación y utilidad. Ofrecemos cada servicio de forma amigable, accesible y respetuosa."
   }
 ];
 

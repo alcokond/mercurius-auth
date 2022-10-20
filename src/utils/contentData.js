@@ -13,7 +13,6 @@ const contentData = [
   },
   {
     title: "Principios",
-    link: "https://auth0.com/docs/anomaly-detection",
     description:
       "Otorgar  experiencias memorables en comunicación e interacción, destacando un estilo renovado y único."
   },

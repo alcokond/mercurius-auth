@@ -37,14 +37,15 @@ const NavBar = () => {
     });
 
   return (
-    <div className="nav-container ">
+    <div className="nav-container">
       <Navbar className="bg-navbar" light expand="md">
-      {isAuthenticated && (
+      {/* {isAuthenticated && (
         <MuiSidebar />
-        )}
+        )} */}
+        
         <Container>
         
-          <NavbarBrand className="logo-mercurius" />
+          <NavbarBrand className="logo-mercurius" href="/"/>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
@@ -52,7 +53,7 @@ const NavBar = () => {
               
               
               <NavItem>
-                <NavLink
+                {/* <NavLink
                   tag={RouterNavLink}
                   to="/"
                   exact
@@ -60,7 +61,7 @@ const NavBar = () => {
                   activeClassName="router-link-exact-active text-navbar"
                 >
                   Home
-                </NavLink>
+                </NavLink> */}
               </NavItem>
               {isAuthenticated && (
                 <NavItem>

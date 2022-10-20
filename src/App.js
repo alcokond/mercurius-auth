@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import Home from "./views/Home";
 import Profile from "./views/Profile";
 import ExternalApi from "./views/ExternalApi";
+import Colores from "./views/Colores";
 import { useAuth0 } from "@auth0/auth0-react";
 import history from "./utils/history";
 import Sidebar from "./components/Sidebar";
@@ -20,6 +21,7 @@ import "./App.css";
 // fontawesome
 import initFontAwesome from "./utils/initFontAwesome";
 import { ProSidebarProvider } from "react-pro-sidebar";
+import PermanentDrawerLeft from "./components/PermanentDrawerLeft.js";
 initFontAwesome();
 
 const App = () => {
@@ -43,16 +45,23 @@ const App = () => {
 
   return (
     <Router history={history}>
+      
       <div id="app" className="d-flex flex-column h-100">
+      
         <NavBar />
+        {isAuthenticated && (
+        <PermanentDrawerLeft />
+        )}
         {/* {isAuthenticated && (
         <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
         )} */}
-        <Container className="flex-grow-1 mt-5">
+        <Container className="flex-grow-1 mt-5 contenido">
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/profile" component={Profile} />
             <Route path="/codificacion" component={ExternalApi} />
+            <Route path="/colores" component={Colores} />
+
           </Switch>
         </Container>
         

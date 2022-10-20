@@ -141,3 +141,28 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-item:hover {
   color: #151055;
 }
+
+.drawer{
+  z-index: 0;
+}
+
+.drawer div{
+  z-index: 1;
+}
+
+.nav-container{
+  z-index: 1;
+}
+
+.contenido{
+  z-index: 0;
+  margin-left: 240px;
+  max-width: 100%;
+}
+
+.alto {
+height : 130px;}
+
+.gap-20{
+  gap: 20px;
+}

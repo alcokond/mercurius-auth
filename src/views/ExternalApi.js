@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 
-import Highlight from "../components/Highlight";
+
 import { useAuth0, withAuthenticationRequired } from "@auth0/auth0-react";
-import { getConfig } from "../config";
 import Loading from "../components/Loading";
 import CodeEditor from '@uiw/react-textarea-code-editor';
-import Sidebar from '../components/Sidebar'
 import MercButton1 from "../components/input/MercButton1";
 
 export const ExternalApiComponent = () => {

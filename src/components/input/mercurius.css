@@ -4,15 +4,6 @@
 /*            Utility classes                */
 /*-------------------------------------------*/
 
-.flex {
-  display: flex;
-  gap: 1rem;
-}
-
-.grid {
-  display: grid;
-  gap: 1rem;
-}
 
 
 :root {

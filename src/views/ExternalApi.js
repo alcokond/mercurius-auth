@@ -5,6 +5,7 @@ import { useAuth0, withAuthenticationRequired } from "@auth0/auth0-react";
 import Loading from "../components/Loading";
 import CodeEditor from '@uiw/react-textarea-code-editor';
 import MercButton1 from "../components/input/MercButton1";
+import { TextareaAutosize } from "@mui/base";
 
 export const ExternalApiComponent = () => {
 
@@ -15,18 +16,8 @@ export const ExternalApiComponent = () => {
   return (
     <>
       <MercButton1/>
-
-      <CodeEditor
-      value={code}
-      language="js"
-      placeholder="Please enter JS code."
-      padding={15}
-      style={{
-        fontSize: 12,
-        backgroundColor: "#f5f5f5",
-        fontFamily: 'ui-monospace,SFMono-Regular,SF Mono,Consolas,Liberation Mono,Menlo,monospace',
-      }}
-    />
+      <TextareaAutosize></TextareaAutosize>
+      
     </>
   );
 };

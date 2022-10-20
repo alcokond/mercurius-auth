@@ -14,11 +14,7 @@
   gap: 1rem;
 }
 
-.container{
-  padding-inline: 2em;
-  margin-inline: auto;
-  max-width: 60rem;
-}
+
 :root {
   /*Colors*/
   /*primary*/

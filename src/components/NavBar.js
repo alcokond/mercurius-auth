@@ -37,6 +37,7 @@ const NavBar = () => {
     });
 
   return (
+    
     <div className="nav-container">
       <Navbar className="bg-navbar" light expand="md">
       {/* {isAuthenticated && (
@@ -52,8 +53,8 @@ const NavBar = () => {
               
               
               
-              <NavItem>
-                {/* <NavLink
+              {/* <NavItem>
+                <NavLink
                   tag={RouterNavLink}
                   to="/"
                   exact
@@ -61,23 +62,63 @@ const NavBar = () => {
                   activeClassName="router-link-exact-active text-navbar"
                 >
                   Home
-                </NavLink> */}
-              </NavItem>
+                </NavLink>
+              </NavItem> */}
               {isAuthenticated && (
+                <>
                 <NavItem>
                   <NavLink
                     tag={RouterNavLink}
-                    to="/codificacion"
+                    to="/marca"
                     exact
                     activeClassName="router-link-exact-active text-navbar"
                     className="text-navbar"
                   >
-                    Codificación
+                    Marca
                   </NavLink>
                 </NavItem>
+                <NavItem>
+                <NavLink
+                  tag={RouterNavLink}
+                  to="/contenido"
+                  exact
+                  activeClassName="router-link-exact-active text-navbar"
+                  className="text-navbar"
+                >
+                  Contenido
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink
+                  tag={RouterNavLink}
+                  to="/guidelines"
+                  exact
+                  activeClassName="router-link-exact-active text-navbar"
+                  className="text-navbar"
+                >
+                  Guidelines
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink
+                  tag={RouterNavLink}
+                  to="/codificacion"
+                  exact
+                  activeClassName="router-link-exact-active text-navbar"
+                  className="text-navbar"
+                >
+                  Codificación
+                </NavLink>
+              </NavItem>
+              </>
+                
               )}
+
+
+              
+              
             </Nav>
-            <Nav className="d-none d-md-block" navbar>
+            <Nav className="d-none d-md-block nav" navbar>
               {!isAuthenticated && (
                 <NavItem>
                   <Button
@@ -91,7 +132,7 @@ const NavBar = () => {
                 </NavItem>
               )}
               {isAuthenticated && (
-                <UncontrolledDropdown nav inNavbar>
+                <UncontrolledDropdown nav inNavbar >
                   <DropdownToggle nav caret id="profileDropDown">
                     <img
                       src={user.picture}
@@ -151,7 +192,7 @@ const NavBar = () => {
                     id="qsLogoutBtn"
                     onClick={() => logoutWithRedirect()}
                   >
-                    Log
+                    Cerrar sesión
                   </RouterNavLink>
                 </NavItem>
               </Nav>
@@ -160,6 +201,7 @@ const NavBar = () => {
         </Container>
       </Navbar>
     </div>
+    
   );
 };
 

@@ -49,6 +49,7 @@ body {
 
 .bg-navbar{
   background-color: #151055!important;
+  padding: 0;
 }
 
 .text-navbar{
@@ -157,7 +158,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .contenido{
   z-index: 0;
   margin-left: 240px;
-  max-width: 100%;
+  max-width: 80%;
 }
 
 .alto {
@@ -165,4 +166,16 @@ height : 130px;}
 
 .gap-20{
   gap: 20px;
+}
+
+.textarea-code{
+  border: none;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  height: 100%;
+}
+
+#profileDropDown{
+  padding-top:10px;
+  padding-bottom: 0;
 }

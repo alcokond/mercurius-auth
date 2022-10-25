@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { NavLink as RouterNavLink } from "react-router-dom";
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import Toolbar from '@mui/material/Toolbar';
@@ -10,6 +11,7 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
+import { NavLink } from 'react-router-dom';
 
 const drawerWidth = 240;
 
@@ -33,40 +35,84 @@ export default function PermanentDrawerLeft() {
         
         <List>
           <ListItem key='Colores' disablePadding>
-              <ListItemButton href='/colores' >
-                <ListItemText primary='Colores' />
+          <NavLink
+              tag={RouterNavLink}
+              to="/colores"
+              exact
+              activeClassName="router-link-exact-active" 
+              >
+              <ListItemButton className='w-full' >
+              
+                <ListItemText primary='Colores' className='w-full'/>
+                
               </ListItemButton>
+              </NavLink>
             </ListItem>
 
             <ListItem key='Tipografia' disablePadding>
-              <ListItemButton href='/tipografia' >
+            <NavLink
+              tag={RouterNavLink}
+              to="/tipografia"
+              exact
+              activeClassName="router-link-exact-active"
+              >
+              <ListItemButton >
                 <ListItemText primary='Tipografía' />
               </ListItemButton>
+              </NavLink>
             </ListItem>
 
             <ListItem key='Botones' disablePadding>
+            <NavLink
+              tag={RouterNavLink}
+              to="/botones"
+              exact
+              activeClassName="router-link-exact-active"
+              >
               <ListItemButton href='/botones' >
                 <ListItemText primary='Botones' />
               </ListItemButton>
+              </NavLink>
             </ListItem>
             
             <ListItem key='Inputs' disablePadding>
-              <ListItemButton href='/inputs' >
+            <NavLink
+              tag={RouterNavLink}
+              to="/inputs"
+              exact
+              activeClassName="router-link-exact-active"
+              >
+              <ListItemButton >
                 <ListItemText primary='Inputs' />
               </ListItemButton>
+              </NavLink>
             </ListItem>
             
             <ListItem key='Formularios' disablePadding>
-              <ListItemButton href='/formularios' >
+            <NavLink
+              tag={RouterNavLink}
+              to="/formularios"
+              exact
+              activeClassName="router-link-exact-active"
+              >
+              <ListItemButton >
                 <ListItemText primary='Formularios' />
               </ListItemButton>
+              </NavLink>
             </ListItem>
             
-            <ListItem key='Botones' disablePadding>
+            {/* <ListItem key='Botones' disablePadding>
+            <NavLink
+              tag={RouterNavLink}
+              to="/botones"
+              exact
+              activeClassName="router-link-exact-active"
+              >
               <ListItemButton href='/botones' >
                 <ListItemText primary='Botones' />
               </ListItemButton>
-            </ListItem>
+              </NavLink>
+            </ListItem> */}
              
           {/* {['Botones', 'Inputs', 'Send email', 'Drafts'].map((text, index) => (
             <ListItem key={text} disablePadding>
@@ -93,13 +139,13 @@ export default function PermanentDrawerLeft() {
           ))}
         </List> */}
       </Drawer>
-      <Box
+      {/* <Box
         component="main"
         sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 }}
       >
         <Toolbar />
         
-      </Box>
+      </Box> */}
     </Box>
   );
 }

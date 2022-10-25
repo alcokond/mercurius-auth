@@ -463,15 +463,6 @@
   color: var(--grayscale-7);
  }
 
-*:focus {
-    outline: none !important;
-}
-input[type=button] {
-  outline:none !important; 
-}
-input[type=button]::-moz-focus-inner {
-  border: 0;
-}
 
 .text-weight-light{
   weight: var(--light);

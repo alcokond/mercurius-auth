@@ -1,7 +1,8 @@
 {
   "name": "mercurius",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "homepage": ".",
   "scripts": {
     "start": "npm-run-all --parallel spa api-server",
     "build": "react-scripts build",
@@ -15,7 +16,8 @@
     "dev": "npm-run-all --parallel spa api-server:dev",
     "prod": "npm-run-all --parallel server api-server",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "production": "webpack -p --progress"
   },
   "dependencies": {
     "@auth0/auth0-react": "^1.12.0",
@@ -57,7 +59,8 @@
     "react-router-dom": "^5.3.3",
     "react-scripts": "^5.0.1",
     "reactstrap": "^8.0",
-    "typescript": "^4.8.3"
+    "typescript": "^4.8.3",
+    "webpack-cli": "^4.10.0"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^6.5.12",

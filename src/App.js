@@ -9,6 +9,7 @@ import Home from "./views/Home";
 import Profile from "./views/Profile";
 import ExternalApi from "./views/ExternalApi";
 import Colores from "./views/Colores";
+import Guidelines from "./views/Guidelines";
 import { useAuth0 } from "@auth0/auth0-react";
 import history from "./utils/history";
 import Sidebar from "./components/Sidebar";
@@ -48,22 +49,22 @@ const App = () => {
       
       <div id="app" className="d-flex flex-column h-100">
       
-        <NavBar />
-        {isAuthenticated && (
-        <PermanentDrawerLeft />
-        )}
+        <NavBar sticky="top" />
+        
         {/* {isAuthenticated && (
         <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
         )} */}
-        <Container className="flex-grow-1 mt-5 contenido">
+        <div className="flex-grow-1 margin-contenido ">
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/profile" component={Profile} />
             <Route path="/codificacion" component={ExternalApi} />
             <Route path="/colores" component={Colores} />
+            <Route path="/guidelines" component={Guidelines} />
+
 
           </Switch>
-        </Container>
+        </div>
         
         <Footer />
       </div>

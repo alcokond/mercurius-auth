@@ -38,8 +38,8 @@ const NavBar = () => {
 
   return (
     
-    <div className="nav-container">
-      <Navbar className="bg-navbar" light expand="md">
+    <div className="nav-container z-3 nav-sticky w-full">
+      <Navbar className="bg-navbar" sticky="top" light expand="md">
       {/* {isAuthenticated && (
         <MuiSidebar />
         )} */}
@@ -53,23 +53,12 @@ const NavBar = () => {
               
               
               
-              {/* <NavItem>
-                <NavLink
-                  tag={RouterNavLink}
-                  to="/"
-                  exact
-                  className="text-navbar"
-                  activeClassName="router-link-exact-active text-navbar"
-                >
-                  Home
-                </NavLink>
-              </NavItem> */}
               {isAuthenticated && (
                 <>
                 <NavItem>
                   <NavLink
                     tag={RouterNavLink}
-                    to="/marca"
+                    to="/"
                     exact
                     activeClassName="router-link-exact-active text-navbar"
                     className="text-navbar"
@@ -107,7 +96,7 @@ const NavBar = () => {
                   activeClassName="router-link-exact-active text-navbar"
                   className="text-navbar"
                 >
-                  Codificación
+                  Componentes
                 </NavLink>
               </NavItem>
               </>
@@ -138,7 +127,7 @@ const NavBar = () => {
                       src={user.picture}
                       alt="Profile"
                       className="nav-user-profile rounded-circle"
-                      width="50"
+                      width="30"
                     />
                   </DropdownToggle>
                   <DropdownMenu>

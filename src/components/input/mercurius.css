@@ -123,7 +123,48 @@
 .background-primary-shade-4{
   background-color: var(--primary-shade-4);
 }
-.complementary{
+
+.background-secondary{
+  background-color: var(--secondary);
+}
+.background-secondary-opacity-60{
+  background-color: var(--secondary-opacity-60);
+}
+.background-secondary-opacity-40{
+  background-color: var(--secondary-opacity-40);
+}
+.background-secondary-opacity-20{
+  background-color: var(--secondary-opacity-20);
+}
+.background-secondary-opacity-10{
+  background-color: var(--secondary-opacity-10);
+}
+.background-secondary-solid-1{
+  background-color: var(--secondary-solid-1);
+}
+.background-secondary-solid-2{
+  background-color: var(--secondary-solid-2);
+}
+.background-secondary-solid-3{
+  background-color: var(--secondary-solid-3);
+}
+.background-secondary-solid-4{
+  background-color: var(--secondary-solid-4);
+}
+.background-secondary-shade-1{
+  background-color: var(--secondary-shade-1);
+}
+.background-secondary-shade-2{
+  background-color: var(--secondary-shade-1);
+}
+.background-secondary-shade-3{
+  background-color: var(--secondary-shade-3);
+}
+.background-secondary-shade-4{
+  background-color: var(--secondary-shade-4);
+}
+
+.background-complementary{
   background-color: var(--complementary);
 }
 .background-complementary-opacity-60{

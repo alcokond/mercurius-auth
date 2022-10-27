@@ -387,3 +387,77 @@ li a{
 .gap-10{
   gap: 10vh;
 }
+
+.padding-colores{
+  padding-left: 5vw;
+  padding-top: 5vh;
+  padding-bottom: 15vh;
+  padding-right: 35vw;
+}
+
+.padding-paleta{
+  padding-left: 5vw;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  padding-right: 20vw;
+}
+
+.text-justify{
+  text-align: justify;
+}
+
+.margin-sidebar-r{
+  padding-right: 240px;
+}
+
+.size-colores{
+  height: 15rem;
+  width: 100vw;
+}
+
+.color-card{
+  width: 19vw;
+  height: 20vh;
+}
+
+.color-card-sm{
+  width: 13vw;
+  height: 13vh;
+}
+
+.card-paleta{
+  border-radius: 8px!important
+}
+
+.gap-1{
+  gap:8px;
+}
+
+.gap-2{
+  gap:16px;
+}
+
+.gap-3{
+  gap:24px;
+}
+
+.gap-4{
+  gap:32px;
+}
+
+.space-evenly{
+  justify-content: space-between;
+}
+
+.padding-tarjetas{
+  padding-left: 5vw;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  padding-right: 20vw;
+}
+
+.grid{
+  display: grid;
+
+}
+

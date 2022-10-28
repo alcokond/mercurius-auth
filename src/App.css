@@ -426,7 +426,8 @@ li a{
 }
 
 .card-paleta{
-  border-radius: 8px!important
+  border-radius: 8px!important;
+  margin-bottom: .5rem;
 }
 
 .gap-1{
@@ -461,3 +462,85 @@ li a{
 
 }
 
+svg path#ob-60-1 {
+  fill:  #5F57B6;
+}
+svg path#ob-60-2 {
+  fill: #928AE9;
+}
+svg path#ob-40-1 {
+  fill:  #6B65A5;
+}
+svg path#ob-40-2 {
+  fill: #B7B1F1;
+}
+svg path#ob-20-1 {
+  fill:  #757292;
+}
+svg path#ob-20-2 {
+  fill: #DBD8F8;
+}
+svg path#ob-10-1 {
+  fill:  #7A7989;
+}
+svg path#ob-10-2 {
+  fill: #EDECFC;
+}
+svg path#ws-60-1 {
+  fill:  #CC3974;
+}
+svg path#ws-60-2 {
+  fill: #FF6CA7;
+}
+svg path#ws-40-1 {
+  fill:  #B35178;
+}
+svg path#ws-40-2 {
+  fill: #FF9DC4;
+}
+svg path#ws-20-1 {
+  fill:  #99687C;
+}
+svg path#ws-20-2 {
+  fill: #FFCEE2;
+}
+svg path#ws-10-1 {
+  fill:  #8C747E;
+}
+svg path#ws-10-2 {
+  fill: #FFE7F1;
+}
+svg path#yp-60-1 {
+  fill:  #C8BA33;
+}
+svg path#yp-60-2 {
+  fill: #FBED66;
+}
+svg path#yp-40-1 {
+  fill:  #B1A74D;
+}
+svg path#yp-40-2 {
+  fill: #FDF399;
+}
+svg path#yp-20-1 {
+  fill:  #989366;
+}
+svg path#yp-20-2 {
+  fill: #FEF9CC;
+}
+svg path#yp-10-1 {
+  fill:  #8C8973;
+}
+svg path#yp-10-2 {
+  fill: #FFFCE6;
+}
+div.bg {
+  position: relative;
+  width: 13vw;
+  height: 13vh;
+}
+div.bg svg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}

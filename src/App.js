@@ -9,6 +9,7 @@ import Home from "./views/Home";
 import Profile from "./views/Profile";
 import ExternalApi from "./views/ExternalApi";
 import Colores from "./views/Colores";
+import Espaciado from "./views/Espaciado";
 import Guidelines from "./views/Guidelines";
 import { useAuth0 } from "@auth0/auth0-react";
 import history from "./utils/history";
@@ -23,6 +24,7 @@ import "./App.css";
 import initFontAwesome from "./utils/initFontAwesome";
 import { ProSidebarProvider } from "react-pro-sidebar";
 import PermanentDrawerLeft from "./components/PermanentDrawerLeft.js";
+import Tipografia from "./views/Tipografia";
 initFontAwesome();
 
 const App = () => {
@@ -61,6 +63,9 @@ const App = () => {
             <Route path="/codificacion" component={ExternalApi} />
             <Route path="/colores" component={Colores} />
             <Route path="/guidelines" component={Guidelines} />
+            <Route path="/espaciado" component={Espaciado} />
+            <Route path="/tipografia" component={Tipografia} />
+
 
 
           </Switch>

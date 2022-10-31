@@ -58,7 +58,7 @@ const ColoresPrincipal = () => (
       </div>
     </div>
     <div className="card-paleta flex flex-col ">
-      <div className="background-primary color-card flex flex-row items-center justify-center gap-4 ">
+      <div style={{backgroundColor: "#222D44"}}  className=" color-card flex flex-row items-center justify-center gap-4 ">
         <h5 className="text-heading-3">A</h5>
         <h5 className="text-heading-3 text-color-grayscale-7">A</h5>
       </div>

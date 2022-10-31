@@ -62,15 +62,15 @@ export default function PermanentDrawerLeft() {
               </NavLink>
             </ListItem>
 
-            <ListItem key='Botones' disablePadding>
+            <ListItem key='Espaciado' disablePadding>
             <NavLink
               tag={RouterNavLink}
-              to="/botones"
+              to="/espaciado"
               exact
               activeClassName="router-link-exact-active"
               >
-              <ListItemButton href='/botones' >
-                <ListItemText primary='Botones' />
+              <ListItemButton >
+                <ListItemText primary='Espaciado' />
               </ListItemButton>
               </NavLink>
             </ListItem>

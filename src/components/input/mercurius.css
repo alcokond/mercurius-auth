@@ -58,6 +58,8 @@
   --linear-gradient-1: linear-gradient(90deg, #4A3DDB -0.18%, #A921A1 52.54%, #FF086C 100.05%);
   --linear-gradient-2: linear-gradient(90deg, #4A3DDB -0.18%, #E33FD9 100.05%);
   --linear-gradient-3: linear-gradient(0deg, #221987 40%, #4A3CDB 100%);
+  --linear-gradient-4: linear-gradient(88.89deg, #221987 7.66%, rgba(74, 60, 219, 0.8) 93.32%);
+  --linear-gradient-5: linear-gradient(46.39deg, #221987 12.06%, #7064E3 87.77%);
   /*states*/
   /*success*/
   --success-primary: #38A57E;
@@ -83,6 +85,7 @@
   --semibold: 600;
   --bold: 700;
 }
+
 
 .background-primary{
   background-color: var(--primary);
@@ -250,6 +253,30 @@
 }
 .background-grayscale-7{
   background-color: var(--grayscale-7);
+}
+.background-gradient-1{
+  background: var(--linear-gradient-1);
+}
+.background-gradient-2{
+  background: var(--linear-gradient-2);
+}
+.background-gradient-3{
+  background: var(--linear-gradient-3);
+}
+.background-gradient-4{
+  background: var(--linear-gradient-4);
+}
+.background-gradient-5{
+  background: var(--linear-gradient-5);
+}
+.background-success-primary{
+  background-color: var(--success-primary);
+}
+.background-warning-primary{
+  background-color: var(--warning-primary);
+}
+.background-error-primary{
+  background-color: var(--error-primary);
 }
 .border-primary{
  border: var(--primary);

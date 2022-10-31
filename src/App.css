@@ -420,6 +420,14 @@ li a{
   height: 20vh;
 }
 
+.color-card-border{
+  width: 19vw;
+  height: 20vh;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border: 1px solid #EBECF0;
+}
+
 .color-card-sm{
   width: 13vw;
   height: 13vh;
@@ -428,6 +436,15 @@ li a{
 .card-paleta{
   border-radius: 8px!important;
   margin-bottom: .5rem;
+  
+
+}
+.card-paleta-border{
+  border-radius: 8px!important;
+  margin-bottom: .5rem;
+  border: 1px solid #EBECF0;
+  
+
 }
 
 .gap-1{
@@ -448,6 +465,10 @@ li a{
 
 .space-evenly{
   justify-content: space-between;
+}
+
+.justify-start{
+  justify-content: start;
 }
 
 .padding-tarjetas{
@@ -543,4 +564,67 @@ div.bg svg {
   position: absolute;
   height: 100%;
   width: 100%;
+}
+
+.flex-start{
+  align-items: flex-start;
+}
+
+.circle {
+  height: 5vh;
+  width: 5vh;
+  border-radius: 50%;
+}
+
+.self-center{
+  align-self: center;
+}
+
+.align-items-end{
+  align-items: flex-end;
+}
+
+.circle-box{
+  width: auto;
+}
+
+.square-4{
+  width: 4px;
+  height: 4px;
+}
+.square-8{
+  width: 8px;
+  height: 8px;
+}
+.square-16{
+  width: 16px;
+  height: 16px;
+}
+.square-24{
+  width: 24px;
+  height: 24px;
+}
+.square-32{
+  width: 32px;
+  height: 32px;
+}
+.square-40{
+  width: 40px;
+  height: 40px;
+}
+.square-48{
+  width: 48px;
+  height: 48px;
+}
+.square-80{
+  width: 80px;
+  height: 80px;
+}
+.square-96{
+  width: 96px;
+  height: 96px;
+}
+.square-120{
+  width: 120px;
+  height: 120px;
 }

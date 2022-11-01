@@ -471,6 +471,10 @@ li a{
   justify-content: start;
 }
 
+.justify-end{
+  justify-content: flex-end;
+}
+
 .padding-tarjetas{
   padding-left: 5vw;
   padding-top: 5vh;
@@ -628,3 +632,38 @@ div.bg svg {
   width: 120px;
   height: 120px;
 }
+
+#sizes div {
+  margin-bottom: 24px;
+}
+
+.mx-10{
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+button:focus{
+  outline: none;
+}
+
+.component-content{
+  width: 20vw;
+  height: 25vh;
+  background-color: #EBECF0;
+  border-radius: 8px;
+  border: 1px solid #B1B5BD;
+  
+}
+
+.component-group{
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.margin-hero{
+  margin-left: 25vh;
+  margin-right: 25vh;
+}
+
+
+

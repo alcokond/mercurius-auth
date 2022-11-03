@@ -10,16 +10,17 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Row, Col } from "reactstrap";
 import PermanentDrawerLeft from "./PermanentDrawerLeft.js";
+import DrawerGuidelines from "./DrawerGuidelines";
 
 const ColoresPrincipal = () => (
   <>
-  <PermanentDrawerLeft></PermanentDrawerLeft>
+  <DrawerGuidelines></DrawerGuidelines>
   {/* <div className="box-colors-1"></div> */}
   <div className="flex flex-col ">
     <div id="colores" className="margin-sidebar size-colores background-grayscale-6">
     <div className="padding-colores">
     <h6 className="text-overline">Guidelines</h6>
-    <h3  className="text-heading-3 mb-3">Colores</h3>
+    <h3 style={{fontSize:"36px", fontWeight:"700"}} className=" mb-3">Colores</h3>
     <p className="text-button-1">Los colores nos definen y distinguen nuestra marca y nos ayudan a crear una marca fuerte e identificable en todas nuestras plataformas.</p>
     </div>
     </div>

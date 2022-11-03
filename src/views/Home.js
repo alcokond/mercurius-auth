@@ -7,8 +7,7 @@ import HeroNew from "../components/HeroNew";
 const Home = () => (
   <Fragment>
     <HeroNew />
-    <hr />
-    <Content />
+    
   </Fragment>
 );
 

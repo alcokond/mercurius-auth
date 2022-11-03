@@ -1,9 +1,10 @@
 import React from "react";
+import DrawerGuidelines from "./DrawerGuidelines.js";
 import PermanentDrawerLeft from "./PermanentDrawerLeft.js";
 
 const EspaciadoPrincipal = () => (
     <>
-    <PermanentDrawerLeft></PermanentDrawerLeft>
+    <DrawerGuidelines></DrawerGuidelines>
     <div className="flex flex-col ">
     <div className="margin-sidebar padding-paleta">
         <h6 className="text-overline">Guidelines</h6>

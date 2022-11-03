@@ -1,9 +1,10 @@
 import React from "react";
+import DrawerGuidelines from "./DrawerGuidelines.js";
 import PermanentDrawerLeft from "./PermanentDrawerLeft.js.js";
 
 const TipografiaPrincipal = () => (
     <>
-    <PermanentDrawerLeft></PermanentDrawerLeft>
+    <DrawerGuidelines></DrawerGuidelines>
     <div className="flex flex-col flex-wrap">
     <div className="margin-sidebar padding-paleta">
         <div className="flex flex-row flex-wrap gap-3">

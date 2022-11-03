@@ -1,10 +1,11 @@
 import React from 'react'
+import DrawerGuidelines from '../components/DrawerGuidelines.js'
 import PermanentDrawerLeft from '../components/PermanentDrawerLeft.js'
 
 const Guidelines = () => {
   return (
     <>
-    <PermanentDrawerLeft></PermanentDrawerLeft>
+    <DrawerGuidelines></DrawerGuidelines>
     <div className='contenido'>Guidelines</div>
     </>
   )

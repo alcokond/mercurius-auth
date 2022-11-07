@@ -132,9 +132,9 @@ const Hero = () => (
       </section>
       <section className=" mb-24">
         <div className="margin-hero component-group pt-16 flex flex-wrap">
-            <div className="flex flex-col flex-wrap gap-4">
-                <div className="flex flex-row flex-wrap gap-2">
-                  <div className=" max-w-400-px">
+            <div className="flex flex-col flex-wrap gap-2">
+                <div className="flex flex-row flex-wrap space-evenly">
+                  <div className=" max-w-300-px">
               <h2 style={{fontSize: "31px"}} className=" font-semibold ">
                 Marca
               </h2>
@@ -163,7 +163,7 @@ const Hero = () => (
                   </div>
                 </div>
                 <div className="flex flex-row flex-wrap gap-2">
-                  <div className=" max-w-400-px">
+                  <div className=" max-w-300-px">
               <h2 style={{fontSize: "31px"}} className=" font-semibold ">
                 Contenido
               </h2>
@@ -192,7 +192,7 @@ const Hero = () => (
                   </div>
                 </div>
                 <div className="flex flex-row flex-wrap gap-2">
-                  <div className=" max-w-400-px">
+                  <div className=" max-w-300-px">
               <h2 style={{fontSize: "31px"}} className=" font-semibold ">
               Guidelines
               </h2>

@@ -33,16 +33,38 @@ export const ExternalApiComponent = () => {
         <PermanentDrawerLeft />
         )}
     <div className=" margin-sidebar padding-paleta">
-    {!isShown && <button className=" " onClick={handleClick}>Código</button> }
-    {isShown && <button className=" " onClick={handleClick}>Componente</button> }
-    {isShown && <CopyBlock
+    {!isShown && <> 
+    <div className="flex flex-col ">
+    <div style={{alignSelf: "flex-end"}}>
+    <button className=" " onClick={handleClick}>Ver Código</button>
+    </div>
+    <div className="component-content-full flex">
+        <div className="mx-auto my-auto">
+          <button class="button-main-primary-medium ">Button</button>            
+        </div>
+    </div>
+    </div>
+    
+     </>  }
+    {isShown &&
+    <div className="flex flex-col ">
+    <div style={{alignSelf: "flex-end"}}>
+    <button className=" " onClick={handleClick}>Ver Componente</button> 
+    </div>
+    
+     <CopyBlock
           language="html"
-          text={`<div><div/>`}
+          text={`<button class="button-main-primary-medium ">Button</button>
+          
+          
+          
+          `}
           codeBlock
           theme={dracula}
           showLineNumbers={false}
-        />}
-    
+        
+        />
+    </div> }
       {/* <div id="cards">
   <div class="card">
     <div class="card-content">

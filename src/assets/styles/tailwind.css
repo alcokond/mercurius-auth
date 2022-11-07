@@ -1889,6 +1889,12 @@ select {
   max-width: 210px;
 }
 
+.max-w-300-px {
+  max-width: 300px;
+}
+
+
+
 .max-w-400-px {
   max-width: 400px;
 }

@@ -684,6 +684,18 @@ button:focus{
   
 }
 
+.component-content-full{
+  width: 100%;
+  height: 25vh;
+  background-color: #EBECF0;
+  border-radius: 8px;
+  border: 1px solid #B1B5BD;
+  
+}
+.h-20{
+  min-height: 25vh;
+}
+
 .component-group{
   padding-right: 15px;
   padding-left: 15px;
@@ -724,6 +736,12 @@ button:focus{
 
 .max-w-30{
   max-width: 20vw;
+}
+
+.box-component{
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  ;
 }
 
 

@@ -56,6 +56,7 @@ body {
 .bg-navbar{
   background-color: #151055!important;
   padding: 15px;
+  min-height: 6rem;
 }
 
 .text-navbar{
@@ -407,6 +408,13 @@ li a{
   padding-right: 35vw;
 }
 
+.padding-voz{
+  padding-left: 5vw;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  padding-right: 5vw;
+}
+
 .padding-paleta{
   padding-left: 5vw;
   padding-top: 5vh;
@@ -473,6 +481,10 @@ li a{
 
 .gap-4{
   gap:32px;
+}
+
+.gap-5{
+  gap:64px;
 }
 
 .space-evenly{
@@ -703,6 +715,15 @@ button:focus{
   background-repeat: no-repeat;
   background-position: right top;
   background-size: cover
+}
+
+.no-margin{
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.max-w-30{
+  max-width: 20vw;
 }
 
 

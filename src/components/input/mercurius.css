@@ -278,6 +278,10 @@
 .background-error-primary{
   background-color: var(--error-primary);
 }
+
+.background-neutral-light{
+  background-color: var(--neutral-light);
+}
 .border-primary{
  border: var(--primary);
 }

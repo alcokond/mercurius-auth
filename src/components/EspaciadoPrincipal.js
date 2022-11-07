@@ -6,9 +6,14 @@ const EspaciadoPrincipal = () => (
     <>
     <DrawerGuidelines></DrawerGuidelines>
     <div className="flex flex-col ">
+    <div id="colores" className="margin-sidebar size-colores background-grayscale-6">
+    <div className="padding-colores">
+    <h6 className="text-overline">Guidelines</h6>
+    <h3 style={{fontSize:"36px", fontWeight:"700"}} className=" mb-3">Espaciado</h3>
+    </div>
+    </div>
     <div className="margin-sidebar padding-paleta">
-        <h6 className="text-overline">Guidelines</h6>
-        <h3  className="text-heading-3 mb-3">Espaciado</h3>
+        
         <div className="flex flex-row flex-wrap align-items-end justify-center space-evenly">
             <div className="flex flex-col items-center justify-center space-evenly">
             <div className="square-4 background-primary"></div>

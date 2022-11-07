@@ -38,13 +38,13 @@ const NavBar = () => {
 
   return (
     
-    <div className="nav-container z-3 nav-sticky w-full">
-      <Navbar className="bg-navbar" sticky="top" light expand="md">
+    <div className="nav-container no-margin z-3 nav-sticky w-full">
+      <Navbar className="bg-navbar " sticky="top" light expand="md">
       {/* {isAuthenticated && (
         <MuiSidebar />
         )} */}
         
-        <Container>
+        <Container className="no-margin">
         
           <NavbarBrand className="logo-mercurius" href="/"/>
           <NavbarToggler onClick={toggle} />

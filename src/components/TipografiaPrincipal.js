@@ -6,7 +6,14 @@ const TipografiaPrincipal = () => (
     <>
     <DrawerGuidelines></DrawerGuidelines>
     <div className="flex flex-col flex-wrap">
+    <div id="colores" className="margin-sidebar size-colores background-grayscale-6">
+    <div className="padding-colores">
+    <h6 className="text-overline">Guidelines</h6>
+    <h3 style={{fontSize:"36px", fontWeight:"700"}} className=" mb-3">Tipografía</h3>
+    </div>
+    </div>
     <div className="margin-sidebar padding-paleta">
+        
         <div className="flex flex-row flex-wrap gap-3">
             <div className="flex flex-col flex-wrap gap-3">
                 <h1 style={{color: "#4F565C"}} className=" text-subtitle-1">Typeface: Montserrat</h1>

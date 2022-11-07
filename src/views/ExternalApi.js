@@ -8,6 +8,9 @@ import MercButton3 from "../components/input/MercButton3";
 import { TextareaAutosize } from "@mui/base";
 import { Label } from "reactstrap";
 import PermanentDrawerLeft from "../components/PermanentDrawerLeft.js";
+import { CopyBlock, dracula } from "react-code-blocks";
+import TopBar  from "../components/TopBar"
+
 
 export const ExternalApiComponent = () => {
 
@@ -18,13 +21,29 @@ export const ExternalApiComponent = () => {
     isAuthenticated,
   } = useAuth0();
 
+  const [isShown, setIsShown] = useState(false);
+
+  const handleClick = event => {
+    setIsShown(current => !current);
+
+  };
   return (
     <>
     {isAuthenticated && (
         <PermanentDrawerLeft />
         )}
-    <div className="contenido">
-      <div id="cards">
+    <div className=" margin-sidebar padding-paleta">
+    {!isShown && <button className=" " onClick={handleClick}>Código</button> }
+    {isShown && <button className=" " onClick={handleClick}>Componente</button> }
+    {isShown && <CopyBlock
+          language="html"
+          text={`<div><div/>`}
+          codeBlock
+          theme={dracula}
+          showLineNumbers={false}
+        />}
+    
+      {/* <div id="cards">
   <div class="card">
     <div class="card-content">
       <div class="card-image">
@@ -122,7 +141,7 @@ export const ExternalApiComponent = () => {
       </div>
     </div>
   </div>
-</div>
+</div> */}
 </div>
 
 

@@ -1040,7 +1040,7 @@ const ColoresDisplay = () => {
 
 </div>
 <h5 className=' text-heading-5 '>Linear Gradients</h5>
-
+<div className='flex flex-col'>
 <div className="flex flex-row flex-wrap space-evenly ">
 <div className="card-paleta flex flex-col ">
   <div className="background-gradient-1 color-card flex flex-col items-center justify-center font-semibold">
@@ -1074,7 +1074,7 @@ const ColoresDisplay = () => {
   </div>
 </div>
 </div>
-<div style={{gap: "50px"}} className="flex flex-row">
+<div style={{gap: ".5vw"}} className="flex flex-row">
 <div className="card-paleta flex flex-col ">
   <div className=" background-gradient-4 color-card-border flex flex-col items-center justify-center font-semibold">
     
@@ -1098,7 +1098,7 @@ const ColoresDisplay = () => {
   </div>
 </div>
 </div>
-
+</div>
 
 <h5 className=' text-heading-5 '>Semantic Colors</h5>
 <div className='flex flex-row gap-5'>
@@ -1108,54 +1108,60 @@ const ColoresDisplay = () => {
 </div>
 <div className='flex flex-col space-evenly'>
 <div  className='flex flex-row space-evenly gap-5'>
-    
+    <div className='flex flex-col'>
     <div className='flex flex-col circle-box'>
       <div className=' self-center circle background-primary'></div>
       <div className='self-center'>Primary</div>
     </div>
     <div className='flex flex-col circle-box'>
+      <div className=' self-center circle background-primary'></div>
+      <div className='self-center'>Primary</div>
+    </div>
+    </div>
+    <div className='flex flex-col'>
+    <div className='flex flex-col circle-box'>
+      <div className=' self-center circle background-grayscale-5'></div>
+      <div className='self-center'>Secondary</div>
+      </div>
+      <div className='flex flex-col circle-box'>
       <div className=' self-center circle background-grayscale-5'></div>
       <div className='self-center'>Secondary</div>
     </div>
+    
+    </div>
+    <div className='flex flex-col'>
     <div className='flex flex-col circle-box'>
       <div className=' self-center circle background-success-primary'></div>
       <div className='self-center'>Confirm</div>
     </div>
     <div className='flex flex-col circle-box'>
-      <div className=' self-center circle background-warning-primary'></div>
-      <div className='self-center'>Warning</div>
-    </div>
-    <div className='flex flex-col circle-box'>
-      <div className=' self-center circle background-error-primary'></div>
-      <div className='self-center'>Cancel</div>
-    </div>
-
-</div>
-
-<div className='flex flex-row space-evenly '>
-   
-    <div className='flex flex-col circle-box'>
-      <div className=' self-center circle background-primary'></div>
-      <div className='self-center'>Primary</div>
-    </div>
-    <div className='flex flex-col circle-box'>
-      <div className=' self-center circle background-grayscale-5'></div>
-      <div className='self-center'>Secondary</div>
-    </div>
-    <div className='flex flex-col circle-box'>
       <div className=' self-center circle background-success-primary'></div>
       <div className='self-center'>Success</div>
     </div>
+    </div>
+    <div className='flex flex-col'>
     <div className='flex flex-col circle-box'>
       <div className=' self-center circle background-warning-primary'></div>
       <div className='self-center'>Warning</div>
+    </div>
+    <div className='flex flex-col circle-box'>
+      <div className=' self-center circle background-warning-primary'></div>
+      <div className='self-center'>Warning</div>
+    </div>
+    </div>
+    <div className='flex flex-col'>
+    <div className='flex flex-col circle-box'>
+      <div className=' self-center circle background-error-primary'></div>
+      <div className='self-center'>Cancel</div>
     </div>
     <div className='flex flex-col circle-box'>
       <div className=' self-center circle background-error-primary'></div>
       <div className='self-center'>Error</div>
     </div>
-
+    </div>
 </div>
+
+
 </div>
 </div>
 </div>

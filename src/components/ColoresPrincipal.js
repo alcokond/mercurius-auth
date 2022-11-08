@@ -21,15 +21,15 @@ const ColoresPrincipal = () => (
     <div className="padding-colores">
     <h6 className="text-overline">Guidelines</h6>
     <h3 style={{fontSize:"36px", fontWeight:"700"}} className=" mb-3">Colores</h3>
-    <p className="text-button-1">Los colores nos definen y distinguen nuestra marca y nos ayudan a crear una marca fuerte e identificable en todas nuestras plataformas.</p>
+    <p className="text-button-1">Nuestros colores en conjunto representan la identidad de Xtrim. Usamos colores que reflejan el trabajo que estamos construyendo como marca. Elegimos colores que permiten a los usuarios acceder a procesos fáciles y entendibles, nuestros colores deben actuar como guías para el usuario resaltando la información importante.</p>
     </div>
     </div>
     <div id="paleta-primaria" className="margin-sidebar padding-paleta text-justify">
       <h6 className="text-heading-5 pb-4" >Paleta Primaria</h6>
-      <p>Nuestra paleta principal está compuesta de azul, y amarillo para aportar audacia a nuestra marca y se utiliza de manera lógica en todo el producto y el marketing para guiar el ojo y resaltar las partes importantes. Apiñamos colores de paleta secundaria más cálidos en todo momento para suavizar la experiencia y transmitir confianza y optimismo.<br/>Utilizamos azul (B500) para acciones primarias, botones, enlaces de texto, para indicar el progreso y representar la autenticación. Amarillo (Y500) se utiliza principalmente para el texto del cuerpo y los encabezados, y el blanco (N0) se utiliza para los fondos de las páginas.</p>
+      <p>Nuestros colores en conjunto representan la identidad de Xtrim. Usamos colores que reflejan el trabajo que estamos construyendo como marca. Elegimos colores que permiten a los usuarios acceder a procesos fáciles y entendibles, nuestros colores deben actuar como guías para el usuario resaltando la información importante.</p>
     </div>
 
-    <div className="flex flex-row flex-wrap margin-sidebar padding-tarjetas space-evenly rounded">
+    {/* <div className="flex flex-row flex-wrap margin-sidebar padding-tarjetas space-evenly rounded">
     
     <div className="card-paleta flex flex-col ">
       <div className="background-primary color-card flex flex-row items-center justify-center gap-4 ">
@@ -73,7 +73,7 @@ const ColoresPrincipal = () => (
     </div>
     
 
-    </div>
+    </div> */}
 
   </div>
 

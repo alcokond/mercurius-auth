@@ -9,7 +9,7 @@ const Hero = () => (
   <>
     <div className="">
       <section style={{backgroundColor: "#F2F1FC"}} className="header relative pt-16 items-center flex pb-16">
-        <div  className="container mx-10 items-center flex flex-wrap">
+        <div  className=" mx-10 items-center flex flex-wrap">
           <div className="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">
             <div className="pt-32 sm:pt-0">
               <h2 className="font-normal text-4xl">
@@ -28,7 +28,7 @@ const Hero = () => (
       </section>
 
       <section >
-      <div className="container mx-10 pt-16 items-center flex flex-wrap">
+      <div className=" mx-10 pt-16 items-center flex flex-wrap">
           <div className="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">
             <div className="pt-32 sm:pt-0">
 
@@ -86,7 +86,7 @@ const Hero = () => (
                     <div className="pt-2">Radiobutton</div>
                 </div>
             </div>
-      <div className="container mx-10 pt-16 items-center flex flex-wrap">
+      <div className=" mx-10 pt-16 items-center flex flex-wrap">
           <div className="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">
             <div className="pt-32 sm:pt-0">
 
@@ -131,8 +131,8 @@ const Hero = () => (
 
       </section>
       <section className=" mb-24">
-        <div className="margin-hero component-group pt-16 flex flex-wrap">
-            <div className="flex flex-col flex-wrap gap-2">
+        <div className="margin-hero pt-16">
+            <div className="flex flex-col flex-wrap gap-col">
                 <div className="flex flex-row flex-wrap space-evenly">
                   <div className=" max-w-300-px">
               <h2 style={{fontSize: "31px"}} className=" font-semibold ">
@@ -162,7 +162,7 @@ const Hero = () => (
                     <div>Mantener un estado de mejora continua para otorgar productos de calidad...</div>
                   </div>
                 </div>
-                <div className="flex flex-row flex-wrap gap-2">
+                <div className="flex flex-row flex-wrap space-evenly">
                   <div className=" max-w-300-px">
               <h2 style={{fontSize: "31px"}} className=" font-semibold ">
                 Contenido
@@ -191,7 +191,7 @@ const Hero = () => (
                     <div>Debes escribir pensando en el usuario. Debes conocer lo que quiere el usuario y sus necesidades...</div>
                   </div>
                 </div>
-                <div className="flex flex-row flex-wrap gap-2">
+                <div className="flex flex-row flex-wrap space-evenly">
                   <div className=" max-w-300-px">
               <h2 style={{fontSize: "31px"}} className=" font-semibold ">
               Guidelines

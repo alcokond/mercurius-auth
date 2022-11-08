@@ -8,7 +8,7 @@ const Hero = () => (
   <>
       
       <section className="header relative pt-16 items-center flex h-screen max-h-300-px">
-        <div className="container mx-auto items-center flex flex-wrap">
+        <div className=" mx-auto items-center flex flex-wrap">
           <div className="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">
             <div className="pt-32 sm:pt-0">
               <h2 className="font-normal text-4xl text-blueGray-800">

@@ -51,6 +51,7 @@ body {
     height: 2rem;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-right: 10px;
 }
 
 .bg-navbar{
@@ -405,7 +406,7 @@ li a{
   padding-left: 5vw;
   padding-top: 5vh;
   padding-bottom: 5vh;
-  padding-right: 35vw;
+  padding-right: 20vw;
 }
 
 .padding-voz{
@@ -432,7 +433,7 @@ li a{
 
 .size-colores{
   height: 15rem;
-  width: 100%;
+  width: 100;
 }
 
 .color-card{
@@ -720,6 +721,25 @@ button:focus{
   padding: 24px;
   border: 1px solid #B1B5BD;
 }
+
+.icon-card-marca{
+  width: 28.5vw;
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid #B1B5BD;
+}
+.icon-card-objetivo{
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid #B1B5BD;
+  width: 100%;
+}
+
+.flex-center{
+  justify-content: center;
+}
+
+
 
 .icon-box{
   width: 45px;

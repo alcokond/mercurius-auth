@@ -1,6 +1,6 @@
 import React from "react";
 import DrawerGuidelines from "./DrawerGuidelines.js";
-import PermanentDrawerLeft from "./PermanentDrawerLeft.js.js";
+import PermanentDrawerLeft from "./PermanentDrawerLeft.js";
 
 const TipografiaPrincipal = () => (
     <>

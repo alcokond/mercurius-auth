@@ -27,6 +27,10 @@ import { ProSidebarProvider } from "react-pro-sidebar";
 import PermanentDrawerLeft from "./components/PermanentDrawerLeft.js";
 import Tipografia from "./views/Tipografia";
 import Marca from "./views/Marca";
+import Mision from "./views/Mision"
+import Promesa from "./views/Promesa";
+import Personalidad from "./views/Personalidad";
+import Contenido from "./views/Contenido";
 
 initFontAwesome();
 
@@ -70,6 +74,11 @@ const App = () => {
             <Route path="/tipografia" component={Tipografia} />
             <Route path="/marca" component={Marca} />
             <Route path="/voz" component={Voz} />
+            <Route path="/mision" component={Mision} />
+            <Route path="/promesa" component={Promesa} />
+            <Route path="/personalidad" component={Personalidad} />
+            <Route path="/contenido" component={Contenido} />
+
 
 
 

@@ -23,14 +23,15 @@ import "./App.css";
 
 // fontawesome
 import initFontAwesome from "./utils/initFontAwesome";
-import { ProSidebarProvider } from "react-pro-sidebar";
-import PermanentDrawerLeft from "./components/PermanentDrawerLeft.js";
+
 import Tipografia from "./views/Tipografia";
 import Marca from "./views/Marca";
 import Mision from "./views/Mision"
 import Promesa from "./views/Promesa";
 import Personalidad from "./views/Personalidad";
 import Contenido from "./views/Contenido";
+import DrawerGuidelines from "./components/DrawerGuidelines";
+
 
 initFontAwesome();
 
@@ -57,15 +58,13 @@ const App = () => {
     <Router history={history}>
       
       <div id="app" className="d-flex flex-column h-100">
-      
-        <NavBar sticky="top" />
         
-        {/* {isAuthenticated && (
-        <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
-        )} */}
+        <NavBar sticky="top" />
         <div className="flex-grow-1 margin-contenido ">
           <Switch>
             <Route path="/" exact component={Home} />
+            <div>
+            <DrawerGuidelines />
             <Route path="/profile" component={Profile} />
             <Route path="/codificacion" component={ExternalApi} />
             <Route path="/colores" component={Colores} />
@@ -79,10 +78,7 @@ const App = () => {
             <Route path="/personalidad" component={Personalidad} />
             <Route path="/contenido" component={Contenido} />
 
-
-
-
-
+            </div>
           </Switch>
         </div>
         

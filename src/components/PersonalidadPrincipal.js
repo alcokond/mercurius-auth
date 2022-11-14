@@ -1,21 +1,11 @@
 import React from "react";
-import logo from "../assets/logo.svg";
 import {FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faHeart, faIcons, faPalette, faPenNib, faTypewriter } from "@fortawesome/pro-light-svg-icons";
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import { Row, Col } from "reactstrap";
-import PermanentDrawerLeft from "./PermanentDrawerLeft.js";
-import DrawerGuidelines from "./DrawerGuidelines";
-import {faArrowRight, facircleuser, faUserCircle, faRocket, faUserAstronaut, faHandHeart } from "@fortawesome/pro-light-svg-icons";
+
+import { faRocket } from "@fortawesome/pro-light-svg-icons";
 
 const PersonalidadPrincipal = () => (
   <>
-    <DrawerGuidelines></DrawerGuidelines>
+
   {/* <div className="box-colors-1"></div> */}
   <div className="flex flex-col margin-sidebar">
     <div id="colores" className=" background-grayscale-6">

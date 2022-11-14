@@ -14,7 +14,7 @@ import DrawerGuidelines from "./DrawerGuidelines";
 
 const ColoresPrincipal = () => (
   <>
-  <DrawerGuidelines></DrawerGuidelines>
+  
   {/* <div className="box-colors-1"></div> */}
   <div className="flex flex-col ">
     <div id="colores" className="margin-sidebar size-colores background-grayscale-6">

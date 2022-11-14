@@ -1,14 +1,10 @@
-import React from 'react'
-import DrawerGuidelines from '../components/DrawerGuidelines.js'
-import PermanentDrawerLeft from '../components/PermanentDrawerLeft.js'
+import React, { Fragment } from "react";
+import GuidelinesPrincipal from "../components/GuidelinesPrincipal";
 
-const Guidelines = () => {
-  return (
-    <>
-    <DrawerGuidelines></DrawerGuidelines>
-    <div className='contenido'>Guidelines</div>
-    </>
-  )
-}
+const Guidelines = () => (
+  <Fragment>
+    <GuidelinesPrincipal />
+  </Fragment>
+);
 
-export default Guidelines
+export default Guidelines;

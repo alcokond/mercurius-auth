@@ -5,7 +5,7 @@ import DrawerGuidelines from "./DrawerGuidelines";
 
 const ContenidoPrincipal = () => (
   <>
-    <DrawerGuidelines></DrawerGuidelines>
+    
   {/* <div className="box-colors-1"></div> */}
   <div className="flex flex-col margin-sidebar">
     <div id="colores" className=" background-grayscale-6">

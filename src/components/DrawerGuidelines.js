@@ -7,15 +7,29 @@ import List from '@mui/material/List';
 import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
 import { NavLink } from 'react-router-dom';
+import ExpandLess from '@mui/icons-material/ExpandLess';
+import ExpandMore from '@mui/icons-material/ExpandMore';
+import Collapse from '@mui/material/Collapse';
 
 const drawerWidth = 240;
 
 export default function DrawerGuidelines() {
+  const [open, setOpen] = React.useState(false);
+  const [open2, setOpen2] = React.useState(false);
+  const [open3, setOpen3] = React.useState(false);
+
+  const handleClick = () => {
+    setOpen(!open);
+  };
+  const handleClick2 = () => {
+    setOpen2(!open2);
+  };
+  const handleClick3 = () => {
+    setOpen3(!open3);
+  };
+
   return (
     <Box sx={{ display: 'flex', height:'0' }} className='drawer'>
       
@@ -34,21 +48,70 @@ export default function DrawerGuidelines() {
         <Toolbar className='alto'/>
         
         <List>
-          <ListItem key='Colores' disablePadding>
-          <NavLink
-              tag={RouterNavLink}
-              to="/colores"
-              exact
-              activeClassName="router-link-exact-active" 
-              >
-              <ListItemButton className='w-full' >
-              
-                <ListItemText primary='Colores' className='w-full'/>
-                
+              <ListItemButton onClick={handleClick}>
+              <ListItemText primary="Guidelines" />
+              {open ? <ExpandLess /> : <ExpandMore />}
               </ListItemButton>
-              </NavLink>
-            </ListItem>
-
+            <Collapse in={open} timeout="auto" unmountOnExit>
+                  <List component="div" disablePadding>
+                    <ListItem>
+                    <NavLink
+                      tag={RouterNavLink}
+                      to="/colores"
+                      exact
+                      activeClassName="router-link-exact-active" 
+                      >
+                      <ListItemButton sx={{ pl: 4 }} >
+                      
+                        <ListItemText primary='Colores' />
+                        
+                      </ListItemButton>
+                    </NavLink>
+                    
+                    </ListItem>
+                    <ListItem>
+                    <NavLink
+                      tag={RouterNavLink}
+                      to="/tipografia"
+                      exact
+                      activeClassName="router-link-exact-active" 
+                      >
+                      <ListItemButton sx={{ pl: 4 }} >
+                      
+                        <ListItemText primary='Tipografía' />
+                        
+                      </ListItemButton>
+                    </NavLink>
+                    
+                    </ListItem>
+                    
+                  </List>
+                </Collapse>
+              <ListItemButton onClick={handleClick2}>
+              <ListItemText primary="Acciones" />
+              {open2 ? <ExpandLess /> : <ExpandMore />}
+              </ListItemButton>
+            <Collapse in={open2} timeout="auto" unmountOnExit>
+                  <List component="div" disablePadding>
+                    <ListItem>
+                    <NavLink
+                      tag={RouterNavLink}
+                      to="/botones"
+                      exact
+                      activeClassName="router-link-exact-active" 
+                      
+                      >
+                      <ListItemButton sx={{ pl: 4 }} >
+                      
+                        <ListItemText primary='Botones' />
+                        
+                      </ListItemButton>
+                    </NavLink>
+                    
+                    </ListItem>
+                    
+                  </List>
+                </Collapse>
             <ListItem key='Tipografía' disablePadding>
             <NavLink
               tag={RouterNavLink}

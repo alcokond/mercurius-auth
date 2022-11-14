@@ -4,7 +4,7 @@ import PermanentDrawerLeft from "./PermanentDrawerLeft.js";
 
 const EspaciadoPrincipal = () => (
     <>
-    <DrawerGuidelines></DrawerGuidelines>
+    
     <div className="flex flex-col ">
     <div id="colores" className="margin-sidebar size-colores background-grayscale-6">
     <div className="padding-colores">

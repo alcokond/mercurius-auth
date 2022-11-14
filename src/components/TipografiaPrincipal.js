@@ -4,7 +4,6 @@ import PermanentDrawerLeft from "./PermanentDrawerLeft.js";
 
 const TipografiaPrincipal = () => (
     <>
-    <DrawerGuidelines></DrawerGuidelines>
     <div className="flex flex-col flex-wrap">
     <div id="colores" className="margin-sidebar size-colores background-grayscale-6">
     <div className="padding-colores">

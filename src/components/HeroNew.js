@@ -4,6 +4,8 @@ import {FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faIcons, faPalette, faPenNib, faTypewriter, faArrowRight, facircleuser, faUserCircle, faRocket } from "@fortawesome/pro-light-svg-icons";
 import { RadioGroup, FormControl, Radio, FormGroup, FormControlLabel, Checkbox, FormLabel } from "@mui/material";
 import { RadioButtonChecked } from "@mui/icons-material";
+import { motion } from "framer-motion"
+
 
 const Hero = () => (
   <>

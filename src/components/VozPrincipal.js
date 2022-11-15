@@ -1,11 +1,11 @@
 import React from "react";
 import {FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import DrawerGuidelines from "./DrawerGuidelines";
+import Sidebar from "./Sidebar";
 import {faArrowRight, facircleuser, faUserCircle, faRocket, faBullhorn, faBullseyeArrow } from "@fortawesome/pro-light-svg-icons";
 
 const VozPrincipal = () => (
   <>
-    <DrawerGuidelines></DrawerGuidelines>
+    <Sidebar></Sidebar>
   {/* <div className="box-colors-1"></div> */}
   <div className="flex flex-col margin-sidebar">
     <div id="colores" className=" background-grayscale-6">

@@ -1,7 +1,7 @@
 import React from "react";
 import {FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faHeart, faRocket, faUserAstronaut, faHandHeart } from "@fortawesome/pro-light-svg-icons";
-import DrawerGuidelines from "./DrawerGuidelines";
+import Sidebar from "./Sidebar";
 
 const ContenidoPrincipal = () => (
   <>

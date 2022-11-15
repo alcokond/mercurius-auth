@@ -1,5 +1,5 @@
 import React from "react";
-import DrawerGuidelines from "./DrawerGuidelines.js";
+import Sidebar from "./Sidebar.js";
 import PermanentDrawerLeft from "./PermanentDrawerLeft.js";
 
 const EspaciadoPrincipal = () => (

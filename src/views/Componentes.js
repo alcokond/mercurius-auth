@@ -12,7 +12,7 @@ import { CopyBlock, dracula } from "react-code-blocks";
 import TopBar  from "../components/TopBar"
 
 
-export const ExternalApiComponent = () => {
+export const Componentes = () => {
 
   const [code, setCode] = React.useState(
     `function add(a, b) {\n  return a + b;\n}`
@@ -181,9 +181,7 @@ export const ExternalApiComponent = () => {
  
   return (
     <>
-    {isAuthenticated && (
-        <PermanentDrawerLeft />
-        )}
+    
     <div id="colores" className="margin-sidebar background-grayscale-6">
     <div className="padding-colores">
     <h6 className="text-overline">Codificación</h6>
@@ -948,6 +946,6 @@ export const ExternalApiComponent = () => {
   );
 };
 
-export default withAuthenticationRequired(ExternalApiComponent, {
+export default withAuthenticationRequired(Componentes, {
   onRedirecting: () => <Loading />,
 });

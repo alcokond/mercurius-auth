@@ -7,15 +7,14 @@ import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Home from "./views/Home";
 import Profile from "./views/Profile";
-import ExternalApi from "./views/ExternalApi";
+import ExternalApi from "./views/Componentes";
 import Colores from "./views/Colores";
 import Espaciado from "./views/Espaciado";
 import Guidelines from "./views/Guidelines";
 import Voz from "./views/Voz";
 import { useAuth0 } from "@auth0/auth0-react";
 import history from "./utils/history";
-import Sidebar from "./components/Sidebar";
-import MuiSidebar from "./components/MuiSidebar";
+
 
 
 // styles
@@ -30,7 +29,7 @@ import Mision from "./views/Mision"
 import Promesa from "./views/Promesa";
 import Personalidad from "./views/Personalidad";
 import Contenido from "./views/Contenido";
-import DrawerGuidelines from "./components/DrawerGuidelines";
+import Sidebar from "./components/Sidebar";
 
 
 initFontAwesome();
@@ -64,7 +63,7 @@ const App = () => {
           <Switch>
             <Route path="/" exact component={Home} />
             <div>
-            <DrawerGuidelines />
+            <Sidebar />
             <Route path="/profile" component={Profile} />
             <Route path="/codificacion" component={ExternalApi} />
             <Route path="/colores" component={Colores} />

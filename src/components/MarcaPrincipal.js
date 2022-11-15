@@ -10,7 +10,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Row, Col } from "reactstrap";
 import PermanentDrawerLeft from "./PermanentDrawerLeft.js";
-import DrawerGuidelines from "./DrawerGuidelines";
+import Sidebar from "./Sidebar";
 import {faArrowRight, facircleuser, faUserCircle, faRocket, faUserAstronaut, faHandHeart } from "@fortawesome/pro-light-svg-icons";
 
 const MarcaPrincipal = () => (

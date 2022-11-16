@@ -30,8 +30,6 @@ export default function Sidebar() {
     setOpen3(!open3);
   };
 
-  function handleClick()
-
   return (
     <Box sx={{ display: 'flex', height:'0' }} className='drawer'>
       
@@ -50,9 +48,48 @@ export default function Sidebar() {
         <Toolbar className='alto'/>
         
         <List>
-              <ListItemButton onClick={handleClick}>
-              <ListItemText primary="Guidelines" />
+        <ListItemButton onClick={handleClick}>
+              <ListItemText primary="Marca" />
               {open ? <ExpandLess /> : <ExpandMore />}
+              </ListItemButton>
+            <Collapse in={open} timeout="auto" unmountOnExit>
+                  <List component="div" disablePadding>
+                    <ListItem>
+                    <NavLink
+                      tag={RouterNavLink}
+                      to="/marca"
+                      exact
+                      activeClassName="router-link-exact-active" 
+                      >
+                      <ListItemButton sx={{ pl: 4 }} >
+                      
+                        <ListItemText primary='Marca' />
+                        
+                      </ListItemButton>
+                    </NavLink>
+                    
+                    </ListItem>
+                    <ListItem>
+                    <NavLink
+                      tag={RouterNavLink}
+                      to="/tipografia"
+                      exact
+                      activeClassName="router-link-exact-active" 
+                      >
+                      <ListItemButton sx={{ pl: 4 }} >
+                      
+                        <ListItemText primary='Tipografía' />
+                        
+                      </ListItemButton>
+                    </NavLink>
+                    
+                    </ListItem>
+                    
+                  </List>
+                </Collapse>
+              <ListItemButton onClick={handleClick2}>
+              <ListItemText primary="Guidelines" />
+              {open2 ? <ExpandLess /> : <ExpandMore />}
               </ListItemButton>
             <Collapse in={open} timeout="auto" unmountOnExit>
                   <List component="div" disablePadding>
@@ -89,9 +126,9 @@ export default function Sidebar() {
                     
                   </List>
                 </Collapse>
-              <ListItemButton onClick={handleClick2}>
+              <ListItemButton onClick={handleClick3}>
               <ListItemText primary="Acciones" />
-              {open2 ? <ExpandLess /> : <ExpandMore />}
+              {open3 ? <ExpandLess /> : <ExpandMore />}
               </ListItemButton>
             <Collapse in={open2} timeout="auto" unmountOnExit>
                   <List component="div" disablePadding>

@@ -10,6 +10,8 @@ import { Label } from "reactstrap";
 import PermanentDrawerLeft from "../components/PermanentDrawerLeft.js";
 import { CopyBlock, dracula } from "react-code-blocks";
 import TopBar  from "../components/TopBar"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCode, faPuzzlePiece } from "@fortawesome/pro-light-svg-icons";
 
 
 export const Componentes = () => {
@@ -195,13 +197,20 @@ export const Componentes = () => {
     <h5 className=' text-heading-3 '>Botones</h5>
     </div>
     <div className=" mb-5">
-    <h5 className=' text-heading-5 '>Boton Primario</h5>
+    <h5 className=' text-heading-5 mb-3'>Boton Primario</h5>
+
+    {/* <div className=" text-subtitle-1 mb-2">Explora otros tamaños: </div> */}
+    <div className="flex flex-row items-center gap-2">
+      <button className="size-option" onClick={handleClickMostrarPrimary1}>Small</button>
+      <button className="size-option" onClick={handleClickMostrarPrimary2}>Medium</button>
+      <button className="size-option" onClick={handleClickMostrarPrimary3}>Large</button>
+    </div>
     
     {isMostrarPrimary1 && 
     !isShownPrimary && <> 
     <div className="flex flex-col ">
     <div style={{alignSelf: "flex-end"}}>
-    <button className=" " onClick={handleClickPrimary}>Ver Código</button>
+    <button className=" text-color-primary text-weight-semibold" onClick={handleClickPrimary}>Ver Código <FontAwesomeIcon icon={faCode} /></button>
     </div>
     <div className="component-content-full flex">
         <div className="mx-auto my-auto">
@@ -215,7 +224,7 @@ export const Componentes = () => {
     isShownPrimary &&
     <div className="flex flex-col ">
     <div style={{alignSelf: "flex-end"}}>
-    <button className=" " onClick={handleClickPrimary}>Ver Componente</button> 
+    <button className=" text-color-primary text-weight-semibold" onClick={handleClickPrimary}>Ver Componente <FontAwesomeIcon icon={faPuzzlePiece} /></button> 
     </div>
     <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
      <CopyBlock 
@@ -232,7 +241,7 @@ export const Componentes = () => {
     !isShownPrimary && <> 
     <div className="flex flex-col ">
     <div style={{alignSelf: "flex-end"}}>
-    <button className=" " onClick={handleClickPrimary}>Ver Código</button>
+    <button className=" text-color-primary text-weight-semibold" onClick={handleClickPrimary}>Ver Código <FontAwesomeIcon icon={faCode} /></button>
     </div>
     <div className="component-content-full flex">
         <div className="mx-auto my-auto">
@@ -246,7 +255,7 @@ export const Componentes = () => {
     isShownPrimary &&
     <div className="flex flex-col ">
     <div style={{alignSelf: "flex-end"}}>
-    <button className=" " onClick={handleClickPrimary}>Ver Componente</button> 
+    <button className=" text-color-primary text-weight-semibold" onClick={handleClickPrimary}>Ver Componente <FontAwesomeIcon icon={faPuzzlePiece} /></button> 
     </div>
     <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
      <CopyBlock 
@@ -263,7 +272,7 @@ export const Componentes = () => {
     !isShownPrimary && <> 
     <div className="flex flex-col ">
     <div style={{alignSelf: "flex-end"}}>
-    <button className=" " onClick={handleClickPrimary}>Ver Código</button>
+    <button className=" text-color-primary text-weight-semibold" onClick={handleClickPrimary}>Ver Código <FontAwesomeIcon icon={faCode} /></button>
     </div>
     <div className="component-content-full flex">
         <div className="mx-auto my-auto">
@@ -277,7 +286,7 @@ export const Componentes = () => {
     isShownPrimary &&
     <div className="flex flex-col ">
     <div style={{alignSelf: "flex-end"}}>
-    <button className=" " onClick={handleClickPrimary}>Ver Componente</button> 
+    <button className=" text-color-primary text-weight-semibold" onClick={handleClickPrimary}>Ver Componente <FontAwesomeIcon icon={faPuzzlePiece} /></button> 
     </div>
     <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
      <CopyBlock 
@@ -290,21 +299,20 @@ export const Componentes = () => {
         />
         </div>
     </div> }
-    <div>Explora otros tamaños: </div>
-    <div className="flex flex-row gap-2">
-      <button onClick={handleClickMostrarPrimary1}>Small</button>
-      <button onClick={handleClickMostrarPrimary2}>Medium</button>
-      <button onClick={handleClickMostrarPrimary3}>Large</button>
-    </div>
     </div>
     <div className=" mb-5">
-    <h5 className=' text-heading-5 '>Boton Secundario</h5>
+    <h5 className=' text-heading-5 mb-3'>Boton Secundario</h5>
     
     {isMostrarSecondary1 && 
     !isShownSecondary && <> 
+    <div className="flex flex-row gap-2">
+      <button onClick={handleClickMostrarSecondary1}>Small</button>
+      <button onClick={handleClickMostrarSecondary2}>Medium</button>
+      <button onClick={handleClickMostrarSecondary3}>Large</button>
+    </div>
     <div className="flex flex-col ">
     <div style={{alignSelf: "flex-end"}}>
-    <button className=" " onClick={handleClickSecondary}>Ver Código</button>
+    <button className=" text-color-primary text-weight-semibold" onClick={handleClickSecondary}>Ver Código <FontAwesomeIcon icon={faCode} /></button>
     </div>
     <div className="component-content-full flex">
         <div className="mx-auto my-auto">
@@ -318,7 +326,7 @@ export const Componentes = () => {
     isShownSecondary &&
     <div className="flex flex-col ">
     <div style={{alignSelf: "flex-end"}}>
-    <button className=" " onClick={handleClickSecondary}>Ver Componente</button> 
+    <button className=" text-color-primary text-weight-semibold" onClick={handleClickSecondary}>Ver Componente <FontAwesomeIcon icon={faPuzzlePiece} /></button> 
     </div>
     <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
      <CopyBlock 
@@ -335,7 +343,7 @@ export const Componentes = () => {
     !isShownSecondary && <> 
     <div className="flex flex-col ">
     <div style={{alignSelf: "flex-end"}}>
-    <button className=" " onClick={handleClickSecondary}>Ver Código</button>
+    <button className=" text-color-primary text-weight-semibold" onClick={handleClickSecondary}>Ver Código <FontAwesomeIcon icon={faCode} /></button>
     </div>
     <div className="component-content-full flex">
         <div className="mx-auto my-auto">
@@ -349,7 +357,7 @@ export const Componentes = () => {
     isShownSecondary &&
     <div className="flex flex-col ">
     <div style={{alignSelf: "flex-end"}}>
-    <button className=" " onClick={handleClickSecondary}>Ver Componente</button> 
+    <button className=" text-color-primary text-weight-semibold" onClick={handleClickSecondary}>Ver Componente <FontAwesomeIcon icon={faPuzzlePiece} /></button> 
     </div>
     <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
      <CopyBlock 
@@ -366,7 +374,7 @@ export const Componentes = () => {
     !isShownSecondary && <> 
     <div className="flex flex-col ">
     <div style={{alignSelf: "flex-end"}}>
-    <button className=" " onClick={handleClickSecondary}>Ver Código</button>
+    <button className=" text-color-primary text-weight-semibold" onClick={handleClickSecondary}>Ver Código <FontAwesomeIcon icon={faCode} /></button>
     </div>
     <div className="component-content-full flex">
         <div className="mx-auto my-auto">
@@ -380,7 +388,7 @@ export const Componentes = () => {
     isShownSecondary &&
     <div className="flex flex-col ">
     <div style={{alignSelf: "flex-end"}}>
-    <button className=" " onClick={handleClickSecondary}>Ver Componente</button> 
+    <button className=" text-color-primary text-weight-semibold" onClick={handleClickSecondary}>Ver Componente <FontAwesomeIcon icon={faPuzzlePiece} /></button> 
     </div>
     <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
      <CopyBlock 
@@ -393,21 +401,16 @@ export const Componentes = () => {
         />
         </div>
     </div> }
-    <div>Explora otros tamaños: </div>
-    <div className="flex flex-row gap-2">
-      <button onClick={handleClickMostrarSecondary1}>Small</button>
-      <button onClick={handleClickMostrarSecondary2}>Medium</button>
-      <button onClick={handleClickMostrarSecondary3}>Large</button>
-    </div>
+    
     </div>
     <div className=" mb-5">
-    <h5 className=' text-heading-5 '>Boton Subtle</h5>
+    <h5 className=' text-heading-5 mb-3'>Boton Subtle</h5>
     
     {isMostrarSubtle1 && 
     !isShownSubtle && <> 
     <div className="flex flex-col ">
     <div style={{alignSelf: "flex-end"}}>
-    <button className=" " onClick={handleClickSubtle}>Ver Código</button>
+    <button className=" text-color-primary text-weight-semibold" onClick={handleClickSubtle}>Ver Código <FontAwesomeIcon icon={faCode} /></button>
     </div>
     <div className="component-content-full flex">
         <div className="mx-auto my-auto">
@@ -421,7 +424,7 @@ export const Componentes = () => {
     isShownSubtle &&
     <div className="flex flex-col ">
     <div style={{alignSelf: "flex-end"}}>
-    <button className=" " onClick={handleClickSubtle}>Ver Componente</button> 
+    <button className=" text-color-primary text-weight-semibold" onClick={handleClickSubtle}>Ver Componente <FontAwesomeIcon icon={faPuzzlePiece} /></button> 
     </div>
     <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
      <CopyBlock 
@@ -438,7 +441,7 @@ export const Componentes = () => {
     !isShownSubtle && <> 
     <div className="flex flex-col ">
     <div style={{alignSelf: "flex-end"}}>
-    <button className=" " onClick={handleClickSubtle}>Ver Código</button>
+    <button className=" text-color-primary text-weight-semibold" onClick={handleClickSubtle}>Ver Código <FontAwesomeIcon icon={faCode} /></button>
     </div>
     <div className="component-content-full flex">
         <div className="mx-auto my-auto">
@@ -452,7 +455,7 @@ export const Componentes = () => {
     isShownSubtle &&
     <div className="flex flex-col ">
     <div style={{alignSelf: "flex-end"}}>
-    <button className=" " onClick={handleClickSubtle}>Ver Componente</button> 
+    <button className=" text-color-primary text-weight-semibold" onClick={handleClickSubtle}>Ver Componente <FontAwesomeIcon icon={faPuzzlePiece} /></button> 
     </div>
     <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
      <CopyBlock 
@@ -469,7 +472,7 @@ export const Componentes = () => {
     !isShownSubtle && <> 
     <div className="flex flex-col ">
     <div style={{alignSelf: "flex-end"}}>
-    <button className=" " onClick={handleClickSubtle}>Ver Código</button>
+    <button className=" text-color-primary text-weight-semibold" onClick={handleClickSubtle}>Ver Código <FontAwesomeIcon icon={faCode} /></button>
     </div>
     <div className="component-content-full flex">
         <div className="mx-auto my-auto">
@@ -483,7 +486,7 @@ export const Componentes = () => {
     isShownSubtle &&
     <div className="flex flex-col ">
     <div style={{alignSelf: "flex-end"}}>
-    <button className=" " onClick={handleClickSubtle}>Ver Componente</button> 
+    <button className=" text-color-primary text-weight-semibold" onClick={handleClickSubtle}>Ver Componente <FontAwesomeIcon icon={faPuzzlePiece} /></button> 
     </div>
     <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
      <CopyBlock 
@@ -504,13 +507,13 @@ export const Componentes = () => {
     </div>
     </div>
     <div className=" mb-5">
-    <h5 className=' text-heading-5 '>Boton Destacado</h5>
+    <h5 className=' text-heading-5 mb-3'>Boton Destacado</h5>
     
     {isMostrarOutstanding1 && 
     !isShownOutstanding && <> 
     <div className="flex flex-col ">
     <div style={{alignSelf: "flex-end"}}>
-    <button className=" " onClick={handleClickOutstanding}>Ver Código</button>
+    <button className=" text-color-primary text-weight-semibold" onClick={handleClickOutstanding}>Ver Código <FontAwesomeIcon icon={faCode} /></button>
     </div>
     <div className="component-content-full flex">
         <div className="mx-auto my-auto">
@@ -524,7 +527,7 @@ export const Componentes = () => {
     isShownOutstanding &&
     <div className="flex flex-col ">
     <div style={{alignSelf: "flex-end"}}>
-    <button className=" " onClick={handleClickOutstanding}>Ver Componente</button> 
+    <button className=" text-color-primary text-weight-semibold" onClick={handleClickOutstanding}>Ver Componente <FontAwesomeIcon icon={faPuzzlePiece} /></button> 
     </div>
     <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
      <CopyBlock 
@@ -541,7 +544,7 @@ export const Componentes = () => {
     !isShownOutstanding && <> 
     <div className="flex flex-col ">
     <div style={{alignSelf: "flex-end"}}>
-    <button className=" " onClick={handleClickOutstanding}>Ver Código</button>
+    <button className=" text-color-primary text-weight-semibold" onClick={handleClickOutstanding}>Ver Código <FontAwesomeIcon icon={faCode} /></button>
     </div>
     <div className="component-content-full flex">
         <div className="mx-auto my-auto">
@@ -555,7 +558,7 @@ export const Componentes = () => {
     isShownOutstanding &&
     <div className="flex flex-col ">
     <div style={{alignSelf: "flex-end"}}>
-    <button className=" " onClick={handleClickOutstanding}>Ver Componente</button> 
+    <button className=" text-color-primary text-weight-semibold" onClick={handleClickOutstanding}>Ver Componente <FontAwesomeIcon icon={faPuzzlePiece} /></button> 
     </div>
     <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
      <CopyBlock 
@@ -572,7 +575,7 @@ export const Componentes = () => {
     !isShownOutstanding && <> 
     <div className="flex flex-col ">
     <div style={{alignSelf: "flex-end"}}>
-    <button className=" " onClick={handleClickOutstanding}>Ver Código</button>
+    <button className=" text-color-primary text-weight-semibold" onClick={handleClickOutstanding}>Ver Código <FontAwesomeIcon icon={faCode} /></button>
     </div>
     <div className="component-content-full flex">
         <div className="mx-auto my-auto">
@@ -586,7 +589,7 @@ export const Componentes = () => {
     isShownOutstanding &&
     <div className="flex flex-col ">
     <div style={{alignSelf: "flex-end"}}>
-    <button className=" " onClick={handleClickOutstanding}>Ver Componente</button> 
+    <button className=" text-color-primary text-weight-semibold" onClick={handleClickOutstanding}>Ver Componente <FontAwesomeIcon icon={faPuzzlePiece} /></button> 
     </div>
     <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
      <CopyBlock 
@@ -607,13 +610,13 @@ export const Componentes = () => {
     </div>
     </div>
     <div className=" mb-5">
-    <h5 className=' text-heading-5 '>Boton Pink</h5>
+    <h5 className=' text-heading-5 mb-3'>Boton Pink</h5>
     
     {isMostrarPink1 && 
     !isShownPink && <> 
     <div className="flex flex-col ">
     <div style={{alignSelf: "flex-end"}}>
-    <button className=" " onClick={handleClickPink}>Ver Código</button>
+    <button className=" text-color-primary text-weight-semibold" onClick={handleClickPink}>Ver Código <FontAwesomeIcon icon={faCode} /></button>
     </div>
     <div className="component-content-full flex">
         <div className="mx-auto my-auto">
@@ -627,7 +630,7 @@ export const Componentes = () => {
     isShownPink &&
     <div className="flex flex-col ">
     <div style={{alignSelf: "flex-end"}}>
-    <button className=" " onClick={handleClickPink}>Ver Componente</button> 
+    <button className=" text-color-primary text-weight-semibold" onClick={handleClickPink}>Ver Componente <FontAwesomeIcon icon={faPuzzlePiece} /></button> 
     </div>
     <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
      <CopyBlock 
@@ -644,7 +647,7 @@ export const Componentes = () => {
     !isShownPink && <> 
     <div className="flex flex-col ">
     <div style={{alignSelf: "flex-end"}}>
-    <button className=" " onClick={handleClickPink}>Ver Código</button>
+    <button className=" text-color-primary text-weight-semibold" onClick={handleClickPink}>Ver Código <FontAwesomeIcon icon={faCode} /></button>
     </div>
     <div className="component-content-full flex">
         <div className="mx-auto my-auto">
@@ -658,7 +661,7 @@ export const Componentes = () => {
     isShownPink &&
     <div className="flex flex-col ">
     <div style={{alignSelf: "flex-end"}}>
-    <button className=" " onClick={handleClickPink}>Ver Componente</button> 
+    <button className=" text-color-primary text-weight-semibold" onClick={handleClickPink}>Ver Componente <FontAwesomeIcon icon={faPuzzlePiece} /></button> 
     </div>
     <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
      <CopyBlock 
@@ -675,7 +678,7 @@ export const Componentes = () => {
     !isShownPink && <> 
     <div className="flex flex-col ">
     <div style={{alignSelf: "flex-end"}}>
-    <button className=" " onClick={handleClickPink}>Ver Código</button>
+    <button className=" text-color-primary text-weight-semibold" onClick={handleClickPink}>Ver Código <FontAwesomeIcon icon={faCode} /></button>
     </div>
     <div className="component-content-full flex">
         <div className="mx-auto my-auto">
@@ -689,7 +692,7 @@ export const Componentes = () => {
     isShownPink &&
     <div className="flex flex-col ">
     <div style={{alignSelf: "flex-end"}}>
-    <button className=" " onClick={handleClickPink}>Ver Componente</button> 
+    <button className=" text-color-primary text-weight-semibold" onClick={handleClickPink}>Ver Componente <FontAwesomeIcon icon={faPuzzlePiece} /></button> 
     </div>
     <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
      <CopyBlock 
@@ -710,13 +713,13 @@ export const Componentes = () => {
     </div>
     </div>
     <div className=" mb-5">
-    <h5 className=' text-heading-5 '>Boton Pink Secundario</h5>
+    <h5 className=' text-heading-5 mb-3'>Boton Pink Secundario</h5>
     
     {isMostrarPinkSecondary1 && 
     !isShownPinkSecondary && <> 
     <div className="flex flex-col ">
     <div style={{alignSelf: "flex-end"}}>
-    <button className=" " onClick={handleClickPinkSecondary}>Ver Código</button>
+    <button className=" text-color-primary text-weight-semibold" onClick={handleClickPinkSecondary}>Ver Código <FontAwesomeIcon icon={faCode} /></button>
     </div>
     <div className="component-content-full flex">
         <div className="mx-auto my-auto">
@@ -730,7 +733,7 @@ export const Componentes = () => {
     isShownPinkSecondary &&
     <div className="flex flex-col ">
     <div style={{alignSelf: "flex-end"}}>
-    <button className=" " onClick={handleClickPinkSecondary}>Ver Componente</button> 
+    <button className=" text-color-primary text-weight-semibold" onClick={handleClickPinkSecondary}>Ver Componente <FontAwesomeIcon icon={faPuzzlePiece} /></button> 
     </div>
     <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
      <CopyBlock 
@@ -747,7 +750,7 @@ export const Componentes = () => {
     !isShownPinkSecondary && <> 
     <div className="flex flex-col ">
     <div style={{alignSelf: "flex-end"}}>
-    <button className=" " onClick={handleClickPinkSecondary}>Ver Código</button>
+    <button className=" text-color-primary text-weight-semibold" onClick={handleClickPinkSecondary}>Ver Código <FontAwesomeIcon icon={faCode} /></button>
     </div>
     <div className="component-content-full flex">
         <div className="mx-auto my-auto">
@@ -761,7 +764,7 @@ export const Componentes = () => {
     isShownPinkSecondary &&
     <div className="flex flex-col ">
     <div style={{alignSelf: "flex-end"}}>
-    <button className=" " onClick={handleClickPinkSecondary}>Ver Componente</button> 
+    <button className=" text-color-primary text-weight-semibold" onClick={handleClickPinkSecondary}>Ver Componente <FontAwesomeIcon icon={faPuzzlePiece} /></button> 
     </div>
     <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
      <CopyBlock 
@@ -778,7 +781,7 @@ export const Componentes = () => {
     !isShownPinkSecondary && <> 
     <div className="flex flex-col ">
     <div style={{alignSelf: "flex-end"}}>
-    <button className=" " onClick={handleClickPinkSecondary}>Ver Código</button>
+    <button className=" text-color-primary text-weight-semibold" onClick={handleClickPinkSecondary}>Ver Código <FontAwesomeIcon icon={faCode} /></button>
     </div>
     <div className="component-content-full flex">
         <div className="mx-auto my-auto">
@@ -792,7 +795,7 @@ export const Componentes = () => {
     isShownPinkSecondary &&
     <div className="flex flex-col ">
     <div style={{alignSelf: "flex-end"}}>
-    <button className=" " onClick={handleClickPinkSecondary}>Ver Componente</button> 
+    <button className=" text-color-primary text-weight-semibold" onClick={handleClickPinkSecondary}>Ver Componente <FontAwesomeIcon icon={faPuzzlePiece} /></button> 
     </div>
     <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
      <CopyBlock 

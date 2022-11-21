@@ -6,7 +6,7 @@ import './mercurius.css'
 
 const MercButton1 = () => {
   return (
-    <Button className='button-main-primary-medium'>Button</Button>
+    <button className='button-main-primary-medium'>Button</button>
   )
 }
 

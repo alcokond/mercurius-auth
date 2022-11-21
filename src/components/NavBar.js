@@ -121,8 +121,8 @@ const NavBar = () => {
                 </NavItem>
               )}
               {isAuthenticated && (
-                <UncontrolledDropdown nav inNavbar >
-                  <DropdownToggle nav caret id="profileDropDown">
+                <UncontrolledDropdown nav inNavbar  >
+                  <DropdownToggle nav caret id="profileDropDown" >
                     <img
                       src={user.picture}
                       alt="Profile"
@@ -130,7 +130,7 @@ const NavBar = () => {
                       width="30"
                     />
                   </DropdownToggle>
-                  <DropdownMenu>
+                  <DropdownMenu style={{marginRight: 170}}>
                     <DropdownItem header>{user.name}</DropdownItem>
                     
                     <DropdownItem
@@ -163,7 +163,7 @@ const NavBar = () => {
                 navbar
                 style={{ minHeight: 170 }}
               >
-                <NavItem>
+                <NavItem >
                   <span className="user-info">
                     <img
                       src={user.picture}

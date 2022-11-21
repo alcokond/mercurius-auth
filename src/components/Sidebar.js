@@ -30,6 +30,7 @@ export default function Sidebar() {
     setOpen3(!open3);
   };
 
+  
   return (
     <Box sx={{ display: 'flex', height:'0' }} className='drawer'>
       
@@ -40,6 +41,7 @@ export default function Sidebar() {
           '& .MuiDrawer-paper': {
             width: drawerWidth,
             boxSizing: 'border-box',
+          marginTop: 1
           },
         }}
         variant="permanent"
@@ -91,7 +93,7 @@ export default function Sidebar() {
               <ListItemText primary="Guidelines" />
               {open2 ? <ExpandLess /> : <ExpandMore />}
               </ListItemButton>
-            <Collapse in={open} timeout="auto" unmountOnExit>
+            <Collapse in={open2} timeout="auto" unmountOnExit>
                   <List component="div" disablePadding>
                     <ListItem>
                     <NavLink
@@ -130,7 +132,7 @@ export default function Sidebar() {
               <ListItemText primary="Acciones" />
               {open3 ? <ExpandLess /> : <ExpandMore />}
               </ListItemButton>
-            <Collapse in={open2} timeout="auto" unmountOnExit>
+            <Collapse in={open3} timeout="auto" unmountOnExit>
                   <List component="div" disablePadding>
                     <ListItem>
                     <NavLink

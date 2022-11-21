@@ -537,19 +537,19 @@
 
 
 .text-weight-light{
-  weight: var(--light);
+ font-weight: var(--light);
 }
 .text-weight-regular{
-  weight: var(--regular);
+ font-weight: var(--regular);
 }
 .text-weight-medium{
-  weight: var(--medium);
+ font-weight: var(--medium);
 }
 .text-weight-semibold{
-  weight: var(--semibold);
+ font-weight: var(--semibold);
 }
 .text-weight-bold{
-  weight: var(--bold);
+ font-weight: var(--bold);
 }
 /*Text*/
 .text-heading-1{

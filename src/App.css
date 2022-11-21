@@ -1,6 +1,7 @@
 body {
   font-family: 'Montserrat';
   font-style: normal;
+  box-sizing: border-box;
 }
 
 .next-steps .fa-link {
@@ -154,6 +155,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 .drawer{
   z-index: 0;
+  
 }
 
 .drawer div{
@@ -195,6 +197,7 @@ height : 130px;}
 #profileDropDown{
   padding-top:10px;
   padding-bottom: 0;
+
 }
 
 
@@ -364,6 +367,13 @@ height : 130px;}
 @media(max-width: 320px) {
   .card {
     width: 100%;
+  }
+}
+
+@media(min-width: 1535px) {
+  #profileDropDown{
+    margin-right: 35vh;
+  
   }
 }
 
@@ -936,3 +946,29 @@ body.menu-toggled > .meta-link > span {
   font-weight: 500;
 }
 
+.size-button{
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  height: 2em;
+  width: 5em;
+  border: 1.5px solid #4A3CDB!important;
+  border-radius: 8px!important;
+  font-weight: 500!important;
+
+}
+
+.size-option{
+  font-weight: 300;
+  color: #999EA9;
+  border-bottom: 3px solid transparent !important;
+}
+.size-option:focus{
+  font-weight: 700;
+  color:#4A3CDB;
+  border-bottom: solid #F9E100!important;
+}
+
+.size-option:hover{
+  color:#5F57B6;
+}

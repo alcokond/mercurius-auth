@@ -963,10 +963,10 @@ body.menu-toggled > .meta-link > span {
   color: #999EA9;
   border-bottom: 3px solid transparent !important;
 }
-.size-option:focus{
+.size-option-focused{
   font-weight: 700;
   color:#4A3CDB;
-  border-bottom: solid #F9E100!important;
+  border-bottom: solid #F9E100 !important;
 }
 
 .size-option:hover{

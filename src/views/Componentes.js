@@ -47,113 +47,243 @@ export const Componentes = () => {
   const [isMostrarOutstanding3, setIsMostrarOutstanding3] = useState(false);
   const [isMostrarPink3, setIsMostrarPink3] = useState(false);
   const [isMostrarPinkSecondary3, setIsMostrarPinkSecondary3] = useState(false);
+
   
+
   const handleClickMostrarPrimary1 = event => {
     setIsMostrarPrimary1(current => true);
     setIsMostrarPrimary2(current => false);
     setIsMostrarPrimary3(current => false);
+    const ps = document.getElementsByClassName('size-1');
+    for (let item of ps) {
+      item.classList.remove('size-option-focused');
+      item.classList.add('size-option');
+    }
+    event.currentTarget.classList.add('size-option-focused');
+    event.currentTarget.classList.remove('size-option');
+    
+    
 
   };
   const handleClickMostrarPrimary2 = event => {
     setIsMostrarPrimary1(current => false);
     setIsMostrarPrimary2(current => true);
     setIsMostrarPrimary3(current => false);
+    const ps = document.getElementsByClassName('size-1');
+    for (let item of ps) {
+      item.classList.remove('size-option-focused');
+      item.classList.add('size-option');
+    }
+    event.currentTarget.classList.add('size-option-focused');
+    event.currentTarget.classList.remove('size-option');
 
   };
   const handleClickMostrarPrimary3 = event => {
     setIsMostrarPrimary1(current => false);
     setIsMostrarPrimary2(current => false);
     setIsMostrarPrimary3(current => true);
+    const ps = document.getElementsByClassName('size-1');
+    for (let item of ps) {
+      item.classList.remove('size-option-focused');
+      item.classList.add('size-option');
+    }
+    event.currentTarget.classList.add('size-option-focused');
+    event.currentTarget.classList.remove('size-option');
 
   };
   const handleClickMostrarSecondary1 = event => {
     setIsMostrarSecondary1(current => true);
     setIsMostrarSecondary2(current => false);
     setIsMostrarSecondary3(current => false);
+    const ps = document.getElementsByClassName('size-2');
+    for (let item of ps) {
+      item.classList.remove('size-option-focused');
+      item.classList.add('size-option');
+    }
+    event.currentTarget.classList.add('size-option-focused');
+    event.currentTarget.classList.remove('size-option');
 
   };
   const handleClickMostrarSecondary2 = event => {
     setIsMostrarSecondary1(current => false);
     setIsMostrarSecondary2(current => true);
     setIsMostrarSecondary3(current => false);
+    const ps = document.getElementsByClassName('size-2');
+    for (let item of ps) {
+      item.classList.remove('size-option-focused');
+      item.classList.add('size-option');
+    }
+    event.currentTarget.classList.add('size-option-focused');
+    event.currentTarget.classList.remove('size-option');
 
   };
   const handleClickMostrarSecondary3 = event => {
     setIsMostrarSecondary1(current => false);
     setIsMostrarSecondary2(current => false);
     setIsMostrarSecondary3(current => true);
+    const ps = document.getElementsByClassName('size-2');
+    for (let item of ps) {
+      item.classList.remove('size-option-focused');
+      item.classList.add('size-option');
+    }
+    event.currentTarget.classList.add('size-option-focused');
+    event.currentTarget.classList.remove('size-option');
 
   };
   const handleClickMostrarSubtle1 = event => {
     setIsMostrarSubtle1(current => true);
     setIsMostrarSubtle2(current => false);
     setIsMostrarSubtle3(current => false);
+    const ps = document.getElementsByClassName('size-3');
+    for (let item of ps) {
+      item.classList.remove('size-option-focused');
+      item.classList.add('size-option');
+    }
+    event.currentTarget.classList.add('size-option-focused');
+    event.currentTarget.classList.remove('size-option');
 
   };
   const handleClickMostrarSubtle2 = event => {
     setIsMostrarSubtle1(current => false);
     setIsMostrarSubtle2(current => true);
     setIsMostrarSubtle3(current => false);
+    const ps = document.getElementsByClassName('size-3');
+    for (let item of ps) {
+      item.classList.remove('size-option-focused');
+      item.classList.add('size-option');
+    }
+    event.currentTarget.classList.add('size-option-focused');
+    event.currentTarget.classList.remove('size-option');
 
   };
   const handleClickMostrarSubtle3 = event => {
     setIsMostrarSubtle1(current => false);
     setIsMostrarSubtle2(current => false);
     setIsMostrarSubtle3(current => true);
+    const ps = document.getElementsByClassName('size-3');
+    for (let item of ps) {
+      item.classList.remove('size-option-focused');
+      item.classList.add('size-option');
+    }
+    event.currentTarget.classList.add('size-option-focused');
+    event.currentTarget.classList.remove('size-option');
 
   };
   const handleClickMostrarOutstanding1 = event => {
     setIsMostrarOutstanding1(current => true);
     setIsMostrarOutstanding2(current => false);
     setIsMostrarOutstanding3(current => false);
+    const ps = document.getElementsByClassName('size-4');
+    for (let item of ps) {
+      item.classList.remove('size-option-focused');
+      item.classList.add('size-option');
+    }
+    event.currentTarget.classList.add('size-option-focused');
+    event.currentTarget.classList.remove('size-option');
 
   };
   const handleClickMostrarOutstanding2 = event => {
     setIsMostrarOutstanding1(current => false);
     setIsMostrarOutstanding2(current => true);
     setIsMostrarOutstanding3(current => false);
+    const ps = document.getElementsByClassName('size-4');
+    for (let item of ps) {
+      item.classList.remove('size-option-focused');
+      item.classList.add('size-option');
+    }
+    event.currentTarget.classList.add('size-option-focused');
+    event.currentTarget.classList.remove('size-option');
 
   };
   const handleClickMostrarOutstanding3 = event => {
     setIsMostrarOutstanding1(current => false);
     setIsMostrarOutstanding2(current => false);
     setIsMostrarOutstanding3(current => true);
+    const ps = document.getElementsByClassName('size-4');
+    for (let item of ps) {
+      item.classList.remove('size-option-focused');
+      item.classList.add('size-option');
+    }
+    event.currentTarget.classList.add('size-option-focused');
+    event.currentTarget.classList.remove('size-option');
 
   };
   const handleClickMostrarPink1 = event => {
     setIsMostrarPink1(current => true);
     setIsMostrarPink2(current => false);
     setIsMostrarPink3(current => false);
+    const ps = document.getElementsByClassName('size-5');
+    for (let item of ps) {
+      item.classList.remove('size-option-focused');
+      item.classList.add('size-option');
+    }
+    event.currentTarget.classList.add('size-option-focused');
+    event.currentTarget.classList.remove('size-option');
 
   };
   const handleClickMostrarPink2 = event => {
     setIsMostrarPink1(current => false);
     setIsMostrarPink2(current => true);
     setIsMostrarPink3(current => false);
+    const ps = document.getElementsByClassName('size-5');
+    for (let item of ps) {
+      item.classList.remove('size-option-focused');
+      item.classList.add('size-option');
+    }
+    event.currentTarget.classList.add('size-option-focused');
+    event.currentTarget.classList.remove('size-option');
 
   };
   const handleClickMostrarPink3 = event => {
     setIsMostrarPink1(current => false);
     setIsMostrarPink2(current => false);
     setIsMostrarPink3(current => true);
+    const ps = document.getElementsByClassName('size-5');
+    for (let item of ps) {
+      item.classList.remove('size-option-focused');
+      item.classList.add('size-option');
+    }
+    event.currentTarget.classList.add('size-option-focused');
+    event.currentTarget.classList.remove('size-option');
 
   };
   const handleClickMostrarPinkSecondary1 = event => {
     setIsMostrarPinkSecondary1(current => true);
     setIsMostrarPinkSecondary2(current => false);
     setIsMostrarPinkSecondary3(current => false);
+    const ps = document.getElementsByClassName('size-6');
+    for (let item of ps) {
+      item.classList.remove('size-option-focused');
+      item.classList.add('size-option');
+    }
+    event.currentTarget.classList.add('size-option-focused');
+    event.currentTarget.classList.remove('size-option');
 
   };
   const handleClickMostrarPinkSecondary2 = event => {
     setIsMostrarPinkSecondary1(current => false);
     setIsMostrarPinkSecondary2(current => true);
     setIsMostrarPinkSecondary3(current => false);
+    const ps = document.getElementsByClassName('size-6');
+    for (let item of ps) {
+      item.classList.remove('size-option-focused');
+      item.classList.add('size-option');
+    }
+    event.currentTarget.classList.add('size-option-focused');
+    event.currentTarget.classList.remove('size-option');
 
   };
   const handleClickMostrarPinkSecondary3 = event => {
     setIsMostrarPinkSecondary1(current => false);
     setIsMostrarPinkSecondary2(current => false);
     setIsMostrarPinkSecondary3(current => true);
+    const ps = document.getElementsByClassName('size-6');
+    for (let item of ps) {
+      item.classList.remove('size-option-focused');
+      item.classList.add('size-option');
+    }
+    event.currentTarget.classList.add('size-option-focused');
+    event.currentTarget.classList.remove('size-option');
 
   };
   const handleClickPrimary = event => {
@@ -201,9 +331,9 @@ export const Componentes = () => {
 
     {/* <div className=" text-subtitle-1 mb-2">Explora otros tamaños: </div> */}
     <div className="flex flex-row items-center gap-2">
-      <button className="size-option" onClick={handleClickMostrarPrimary1}>Small</button>
-      <button className="size-option" onClick={handleClickMostrarPrimary2}>Medium</button>
-      <button className="size-option" onClick={handleClickMostrarPrimary3}>Large</button>
+      <button className="size-1 size-option-focused" onClick={handleClickMostrarPrimary1}>Small</button>
+      <button className="size-1 size-option" onClick={handleClickMostrarPrimary2}>Medium</button>
+      <button className="size-1 size-option" onClick={handleClickMostrarPrimary3}>Large</button>
     </div>
     
     {isMostrarPrimary1 && 
@@ -302,14 +432,14 @@ export const Componentes = () => {
     </div>
     <div className=" mb-5">
     <h5 className=' text-heading-5 mb-3'>Boton Secundario</h5>
-    
+    <div className="flex flex-row gap-2">
+      <button className="size-2 size-option-focused" onClick={handleClickMostrarSecondary1}>Small</button>
+      <button className="size-2 size-option" onClick={handleClickMostrarSecondary2}>Medium</button>
+      <button className="size-2 size-option" onClick={handleClickMostrarSecondary3}>Large</button>
+    </div>
     {isMostrarSecondary1 && 
     !isShownSecondary && <> 
-    <div className="flex flex-row gap-2">
-      <button onClick={handleClickMostrarSecondary1}>Small</button>
-      <button onClick={handleClickMostrarSecondary2}>Medium</button>
-      <button onClick={handleClickMostrarSecondary3}>Large</button>
-    </div>
+    
     <div className="flex flex-col ">
     <div style={{alignSelf: "flex-end"}}>
     <button className=" text-color-primary text-weight-semibold" onClick={handleClickSecondary}>Ver Código <FontAwesomeIcon icon={faCode} /></button>
@@ -405,7 +535,11 @@ export const Componentes = () => {
     </div>
     <div className=" mb-5">
     <h5 className=' text-heading-5 mb-3'>Boton Subtle</h5>
-    
+    <div className="flex flex-row gap-2">
+      <button className="size-3 size-option-focused" onClick={handleClickMostrarSubtle1}>Small</button>
+      <button className="size-3 size-option" onClick={handleClickMostrarSubtle2}>Medium</button>
+      <button className="size-3 size-option" onClick={handleClickMostrarSubtle3}>Large</button>
+    </div>
     {isMostrarSubtle1 && 
     !isShownSubtle && <> 
     <div className="flex flex-col ">
@@ -499,16 +633,14 @@ export const Componentes = () => {
         />
         </div>
     </div> }
-    <div>Explora otros tamaños: </div>
-    <div className="flex flex-row gap-2">
-      <button onClick={handleClickMostrarSubtle1}>Small</button>
-      <button onClick={handleClickMostrarSubtle2}>Medium</button>
-      <button onClick={handleClickMostrarSubtle3}>Large</button>
-    </div>
     </div>
     <div className=" mb-5">
     <h5 className=' text-heading-5 mb-3'>Boton Destacado</h5>
-    
+    <div className="flex flex-row gap-2">
+      <button className="size-4 size-option-focused" onClick={handleClickMostrarOutstanding1}>Small</button>
+      <button className="size-4 size-option" onClick={handleClickMostrarOutstanding2}>Medium</button>
+      <button className="size-4 size-option" onClick={handleClickMostrarOutstanding3}>Large</button>
+    </div>
     {isMostrarOutstanding1 && 
     !isShownOutstanding && <> 
     <div className="flex flex-col ">
@@ -602,16 +734,14 @@ export const Componentes = () => {
         />
         </div>
     </div> }
-    <div>Explora otros tamaños: </div>
-    <div className="flex flex-row gap-2">
-      <button onClick={handleClickMostrarOutstanding1}>Small</button>
-      <button onClick={handleClickMostrarOutstanding2}>Medium</button>
-      <button onClick={handleClickMostrarOutstanding3}>Large</button>
-    </div>
     </div>
     <div className=" mb-5">
     <h5 className=' text-heading-5 mb-3'>Boton Pink</h5>
-    
+    <div className="flex flex-row gap-2">
+      <button className="size-5 size-option-focused" onClick={handleClickMostrarPink1}>Small</button>
+      <button className="size-5 size-option" onClick={handleClickMostrarPink2}>Medium</button>
+      <button className="size-5 size-option" onClick={handleClickMostrarPink3}>Large</button>
+    </div>
     {isMostrarPink1 && 
     !isShownPink && <> 
     <div className="flex flex-col ">
@@ -705,16 +835,14 @@ export const Componentes = () => {
         />
         </div>
     </div> }
-    <div>Explora otros tamaños: </div>
-    <div className="flex flex-row gap-2">
-      <button onClick={handleClickMostrarPink1}>Small</button>
-      <button onClick={handleClickMostrarPink2}>Medium</button>
-      <button onClick={handleClickMostrarPink3}>Large</button>
-    </div>
     </div>
     <div className=" mb-5">
     <h5 className=' text-heading-5 mb-3'>Boton Pink Secundario</h5>
-    
+    <div className="flex flex-row gap-2">
+      <button className="size-6 size-option-focused" onClick={handleClickMostrarPinkSecondary1}>Small</button>
+      <button className="size-6 size-option" onClick={handleClickMostrarPinkSecondary2}>Medium</button>
+      <button className="size-6 size-option" onClick={handleClickMostrarPinkSecondary3}>Large</button>
+    </div>
     {isMostrarPinkSecondary1 && 
     !isShownPinkSecondary && <> 
     <div className="flex flex-col ">
@@ -808,12 +936,7 @@ export const Componentes = () => {
         />
         </div>
     </div> }
-    <div>Explora otros tamaños: </div>
-    <div className="flex flex-row gap-2">
-      <button onClick={handleClickMostrarPinkSecondary1}>Small</button>
-      <button onClick={handleClickMostrarPinkSecondary2}>Medium</button>
-      <button onClick={handleClickMostrarPinkSecondary3}>Large</button>
-    </div>
+    
     </div>
     
     

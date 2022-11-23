@@ -29,6 +29,12 @@ body {
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.logo-mercurius{
+    display: none;
+  };
+}
+
 .spinner {
   position: absolute;
   display: flex;
@@ -60,6 +66,10 @@ body {
   background-color: #151055!important;
   padding: 15px;
   min-height: 6rem;
+  border: 0px;
+  border-bottom: 4.5px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(90deg, #4A3DDB -0.18%, #FF086C 62.98%, #FE609F 89.61%);
 }
 
 .text-navbar{

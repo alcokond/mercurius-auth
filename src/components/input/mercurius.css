@@ -2307,5 +2307,68 @@ line-height: 24px;
   font-family: "Font Awesome Kit"; font-weight: 400; content: "\e007";
 }
 
+.button-square{
+  color: var(--grayscale-7);
+  border:0;
+  padding: 8px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  min-width: 40px;
+  min-height: 40px;
+  background: var(--linear-gradient-3);
+  box-shadow: 0px 0px 10px rgba(74, 60, 219, 0.4);
+  border-radius: 8px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: var( --semibold);
+  font-size: 24px;
+  text-align: center;
+}
 
+.button-square::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: var(--primary-shade-2);
+  z-index: -1;
+  transition: opacity 0.5s linear;
+  opacity: 0;
+}
+.button-square:hover::before {
+  opacity: 1;
+}
 
+.button-square:disabled{
+  pointer-events: none;
+  color: var(--grayscale-7);
+  border:0;
+  padding: 8px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  min-width: 40px;
+  min-height: 40px;
+  background: var(--neutral-light);
+  box-shadow: 0px 0px 0px;
+  border-radius: 8px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: var( --semibold);
+  font-size: 24px;
+  text-align: center;
+  
+}

@@ -5,6 +5,10 @@ import {faIcons, faPalette, faPenNib, faTypewriter, faArrowRight, facircleuser, 
 import { RadioGroup, FormControl, Radio, FormGroup, FormControlLabel, Checkbox, FormLabel } from "@mui/material";
 import { RadioButtonChecked } from "@mui/icons-material";
 import { motion } from "framer-motion"
+import { Router, Route, Switch, NavLink } from "react-router-dom";
+import { NavLink as RouterNavLink } from "react-router-dom";
+
+
 
 
 const Hero = () => (
@@ -21,7 +25,16 @@ const Hero = () => (
               Mercurius, de Xtrim TVCable es un sistema de diseño que  mejora la experiencia en desarrollo e interacción digital.
               </p>
               <div className="flex flex-wrap mb-4 gap-2 justify-center">
-                <button className=" button-main-primary-medium">Ver Componentes <FontAwesomeIcon icon={faArrowRight} /></button>
+                
+                <NavLink
+                      tag={RouterNavLink}
+                      to="/componentes"
+                      exact
+                      style={{ textDecoration: 'none' }}
+                      >
+                      <button className=" button-main-primary-medium"> 
+                      Ver Componentes <FontAwesomeIcon icon={faArrowRight} /></button>
+                    </NavLink>
                 <button className=" button-main-secondary-medium">Explorar Plantillas <FontAwesomeIcon icon={faArrowRight} /></button>
               </div>
             </div>

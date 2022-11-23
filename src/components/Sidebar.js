@@ -62,6 +62,7 @@ export default function Sidebar() {
                       to="/marca"
                       exact
                       activeClassName="router-link-exact-active" 
+                      style={{ textDecoration: 'none' }}
                       >
                       <ListItemButton sx={{ pl: 4 }} >
                       
@@ -77,6 +78,7 @@ export default function Sidebar() {
                       to="/tipografia"
                       exact
                       activeClassName="router-link-exact-active" 
+                      style={{ textDecoration: 'none' }} 
                       >
                       <ListItemButton sx={{ pl: 4 }} >
                       
@@ -101,6 +103,7 @@ export default function Sidebar() {
                       to="/colores"
                       exact
                       activeClassName="router-link-exact-active" 
+                      style={{ textDecoration: 'none' }} 
                       >
                       <ListItemButton sx={{ pl: 4 }} >
                       
@@ -116,6 +119,7 @@ export default function Sidebar() {
                       to="/tipografia"
                       exact
                       activeClassName="router-link-exact-active" 
+                      style={{ textDecoration: 'none' }} 
                       >
                       <ListItemButton sx={{ pl: 4 }} >
                       
@@ -140,6 +144,7 @@ export default function Sidebar() {
                       to="/botones"
                       exact
                       activeClassName="router-link-exact-active" 
+                      style={{ textDecoration: 'none' }} 
                       
                       >
                       <ListItemButton sx={{ pl: 4 }} >
@@ -158,7 +163,8 @@ export default function Sidebar() {
               tag={RouterNavLink}
               to="/tipografia"
               exact
-              activeClassName="router-link-exact-active"
+              activeClassName="router-link-exact-active" 
+                      style={{ textDecoration: 'none' }}
               >
               <ListItemButton >
                 <ListItemText primary='Tipografía' />
@@ -171,7 +177,8 @@ export default function Sidebar() {
               tag={RouterNavLink}
               to="/espaciado"
               exact
-              activeClassName="router-link-exact-active"
+              activeClassName="router-link-exact-active" 
+                      style={{ textDecoration: 'none' }}
               >
               <ListItemButton >
                 <ListItemText primary='Espaciado' />
@@ -183,7 +190,8 @@ export default function Sidebar() {
               tag={RouterNavLink}
               to="/voz"
               exact
-              activeClassName="router-link-exact-active"
+              activeClassName="router-link-exact-active" 
+                      style={{ textDecoration: 'none' }}
               >
               <ListItemButton >
                 <ListItemText primary='Voz' />

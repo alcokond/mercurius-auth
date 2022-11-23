@@ -91,7 +91,7 @@ const NavBar = () => {
               <NavItem>
                 <NavLink
                   tag={RouterNavLink}
-                  to="/codificacion"
+                  to="/componentes"
                   exact
                   activeClassName="router-link-exact-active text-navbar"
                   className="text-navbar"

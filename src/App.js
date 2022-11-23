@@ -59,8 +59,10 @@ const App = () => {
         
         <NavBar sticky="top" />
         <div className="flex-grow-1 margin-contenido ">
+        
           <Switch>
             <Route path="/" exact component={Home} />
+            {isAuthenticated && (
             <div>
             <Sidebar />
             <Route path="/profile" component={Profile} />
@@ -77,7 +79,9 @@ const App = () => {
             <Route path="/contenido" component={Contenido} />
 
             </div>
+            )}
           </Switch>
+        
         </div>
         
         

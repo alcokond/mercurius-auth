@@ -29,6 +29,7 @@ import Promesa from "./views/Promesa";
 import Personalidad from "./views/Personalidad";
 import Contenido from "./views/Contenido";
 import Sidebar from "./components/Sidebar";
+import GuiaDeEstilo from "./components/GuiaDeEstilo";
 
 
 initFontAwesome();
@@ -77,6 +78,8 @@ const App = () => {
             <Route path="/promesa" component={Promesa} />
             <Route path="/personalidad" component={Personalidad} />
             <Route path="/contenido" component={Contenido} />
+            <Route path="/guia" component={GuiaDeEstilo} />
+
 
             </div>
             )}

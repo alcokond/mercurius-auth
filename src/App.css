@@ -4,6 +4,13 @@ body {
   box-sizing: border-box;
 }
 
+li::marker {
+  color: #E5E3FA;
+  font-size: 2em;
+}
+
+
+
 .next-steps .fa-link {
   margin-right: 5px;
 }

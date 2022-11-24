@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../assets/logo.svg";
 import {FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faHeart, faIcons, faPalette, faPenNib, faTypewriter } from "@fortawesome/pro-light-svg-icons";
+import {faHandshake, faHeart, faIcons, faPalette, faPenNib, faTypewriter } from "@fortawesome/pro-light-svg-icons";
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -27,17 +27,17 @@ const MisionPrincipal = () => (
     </div>
     
     <div className=" padding-marca">
-    <div style={{fontSize:"31px", fontWeight:"500", marginBottom:"1vh"}}>Nuestros Productos 🤝 Nuestra meta</div>
+    <div style={{fontSize:"31px", fontWeight:"500", marginBottom:"1vh"}}>Nuestros Productos <FontAwesomeIcon icon={faHandshake} /> Nuestra meta</div>
     <div style={{fontSize:"16px", fontWeight:"500", textAlign:"justify", color:"#222D44"}}><p>Diseñamos experiencias que permitan a los usuarios sentirse seguros al realizar procesos digitales e interactivos.<br></br>
 Nuestros productos y misión van tomados de la mano, se corresponden entre sí. </p><br></br>
 <ul>
-<li>Nuestra misión es crear experiencias digitales memorables, los usuarios deben asociar un producto Xtrim con momentos significativos, no con procesos largos y molestos.</li><br></br>
+<li style={{margin: 16 }}>Nuestra misión es crear experiencias digitales atractivas para los usuarios, quienes deben asociar un producto Xtrim con momentos significativos.</li>
 
-<li>Somos guías, debemos permitir que los procesos digitales sean intuitivos y no confusos.</li><br></br>
+<li style={{margin: 16 }}>Somos guías, debemos permitir que los procesos digitales sean intuitivos y no confusos.</li>
 
-<li>Somos los primeros usuarios de nuestros productos. Nos aseguramos de ofrecer calidad e innovación.</li><br></br>
+<li style={{margin: 16 }}>Somos los primeros usuarios de nuestros productos. Nos aseguramos de ofrecer calidad e innovación.</li>
 
-<li>Procuramos establecer una comunicación entendible.</li>
+<li style={{margin: 16 }}>Procuramos establecer una comunicación entendible.</li>
 </ul></div>
     </div>
     

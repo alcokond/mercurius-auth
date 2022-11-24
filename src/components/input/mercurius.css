@@ -608,7 +608,7 @@
   font-size: 16px;
   line-height: 20px;
 }
-text-button-2{
+.text-button-2{
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: var(--semibold);
@@ -2372,4 +2372,25 @@ line-height: 24px;
   font-size: 20px;
   text-align: center;
   
+}
+
+.link-small{
+  display: flex;
+  gap:8px;
+  color: #4A3CDB;
+  font-size: 14px;
+}
+
+.link-medium{
+  display: flex;
+  gap: 8px;
+  color: #4A3CDB;
+  font-size: 16px;
+}
+
+.link-large{
+  display: flex;
+  gap: 8px;
+  color: #4A3CDB;
+  font-size: 20px;
 }

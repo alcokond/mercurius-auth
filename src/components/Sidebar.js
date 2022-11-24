@@ -50,44 +50,60 @@ export default function Sidebar() {
         <Toolbar className='alto'/>
         
         <List>
-        <ListItemButton onClick={handleClick}>
-              <ListItemText primary="Marca" />
-              {open ? <ExpandLess /> : <ExpandMore />}
+        <ListItemButton >
+              <ListItemText>
+                <NavLink
+                to="/marca"
+                exact
+                activeClassName="router-link-exact-active" 
+                style={{ textDecoration: 'none' }}
+                >Marca</NavLink>
+              </ListItemText>
+              {open ? <ExpandLess onClick={handleClick} /> : <ExpandMore onClick={handleClick} />}
               </ListItemButton>
             <Collapse in={open} timeout="auto" unmountOnExit>
                   <List component="div" disablePadding>
-                    <ListItem>
                     <NavLink
                       tag={RouterNavLink}
-                      to="/marca"
-                      exact
-                      activeClassName="router-link-exact-active" 
-                      style={{ textDecoration: 'none' }}
-                      >
-                      <ListItemButton sx={{ pl: 4 }} >
-                      
-                        <ListItemText primary='Marca' />
-                        
-                      </ListItemButton>
-                    </NavLink>
-                    
-                    </ListItem>
-                    <ListItem>
-                    <NavLink
-                      tag={RouterNavLink}
-                      to="/tipografia"
+                      to="/objetivo"
                       exact
                       activeClassName="router-link-exact-active" 
                       style={{ textDecoration: 'none' }} 
                       >
                       <ListItemButton sx={{ pl: 4 }} >
                       
-                        <ListItemText primary='Tipografía' />
+                        <ListItemText primary='Objetivo' />
+                        
+                      </ListItemButton>
+                    </NavLink>
+                    <NavLink
+                      tag={RouterNavLink}
+                      to="/promesa"
+                      exact
+                      activeClassName="router-link-exact-active" 
+                      style={{ textDecoration: 'none' }} 
+                      >
+                      <ListItemButton sx={{ pl: 4 }} >
+                      
+                        <ListItemText primary='Promesa' />
+                        
+                      </ListItemButton>
+                    </NavLink>
+                    <NavLink
+                      tag={RouterNavLink}
+                      to="/personalidad"
+                      exact
+                      activeClassName="router-link-exact-active" 
+                      style={{ textDecoration: 'none' }} 
+                      >
+                      <ListItemButton sx={{ pl: 4 }} >
+                      
+                        <ListItemText primary='Personalidad' />
                         
                       </ListItemButton>
                     </NavLink>
                     
-                    </ListItem>
+                    
                     
                   </List>
                 </Collapse>
@@ -97,7 +113,7 @@ export default function Sidebar() {
               </ListItemButton>
             <Collapse in={open2} timeout="auto" unmountOnExit>
                   <List component="div" disablePadding>
-                    <ListItem>
+                    
                     <NavLink
                       tag={RouterNavLink}
                       to="/colores"
@@ -112,8 +128,8 @@ export default function Sidebar() {
                       </ListItemButton>
                     </NavLink>
                     
-                    </ListItem>
-                    <ListItem>
+                    
+                    
                     <NavLink
                       tag={RouterNavLink}
                       to="/tipografia"
@@ -128,7 +144,7 @@ export default function Sidebar() {
                       </ListItemButton>
                     </NavLink>
                     
-                    </ListItem>
+                    
                     
                   </List>
                 </Collapse>
@@ -138,7 +154,7 @@ export default function Sidebar() {
               </ListItemButton>
             <Collapse in={open3} timeout="auto" unmountOnExit>
                   <List component="div" disablePadding>
-                    <ListItem>
+                    
                     <NavLink
                       tag={RouterNavLink}
                       to="/botones"
@@ -154,50 +170,14 @@ export default function Sidebar() {
                       </ListItemButton>
                     </NavLink>
                     
-                    </ListItem>
+                    
                     
                   </List>
                 </Collapse>
-            <ListItem key='Tipografía' disablePadding>
-            <NavLink
-              tag={RouterNavLink}
-              to="/tipografia"
-              exact
-              activeClassName="router-link-exact-active" 
-                      style={{ textDecoration: 'none' }}
-              >
-              <ListItemButton >
-                <ListItemText primary='Tipografía' />
-              </ListItemButton>
-              </NavLink>
-            </ListItem>
+            
 
-            <ListItem key='Espaciado' disablePadding>
-            <NavLink
-              tag={RouterNavLink}
-              to="/espaciado"
-              exact
-              activeClassName="router-link-exact-active" 
-                      style={{ textDecoration: 'none' }}
-              >
-              <ListItemButton >
-                <ListItemText primary='Espaciado' />
-              </ListItemButton>
-              </NavLink>
-            </ListItem>
-            <ListItem key='Voz' disablePadding>
-            <NavLink
-              tag={RouterNavLink}
-              to="/voz"
-              exact
-              activeClassName="router-link-exact-active" 
-                      style={{ textDecoration: 'none' }}
-              >
-              <ListItemButton >
-                <ListItemText primary='Voz' />
-              </ListItemButton>
-              </NavLink>
-            </ListItem>
+            
+            
 
         </List>
         <Divider />

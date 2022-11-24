@@ -29,6 +29,8 @@ export const Componentes = () => {
   const [isShownOutstanding, setIsShownOutstanding] = useState(false);
   const [isShownPink, setIsShownPink] = useState(false);
   const [isShownPinkSecondary, setIsShownPinkSecondary] = useState(false);
+  const [isShownSquare, setIsShownSquare] = useState(false);
+
   const [isMostrarPrimary1, setIsMostrarPrimary1] = useState(true);
   const [isMostrarSecondary1, setIsMostrarSecondary1] = useState(true);
   const [isMostrarSubtle1, setIsMostrarSubtle1] = useState(true);
@@ -47,6 +49,7 @@ export const Componentes = () => {
   const [isMostrarOutstanding3, setIsMostrarOutstanding3] = useState(false);
   const [isMostrarPink3, setIsMostrarPink3] = useState(false);
   const [isMostrarPinkSecondary3, setIsMostrarPinkSecondary3] = useState(false);
+  const [isMostrarSquare, setIsMostrarSquare] = useState(false);
 
   
 
@@ -308,6 +311,10 @@ export const Componentes = () => {
   };
   const handleClickPinkSecondary = event => {
     setIsShownPinkSecondary(current => !current);
+
+  };
+  const handleClickSquare = event => {
+    setIsShownSquare(current => !current);
 
   };
  
@@ -939,13 +946,12 @@ export const Componentes = () => {
     
     </div>
     <div className=" mb-5">
-    <h5 className=' text-heading-5 mb-3'>Boton Pink Secundario</h5>
+    <h5 className=' text-heading-5 mb-3'>Boton Square</h5>
     
-    {isMostrarPinkSecondary1 && 
-    !isShownPinkSecondary && <> 
+    {!isShownSquare && <> 
     <div className="flex flex-col ">
     <div style={{alignSelf: "flex-end"}}>
-    <button className=" text-color-primary text-weight-semibold" onClick={handleClickPinkSecondary}>Ver Código <FontAwesomeIcon icon={faCode} /></button>
+    <button className=" text-color-primary text-weight-semibold" onClick={handleClickSquare}>Ver Código <FontAwesomeIcon icon={faCode} /></button>
     </div>
     <div className="component-content-full flex">
         <div className="mx-auto my-auto">
@@ -955,11 +961,10 @@ export const Componentes = () => {
     </div>
     
      </>  }
-     {isMostrarPinkSecondary1 && 
-    isShownPinkSecondary &&
+     {isShownSquare &&
     <div className="flex flex-col ">
     <div style={{alignSelf: "flex-end"}}>
-    <button className=" text-color-primary text-weight-semibold" onClick={handleClickPinkSecondary}>Ver Componente <FontAwesomeIcon icon={faPuzzlePiece} /></button> 
+    <button className=" text-color-primary text-weight-semibold" onClick={handleClickSquare}>Ver Componente <FontAwesomeIcon icon={faPuzzlePiece} /></button> 
     </div>
     <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
      <CopyBlock 

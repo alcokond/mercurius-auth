@@ -1886,6 +1886,9 @@ select {
 .max-w-300-px {
   max-width: 300px;
 }
+.max-w-400-px {
+  max-width: 400px;
+}
 
 
 
@@ -3020,8 +3023,8 @@ select {
     width: 33.333333%;
   }
 
-  .lg\:w-6\/12 {
-    width: 50%;
+  .lg\:w-6\/12-2 {
+    width: 55%;
   }
 
   .lg\:w-8\/12 {
@@ -3048,6 +3051,10 @@ select {
 
   .xl\:w-6\/12 {
     width: 50%;
+  }
+
+  .xl\:w-6\/12-2 {
+    width: 55%;
   }
 
   .xl\:w-8\/12 {

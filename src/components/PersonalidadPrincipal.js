@@ -44,6 +44,17 @@ const PersonalidadPrincipal = () => (
 
 </div>
  </div>
+    <div>
+    <div className="icon-box background-primary text-color-primary-solid-4 mb-1"> <FontAwesomeIcon icon={faRocket} /></div>
+    <div style={{fontSize:"16px", fontWeight:"500", textAlign:"justify", color:"#222D44"}}><b>Sociables</b> <br></br>
+ 
+ <p>Somos positivos, creativos y sociables. Creemos en la cordialidad, queremos ser amigos de nuestros usuarios.
+</p><br></br>
+
+<p>Evitamos el exceso de confianza, así logramos mantener un entorno amigable.​</p><br></br>
+
+</div>
+ </div>
     </div>
     
 

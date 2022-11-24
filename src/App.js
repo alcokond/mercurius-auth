@@ -73,7 +73,7 @@ const App = () => {
             <Route path="/tipografia" component={Tipografia} />
             <Route path="/marca" component={Marca} />
             <Route path="/voz" component={Voz} />
-            <Route path="/mision" component={Mision} />
+            <Route path="/objetivo" component={Mision} />
             <Route path="/promesa" component={Promesa} />
             <Route path="/personalidad" component={Personalidad} />
             <Route path="/contenido" component={Contenido} />

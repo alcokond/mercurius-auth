@@ -18,15 +18,15 @@ const ColoresPrincipal = () => (
   {/* <div className="box-colors-1"></div> */}
   <div className="flex flex-col ">
     <div id="colores" className="margin-sidebar size-colores background-grayscale-6">
-    <div className="padding-colores">
+    <div className="padding-paleta">
     <h6 className="text-overline">Guidelines</h6>
     <h3 style={{fontSize:"36px", fontWeight:"700"}} className=" mb-3">Colores</h3>
     <p className="text-button-1">Nuestros colores en conjunto representan la identidad de Xtrim. Usamos colores que reflejan el trabajo que estamos construyendo como marca. Elegimos colores que permiten a los usuarios acceder a procesos fáciles y entendibles, nuestros colores deben actuar como guías para el usuario resaltando la información importante.</p>
     </div>
     </div>
     <div id="paleta-primaria" className="margin-sidebar padding-paleta text-justify">
-      <h6 className="text-heading-5 pb-4" >Paleta Primaria</h6>
-      <p>Nuestros colores en conjunto representan la identidad de Xtrim. Usamos colores que reflejan el trabajo que estamos construyendo como marca. Elegimos colores que permiten a los usuarios acceder a procesos fáciles y entendibles, nuestros colores deben actuar como guías para el usuario resaltando la información importante.</p>
+      <h6 className="text-heading-5 pb-4" >Paleta Principal</h6>
+      <p>Nuestros colores deben actuar como guías para el usuario resaltando la información importante.</p>
     </div>
 
     {/* <div className="flex flex-row flex-wrap margin-sidebar padding-tarjetas space-evenly rounded">

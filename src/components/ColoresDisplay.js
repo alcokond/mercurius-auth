@@ -5,14 +5,12 @@ import Grayscale from "../assets/colors/Grayscale.png";
 const ColoresDisplay = () => {
   return (
     <div className=' flex flex-col gap-3 margin-sidebar padding-paleta '>
-    <h5 className=' text-heading-5 '>Corporativos</h5>
     <div className="flex flex-row flex-wrap space-evenly">
     
 
     <div className="card-paleta flex flex-col ">
       <div className=" background-primary color-card flex flex-col items-center justify-center font-semibold">
-        <h5 className=" text-button-1 text-color-grayscale-7 ">Primary</h5>
-        <h5 className=" text-button-1 text-color-grayscale-7 ">#4A3CDB</h5>
+        <h5 className=" text-button-1 text-color-grayscale-7 ">B500</h5>
         <h5 className=" text-button-1 text-color-grayscale-7 ">Ocean Blue</h5>
         
       </div>
@@ -26,8 +24,7 @@ const ColoresDisplay = () => {
     </div>
     <div className="card-paleta flex flex-col ">
       <div className=" background-secondary color-card flex flex-col items-center justify-center font-semibold">
-        <h5 className=" text-button-1 text-color-grayscale-7 ">Secondary</h5>
-        <h5 className=" text-button-1 text-color-grayscale-7 ">#FF0A6C</h5>
+        <h5 className=" text-button-1 text-color-grayscale-7 ">P500</h5>
         <h5 className=" text-button-1 text-color-grayscale-7 ">Winter Sky</h5>
         
       </div>
@@ -41,8 +38,7 @@ const ColoresDisplay = () => {
     </div>
     <div className="card-paleta flex flex-col ">
       <div className=" background-complementary color-card flex flex-col items-center justify-center font-semibold">
-        <h5 className=" text-button-1 text-color-grayscale-1 ">Complementary</h5>
-        <h5 className=" text-button-1 text-color-grayscale-1 ">#F9E100</h5>
+        <h5 className=" text-button-1 text-color-grayscale-1 ">Y500</h5>
         <h5 className=" text-button-1 text-color-grayscale-1 ">Yellow Pantone</h5>
         
       </div>
@@ -54,9 +50,42 @@ const ColoresDisplay = () => {
         
       </div>
     </div>
+    <div className='flex gap-1'>
+    <div className="card-paleta flex flex-col ">
+      <div style={{backgroundColor: "#222D44"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+        <h5 className=" text-button-1 text-color-grayscale-7 ">N900</h5>
+        <h5 className=" text-button-1 text-color-grayscale-7 ">Space Cadet</h5>
+        
+      </div>
+      <div className="background-grayscale-5 justify-center text-button-1  flex flex-col gap-1 p-2">
+        <div >HEX: #222D44
+        </div>
+        <div >RGB: 34, 45, 68
+        </div>
+        
+      </div>
+    </div>
+    <div className="card-paleta flex flex-col ">
+      <div style={{backgroundColor:"#ffffff"}} className="color-card flex flex-col items-center justify-center font-semibold">
+        <h5 className=" text-button-1 text-color-grayscale-1 ">White</h5>
+        <h5 className=" text-button-1 text-color-grayscale-1 ">Light</h5>
+        
+      </div>
+      <div className="background-grayscale-5 justify-center text-button-1  flex flex-col gap-1 p-2">
+        <div >HEX: #FFFFFF
+        </div>
+        <div >RGB: 255, 255, 255
+        </div>
+        
+      </div>
+    </div>
+    </div>
     </div>
 
-    <h5 className=' text-heading-5 '>Opacity</h5>
+    
+      <h6 style={{fontSize: 24, fontWeight: 600}} >Opacidades</h6>
+      <p>Utilizamos la paleta de opacidades de los colores corporativos como sombra de botones e Imputs. Estos colores crean contraste y efectos que permiten a los usuarios identificar los botones y realizar acciones más rápidas.</p>
+    
 
     <div className=' flex flex-row flex-wrap space-evenly '>
     <div className=" flex flex-col ">
@@ -293,13 +322,15 @@ const ColoresDisplay = () => {
 
     </div>
 
-    <h5 className=' text-heading-5 '>Tints & Shades</h5>
+    <h5 className=' text-heading-5 '>Tintes y sombras</h5>
+    <p>Esta paleta está constituida desde colores oscuros, colores corporativos, hasta los colores claros. Utilizamos los tintes y sombras en imputs y botones.</p>
     <img
                   alt="..."
                   src= {grid}
                   className="w-full align-middle"
                 />
-    <h5 className=' text-heading-5 '>Ocean Blue</h5>
+    <h5 className=' text-heading-5 '>Azules</h5>
+    <p>Los azules son refrescantes, producen armonía y facilitan la lectura. Utilizamos el color azul “Ocean Blue” para acciones, como botones, links, selectores y texto.</p>
 
     <div className="flex flex-row flex-wrap space-evenly">
     <div className="card-paleta flex flex-col ">
@@ -430,7 +461,8 @@ const ColoresDisplay = () => {
     </div>
 
     </div>
-    <h5 className=' text-heading-5 '>Winter Sky</h5>
+    <h5 className=' text-heading-5 '>Rosas</h5>
+    <p>Utilizamos los colores rosados y fucsias para generar impacto y resaltar textos y componentes, también utilizamos los colores rosados en fondos.</p>
 
     <div className="flex flex-row flex-wrap space-evenly">
     <div className="card-paleta flex flex-col ">
@@ -562,8 +594,8 @@ const ColoresDisplay = () => {
 
     </div>
 
-    <h5 className=' text-heading-5 '>Yellow Pantone</h5>
-
+    <h5 className=' text-heading-5 '>Amarillos</h5>
+    <p>El color amarillo representa vitalidad y nos permite crear armonía, es un color complementario que utilizamos en textos y fondos para destacar acciones.</p>
     <div className="flex flex-row flex-wrap space-evenly">
     <div className="card-paleta flex flex-col ">
       <div style={{backgroundColor: "#80780F"}} className=" color-card flex flex-col items-center justify-center font-semibold">
@@ -694,7 +726,10 @@ const ColoresDisplay = () => {
 
     </div>
 
-    <h5 className=' text-heading-5 '>Green</h5>
+    <h5 className=' text-heading-5 '>Colores Semánticos</h5>
+    <p>Describimos el uso que hacemos de cada color y las pautas a tomar en cuenta. El color semántico ayuda a los usuarios a identificar estados, acciones, botones, links y encontrar opciones de ayuda.</p>
+    <h5 className=' text-heading-5 '>Verdes</h5>
+    <p>El color verde representa energía, positivismo y vitalidad. Utilizamos el color verde para denotar procesos de éxito.</p>
 
     <div className="flex flex-row flex-wrap space-evenly">
     <div className="card-paleta flex flex-col ">
@@ -740,53 +775,9 @@ const ColoresDisplay = () => {
       </div>
     </div>
     </div>
-    <h5 className=' text-heading-5 '>Red</h5>
 
-    <div className="flex flex-row flex-wrap space-evenly">
-    <div className="card-paleta flex flex-col ">
-      <div style={{backgroundColor: "#BD033B"}} className=" color-card flex flex-col items-center justify-center font-semibold">
-        <h5 className=" text-button-1 text-color-grayscale-7 ">R500</h5>
-        <h5 className=" text-button-1 text-color-grayscale-7 ">Bright Maroon</h5>
-        
-      </div>
-      <div className="background-grayscale-5 justify-center text-button-1  flex flex-col gap-1 p-2">
-        <div >HEX: #BD033B
-        </div>
-        <div >RGB: 189, 3, 59
-        </div>
-        
-      </div>
-    </div>
-    <div className="card-paleta flex flex-col ">
-      <div style={{backgroundColor: "#E59AB1"}} className=" color-card flex flex-col items-center justify-center font-semibold">
-        <h5 className=" text-button-1 text-color-grayscale-1 ">R200</h5>
-        <h5 className=" text-button-1 text-color-grayscale-1 ">Amaranth Pink</h5>
-        
-      </div>
-      <div className="background-grayscale-5 justify-center text-button-1  flex flex-col gap-1 p-2">
-        <div >HEX: #E59AB1
-        </div>
-        <div >RGB: 229, 154, 177
-        </div>
-        
-      </div>
-    </div>
-    <div className="card-paleta flex flex-col ">
-      <div style={{backgroundColor: "#F6DFE6"}} className=" color-card flex flex-col items-center justify-center font-semibold">
-        <h5 className=" text-button-1 text-color-grayscale-1 ">R50</h5>
-        <h5 className=" text-button-1 text-color-grayscale-1 ">Piggy Pink</h5>
-        
-      </div>
-      <div className="background-grayscale-5 justify-center text-button-1  flex flex-col gap-1 p-2">
-        <div >HEX: #F6DFE6
-        </div>
-        <div >RGB: 246, 223, 230
-        </div>
-        
-      </div>
-    </div>
-    </div>
-    <h5 className=' text-heading-5 '>Honey</h5>
+    <h5 className=' text-heading-5 '>Naranja</h5>
+    <p>Nuestro color naranja es de tonalidad clara y vibrante, es difícil pasarlo desapercibido. En Xtrim lo usamos en alertas.</p>
 
     <div className="flex flex-row flex-wrap space-evenly">
     <div className="card-paleta flex flex-col ">
@@ -832,7 +823,57 @@ const ColoresDisplay = () => {
       </div>
     </div>
     </div>
-    <h5 className=' text-heading-5 '>Neutrals</h5>
+
+    <h5 className=' text-heading-5 '>Rojo</h5>
+    <p>Es un color que llama la atención, utilizamos el color rojo para denotar procesos erróneos.</p>
+
+    <div className="flex flex-row flex-wrap space-evenly">
+    <div className="card-paleta flex flex-col ">
+      <div style={{backgroundColor: "#BD033B"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+        <h5 className=" text-button-1 text-color-grayscale-7 ">R500</h5>
+        <h5 className=" text-button-1 text-color-grayscale-7 ">Bright Maroon</h5>
+        
+      </div>
+      <div className="background-grayscale-5 justify-center text-button-1  flex flex-col gap-1 p-2">
+        <div >HEX: #BD033B
+        </div>
+        <div >RGB: 189, 3, 59
+        </div>
+        
+      </div>
+    </div>
+    <div className="card-paleta flex flex-col ">
+      <div style={{backgroundColor: "#E59AB1"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+        <h5 className=" text-button-1 text-color-grayscale-1 ">R200</h5>
+        <h5 className=" text-button-1 text-color-grayscale-1 ">Amaranth Pink</h5>
+        
+      </div>
+      <div className="background-grayscale-5 justify-center text-button-1  flex flex-col gap-1 p-2">
+        <div >HEX: #E59AB1
+        </div>
+        <div >RGB: 229, 154, 177
+        </div>
+        
+      </div>
+    </div>
+    <div className="card-paleta flex flex-col ">
+      <div style={{backgroundColor: "#F6DFE6"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+        <h5 className=" text-button-1 text-color-grayscale-1 ">R50</h5>
+        <h5 className=" text-button-1 text-color-grayscale-1 ">Piggy Pink</h5>
+        
+      </div>
+      <div className="background-grayscale-5 justify-center text-button-1  flex flex-col gap-1 p-2">
+        <div >HEX: #F6DFE6
+        </div>
+        <div >RGB: 246, 223, 230
+        </div>
+        
+      </div>
+    </div>
+    </div>
+
+    <h5 className=' text-heading-5 '>Colores Neutrales</h5>
+    <p>Dentro de esta categoría de colores se hallan el negro, el gris, el blanco y el beige, a su vez, estos se dividen en fríos y cálidos.</p>
     <div className="flex flex-row flex-wrap justify-start gap-1">
     <div style={{backgroundColor: "#222D44"}} className="card-paleta flex flex-col ">
       <div className=" color-card flex flex-col items-center justify-center font-semibold">
@@ -866,13 +907,13 @@ const ColoresDisplay = () => {
     </div>
 
     </div>
-    <h5 className=' text-heading-5 '>Grayscale</h5>
     <img
                   alt="..."
                   src= {Grayscale}
                   className="w-full align-middle "
                 />
-<h5 className=' text-heading-5 '>Dark Neutrals</h5>
+<h5 className=' text-heading-5 '>Neutros Oscuros</h5>
+    <p>Los neutros oscuros se ajustan a colores con tonos similares, los utilizamos en fondos menos llamativos, se combinan con otros colores fríos.</p>
 
 <div className="flex flex-row flex-wrap space-evenly">
 <div className="card-paleta flex flex-col ">
@@ -932,7 +973,8 @@ const ColoresDisplay = () => {
   </div>
 </div>
 </div>
-<h5 className=' text-heading-5 '>Mid Neutrals</h5>
+<h5 className=' text-heading-5 '>Neutros Medios</h5>
+    <p>Los neutros medios nos permiten crear sombra y contraste, pero debemos evitar usarlos como fondos o escribir sobre ellos porque tienen poca legibilidad.</p>
 
 <div className="flex flex-row flex-wrap space-evenly">
 <div className="card-paleta flex flex-col ">
@@ -979,7 +1021,9 @@ const ColoresDisplay = () => {
 </div>
 
 </div>
-<h5 className=' text-heading-5 '>Light Neutrals</h5>
+<h5 className=' text-heading-5 '>Neutros Claros</h5>
+    <p>Usamos los neutros claros en fondos, en texto, en interacciones e ilustraciones. Los neutros claros permiten que un diseño se vea impecable y delicado.</p>
+
 
 <div className="flex flex-row flex-wrap space-evenly">
 <div className="card-paleta flex flex-col ">

@@ -1,4 +1,8 @@
 import React from "react";
+import voz from "../assets/guides/voz.png";
+import jergas from "../assets/guides/jergas.png";
+import tecnico from "../assets/guides/tecnico.png";
+import lenguaje from "../assets/guides/lenguaje.png";
 import {FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faHeart, faRocket, faUserAstronaut, faHandHeart } from "@fortawesome/pro-light-svg-icons";
 import Sidebar from "./Sidebar";
@@ -18,8 +22,40 @@ Planteamos nuestra comunicación a modo que nos permita establecer cercanía y f
     </div>
     
     <div className="flex flex-col gap-2 padding-marca">
+    <p style={{fontSize: 31, fontWeight: 500, color: "#222D44"}}>Usamos una voz activa</p>
+    <p style={{fontSize: 16, fontWeight: 500, color: "#222D44"}}>En la voz activa el sujeto realiza la acción verbal de forma directa, es decir actúa por si solo.
+    <br></br>En este caso,  el usuario posee autonomía, tiene libertad de decisión; la accion toma sentido al ser realizada de forma directa por el usuario.
+    </p>
+    <img
+    alt="..."
+    src= {voz}
+    className=""
+    style={{marginBottom:64}}
+    />
+    <p style={{fontSize: 31, fontWeight: 500, color: "#222D44"}}>Sin jergas, ni lenguaje técnico</p>
+    <p style={{fontSize: 16, fontWeight: 500, color: "#222D44"}}>Nuestra comunicación debe ser clara y fácil de comprender, utilizamos el lenguaje para transmitir empatía y situar al usuario como el centro de nuestra comunicación, a manera que, establecemos a los usuarios como prioridad.
+    </p>
+    <img
+    alt="..."
+    src= {jergas}
+    className=""
+    />
+    <img
+    alt="..."
+    src= {tecnico}
+    className=""
+    />
+    <p style={{fontSize: 31, fontWeight: 500, color: "#222D44"}}>Lenguaje claro, informativo, expositivo</p>
+    <p style={{fontSize: 16, fontWeight: 500, color: "#222D44"}}>Informamos en frases cortas, con plabras precisas. El mensaje debe ser explicado en brevedad, pero sin dejar de ser explicativos:<br></br> 
+Utilizamos un titulo que advierta cual es el problema, luego en dos o tres lineas de texto nos asegurarnos que el usuario entienda el mensaje. 
+    </p>
     
-    
+    <img
+    alt="..."
+    src= {lenguaje}
+    className=""
+    style={{marginBottom:64, maxWidth: 500, alignSelf: "center"}}
+    />
     </div>
     
 

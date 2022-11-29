@@ -1,9 +1,7 @@
 import React from "react";
 import { Router, Route, Switch } from "react-router-dom";
-
 import Loading from "./components/Loading";
 import NavBar from "./components/NavBar";
-import Footer from "./components/Footer";
 import Home from "./views/Home";
 import Profile from "./views/Profile";
 import Componentes from "./views/Componentes";
@@ -29,7 +27,9 @@ import Promesa from "./views/Promesa";
 import Personalidad from "./views/Personalidad";
 import Contenido from "./views/Contenido";
 import Sidebar from "./components/Sidebar";
-import GuiaDeEstilo from "./components/GuiaDeEstilo";
+import Guia from "./views/Guia";
+import { Fragment } from "react";
+import Escritura from "./views/Escritura";
 
 
 initFontAwesome();
@@ -50,9 +50,6 @@ const App = () => {
     isAuthenticated,
   } = useAuth0();
   
-
-  
-
   return (
     <Router history={history}>
       
@@ -64,7 +61,7 @@ const App = () => {
           <Switch>
             <Route path="/" exact component={Home} />
             {isAuthenticated && (
-            <div>
+            <Fragment>
             <Sidebar />
             <Route path="/profile" component={Profile} />
             <Route path="/componentes" component={Componentes} />
@@ -78,10 +75,9 @@ const App = () => {
             <Route path="/promesa" component={Promesa} />
             <Route path="/personalidad" component={Personalidad} />
             <Route path="/contenido" component={Contenido} />
-            <Route path="/guia" component={GuiaDeEstilo} />
-
-
-            </div>
+            <Route path="/guia" component={Guia} />
+            <Route path="/escritura" component={Escritura} />
+            </Fragment>
             )}
           </Switch>
         

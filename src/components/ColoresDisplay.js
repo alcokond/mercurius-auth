@@ -872,7 +872,7 @@ const ColoresDisplay = () => {
     </div>
     </div>
 
-    <h5 className=' text-heading-5 '>Colores Neutrales</h5>
+    <h5 style={{fontSize: 31, fontWeight: 500}}>Colores Neutrales</h5>
     <p>Dentro de esta categoría de colores se hallan el negro, el gris, el blanco y el beige, a su vez, estos se dividen en fríos y cálidos.</p>
     <div className="flex flex-row flex-wrap justify-start gap-1">
     <div style={{backgroundColor: "#222D44"}} className="card-paleta flex flex-col ">

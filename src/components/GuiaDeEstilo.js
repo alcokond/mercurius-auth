@@ -3,9 +3,6 @@ import voz from "../assets/guides/voz.png";
 import jergas from "../assets/guides/jergas.png";
 import tecnico from "../assets/guides/tecnico.png";
 import lenguaje from "../assets/guides/lenguaje.png";
-import {FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faHeart, faRocket, faUserAstronaut, faHandHeart } from "@fortawesome/pro-light-svg-icons";
-import Sidebar from "./Sidebar";
 
 const GuiaDeEstilo = () => (
   <>
@@ -30,7 +27,7 @@ Planteamos nuestra comunicación a modo que nos permita establecer cercanía y f
     alt="..."
     src= {voz}
     className=""
-    style={{marginBottom:64}}
+    style={{marginBottom:64, maxWidth: 500, alignSelf: "center"}}
     />
     <p style={{fontSize: 31, fontWeight: 500, color: "#222D44"}}>Sin jergas, ni lenguaje técnico</p>
     <p style={{fontSize: 16, fontWeight: 500, color: "#222D44"}}>Nuestra comunicación debe ser clara y fácil de comprender, utilizamos el lenguaje para transmitir empatía y situar al usuario como el centro de nuestra comunicación, a manera que, establecemos a los usuarios como prioridad.
@@ -39,11 +36,13 @@ Planteamos nuestra comunicación a modo que nos permita establecer cercanía y f
     alt="..."
     src= {jergas}
     className=""
+    style={{marginBottom:64, maxWidth: 500, alignSelf: "center"}}
     />
     <img
     alt="..."
     src= {tecnico}
     className=""
+    style={{marginBottom:64, maxWidth: 500, alignSelf: "center"}}
     />
     <p style={{fontSize: 31, fontWeight: 500, color: "#222D44"}}>Lenguaje claro, informativo, expositivo</p>
     <p style={{fontSize: 16, fontWeight: 500, color: "#222D44"}}>Informamos en frases cortas, con plabras precisas. El mensaje debe ser explicado en brevedad, pero sin dejar de ser explicativos:<br></br> 

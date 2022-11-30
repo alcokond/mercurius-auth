@@ -33,20 +33,19 @@ const NavBar = () => {
 
   const logoutWithRedirect = () =>
     logout({
-      returnTo: window.location.origin,
+      //returnTo: window.location.origin,
+      returnTo: "https://www.xtrim.com.ec/mercurius/",
     });
 
   return (
     
     <div className="nav-container no-margin z-3 nav-sticky w-full">
       <Navbar className="bg-navbar " sticky="top" light expand="md">
-      {/* {isAuthenticated && (
-        <MuiSidebar />
-        )} */}
+
         
         <Container className="no-margin">
           
-          <NavbarBrand className="logo-mercurius" href="/"/>
+          <NavbarBrand className="logo-mercurius" href="/mercurius"/>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
@@ -58,9 +57,9 @@ const NavBar = () => {
                 <NavItem>
                   <NavLink
                     tag={RouterNavLink}
-                    to="/marca"
+                    to="/mercurius/marca"
                     exact
-                    activeClassName="router-link-exact-active text-navbar"
+                    activeClassName=" text-navbar-focused"
                     className="text-navbar"
                   >
                     Marca
@@ -69,9 +68,9 @@ const NavBar = () => {
                 <NavItem>
                 <NavLink
                   tag={RouterNavLink}
-                  to="/contenido"
+                  to="/mercurius/contenido"
                   exact
-                  activeClassName="router-link-exact-active text-navbar"
+                  activeClassName="text-navbar-focused"
                   className="text-navbar"
                 >
                   Contenido
@@ -80,9 +79,9 @@ const NavBar = () => {
               <NavItem>
                 <NavLink
                   tag={RouterNavLink}
-                  to="/guidelines"
+                  to="/mercurius/guidelines"
                   exact
-                  activeClassName="router-link-exact-active text-navbar"
+                  activeClassName="text-navbar-focused"
                   className="text-navbar"
                 >
                   Guidelines
@@ -91,9 +90,9 @@ const NavBar = () => {
               <NavItem>
                 <NavLink
                   tag={RouterNavLink}
-                  to="/componentes"
+                  to="/mercurius/componentes"
                   exact
-                  activeClassName="router-link-exact-active text-navbar"
+                  activeClassName="text-navbar-focused"
                   className="text-navbar"
                 >
                   Componentes
@@ -130,7 +129,7 @@ const NavBar = () => {
                       width="30"
                     />
                   </DropdownToggle>
-                  <DropdownMenu style={{marginRight: 170}}>
+                  <DropdownMenu >
                     <DropdownItem header>{user.name}</DropdownItem>
                     
                     <DropdownItem

@@ -2,7 +2,7 @@
   "name": "mercurius",
   "version": "0.1.0",
   "private": false,
-  "homepage": ".",
+  "homepage": "https://www.xtrim.com.ec/mercurius",
   "scripts": {
     "start": "npm-run-all --parallel spa api-server",
     "build": "react-scripts build",

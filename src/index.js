@@ -22,8 +22,10 @@ const providerConfig = {
   domain: config.domain,
   clientId: config.clientId,
   ...(config.audience ? { audience: config.audience } : null),
-  redirectUri: window.location.origin,
+  //redirectUri: window.location.origin,
+  redirectUri: "https://www.xtrim.com.ec/mercurius/",
   onRedirectCallback,
+  returnTo: "https://www.xtrim.com.ec/mercurius/"
 };
 
 ReactDOM.render(

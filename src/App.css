@@ -80,7 +80,17 @@ li::marker {
 }
 
 .text-navbar{
+  font-weight: 500!important;
   color: #fff!important;
+}
+
+.text-navbar:hover{
+  color: #F9E100!important;
+}
+
+.text-navbar-focused{
+  font-weight: 600!important;
+  color: #F9E100!important;
 }
 
 .logo-xtrim{

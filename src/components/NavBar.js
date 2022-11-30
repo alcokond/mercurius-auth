@@ -45,7 +45,7 @@ const NavBar = () => {
         )} */}
         
         <Container className="no-margin">
-        
+          
           <NavbarBrand className="logo-mercurius" href="/"/>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>

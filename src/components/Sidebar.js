@@ -107,6 +107,7 @@ export default function Sidebar() {
                     
                   </List>
                 </Collapse>
+              <Divider />
               <ListItemButton onClick={handleClick2}>
               <ListItemText primary="Guidelines" />
               {open2 ? <ExpandLess /> : <ExpandMore />}

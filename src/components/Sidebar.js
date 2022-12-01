@@ -148,37 +148,6 @@ export default function Sidebar() {
                     
                   </List>
                 </Collapse>
-              <ListItemButton onClick={handleClick3}>
-              <ListItemText primary="Acciones" />
-              {open3 ? <ExpandLess /> : <ExpandMore />}
-              </ListItemButton>
-            <Collapse in={open3} timeout="auto" unmountOnExit>
-                  <List component="div" disablePadding>
-                    
-                    <NavLink
-                      tag={RouterNavLink}
-                      to="/botones"
-                      exact
-                      activeClassName="router-link-exact-active" 
-                      style={{ textDecoration: 'none' }} 
-                      
-                      >
-                      <ListItemButton sx={{ pl: 4 }} >
-                      
-                        <ListItemText primary='Botones' />
-                        
-                      </ListItemButton>
-                    </NavLink>
-                    
-                    
-                    
-                  </List>
-                </Collapse>
-            
-
-            
-            
-
         </List>
         <Divider />
       </Drawer>

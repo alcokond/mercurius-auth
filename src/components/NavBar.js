@@ -60,7 +60,7 @@ const NavBar = () => {
                     tag={RouterNavLink}
                     to="/marca"
                     exact
-                    activeClassName="text-navbar-focused text-navbar"
+                    activeClassName=" text-navbar"
                     className="text-navbar"
                   >
                     Marca
@@ -71,7 +71,7 @@ const NavBar = () => {
                   tag={RouterNavLink}
                   to="/contenido"
                   exact
-                  activeClassName="text-navbar-focused text-navbar"
+                  activeClassName=" text-navbar"
                   className="text-navbar"
                 >
                   Contenido
@@ -82,7 +82,7 @@ const NavBar = () => {
                   tag={RouterNavLink}
                   to="/guidelines"
                   exact
-                  activeClassName="text-navbar-focused text-navbar"
+                  activeClassName=" text-navbar"
                   className="text-navbar"
                 >
                   Guidelines
@@ -93,7 +93,7 @@ const NavBar = () => {
                   tag={RouterNavLink}
                   to="/componentes"
                   exact
-                  activeClassName="text-navbar-focused text-navbar"
+                  activeClassName=" text-navbar"
                   className="text-navbar"
                 >
                   Componentes

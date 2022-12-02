@@ -212,7 +212,7 @@ height : 130px;}
 }
 
 #profileDropDown{
-  padding-top:10px;
+  padding-top: 40%;
   padding-bottom: 0;
 
 }
@@ -387,12 +387,7 @@ height : 130px;}
   }
 }
 
-@media(min-width: 1535px) {
-  #profileDropDown{
-    margin-right: 35vh;
-  
-  }
-}
+
 
 .margin-sidebar{
   margin-left: 240px;

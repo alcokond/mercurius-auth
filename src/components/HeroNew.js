@@ -147,8 +147,8 @@ const Hero = () => (
       </section>
       <section className=" mb-24">
         <div className="margin-hero pt-16">
-            <div className="flex flex-col flex-wrap gap-3">
-                <div className="flex flex-row flex-wrap space-evenly">
+            <div style={{gridTemplateColumns: "auto auto auto auto"}} className="grid gap-3">
+                
                   <div className=" max-w-400-px">
               <h2 style={{fontSize: "31px"}} className=" font-semibold ">
                 Marca
@@ -208,8 +208,8 @@ const Hero = () => (
                     
                     </NavLink>
                   
-                </div>
-                <div className="flex flex-row flex-wrap space-evenly">
+                
+                
                   <div className=" max-w-400-px">
               <h2 style={{fontSize: "31px"}} className=" font-semibold ">
                 Contenido
@@ -255,8 +255,8 @@ const Hero = () => (
                     <div style={{fontWeight: "700", color: "#525A6C", fontSize: "20px"}}>Guía de Estilo</div>
                     <div style={{fontSize: 14, fontWeight: 400, color: "#222D44"}}>Debes escribir pensando en el usuario. Debes conocer lo que quiere el usuario y sus necesidades.</div>
                   </NavLink>
-                </div>
-                <div className="flex flex-row flex-wrap space-evenly">
+                
+                
                   <div className=" max-w-400-px">
               <h2 style={{fontSize: "31px"}} className=" font-semibold ">
               Guidelines
@@ -284,7 +284,7 @@ const Hero = () => (
                     <div style={{fontWeight: "700", color: "#525A6C", fontSize: "20px"}}>Iconografía</div>
                     <div style={{fontSize: 14, fontWeight: 400}}>Nuestros iconos reflejan la personalidad de Xtrim y como nos comunicamos con los usuarios.</div>
                   </div>
-                </div>
+                
                 
             </div>
         </div>

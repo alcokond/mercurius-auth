@@ -60,7 +60,7 @@ const NavBar = () => {
                     tag={RouterNavLink}
                     to="/marca"
                     exact
-                    activeClassName="router-link-exact-active text-navbar"
+                    activeClassName=" text-navbar"
                     className="text-navbar"
                   >
                     Marca
@@ -71,7 +71,7 @@ const NavBar = () => {
                   tag={RouterNavLink}
                   to="/contenido"
                   exact
-                  activeClassName="router-link-exact-active text-navbar"
+                  activeClassName=" text-navbar"
                   className="text-navbar"
                 >
                   Contenido
@@ -82,7 +82,7 @@ const NavBar = () => {
                   tag={RouterNavLink}
                   to="/guidelines"
                   exact
-                  activeClassName="router-link-exact-active text-navbar"
+                  activeClassName=" text-navbar"
                   className="text-navbar"
                 >
                   Guidelines
@@ -93,7 +93,7 @@ const NavBar = () => {
                   tag={RouterNavLink}
                   to="/componentes"
                   exact
-                  activeClassName="router-link-exact-active text-navbar"
+                  activeClassName=" text-navbar"
                   className="text-navbar"
                 >
                   Componentes
@@ -130,7 +130,7 @@ const NavBar = () => {
                       width="30"
                     />
                   </DropdownToggle>
-                  <DropdownMenu style={{marginRight: 170}}>
+                  <DropdownMenu style={{marginRight: "170"}}>
                     <DropdownItem header>{user.name}</DropdownItem>
                     
                     <DropdownItem

@@ -1146,32 +1146,23 @@ const ColoresDisplay = () => {
 
 
 <h5 className=' text-heading-5 '>Semantic Colors</h5>
-<div className='flex flex-row gap-5'>
-<div className='flex flex-col space-evenly'>
+<div style={{gridTemplateColumns: "1fr 1fr 1fr 1fr 1fr 1fr", gap: "2%"}} className='grid'>
+
 <div className='circle-box self-center my-auto'>Actions</div>
-<div className=' self-center circle-box my-auto'>Messages</div>
-</div>
-<div className='flex flex-col space-evenly'>
-<div  className='flex flex-row space-evenly gap-5'>
+
     <div className='flex flex-col'>
     <div className='flex flex-col circle-box'>
       <div className=' self-center circle background-primary'></div>
       <div className='self-center'>Primary</div>
     </div>
-    <div className='flex flex-col circle-box'>
-      <div className=' self-center circle background-primary'></div>
-      <div className='self-center'>Primary</div>
-    </div>
+  
     </div>
     <div className='flex flex-col'>
     <div className='flex flex-col circle-box'>
       <div className=' self-center circle background-grayscale-5'></div>
       <div className='self-center'>Secondary</div>
       </div>
-      <div className='flex flex-col circle-box'>
-      <div className=' self-center circle background-grayscale-5'></div>
-      <div className='self-center'>Secondary</div>
-    </div>
+    
     
     </div>
     <div className='flex flex-col'>
@@ -1179,35 +1170,45 @@ const ColoresDisplay = () => {
       <div className=' self-center circle background-success-primary'></div>
       <div className='self-center'>Confirm</div>
     </div>
-    <div className='flex flex-col circle-box'>
-      <div className=' self-center circle background-success-primary'></div>
-      <div className='self-center'>Success</div>
-    </div>
+    
     </div>
     <div className='flex flex-col'>
     <div className='flex flex-col circle-box'>
       <div className=' self-center circle background-warning-primary'></div>
       <div className='self-center'>Warning</div>
     </div>
-    <div className='flex flex-col circle-box'>
-      <div className=' self-center circle background-warning-primary'></div>
-      <div className='self-center'>Warning</div>
+  
     </div>
-    </div>
-    <div className='flex flex-col'>
     <div className='flex flex-col circle-box'>
       <div className=' self-center circle background-error-primary'></div>
       <div className='self-center'>Cancel</div>
     </div>
-    <div className='flex flex-col circle-box'>
+    
+    <div className=' self-center circle-box my-auto'>Messages</div>
+<div className='flex flex-col circle-box'>
+      <div className=' self-center circle background-primary'></div>
+      <div className='self-center'>Primary</div>
+    </div>
+<div className='flex flex-col circle-box'>
+      <div className=' self-center circle background-grayscale-5'></div>
+      <div className='self-center'>Secondary</div>
+    </div>
+<div className='flex flex-col circle-box'>
+      <div className=' self-center circle background-success-primary'></div>
+      <div className='self-center'>Success</div>
+    </div>
+<div className='flex flex-col circle-box'>
+      <div className=' self-center circle background-warning-primary'></div>
+      <div className='self-center'>Warning</div>
+    </div>
+<div className='flex flex-col circle-box'>
       <div className=' self-center circle background-error-primary'></div>
       <div className='self-center'>Error</div>
     </div>
-    </div>
-</div>
 
 
-</div>
+
+
 </div>
 </div>
     

@@ -5,7 +5,7 @@ import Grayscale from "../assets/colors/Grayscale.png";
 const ColoresDisplay = () => {
   return (
     <div className=' flex flex-col gap-3 margin-sidebar padding-paleta '>
-    <div className="flex flex-row flex-wrap space-evenly">
+    <div style={{gridTemplateColumns: "1fr 1fr 1fr", gap: "2%"}} className="grid">
     
 
     <div className="card-paleta flex flex-col ">
@@ -14,7 +14,7 @@ const ColoresDisplay = () => {
         <h5 className=" text-button-1 text-color-grayscale-7 ">Ocean Blue</h5>
         
       </div>
-      <div className="background-grayscale-5 justify-center text-button-1  flex flex-col gap-1 p-2">
+      <div className="background-grayscale-5 justify-center text-button-1 p-2">
         <div >HEX: #4A3CDB
         </div>
         <div >RGB: 74, 60, 219
@@ -28,7 +28,7 @@ const ColoresDisplay = () => {
         <h5 className=" text-button-1 text-color-grayscale-7 ">Winter Sky</h5>
         
       </div>
-      <div className="background-grayscale-5 justify-center text-button-1  flex flex-col gap-1 p-2">
+      <div className="background-grayscale-5 justify-center text-button-1 p-2">
         <div >HEX: #FF0A6C
         </div>
         <div >RGB: 225, 10, 108
@@ -42,7 +42,7 @@ const ColoresDisplay = () => {
         <h5 className=" text-button-1 text-color-grayscale-1 ">Yellow Pantone</h5>
         
       </div>
-      <div className="background-grayscale-5 justify-center text-button-1  flex flex-col gap-1 p-2">
+      <div className="background-grayscale-5 justify-center text-button-1 p-2">
         <div >HEX: #F9E100
         </div>
         <div >RGB: 249, 225, 0
@@ -50,14 +50,14 @@ const ColoresDisplay = () => {
         
       </div>
     </div>
-    <div className='flex gap-1'>
+    
     <div className="card-paleta flex flex-col ">
       <div style={{backgroundColor: "#222D44"}} className=" color-card flex flex-col items-center justify-center font-semibold">
         <h5 className=" text-button-1 text-color-grayscale-7 ">N900</h5>
         <h5 className=" text-button-1 text-color-grayscale-7 ">Space Cadet</h5>
         
       </div>
-      <div className="background-grayscale-5 justify-center text-button-1  flex flex-col gap-1 p-2">
+      <div className="background-grayscale-5 justify-center text-button-1 p-2">
         <div >HEX: #222D44
         </div>
         <div >RGB: 34, 45, 68
@@ -71,7 +71,7 @@ const ColoresDisplay = () => {
         <h5 className=" text-button-1 text-color-grayscale-1 ">Light</h5>
         
       </div>
-      <div className="background-grayscale-5 justify-center text-button-1  flex flex-col gap-1 p-2">
+      <div className="background-grayscale-5 justify-center text-button-1 p-2">
         <div >HEX: #FFFFFF
         </div>
         <div >RGB: 255, 255, 255
@@ -79,7 +79,7 @@ const ColoresDisplay = () => {
         
       </div>
     </div>
-    </div>
+    
     </div>
 
     
@@ -87,231 +87,231 @@ const ColoresDisplay = () => {
       <p>Utilizamos la paleta de opacidades de los colores corporativos como sombra de botones e Imputs. Estos colores crean contraste y efectos que permiten a los usuarios identificar los botones y realizar acciones más rápidas.</p>
     
 
-    <div className=' flex flex-row flex-wrap space-evenly '>
-    <div className=" flex flex-col ">
+    <div style={{gridTemplateColumns: "1fr 1fr 1fr auto", gap: "2%"}} className='grid mb-3'>
+    <div className=" ">
     <div class='bg'>
   <svg viewBox='0 0 100 100' preserveAspectRatio='none'>
     <path d='M0,0 L0,100 100,0z' id='ob-60-1' />
     <path d='M0,100 L100,100 100,0z' id='ob-60-2' />
   </svg>
 </div>
-      <div className=" items-start text-button-1  flex flex-col gap-0 p-2">
+      <div className=" items-start ">
         <div ><b>Ocean-Blue/60%</b>
         </div>
         <div >#4A3CDB99
         </div>
-        <div >rgba(74, 60, 219, 0.6)
+        <div >rgba(74,60,219,0.6)
         </div>
-        <div >hsla(245, 69, 55, 0.6)
+        <div >hsla(245,69,55,0.6)
         </div>
         
       </div>
     </div>
-    <div className=" flex flex-col ">
+    <div className=" ">
     <div class='bg'>
   <svg viewBox='0 0 100 100' preserveAspectRatio='none'>
     <path d='M0,0 L0,100 100,0z' id='ob-40-1' />
     <path d='M0,100 L100,100 100,0z' id='ob-40-2' />
   </svg>
 </div>
-      <div className=" items-start text-button-1  flex flex-col gap-0 p-2">
+      <div className=" items-start text-button-1">
         <div ><b>Ocean-Blue/40%</b>
         </div>
         <div >#4A3CDB66
         </div>
-        <div >rgba(74, 60, 219, 0.4)
+        <div >rgba(74,60,219,0.4)
         </div>
-        <div >hsla(245, 69, 55, 0.4)
+        <div >hsla(245,69,55,0.4)
         </div>
         
       </div>
     </div>
-    <div className=" flex flex-col ">
+    <div className=" ">
     <div class='bg'>
   <svg viewBox='0 0 100 100' preserveAspectRatio='none'>
     <path d='M0,0 L0,100 100,0z' id='ob-20-1' />
     <path d='M0,100 L100,100 100,0z' id='ob-20-2' />
   </svg>
 </div>
-      <div className=" items-start text-button-1  flex flex-col gap-0 p-2">
+      <div className=" items-start text-button-1">
         <div ><b>Ocean-Blue/20%</b>
         </div>
         <div >#4A3CDB33
         </div>
-        <div >rgba(74, 60, 219, 0.2)
+        <div >rgba(74,60,219,0.2)
         </div>
-        <div >hsla(245, 69, 55, 0.2)
+        <div >hsla(245,69,55,0.2)
         </div>
         
       </div>
     </div>
-    <div className=" flex flex-col ">
+    <div className=" ">
     <div class='bg'>
   <svg viewBox='0 0 100 100' preserveAspectRatio='none'>
     <path d='M0,0 L0,100 100,0z' id='ob-10-1' />
     <path d='M0,100 L100,100 100,0z' id='ob-10-2' />
   </svg>
 </div>
-      <div className=" items-start text-button-1  flex flex-col gap-0 p-2">
+      <div className=" items-start text-button-1">
         <div ><b>Ocean-Blue/10%</b>
         </div>
         <div >#4A3CDB1A
         </div>
-        <div >rgba(74, 60, 219, 0.1)
+        <div >rgba(74,60,219,0.1)
         </div>
-        <div >hsla(245, 69, 55, 0.1)
+        <div >hsla(245,69,55,0.1)
         </div>
         
       </div>
     </div>
-    <div className=" flex flex-col ">
+    <div className=" ">
     <div class='bg'>
   <svg viewBox='0 0 100 100' preserveAspectRatio='none'>
     <path d='M0,0 L0,100 100,0z' id='ws-60-1' />
     <path d='M0,100 L100,100 100,0z' id='ws-60-2' />
   </svg>
 </div>
-      <div className=" items-start text-button-1  flex flex-col gap-0 p-2">
+      <div className=" items-start text-button-1">
         <div ><b>Winter-Sky/60%</b>
         </div>
         <div >#FF0A6C99
         </div>
-        <div >rgba(255, 10, 108, 0.6)
+        <div >rgba(255,10,108,0.6)
         </div>
-        <div >hsla(336, 100, 52, 0.6)
+        <div >hsla(336,100,52,0.6)
         </div>
         
       </div>
     </div>
-    <div className=" flex flex-col ">
+    <div className=" ">
     <div class='bg'>
   <svg viewBox='0 0 100 100' preserveAspectRatio='none'>
     <path d='M0,0 L0,100 100,0z' id='ws-40-1' />
     <path d='M0,100 L100,100 100,0z' id='ws-40-2' />
   </svg>
 </div>
-      <div className=" items-start text-button-1  flex flex-col gap-0 p-2">
+      <div className=" items-start text-button-1">
         <div ><b>Winter-Sky/40%</b>
         </div>
         <div >#FF0A6C66
         </div>
-        <div >rgba(255, 10, 108, 0.4)
+        <div >rgba(255,10,108,0.4)
         </div>
-        <div >hsla(336, 100, 52, 0.4)
+        <div >hsla(336,100,52,0.4)
         </div>
         
       </div>
     </div>
-    <div className=" flex flex-col ">
+    <div className=" ">
     <div class='bg'>
   <svg viewBox='0 0 100 100' preserveAspectRatio='none'>
     <path d='M0,0 L0,100 100,0z' id='ws-20-1' />
     <path d='M0,100 L100,100 100,0z' id='ws-20-2' />
   </svg>
 </div>
-      <div className=" items-start text-button-1  flex flex-col gap-0 p-2">
+      <div className=" items-start text-button-1">
         <div ><b>Winter-Sky/20%</b>
         </div>
         <div >#FF0A6C33
         </div>
-        <div >rgba(255, 10, 108, 0.2)
+        <div >rgba(255,10,108,0.2)
         </div>
-        <div >hsla(336, 100, 52, 0.2)
+        <div >hsla(336,100,52,0.2)
         </div>
         
       </div>
     </div>
-    <div className=" flex flex-col ">
+    <div className=" ">
     <div class='bg'>
   <svg viewBox='0 0 100 100' preserveAspectRatio='none'>
     <path d='M0,0 L0,100 100,0z' id='ws-10-1' />
     <path d='M0,100 L100,100 100,0z' id='ws-10-2' />
   </svg>
 </div>
-      <div className=" items-start text-button-1  flex flex-col gap-0 p-2">
+      <div className=" items-start text-button-1">
         <div ><b>Winter-Sky/10%</b>
         </div>
         <div >#FF0A6C66
         </div>
-        <div >rgba(255, 10, 108, 0.1)
+        <div >rgba(255,10,108,0.1)
         </div>
-        <div >hsla(336, 100, 52, 0.1)
+        <div >hsla(336,100,52,0.1)
         </div>
         
       </div>
     </div>
-    <div className=" flex flex-col ">
+    <div className=" ">
     <div class='bg'>
   <svg viewBox='0 0 100 100' preserveAspectRatio='none'>
     <path d='M0,0 L0,100 100,0z' id='yp-60-1' />
     <path d='M0,100 L100,100 100,0z' id='yp-60-2' />
   </svg>
 </div>
-      <div className=" items-start text-button-1  flex flex-col gap-0 p-2">
+      <div className=" items-start text-button-1">
         <div ><b>Yellow-Pantone/60%</b>
         </div>
         <div >#F9E10099
         </div>
-        <div >rgba(249, 225, 0, 0.6)
+        <div >rgba(249,225,0,0.6)
         </div>
-        <div >hsla(54, 100, 49, 0.6)
+        <div >hsla(54,100,49,0.6)
         </div>
         
       </div>
     </div>
-    <div className=" flex flex-col ">
+    <div className=" ">
     <div class='bg'>
   <svg viewBox='0 0 100 100' preserveAspectRatio='none'>
     <path d='M0,0 L0,100 100,0z' id='yp-40-1' />
     <path d='M0,100 L100,100 100,0z' id='yp-40-2' />
   </svg>
 </div>
-      <div className=" items-start text-button-1  flex flex-col gap-0 p-2">
+      <div className=" items-start text-button-1">
         <div ><b>Yellow-Pantone/40%</b>
         </div>
         <div >#F9E10066
         </div>
-        <div >rgba(249, 225, 0, 0.4)
+        <div >rgba(249,225,0,0.4)
         </div>
-        <div >hsla(54, 100, 49, 0.4)
+        <div >hsla(54,100,49,0.4)
         </div>
         
       </div>
     </div>
-    <div className=" flex flex-col ">
+    <div className=" ">
     <div class='bg'>
   <svg viewBox='0 0 100 100' preserveAspectRatio='none'>
     <path d='M0,0 L0,100 100,0z' id='yp-20-1' />
     <path d='M0,100 L100,100 100,0z' id='yp-20-2' />
   </svg>
 </div>
-      <div className=" items-start text-button-1  flex flex-col gap-0 p-2">
+      <div className=" items-start text-button-1">
         <div ><b>Yellow-Pantone/20%</b>
         </div>
         <div >#F9E10033 
         </div>
-        <div >rgba(249, 225, 0, 0.2)
+        <div >rgba(249,225,0,0.2)
         </div>
-        <div >hsla(54, 100, 49, 0.2)
+        <div >hsla(54,100,49,0.2)
         </div>
         
       </div>
     </div>
-    <div className=" flex flex-col ">
+    <div className=" ">
     <div class='bg'>
   <svg viewBox='0 0 100 100' preserveAspectRatio='none'>
     <path d='M0,0 L0,100 100,0z' id='yp-10-1' />
     <path d='M0,100 L100,100 100,0z' id='yp-10-2' />
   </svg>
 </div>
-      <div className=" items-start text-button-1  flex flex-col gap-0 p-2">
+      <div className=" items-start text-button-1">
         <div ><b>Yellow-Pantone/10%</b>
         </div>
         <div >#F9E1001A
         </div>
-        <div >rgba(249, 225, 0, 0.1)
+        <div >rgba(249,225,0,0.1)
         </div>
-        <div >hsla(54, 100, 49, 0.1)
+        <div >hsla(54,100,49,0.1)
         </div>
         
       </div>
@@ -332,7 +332,7 @@ const ColoresDisplay = () => {
     <h5 className=' text-heading-5 '>Azules</h5>
     <p>Los azules son refrescantes, producen armonía y facilitan la lectura. Utilizamos el color azul “Ocean Blue” para acciones, como botones, links, selectores y texto.</p>
 
-    <div className="flex flex-row flex-wrap space-evenly">
+    <div style={{gridTemplateColumns: "1fr 1fr 1fr", gap: "2%"}} className="grid">
     <div className="card-paleta flex flex-col ">
       <div style={{backgroundColor: "#090622"}} className=" color-card flex flex-col items-center justify-center font-semibold">
         <h5 className=" text-button-1 text-color-grayscale-7 ">B900</h5>
@@ -464,7 +464,7 @@ const ColoresDisplay = () => {
     <h5 className=' text-heading-5 '>Rosas</h5>
     <p>Utilizamos los colores rosados y fucsias para generar impacto y resaltar textos y componentes, también utilizamos los colores rosados en fondos.</p>
 
-    <div className="flex flex-row flex-wrap space-evenly">
+    <div style={{gridTemplateColumns: "1fr 1fr 1fr", gap: "2%"}} className="grid">
     <div className="card-paleta flex flex-col ">
       <div style={{backgroundColor: "#471E4D"}} className=" color-card flex flex-col items-center justify-center font-semibold">
         <h5 className=" text-button-1 text-color-grayscale-7 ">P900</h5>
@@ -596,7 +596,7 @@ const ColoresDisplay = () => {
 
     <h5 className=' text-heading-5 '>Amarillos</h5>
     <p>El color amarillo representa vitalidad y nos permite crear armonía, es un color complementario que utilizamos en textos y fondos para destacar acciones.</p>
-    <div className="flex flex-row flex-wrap space-evenly">
+    <div style={{gridTemplateColumns: "1fr 1fr 1fr", gap: "2%"}} className="grid">
     <div className="card-paleta flex flex-col ">
       <div style={{backgroundColor: "#80780F"}} className=" color-card flex flex-col items-center justify-center font-semibold">
         <h5 className=" text-button-1 text-color-grayscale-7 ">Y900</h5>
@@ -731,7 +731,7 @@ const ColoresDisplay = () => {
     <h5 className=' text-heading-5 '>Verdes</h5>
     <p>El color verde representa energía, positivismo y vitalidad. Utilizamos el color verde para denotar procesos de éxito.</p>
 
-    <div className="flex flex-row flex-wrap space-evenly">
+    <div style={{gridTemplateColumns: "1fr 1fr 1fr", gap: "2%"}} className="grid">
     <div className="card-paleta flex flex-col ">
       <div style={{backgroundColor: "#38A57E"}} className=" color-card flex flex-col items-center justify-center font-semibold">
         <h5 className=" text-button-1 text-color-grayscale-7 ">G500</h5>
@@ -779,7 +779,7 @@ const ColoresDisplay = () => {
     <h5 className=' text-heading-5 '>Naranja</h5>
     <p>Nuestro color naranja es de tonalidad clara y vibrante, es difícil pasarlo desapercibido. En Xtrim lo usamos en alertas.</p>
 
-    <div className="flex flex-row flex-wrap space-evenly">
+    <div style={{gridTemplateColumns: "1fr 1fr 1fr", gap: "2%"}} className="grid">
     <div className="card-paleta flex flex-col ">
       <div style={{backgroundColor: "#F9B100"}} className=" color-card flex flex-col items-center justify-center font-semibold">
         <h5 className=" text-button-1 text-color-grayscale-1 ">H500</h5>
@@ -827,7 +827,7 @@ const ColoresDisplay = () => {
     <h5 className=' text-heading-5 '>Rojo</h5>
     <p>Es un color que llama la atención, utilizamos el color rojo para denotar procesos erróneos.</p>
 
-    <div className="flex flex-row flex-wrap space-evenly">
+    <div style={{gridTemplateColumns: "1fr 1fr 1fr", gap: "2%"}} className="grid">
     <div className="card-paleta flex flex-col ">
       <div style={{backgroundColor: "#BD033B"}} className=" color-card flex flex-col items-center justify-center font-semibold">
         <h5 className=" text-button-1 text-color-grayscale-7 ">R500</h5>
@@ -874,7 +874,7 @@ const ColoresDisplay = () => {
 
     <h5 style={{fontSize: 31, fontWeight: 500}}>Colores Neutrales</h5>
     <p>Dentro de esta categoría de colores se hallan el negro, el gris, el blanco y el beige, a su vez, estos se dividen en fríos y cálidos.</p>
-    <div className="flex flex-row flex-wrap justify-start gap-1">
+    <div style={{gridTemplateColumns: "33% 33% ", gap: "2%"}} className="grid">
     <div style={{backgroundColor: "#222D44"}} className="card-paleta flex flex-col ">
       <div className=" color-card flex flex-col items-center justify-center font-semibold">
         <h5 className=" text-button-1 text-color-grayscale-7 ">Neutral</h5>
@@ -882,7 +882,7 @@ const ColoresDisplay = () => {
         <h5 className=" text-button-1 text-color-grayscale-7 ">Space Cadet</h5>
         
       </div>
-      <div className="background-grayscale-5 items-center justify-center text-button-1 color-card flex flex-col gap-1 p-2">
+      <div className="background-grayscale-5 justify-center text-button-1 flex flex-col gap-1 p-2">
         <div >HEX: 222D44
         </div>
         <div >RGB: 34, 45, 68
@@ -897,7 +897,7 @@ const ColoresDisplay = () => {
         <h5 className=" text-button-1 text-color-grayscale-1 ">Ligth</h5>
         
       </div>
-      <div className="background-grayscale-5 items-center justify-center text-button-1 color-card flex flex-col gap-1 p-2">
+      <div className="background-grayscale-5 justify-center text-button-1 flex flex-col gap-1 p-2 ">
         <div >HEX: FFFFFF
         </div>
         <div >RGB: 255, 255, 255
@@ -908,14 +908,14 @@ const ColoresDisplay = () => {
 
     </div>
     <img
-                  alt="..."
-                  src= {Grayscale}
-                  className="w-full align-middle "
-                />
+      alt="..."
+      src= {Grayscale}
+      className="w-full align-middle "
+    />
 <h5 className=' text-heading-5 '>Neutros Oscuros</h5>
     <p>Los neutros oscuros se ajustan a colores con tonos similares, los utilizamos en fondos menos llamativos, se combinan con otros colores fríos.</p>
 
-<div className="flex flex-row flex-wrap space-evenly">
+<div style={{gridTemplateColumns: "1fr 1fr 1fr", gap: "2%"}} className="grid">
 <div className="card-paleta flex flex-col ">
   <div style={{backgroundColor: "#222D44"}} className=" color-card flex flex-col items-center justify-center font-semibold">
     <h5 className=" text-button-1 text-color-grayscale-7 ">N900</h5>
@@ -976,7 +976,7 @@ const ColoresDisplay = () => {
 <h5 className=' text-heading-5 '>Neutros Medios</h5>
     <p>Los neutros medios nos permiten crear sombra y contraste, pero debemos evitar usarlos como fondos o escribir sobre ellos porque tienen poca legibilidad.</p>
 
-<div className="flex flex-row flex-wrap space-evenly">
+<div style={{gridTemplateColumns: "1fr 1fr 1fr", gap: "2%"}} className="grid">
 <div className="card-paleta flex flex-col ">
   <div style={{backgroundColor: "#828894"}} className=" color-card flex flex-col items-center justify-center font-semibold">
     <h5 className=" text-button-1 text-color-grayscale-7 ">N500</h5>
@@ -1025,7 +1025,7 @@ const ColoresDisplay = () => {
     <p>Usamos los neutros claros en fondos, en texto, en interacciones e ilustraciones. Los neutros claros permiten que un diseño se vea impecable y delicado.</p>
 
 
-<div className="flex flex-row flex-wrap space-evenly">
+<div style={{gridTemplateColumns: "1fr 1fr 1fr", gap: "2%"}} className="grid">
 <div className="card-paleta flex flex-col ">
   <div style={{backgroundColor: "#D7DAE1"}} className=" color-card flex flex-col items-center justify-center font-semibold">
     <h5 className=" text-button-1 text-color-grayscale-1 ">N200</h5>
@@ -1084,14 +1084,14 @@ const ColoresDisplay = () => {
 
 </div>
 <h5 className=' text-heading-5 '>Linear Gradients</h5>
-<div className='flex flex-col'>
-<div className="flex flex-row flex-wrap space-evenly ">
+
+<div style={{gridTemplateColumns: "1fr 1fr 1fr", gap: "2%"}} className="grid ">
 <div className="card-paleta flex flex-col ">
   <div className="background-gradient-1 color-card flex flex-col items-center justify-center font-semibold">
     
   </div>
   <div className="background-grayscale-5 justify-center text-button-1  flex flex-col gap-1 p-3 items-center">
-    <div >Gradient 1 - Corporative
+    <div >Corporative
     </div>
     
   </div>
@@ -1102,7 +1102,7 @@ const ColoresDisplay = () => {
     
   </div>
   <div className="background-grayscale-5 items-center justify-center text-button-1  flex flex-col gap-1 p-3">
-    <div >Gradient 2 - Outstanding
+    <div >Outstanding
     </div>
     
   </div>
@@ -1112,20 +1112,19 @@ const ColoresDisplay = () => {
     
   </div>
   <div className="background-grayscale-5 items-center justify-center text-button-1  flex flex-col gap-1 p-3">
-    <div >Gradient 3 - Button
+    <div >Button
     </div>
     
   </div>
 </div>
-</div>
-<div style={{gap: ".5vw"}} className="flex flex-row">
+
 <div className="card-paleta flex flex-col ">
   <div className=" background-gradient-4 color-card-border flex flex-col items-center justify-center font-semibold">
     
   </div>
   <div className="background-grayscale-5 items-center justify-center text-button-1 flex flex-col gap-1 p-3">
-    <small >Gradient 4 - Decorative - Opacity
-    </small>
+    <div >Decorative - Opacity
+    </div>
 
     
   </div>
@@ -1135,14 +1134,16 @@ const ColoresDisplay = () => {
     
   </div>
   <div className="background-grayscale-5 items-center justify-center text-button-1 flex flex-col gap-1 p-3">
-    <small >Gradient 5 - Decorative - Solid
-    </small>
+    <div >Solid
+    </div>
 
     
   </div>
 </div>
+
 </div>
-</div>
+
+
 
 <h5 className=' text-heading-5 '>Semantic Colors</h5>
 <div className='flex flex-row gap-5'>

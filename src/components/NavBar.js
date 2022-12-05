@@ -38,7 +38,7 @@ const NavBar = () => {
 
   return (
     
-    <div className="nav-container no-margin z-3 nav-sticky w-full">
+    <div style={{height:"20%"}} className="nav-container no-margin z-3 nav-sticky w-full">
       <Navbar className="bg-navbar " sticky="top" light expand="md">
       {/* {isAuthenticated && (
         <MuiSidebar />
@@ -60,7 +60,7 @@ const NavBar = () => {
                     tag={RouterNavLink}
                     to="/marca"
                     exact
-                    activeClassName=" text-navbar"
+                    activeClassName="text-navbar-focused"
                     className="text-navbar"
                   >
                     Marca
@@ -71,7 +71,7 @@ const NavBar = () => {
                   tag={RouterNavLink}
                   to="/contenido"
                   exact
-                  activeClassName=" text-navbar"
+                  activeClassName="text-navbar-focused"
                   className="text-navbar"
                 >
                   Contenido
@@ -82,7 +82,7 @@ const NavBar = () => {
                   tag={RouterNavLink}
                   to="/guidelines"
                   exact
-                  activeClassName=" text-navbar"
+                  activeClassName=" text-navbar-focused"
                   className="text-navbar"
                 >
                   Guidelines
@@ -93,7 +93,7 @@ const NavBar = () => {
                   tag={RouterNavLink}
                   to="/componentes"
                   exact
-                  activeClassName=" text-navbar"
+                  activeClassName=" text-navbar-focused"
                   className="text-navbar"
                 >
                   Componentes

@@ -1,15 +1,9 @@
 import React from "react";
-import logo from "../assets/logo.svg";
 import {FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faIcons, faPalette, faPenNib, faTypewriter, faArrowRight, facircleuser, faUserCircle, faRocket, faBullseyeArrow, faHandHeart, faHeart, faBullhorn, faEdit, faBolt, faT, faCircleStar, faText } from "@fortawesome/pro-light-svg-icons";
 import { RadioGroup, FormControl, Radio, FormGroup, FormControlLabel, Checkbox, FormLabel } from "@mui/material";
-import { RadioButtonChecked } from "@mui/icons-material";
-import { motion } from "framer-motion"
-import { Router, Route, Switch, NavLink } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
 import { NavLink as RouterNavLink } from "react-router-dom";
-
-
-
 
 const Hero = () => (
   <>
@@ -147,7 +141,7 @@ const Hero = () => (
       </section>
       <section className=" mb-24">
         <div className="margin-hero pt-16">
-            <div style={{gridTemplateColumns: "auto auto auto auto"}} className="grid gap-3">
+            <div style={{gridTemplateColumns: "33.33333333333333% auto auto auto", columnGap:"1%", rowGap:"2%"}} className="grid">
                 
                   <div className=" max-w-400-px">
               <h2 style={{fontSize: "31px"}} className=" font-semibold ">

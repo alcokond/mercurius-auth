@@ -89,7 +89,7 @@ const ColoresDisplay = () => {
 
     <div style={{gridTemplateColumns: "1fr 1fr 1fr auto", gap: "2%"}} className='grid mb-3'>
     <div className=" ">
-    <div class='bg'>
+    <div className='bg'>
   <svg viewBox='0 0 100 100' preserveAspectRatio='none'>
     <path d='M0,0 L0,100 100,0z' id='ob-60-1' />
     <path d='M0,100 L100,100 100,0z' id='ob-60-2' />
@@ -108,7 +108,7 @@ const ColoresDisplay = () => {
       </div>
     </div>
     <div className=" ">
-    <div class='bg'>
+    <div className='bg'>
   <svg viewBox='0 0 100 100' preserveAspectRatio='none'>
     <path d='M0,0 L0,100 100,0z' id='ob-40-1' />
     <path d='M0,100 L100,100 100,0z' id='ob-40-2' />
@@ -127,7 +127,7 @@ const ColoresDisplay = () => {
       </div>
     </div>
     <div className=" ">
-    <div class='bg'>
+    <div className='bg'>
   <svg viewBox='0 0 100 100' preserveAspectRatio='none'>
     <path d='M0,0 L0,100 100,0z' id='ob-20-1' />
     <path d='M0,100 L100,100 100,0z' id='ob-20-2' />
@@ -146,7 +146,7 @@ const ColoresDisplay = () => {
       </div>
     </div>
     <div className=" ">
-    <div class='bg'>
+    <div className='bg'>
   <svg viewBox='0 0 100 100' preserveAspectRatio='none'>
     <path d='M0,0 L0,100 100,0z' id='ob-10-1' />
     <path d='M0,100 L100,100 100,0z' id='ob-10-2' />
@@ -165,7 +165,7 @@ const ColoresDisplay = () => {
       </div>
     </div>
     <div className=" ">
-    <div class='bg'>
+    <div className='bg'>
   <svg viewBox='0 0 100 100' preserveAspectRatio='none'>
     <path d='M0,0 L0,100 100,0z' id='ws-60-1' />
     <path d='M0,100 L100,100 100,0z' id='ws-60-2' />
@@ -184,7 +184,7 @@ const ColoresDisplay = () => {
       </div>
     </div>
     <div className=" ">
-    <div class='bg'>
+    <div className='bg'>
   <svg viewBox='0 0 100 100' preserveAspectRatio='none'>
     <path d='M0,0 L0,100 100,0z' id='ws-40-1' />
     <path d='M0,100 L100,100 100,0z' id='ws-40-2' />
@@ -203,7 +203,7 @@ const ColoresDisplay = () => {
       </div>
     </div>
     <div className=" ">
-    <div class='bg'>
+    <div className='bg'>
   <svg viewBox='0 0 100 100' preserveAspectRatio='none'>
     <path d='M0,0 L0,100 100,0z' id='ws-20-1' />
     <path d='M0,100 L100,100 100,0z' id='ws-20-2' />
@@ -222,7 +222,7 @@ const ColoresDisplay = () => {
       </div>
     </div>
     <div className=" ">
-    <div class='bg'>
+    <div className='bg'>
   <svg viewBox='0 0 100 100' preserveAspectRatio='none'>
     <path d='M0,0 L0,100 100,0z' id='ws-10-1' />
     <path d='M0,100 L100,100 100,0z' id='ws-10-2' />
@@ -241,7 +241,7 @@ const ColoresDisplay = () => {
       </div>
     </div>
     <div className=" ">
-    <div class='bg'>
+    <div className='bg'>
   <svg viewBox='0 0 100 100' preserveAspectRatio='none'>
     <path d='M0,0 L0,100 100,0z' id='yp-60-1' />
     <path d='M0,100 L100,100 100,0z' id='yp-60-2' />
@@ -260,7 +260,7 @@ const ColoresDisplay = () => {
       </div>
     </div>
     <div className=" ">
-    <div class='bg'>
+    <div className='bg'>
   <svg viewBox='0 0 100 100' preserveAspectRatio='none'>
     <path d='M0,0 L0,100 100,0z' id='yp-40-1' />
     <path d='M0,100 L100,100 100,0z' id='yp-40-2' />
@@ -279,7 +279,7 @@ const ColoresDisplay = () => {
       </div>
     </div>
     <div className=" ">
-    <div class='bg'>
+    <div className='bg'>
   <svg viewBox='0 0 100 100' preserveAspectRatio='none'>
     <path d='M0,0 L0,100 100,0z' id='yp-20-1' />
     <path d='M0,100 L100,100 100,0z' id='yp-20-2' />
@@ -298,7 +298,7 @@ const ColoresDisplay = () => {
       </div>
     </div>
     <div className=" ">
-    <div class='bg'>
+    <div className='bg'>
   <svg viewBox='0 0 100 100' preserveAspectRatio='none'>
     <path d='M0,0 L0,100 100,0z' id='yp-10-1' />
     <path d='M0,100 L100,100 100,0z' id='yp-10-2' />

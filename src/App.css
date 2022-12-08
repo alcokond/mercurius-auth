@@ -990,7 +990,7 @@ body.menu-toggled > .meta-link > span {
 }
 
 .size-option:hover{
-  color:#5F57B6;
+  color:#9890eb;
 }
 
 .grid-container-marca {
@@ -1006,3 +1006,8 @@ body.menu-toggled > .meta-link > span {
 .header { grid-area: header; }
 .one { grid-area: one; }
 .two { grid-area: two; }
+
+.active-sidebar{
+  font-weight: 700 !important;
+  color: #221987 !important;
+}

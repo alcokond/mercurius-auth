@@ -20,7 +20,7 @@ const ColoresPrincipal = () => (
     <div id="colores" className="margin-sidebar size-colores background-grayscale-6">
     <div className="padding-paleta">
     <h6 className="text-overline">Guidelines</h6>
-    <h3 style={{fontSize:"36px", fontWeight:"700"}} className=" mb-3">Colores</h3>
+    <h3 style={{fontSize:"36px", fontWeight:"700", color:"#221987"}} className=" mb-3">Colores</h3>
     <p className="text-button-1">Nuestros colores en conjunto representan la identidad de Xtrim. Usamos colores que reflejan el trabajo que estamos construyendo como marca. Elegimos colores que permiten a los usuarios acceder a procesos fáciles y entendibles, nuestros colores deben actuar como guías para el usuario resaltando la información importante.</p>
     </div>
     </div>

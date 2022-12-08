@@ -21,7 +21,7 @@ const MisionPrincipal = () => (
     <div id="colores" className=" background-grayscale-6">
     <div className="padding-marca">
     <h6 className="text-overline">Marca</h6>
-    <h3 style={{fontSize:"36px", fontWeight:"700", color:"#221987"}} className="mb-2">Objetivo</h3>
+    <h3 style={{fontSize:"36px", fontWeight:"700", color:"#221987"}} className="mb-3">Objetivo</h3>
     <p className="text-button-1 text-justify">Otorgar experiencias memorables en comunicación e interacción.<br></br><br></br>Diseñamos experiencias que permitan a los usuarios sentirse seguros al realizar procesos digitales e interactivos. </p>
     </div>
     </div>

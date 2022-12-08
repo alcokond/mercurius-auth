@@ -55,7 +55,7 @@ export default function Sidebar() {
                 <NavLink
                 to="/marca"
                 exact
-                activeClassName="router-link-exact-active" 
+                activeClassName="active-sidebar" 
                 style={{ textDecoration: 'none' }}
                 >Marca</NavLink>
               </ListItemText>
@@ -67,7 +67,7 @@ export default function Sidebar() {
                       tag={RouterNavLink}
                       to="/objetivo"
                       exact
-                      activeClassName="router-link-exact-active" 
+                      activeClassName="active-sidebar" 
                       style={{ textDecoration: 'none' }} 
                       >
                       <ListItemButton sx={{ pl: 4 }} >
@@ -80,7 +80,7 @@ export default function Sidebar() {
                       tag={RouterNavLink}
                       to="/promesa"
                       exact
-                      activeClassName="router-link-exact-active" 
+                      activeClassName="active-sidebar" 
                       style={{ textDecoration: 'none' }} 
                       >
                       <ListItemButton sx={{ pl: 4 }} >
@@ -93,7 +93,7 @@ export default function Sidebar() {
                       tag={RouterNavLink}
                       to="/personalidad"
                       exact
-                      activeClassName="router-link-exact-active" 
+                      activeClassName="active-sidebar" 
                       style={{ textDecoration: 'none' }} 
                       >
                       <ListItemButton sx={{ pl: 4 }} >
@@ -108,9 +108,16 @@ export default function Sidebar() {
                   </List>
                 </Collapse>
               <Divider />
-              <ListItemButton onClick={handleClick2}>
-              <ListItemText primary="Guidelines" />
-              {open2 ? <ExpandLess /> : <ExpandMore />}
+              <ListItemButton >
+              <ListItemText>
+                <NavLink
+                to="/guidelines"
+                exact
+                activeClassName="active-sidebar" 
+                style={{ textDecoration: 'none' }}
+                >Guidelines</NavLink>
+              </ListItemText>
+              {open2 ? <ExpandLess onClick={handleClick2} /> : <ExpandMore onClick={handleClick2} />}
               </ListItemButton>
             <Collapse in={open2} timeout="auto" unmountOnExit>
                   <List component="div" disablePadding>
@@ -119,7 +126,7 @@ export default function Sidebar() {
                       tag={RouterNavLink}
                       to="/colores"
                       exact
-                      activeClassName="router-link-exact-active" 
+                      activeClassName="active-sidebar" 
                       style={{ textDecoration: 'none' }} 
                       >
                       <ListItemButton sx={{ pl: 4 }} >
@@ -135,7 +142,7 @@ export default function Sidebar() {
                       tag={RouterNavLink}
                       to="/tipografia"
                       exact
-                      activeClassName="router-link-exact-active" 
+                      activeClassName="active-sidebar" 
                       style={{ textDecoration: 'none' }} 
                       >
                       <ListItemButton sx={{ pl: 4 }} >

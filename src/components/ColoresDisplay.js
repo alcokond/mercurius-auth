@@ -180,7 +180,6 @@ const ColoresDisplay = () => {
         </div>
         <div >hsla(336,100,52,0.6)
         </div>
-        
       </div>
     </div>
     <div className=" ">
@@ -325,10 +324,10 @@ const ColoresDisplay = () => {
     <h5 className=' text-heading-5 '>Tintes y sombras</h5>
     <p>Esta paleta está constituida desde colores oscuros, colores corporativos, hasta los colores claros. Utilizamos los tintes y sombras en imputs y botones.</p>
     <img
-                  alt="..."
-                  src= {grid}
-                  className="w-full align-middle"
-                />
+      alt="..."
+      src= {grid}
+      className="w-full align-middle"
+    />
     <h5 className=' text-heading-5 '>Azules</h5>
     <p>Los azules son refrescantes, producen armonía y facilitan la lectura. Utilizamos el color azul “Ocean Blue” para acciones, como botones, links, selectores y texto.</p>
 

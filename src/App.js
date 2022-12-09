@@ -30,6 +30,7 @@ import Sidebar from "./components/Sidebar";
 import Guia from "./views/Guia";
 import { Fragment } from "react";
 import Escritura from "./views/Escritura";
+import Iconografia from "./views/Iconografia";
 
 
 initFontAwesome();
@@ -77,6 +78,7 @@ const App = () => {
             <Route path="/contenido" component={Contenido} />
             <Route path="/guia" component={Guia} />
             <Route path="/escritura" component={Escritura} />
+            <Route path="/iconografia" component={Iconografia} />
             </Fragment>
             )}
           </Switch>

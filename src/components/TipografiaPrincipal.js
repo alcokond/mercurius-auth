@@ -13,6 +13,7 @@ const TipografiaPrincipal = () => (
     </div>
     </div>
     <div className="margin-sidebar padding-marca">
+        <div style={{fontSize: "31px", fontWeight: 600, }}>Estilos de fuente</div>
         
         <div style={{gridTemplateColumns:"1fr 1fr"}} className="grid gap-4">
             
@@ -72,26 +73,13 @@ const TipografiaPrincipal = () => (
             <div style={{fontWeight: "500", fontSize: "12.8px"}} >Caption</div>
             <div style={{fontSize: "10.24px", textAlign: "end"}}>10.24</div>
             <div style={{fontWeight: "400", fontSize: "10.24px"}} >OVERLINE</div>
-            
-
-            
-            <div id="sizes" className=" flex-col">
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            </div>
+    
             </div>
             </div>
             <div className="flex flex-col"></div>
         </div>
+
+        <div>Usamos la fuente Montserrat, en todos los procesos relacionados con Xtrim. Elegimos ser leales a nuestro tono y voz. Nos aseguramos de utilizar una escritura que sea legible para todos los usuarios.</div>
     </div>
       
   

@@ -2347,8 +2347,48 @@ line-height: 24px;
 .button-square:hover::before {
   opacity: 1;
 }
+.button-square-neutral{
+  color: var(--grayscale-7);
+  border:0;
+  padding: 8px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  min-width: 40px;
+  min-height: 40px;
+  background: #B1B5BD;
+  box-shadow: 0px 4px 4px rgba(185, 190, 203, 0.2);
+  border-radius: 8px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: var( --semibold);
+  font-size: 20px;
+  text-align: center;
+}
 
-.button-square:disabled{
+.button-square-neutral::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #6A7180;;
+  z-index: -1;
+  transition: opacity 0.5s linear;
+  opacity: 0;
+}
+
+.button-square-neutral:hover::before {
+  opacity: 1;
+}
+
+.button-square-neutral:disabled{
   pointer-events: none;
   color: var(--grayscale-7);
   border:0;
@@ -2363,7 +2403,7 @@ line-height: 24px;
   gap: 16px;
   min-width: 40px;
   min-height: 40px;
-  background: var(--neutral-light);
+  background: #EBECF0;
   box-shadow: 0px 0px 0px;
   border-radius: 8px;
   font-family: 'Montserrat';
@@ -2393,4 +2433,34 @@ line-height: 24px;
   gap: 8px;
   color: #4A3CDB;
   font-size: 20px;
+}
+
+#counter {
+  display: flex;
+  align-items: center;
+}
+
+#number {
+  width: 50px;
+  text-align: center;
+}
+
+.button-contador {
+  width: 30px;
+  height: 30px;
+  background-color: #eee;
+  border: none;
+  cursor: pointer;
+}
+
+.button-contador:active {
+  background-color: #ddd;
+}
+
+#decrement {
+  margin-right: 10px;
+}
+
+#increment {
+  margin-left: 10px;
 }

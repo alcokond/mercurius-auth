@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useAuth0, withAuthenticationRequired } from "@auth0/auth0-react";
 import Loading from "../components/Loading";
 import CodeEditor from '@uiw/react-textarea-code-editor';
+import CodeBox from "../components/CodeBox";
 import MercButton1 from "../components/input/MercButton1";
 import MercButton2 from "../components/input/MercButton2";
 import MercButton3 from "../components/input/MercButton3";
@@ -15,7 +16,18 @@ import { faArrowLeft, faCode, faPuzzlePiece } from "@fortawesome/pro-light-svg-i
 
 
 export const Componentes = () => {
+  const decrementButton = document.getElementById('decrement');
+  const incrementButton = document.getElementById('increment');
+  const numberInput = document.getElementById('number');
 
+  decrementButton.addEventListener('click', () => {
+    numberInput.value = Math.max(0, parseInt(numberInput.value) - 1);
+  });
+
+  incrementButton.addEventListener('click', () => {
+    numberInput.value = parseInt(numberInput.value) + 1;
+  });
+  
   const [code, setCode] = React.useState(
     `function add(a, b) {\n  return a + b;\n}`
   );
@@ -30,6 +42,7 @@ export const Componentes = () => {
   const [isShownPink, setIsShownPink] = useState(false);
   const [isShownPinkSecondary, setIsShownPinkSecondary] = useState(false);
   const [isShownSquare, setIsShownSquare] = useState(false);
+  const [isShownSquareNeutral, setIsShownSquareNeutral] = useState(false);
 
   const [isMostrarPrimary1, setIsMostrarPrimary1] = useState(true);
   const [isMostrarSecondary1, setIsMostrarSecondary1] = useState(true);
@@ -315,6 +328,10 @@ export const Componentes = () => {
   };
   const handleClickSquare = event => {
     setIsShownSquare(current => !current);
+
+  };
+  const handleClickSquareNeutral = event => {
+    setIsShownSquareNeutral(current => !current);
 
   };
  
@@ -978,6 +995,83 @@ export const Componentes = () => {
         </div>
     </div> } 
     </div>
+    <div className=" mb-5">
+    <h5 className=' text-heading-5 mb-3'>Boton Square Neutral</h5>
+    
+    {!isShownSquareNeutral && <> 
+    <div className="flex flex-col ">
+    <div style={{alignSelf: "flex-end"}}>
+    <button className=" text-color-primary text-weight-semibold" onClick={handleClickSquareNeutral}>Ver Código <FontAwesomeIcon icon={faCode} /></button>
+    </div>
+    <div className="component-content-full flex">
+        <div className="mx-auto my-auto">
+          <button className="button-square-neutral"><FontAwesomeIcon icon={faArrowLeft } /></button>            
+        </div>
+    </div>
+    </div>
+    
+     </>  }
+     {isShownSquareNeutral &&
+    <div className="flex flex-col ">
+    <div style={{alignSelf: "flex-end"}}>
+    <button className=" text-color-primary text-weight-semibold" onClick={handleClickSquareNeutral}>Ver Componente <FontAwesomeIcon icon={faPuzzlePiece} /></button> 
+    </div>
+    <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
+     <CopyBlock 
+          language="html"
+          text={`<button class="button-square-neutral"></button>`}
+          codeBlock
+          theme={dracula}
+          showLineNumbers={false}
+        
+        />
+        </div>
+    </div> } 
+    </div>
+    <div className=" mb-5">
+    <h5 className=' text-heading-5 mb-3'>Contador</h5>
+    
+    {!isShownContador && <> 
+    <div className="flex flex-col ">
+    <div style={{alignSelf: "flex-end"}}>
+    <button className=" text-color-primary text-weight-semibold" onClick={handleClickContador}>Ver Código <FontAwesomeIcon icon={faCode} /></button>
+    </div>
+    <div className="component-content-full flex">
+        <div className="mx-auto my-auto">
+        <div id="counter">
+          <button className="button-contador" id="decrement">-</button>
+          <input type="number" value="0" id="number" />
+          <button className="button-contador" id="increment">+</button>
+        </div>           
+        </div>
+    </div>
+    </div>
+    
+     </>  }
+     {isShownContador &&
+    <div className="flex flex-col ">
+    <div style={{alignSelf: "flex-end"}}>
+    <button className=" text-color-primary text-weight-semibold" onClick={handleClickContador}>Ver Componente <FontAwesomeIcon icon={faPuzzlePiece} /></button> 
+    </div>
+    <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
+     <CopyBlock 
+          language="html"
+          text={`<button class="contador"></button>`}
+          codeBlock
+          theme={dracula}
+          showLineNumbers={false}
+        
+        />
+        </div>
+    </div> } 
+    </div>
+    
+    {/* <div className="mb-5">
+    <CodeBox
+      component={<MercButton1 />}
+      htmlCode="<div>My component</div>"
+    />
+    </div> */}
 </div>    
     </>
   );

@@ -19,7 +19,7 @@ const IconografiaPrincipal = () => (
     </div>
     </div>
     
-    <div className=" padding-marca">
+    <div className="padding-marca">
         <div className="mb-3">El uso de iconos facilita la comprensión y nos permite utilizar una cantidad menor de texto, además, los iconos nos permiten llamar la atención de los usuarios sobre una acción o interacción. </div>        
         <div style={{justifyContent: "center", padding:"5%", gap:"10%", marginLeft:"20%", marginRight:"20%"}} className="flex flex-row background-grayscale-4 mb-3">
             <div style={{fontSize: "48px"}}><i class="fak fa-camera-dome-outline"></i></div>
@@ -27,6 +27,7 @@ const IconografiaPrincipal = () => (
 
         </div>
         <div>Nuestros iconos son ligeros, poseen variaciones que les permiten desempeñar funciones de acuerdo a la acción solicitada, se encuentran ordenados según las acciones que se llevaran a cabo. Puedes encontrar nuestros iconos en nuestra librería de Font Awesome.</div>
+        <div style={{fontSize: 31, fontWeight: 600, }}>Tamaño</div>
     </div>
     
 

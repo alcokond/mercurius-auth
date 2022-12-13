@@ -151,6 +151,20 @@ export default function Sidebar() {
                         
                       </ListItemButton>
                     </NavLink>
+
+                    <NavLink
+                      tag={RouterNavLink}
+                      to="/iconografia"
+                      exact
+                      activeClassName="active-sidebar" 
+                      style={{ textDecoration: 'none' }} 
+                      >
+                      <ListItemButton sx={{ pl: 4 }} >
+                      
+                        <ListItemText primary='Iconografía' />
+                        
+                      </ListItemButton>
+                    </NavLink>
                     
                     
                     

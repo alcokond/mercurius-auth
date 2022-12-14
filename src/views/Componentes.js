@@ -12,21 +12,22 @@ import PermanentDrawerLeft from "../components/PermanentDrawerLeft.js";
 import { CopyBlock, dracula } from "react-code-blocks";
 import TopBar  from "../components/TopBar"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft, faCode, faPuzzlePiece } from "@fortawesome/pro-light-svg-icons";
+import { faArrowLeft, faCode, faMinus, faPlus, faPuzzlePiece } from "@fortawesome/pro-light-svg-icons";
 
 
 export const Componentes = () => {
-  const decrementButton = document.getElementById('decrement');
-  const incrementButton = document.getElementById('increment');
-  const numberInput = document.getElementById('number');
+  function incrementCounter() {
+    document.getElementById("number").value ++;
+  }
 
-  decrementButton.addEventListener('click', () => {
-    numberInput.value = Math.max(0, parseInt(numberInput.value) - 1);
-  });
+  function decrementCounter() {
+    if(document.getElementById("number").value>0){
+    document.getElementById("number").value --;
+    }
+    console.log(document.getElementById("number").value);
+  }
 
-  incrementButton.addEventListener('click', () => {
-    numberInput.value = parseInt(numberInput.value) + 1;
-  });
+
   
   const [code, setCode] = React.useState(
     `function add(a, b) {\n  return a + b;\n}`
@@ -43,6 +44,7 @@ export const Componentes = () => {
   const [isShownPinkSecondary, setIsShownPinkSecondary] = useState(false);
   const [isShownSquare, setIsShownSquare] = useState(false);
   const [isShownSquareNeutral, setIsShownSquareNeutral] = useState(false);
+  const [isShownContador, setIsShownContador] = useState(false);
 
   const [isMostrarPrimary1, setIsMostrarPrimary1] = useState(true);
   const [isMostrarSecondary1, setIsMostrarSecondary1] = useState(true);
@@ -332,6 +334,10 @@ export const Componentes = () => {
   };
   const handleClickSquareNeutral = event => {
     setIsShownSquareNeutral(current => !current);
+
+  };
+  const handleClickContador = event => {
+    setIsShownContador(current => !current);
 
   };
  
@@ -1038,11 +1044,11 @@ export const Componentes = () => {
     </div>
     <div className="component-content-full flex">
         <div className="mx-auto my-auto">
-        <div id="counter">
-          <button className="button-contador" id="decrement">-</button>
-          <input type="number" value="0" id="number" />
-          <button className="button-contador" id="increment">+</button>
-        </div>           
+        <div className="counter">
+          <button style={{color: "#4A3CDB"}} onClick={decrementCounter}><FontAwesomeIcon icon={faMinus} /></button>
+          <input value="0" className="counter-number" id="number" readOnly />
+          <button style={{color: "#4A3CDB"}} onClick={incrementCounter}><FontAwesomeIcon icon={faPlus} /></button>
+        </div>
         </div>
     </div>
     </div>
@@ -1051,12 +1057,16 @@ export const Componentes = () => {
      {isShownContador &&
     <div className="flex flex-col ">
     <div style={{alignSelf: "flex-end"}}>
-    <button className=" text-color-primary text-weight-semibold" onClick={handleClickContador}>Ver Componente <FontAwesomeIcon icon={faPuzzlePiece} /></button> 
+    <button className="text-color-primary text-weight-semibold" onClick={handleClickContador}>Ver Componente <FontAwesomeIcon icon={faPuzzlePiece} /></button> 
     </div>
     <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
      <CopyBlock 
           language="html"
-          text={`<button class="contador"></button>`}
+          text={`<div className="counter">
+          <button style={{color: "#4A3CDB"}} onClick={decrementCounter()}><FontAwesomeIcon icon={faMinus} /></button>
+          <input value="0" className="counter-number" id="number" readOnly />
+          <button style={{color: "#4A3CDB"}} onClick={incrementCounter()}><i class="fak fa-plus"></i></button>
+        </div>`}
           codeBlock
           theme={dracula}
           showLineNumbers={false}

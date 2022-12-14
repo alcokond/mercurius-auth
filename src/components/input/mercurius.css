@@ -86,6 +86,10 @@
   --bold: 700;
 }
 
+input:focus {
+    outline: none;
+}
+
 
 .background-primary{
   background-color: var(--primary);
@@ -2435,32 +2439,27 @@ line-height: 24px;
   font-size: 20px;
 }
 
-#counter {
+.counter {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  background-color: #ffffff;
+  width: 150px;
+  padding: 8px;
+  border: 1.5px solid #B1B5BD;
+  border-radius: 8px;
 }
-
-#number {
-  width: 50px;
+ 
+.counter-number{
   text-align: center;
-}
-
-.button-contador {
-  width: 30px;
-  height: 30px;
-  background-color: #eee;
-  border: none;
-  cursor: pointer;
-}
-
-.button-contador:active {
-  background-color: #ddd;
-}
-
-#decrement {
-  margin-right: 10px;
-}
-
-#increment {
-  margin-left: 10px;
+  font-size: 20px;
+  width: 3ch;
+  padding: 0;
+  border: 0;
+  font-weight: 700;
+  color: #222D44;
+  background-color: inherit!important;
+  user-select: none!important;
+  margin-left: 1ch;
+  margin-right: 1ch;
 }

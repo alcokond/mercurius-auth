@@ -2463,3 +2463,7 @@ line-height: 24px;
   margin-left: 1ch;
   margin-right: 1ch;
 }
+
+.grayed{
+  color:#E5E3FA!important;
+}

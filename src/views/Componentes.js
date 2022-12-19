@@ -18,11 +18,18 @@ import { faArrowLeft, faCode, faMinus, faPlus, faPuzzlePiece } from "@fortawesom
 export const Componentes = () => {
   function incrementCounter() {
     document.getElementById("number").value ++;
+    if(document.getElementById("number").value>0){
+    document.getElementById("minus").classList.remove("grayed");
+    }
   }
 
   function decrementCounter() {
     if(document.getElementById("number").value>0){
     document.getElementById("number").value --;
+    
+    }
+    if (document.getElementById("number").value==0){
+    document.getElementById("minus").classList.add("grayed");
     }
     console.log(document.getElementById("number").value);
   }
@@ -1045,9 +1052,9 @@ export const Componentes = () => {
     <div className="component-content-full flex">
         <div className="mx-auto my-auto">
         <div className="counter">
-          <button style={{color: "#4A3CDB"}} onClick={decrementCounter}><FontAwesomeIcon icon={faMinus} /></button>
+          <button id="minus" style={{color: "#4A3CDB"}} onClick={decrementCounter}><FontAwesomeIcon icon={faMinus} /></button>
           <input value="0" className="counter-number" id="number" readOnly />
-          <button style={{color: "#4A3CDB"}} onClick={incrementCounter}><FontAwesomeIcon icon={faPlus} /></button>
+          <button id="plus" style={{color: "#4A3CDB"}} onClick={incrementCounter}><FontAwesomeIcon icon={faPlus} /></button>
         </div>
         </div>
     </div>
@@ -1062,11 +1069,30 @@ export const Componentes = () => {
     <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
      <CopyBlock 
           language="html"
-          text={`<div className="counter">
-          <button style={{color: "#4A3CDB"}} onClick={decrementCounter()}><FontAwesomeIcon icon={faMinus} /></button>
-          <input value="0" className="counter-number" id="number" readOnly />
-          <button style={{color: "#4A3CDB"}} onClick={incrementCounter()}><i class="fak fa-plus"></i></button>
-        </div>`}
+          text={`
+          <script>
+          function incrementCounter() {
+            document.getElementById("number").value ++;
+            if(document.getElementById("number").value>0){
+              document.getElementById("minus").classList.remove("grayed");
+            }
+          }
+
+          function decrementCounter() {
+            if(document.getElementById("number").value>0){
+              document.getElementById("number").value --;
+            }
+            if (document.getElementById("number").value==0){
+              document.getElementById("minus").classList.add("grayed");
+            }
+          }
+          </script>
+
+          <div className="counter">
+              <button style={{color: "#4A3CDB"}} onClick={decrementCounter()}><i class="fak fa-minus"></i></button>
+              <input value="0" class="counter-number" id="number" readonly>
+              <button style={{color: "#4A3CDB"}} onClick={incrementCounter()}><i class="fak fa-plus"></i></button>
+          </div>`}
           codeBlock
           theme={dracula}
           showLineNumbers={false}

@@ -52,6 +52,7 @@ export const Componentes = () => {
   const [isShownSquare, setIsShownSquare] = useState(false);
   const [isShownSquareNeutral, setIsShownSquareNeutral] = useState(false);
   const [isShownContador, setIsShownContador] = useState(false);
+  const [isShownTextarea1, setIsShownTextarea1] = useState(false);
 
   const [isMostrarPrimary1, setIsMostrarPrimary1] = useState(true);
   const [isMostrarSecondary1, setIsMostrarSecondary1] = useState(true);
@@ -345,6 +346,10 @@ export const Componentes = () => {
   };
   const handleClickContador = event => {
     setIsShownContador(current => !current);
+
+  };
+  const handleClickTextarea1 = event => {
+    setIsShownTextarea1(current => !current);
 
   };
  
@@ -1053,7 +1058,7 @@ export const Componentes = () => {
         <div className="mx-auto my-auto">
         <div className="counter">
           <button id="minus" style={{color: "#4A3CDB"}} onClick={decrementCounter}><FontAwesomeIcon icon={faMinus} /></button>
-          <input value="0" className="counter-number" id="number" readOnly />
+          <input value="1" className="counter-number" id="number" readOnly />
           <button id="plus" style={{color: "#4A3CDB"}} onClick={incrementCounter}><FontAwesomeIcon icon={faPlus} /></button>
         </div>
         </div>
@@ -1069,30 +1074,62 @@ export const Componentes = () => {
     <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
      <CopyBlock 
           language="html"
-          text={`
-          <script>
-          function incrementCounter() {
-            document.getElementById("number").value ++;
-            if(document.getElementById("number").value>0){
-              document.getElementById("minus").classList.remove("grayed");
-            }
-          }
+          text={`<script>
+function incrementCounter() {
+  document.getElementById("number").value ++;
+  if(document.getElementById("number").value>0){
+    document.getElementById("minus").classList.remove("grayed");
+  }
+}
 
-          function decrementCounter() {
-            if(document.getElementById("number").value>0){
-              document.getElementById("number").value --;
-            }
-            if (document.getElementById("number").value==0){
-              document.getElementById("minus").classList.add("grayed");
-            }
-          }
-          </script>
+function decrementCounter() {
+  if(document.getElementById("number").value>0){
+    document.getElementById("number").value --;
+  }
+  if (document.getElementById("number").value==0){
+    document.getElementById("minus").classList.add("grayed");
+  }
+}
+</script>
 
-          <div className="counter">
-              <button style={{color: "#4A3CDB"}} onClick={decrementCounter()}><i class="fak fa-minus"></i></button>
-              <input value="0" class="counter-number" id="number" readonly>
-              <button style={{color: "#4A3CDB"}} onClick={incrementCounter()}><i class="fak fa-plus"></i></button>
-          </div>`}
+<div className="counter">
+    <button style={{color: "#4A3CDB"}} onClick={decrementCounter()}><i class="fak fa-minus"></i></button>
+    <input value="0" class="counter-number" id="number" readonly>
+    <button style={{color: "#4A3CDB"}} onClick={incrementCounter()}><i class="fak fa-plus"></i></button>
+</div>`}
+          codeBlock
+          theme={dracula}
+          showLineNumbers={false}
+        
+        />
+        </div>
+    </div> } 
+    </div>
+    <div className=" mb-5">
+    <h5 className=' text-heading-5 mb-3'>Text Area</h5>
+    
+    {!isShownTextarea1 && <> 
+    <div className="flex flex-col ">
+    <div style={{alignSelf: "flex-end"}}>
+    <button className=" text-color-primary text-weight-semibold" onClick={handleClickTextarea1}>Ver Código <FontAwesomeIcon icon={faCode} /></button>
+    </div>
+    <div className="component-content-full flex">
+        <div className="mx-auto my-auto">
+        <textarea className="textarea" placeholder="Placeholder"></textarea>
+        </div>
+    </div>
+    </div>
+    
+     </>  }
+     {isShownTextarea1 &&
+    <div className="flex flex-col ">
+    <div style={{alignSelf: "flex-end"}}>
+    <button className="text-color-primary text-weight-semibold" onClick={handleClickTextarea1}>Ver Componente <FontAwesomeIcon icon={faPuzzlePiece} /></button> 
+    </div>
+    <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
+     <CopyBlock 
+          language="html"
+          text={`<textarea className="textarea" placeholder="Placeholder"></textarea>`}
           codeBlock
           theme={dracula}
           showLineNumbers={false}

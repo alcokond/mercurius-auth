@@ -2464,3 +2464,20 @@ line-height: 24px;
 .grayed{
   color:#E5E3FA!important;
 }
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+input[type="text"]:focus + .dropdown-content {
+  display: block;
+}

@@ -16,6 +16,27 @@ import { faArrowLeft, faCode, faMinus, faPlus, faPuzzlePiece } from "@fortawesom
 
 
 export const Componentes = () => {
+
+  const [selectedOption, setSelectedOption] = useState("");
+
+  const handleOptionSelect = (option) => {
+    setSelectedOption(option);
+  };
+
+  function openOptions() {
+    document.getElementById("options").style.display ="block";
+  }
+
+  function closeOptions() {
+    document.getElementById("options").style.display ="none";
+  }
+
+  
+
+  function selectOption(option) {
+    document.getElementById("inputField").value = option.innerHTML;
+  }
+
   function incrementCounter() {
     document.getElementById("number").value ++;
     if(document.getElementById("number").value>0){
@@ -1116,6 +1137,61 @@ function decrementCounter() {
     <div className="component-content-full flex">
         <div className="mx-auto my-auto">
         <textarea className="textarea" placeholder="Placeholder"></textarea>
+        </div>
+    </div>
+    </div>
+    
+     </>  }
+     {isShownTextarea1 &&
+    <div className="flex flex-col ">
+    <div style={{alignSelf: "flex-end"}}>
+    <button className="text-color-primary text-weight-semibold" onClick={handleClickTextarea1}>Ver Componente <FontAwesomeIcon icon={faPuzzlePiece} /></button> 
+    </div>
+    <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
+     <CopyBlock 
+          language="html"
+          text={`<textarea className="textarea" placeholder="Placeholder"></textarea>`}
+          codeBlock
+          theme={dracula}
+          showLineNumbers={false}
+        
+        />
+        </div>
+    </div> } 
+    </div>
+    <div className=" mb-5">
+    <h5 className=' text-heading-5 mb-3'>Text Area</h5>
+    
+    {!isShownTextarea1 && <> 
+    <div className="flex flex-col ">
+    <div style={{alignSelf: "flex-end"}}>
+    <button className=" text-color-primary text-weight-semibold" onClick={handleClickTextarea1}>Ver Código <FontAwesomeIcon icon={faCode} /></button>
+    </div>
+    <div className="component-content-full flex">
+        <div className="mx-auto my-auto">
+        {/* <div class="dropdown">
+  <input type="text" placeholder="Select an option" onfocus="this.select()" id="inputField"></input>
+  <div class="dropdown-content">
+    <a href="#" value="1" onclick="selectOption(this)">Option 1</a>
+    <a href="#" value="2" onclick="selectOption(this)">Option 2</a>
+    <a href="#" value="3" onclick="selectOption(this)">Option 3</a>
+  </div>
+</div> */}
+
+<div>
+      <input
+        type="text"
+        placeholder="Select an option"
+        value={selectedOption}
+        onFocus={openOptions}
+        readOnly
+      />
+      <div id="options" style={{ display: "none" }}>
+        <a onClick={() => handleOptionSelect("Option 1")}>Option 1</a>
+        <a onClick={() => handleOptionSelect("Option 2")}>Option 2</a>
+        <a onClick={() => handleOptionSelect("Option 3")}>Option 3</a>
+      </div>
+    </div>
         </div>
     </div>
     </div>

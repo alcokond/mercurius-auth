@@ -1159,7 +1159,7 @@ function decrementCounter() {
         </div>
     </div> } 
     </div>
-    <div className=" mb-5">
+    {/* <div className=" mb-5">
     <h5 className=' text-heading-5 mb-3'>Text Area</h5>
     
     {!isShownTextarea1 && <> 
@@ -1169,14 +1169,14 @@ function decrementCounter() {
     </div>
     <div className="component-content-full flex">
         <div className="mx-auto my-auto">
-        {/* <div class="dropdown">
+        <div class="dropdown">
   <input type="text" placeholder="Select an option" onfocus="this.select()" id="inputField"></input>
   <div class="dropdown-content">
     <a href="#" value="1" onclick="selectOption(this)">Option 1</a>
     <a href="#" value="2" onclick="selectOption(this)">Option 2</a>
     <a href="#" value="3" onclick="selectOption(this)">Option 3</a>
   </div>
-</div> */}
+</div>
 
 <div>
       <input
@@ -1213,7 +1213,7 @@ function decrementCounter() {
         />
         </div>
     </div> } 
-    </div>
+    </div> */}
     
     {/* <div className="mb-5">
     <CodeBox

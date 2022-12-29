@@ -18,7 +18,7 @@ Establecer nuestra voz y tono nos permiten mantener un estilo de comunicacion ac
     </div>
     
     <div className="flex flex-col gap-5 padding-marca">
-    <div style={{ gridTemplateColumns: "49% 49%", gap: "2%"}} className="grid">
+    <div style={{ gridTemplateColumns: "1fr 1fr", gap: "5vh"}} className="grid">
         <div className="flex flex-col icon-card gap-2">
         <div className="icon-box background-primary text-color-primary-solid-4"> <FontAwesomeIcon icon={faRocket} /></div>
         <div style={{fontWeight: "700", color: "#525A6C", fontSize: "20px"}}>Voz</div>

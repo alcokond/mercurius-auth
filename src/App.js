@@ -60,25 +60,25 @@ const App = () => {
         <div className="flex-grow-1 margin-contenido ">
         
           <Switch>
-            <Route path="/" exact component={Home} />
+            <Route path="/mercurius" exact component={Home} />
             {isAuthenticated && (
             <Fragment>
             <Sidebar />
-            <Route path="/profile" component={Profile} />
-            <Route path="/componentes" component={Componentes} />
-            <Route path="/colores" component={Colores} />
-            <Route path="/guidelines" component={Guidelines} />
-            <Route path="/espaciado" component={Espaciado} />
-            <Route path="/tipografia" component={Tipografia} />
-            <Route path="/marca" component={Marca} />
-            <Route path="/voz" component={Voz} />
-            <Route path="/objetivo" component={Mision} />
-            <Route path="/promesa" component={Promesa} />
-            <Route path="/personalidad" component={Personalidad} />
-            <Route path="/contenido" component={Contenido} />
-            <Route path="/guia" component={Guia} />
-            <Route path="/escritura" component={Escritura} />
-            <Route path="/iconografia" component={Iconografia} />
+            <Route path="/mercurius/profile" component={Profile} />
+            <Route path="/mercurius/componentes" component={Componentes} />
+            <Route path="/mercurius/colores" component={Colores} />
+            <Route path="/mercurius/guidelines" component={Guidelines} />
+            <Route path="/mercurius/espaciado" component={Espaciado} />
+            <Route path="/mercurius/tipografia" component={Tipografia} />
+            <Route path="/mercurius/marca" component={Marca} />
+            <Route path="/mercurius/voz" component={Voz} />
+            <Route path="/mercurius/objetivo" component={Mision} />
+            <Route path="/mercurius/promesa" component={Promesa} />
+            <Route path="/mercurius/personalidad" component={Personalidad} />
+            <Route path="/mercurius/contenido" component={Contenido} />
+            <Route path="/mercurius/guia" component={Guia} />
+            <Route path="/mercurius/escritura" component={Escritura} />
+            <Route path="/mercurius/iconografia" component={Iconografia} />
             </Fragment>
             )}
           </Switch>

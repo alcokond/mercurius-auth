@@ -10,7 +10,7 @@ const Hero = () => (
     <div className="">
       <section style={{backgroundColor: "#F2F1FC"}} className="header relative pt-16 items-center flex pb-16">
         <div  className=" mx-10 items-center flex flex-wrap">
-          <div className="w-full md:w-8/12 lg:w-6/12-2 xl:w-6/12-2 px-4">
+          <div className="w-full md:w-8/12 lg:w-6/12-2 xl:w-6/12-2">
             <div className="pt-32 sm:pt-0">
               <h2 style={{fontSize: 61}} className="font-normal">
                 <strong>Crea y desarrolla <br></br><div style={{color:"#4A3CDB"}}>más rápido</div>  </strong>
@@ -18,18 +18,18 @@ const Hero = () => (
               <p style={{fontSize: 20}} className="mt-4 mb-4 leading-relaxed ">
               Mercurius, de Xtrim TVCable es un sistema de diseño que  mejora la experiencia en desarrollo e interacción digital.
               </p>
-              <div className="flex flex-wrap mb-4 gap-2 justify-center">
+              <div className="flex flex-wrap mb-4 gap-2">
                 
                 <NavLink
                       tag={RouterNavLink}
-                      to="/componentes"
+                      to="/mercurius/componentes"
                       exact
                       style={{ textDecoration: 'none' }}
                       >
                       <button className=" button-main-primary-medium"> 
                       Ver Componentes <FontAwesomeIcon icon={faArrowRight} /></button>
                     </NavLink>
-                <button className=" button-main-secondary-medium">Explorar Plantillas <FontAwesomeIcon icon={faArrowRight} /></button>
+                {/* <button className=" button-main-secondary-medium">Explorar Plantillas <FontAwesomeIcon icon={faArrowRight} /></button> */}
               </div>
             </div>
           </div>
@@ -38,7 +38,7 @@ const Hero = () => (
 
       <section >
       <div className=" mx-10 pt-16 items-center flex flex-wrap">
-          <div className="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">
+          <div className="w-full md:w-8/12 lg:w-6/12 xl:w-6/12">
             <div className="pt-32 sm:pt-0">
 
               <h2 style={{color: "#4A3CDB"}} className=" font-medium">
@@ -96,7 +96,7 @@ const Hero = () => (
                 </div>
             </div>
       <div className=" mx-10 pt-16 items-center flex flex-wrap">
-          <div className="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">
+          <div className="w-full md:w-8/12 lg:w-6/12 xl:w-6/12">
             <div className="pt-32 sm:pt-0">
 
               <h2 style={{color: "#4A3CDB"}} className=" font-medium">
@@ -151,14 +151,21 @@ const Hero = () => (
               Nos preocupamos por la accesibilidad y experiencia del usuario en cada una de nuestras plataformas. 
               </p>
               <div className="flex flex-wrap mb-4 gap-2 ">
-                <button className=" button-main-terchiary-medium">Explora nuestra marca <FontAwesomeIcon icon={faArrowRight} /></button>
-                
+              <NavLink
+                      tag={RouterNavLink}
+                      to="/mercurius/marca"
+                      exact
+                      style={{ textDecoration: 'none' }}
+                      
+                      >
+                <button  className=" button-main-terchiary-medium">Explora nuestra marca <FontAwesomeIcon icon={faArrowRight} /></button>
+                </NavLink>
               </div>
                   </div>
                   
                   <NavLink
                       tag={RouterNavLink}
-                      to="/objetivo"
+                      to="/mercurius/objetivo"
                       exact
                       style={{ textDecoration: 'none' }}
                       className="flex flex-col icon-card gap-2"
@@ -174,7 +181,7 @@ const Hero = () => (
                   
                   <NavLink
                       tag={RouterNavLink}
-                      to="/promesa"
+                      to="/mercurius/promesa"
                       exact
                       style={{ textDecoration: 'none' }}
                       className="flex flex-col icon-card gap-2"
@@ -190,7 +197,7 @@ const Hero = () => (
                   
                   <NavLink
                       tag={RouterNavLink}
-                      to="/personalidad"
+                      to="/mercurius/personalidad"
                       exact
                       style={{ textDecoration: 'none' }}
                       className="flex flex-col icon-card gap-2"
@@ -212,13 +219,20 @@ const Hero = () => (
               Nuestro tono de voz nos identifica y nuestras reglas de estilo nos permiten avanzar junto a los usuarios.
               </p>
               <div className="flex flex-wrap mb-4 gap-2 ">
+              <NavLink
+                      tag={RouterNavLink}
+                      to="/mercurius/contenido"
+                      exact
+                      style={{ textDecoration: 'none' }}
+                      
+                      >
                 <button className=" button-main-terchiary-medium">Explorar guía de contenido <FontAwesomeIcon icon={faArrowRight} /></button>
-                
+                </NavLink>
               </div>
                   </div>
                   <NavLink
                       tag={RouterNavLink}
-                      to="/voz"
+                      to="/mercurius/voz"
                       exact
                       style={{ textDecoration: 'none' }}
                       className="flex flex-col icon-card gap-2"
@@ -229,7 +243,7 @@ const Hero = () => (
                     </NavLink>
                     <NavLink
                       tag={RouterNavLink}
-                      to="/personalidad"
+                      to="/mercurius/personalidad"
                       exact
                       style={{ textDecoration: 'none' }}
                       className="flex flex-col icon-card gap-2"
@@ -240,7 +254,7 @@ const Hero = () => (
                   </NavLink>
                   <NavLink
                       tag={RouterNavLink}
-                      to="/personalidad"
+                      to="/mercurius/personalidad"
                       exact
                       style={{ textDecoration: 'none' }}
                       className="flex flex-col icon-card gap-2"
@@ -259,8 +273,15 @@ const Hero = () => (
               Nuestros colores, tipografía e iconos nos representan, nos definen y reflejan nuestra personalidad. 
               </p>
               <div className="flex flex-wrap mb-4 gap-2 ">
+              <NavLink
+                      tag={RouterNavLink}
+                      to="/mercurius/guidelines"
+                      exact
+                      style={{ textDecoration: 'none' }}
+                      
+                      >
                 <button className=" button-main-terchiary-medium">Explora nuestros guidelines <FontAwesomeIcon icon={faArrowRight} /></button>
-                
+                </NavLink>
               </div>
                   </div>
                   <div className="flex flex-col icon-card gap-2">

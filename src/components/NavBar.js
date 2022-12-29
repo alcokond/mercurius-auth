@@ -33,12 +33,12 @@ const NavBar = () => {
 
   const logoutWithRedirect = () =>
     logout({
-      returnTo: window.location.origin,
+      returnTo: "https://www.xtrim.com.ec/mercurius/",
     });
 
   return (
     
-    <div style={{height:"20%"}} className="nav-container no-margin z-3 nav-sticky w-full">
+    <div className="nav-container no-margin z-3 nav-sticky w-full">
       <Navbar className="bg-navbar " sticky="top" light expand="md">
       {/* {isAuthenticated && (
         <MuiSidebar />
@@ -46,10 +46,10 @@ const NavBar = () => {
         
         <Container className="no-margin">
           
-          <NavbarBrand className="logo-mercurius" href="/"/>
+          <NavbarBrand className="logo-mercurius" href="/mercurius"/>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
-            <Nav className="mr-auto" navbar>
+            <Nav navbar>
               
               
               
@@ -58,7 +58,7 @@ const NavBar = () => {
                 <NavItem>
                   <NavLink
                     tag={RouterNavLink}
-                    to="/marca"
+                    to="/mercurius/marca"
                     exact
                     activeClassName="text-navbar-focused"
                     className="text-navbar"
@@ -69,7 +69,7 @@ const NavBar = () => {
                 <NavItem>
                 <NavLink
                   tag={RouterNavLink}
-                  to="/contenido"
+                  to="/mercurius/contenido"
                   exact
                   activeClassName="text-navbar-focused"
                   className="text-navbar"
@@ -80,7 +80,7 @@ const NavBar = () => {
               <NavItem>
                 <NavLink
                   tag={RouterNavLink}
-                  to="/guidelines"
+                  to="/mercurius/guidelines"
                   exact
                   activeClassName=" text-navbar-focused"
                   className="text-navbar"
@@ -91,7 +91,7 @@ const NavBar = () => {
               <NavItem>
                 <NavLink
                   tag={RouterNavLink}
-                  to="/componentes"
+                  to="/mercurius/componentes"
                   exact
                   activeClassName=" text-navbar-focused"
                   className="text-navbar"
@@ -107,7 +107,7 @@ const NavBar = () => {
               
               
             </Nav>
-            <Nav className="d-none d-md-block nav" navbar>
+            <Nav className="d-none d-md-block nav right-nav" navbar>
               {!isAuthenticated && (
                 <NavItem>
                   <Button
@@ -158,10 +158,11 @@ const NavBar = () => {
               </Nav>
             )}
             {isAuthenticated && (
+            
               <Nav
                 className="d-md-none justify-content-between"
                 navbar
-                style={{ minHeight: 170 }}
+                style={{ minHeight: 170, marginRight: "auto" }}
               >
                 <NavItem >
                   <span className="user-info">

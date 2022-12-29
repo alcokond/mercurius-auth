@@ -53,7 +53,7 @@ export default function Sidebar() {
         <ListItemButton >
               <ListItemText>
                 <NavLink
-                to="/marca"
+                to="/mercurius/marca"
                 exact
                 activeClassName="active-sidebar" 
                 style={{ textDecoration: 'none' }}
@@ -65,7 +65,7 @@ export default function Sidebar() {
                   <List component="div" disablePadding>
                     <NavLink
                       tag={RouterNavLink}
-                      to="/objetivo"
+                      to="/mercurius/objetivo"
                       exact
                       activeClassName="active-sidebar" 
                       style={{ textDecoration: 'none' }} 
@@ -78,7 +78,7 @@ export default function Sidebar() {
                     </NavLink>
                     <NavLink
                       tag={RouterNavLink}
-                      to="/promesa"
+                      to="/mercurius/promesa"
                       exact
                       activeClassName="active-sidebar" 
                       style={{ textDecoration: 'none' }} 
@@ -91,7 +91,7 @@ export default function Sidebar() {
                     </NavLink>
                     <NavLink
                       tag={RouterNavLink}
-                      to="/personalidad"
+                      to="/mercurius/personalidad"
                       exact
                       activeClassName="active-sidebar" 
                       style={{ textDecoration: 'none' }} 
@@ -111,7 +111,7 @@ export default function Sidebar() {
               <ListItemButton >
               <ListItemText>
                 <NavLink
-                to="/guidelines"
+                to="/mercurius/guidelines"
                 exact
                 activeClassName="active-sidebar" 
                 style={{ textDecoration: 'none' }}
@@ -124,7 +124,7 @@ export default function Sidebar() {
                     
                     <NavLink
                       tag={RouterNavLink}
-                      to="/colores"
+                      to="/mercurius/colores"
                       exact
                       activeClassName="active-sidebar" 
                       style={{ textDecoration: 'none' }} 
@@ -140,7 +140,7 @@ export default function Sidebar() {
                     
                     <NavLink
                       tag={RouterNavLink}
-                      to="/tipografia"
+                      to="/mercurius/tipografia"
                       exact
                       activeClassName="active-sidebar" 
                       style={{ textDecoration: 'none' }} 
@@ -154,7 +154,7 @@ export default function Sidebar() {
 
                     <NavLink
                       tag={RouterNavLink}
-                      to="/iconografia"
+                      to="/mercurius/iconografia"
                       exact
                       activeClassName="active-sidebar" 
                       style={{ textDecoration: 'none' }} 
@@ -162,6 +162,69 @@ export default function Sidebar() {
                       <ListItemButton sx={{ pl: 4 }} >
                       
                         <ListItemText primary='Iconografía' />
+                        
+                      </ListItemButton>
+                    </NavLink>
+                    
+                    
+                    
+                  </List>
+                </Collapse>
+              <Divider />
+              <ListItemButton >
+              <ListItemText>
+                <NavLink
+                to="/mercurius/contenido"
+                exact
+                activeClassName="active-sidebar" 
+                style={{ textDecoration: 'none' }}
+                >Contenido</NavLink>
+              </ListItemText>
+              {open3 ? <ExpandLess onClick={handleClick3} /> : <ExpandMore onClick={handleClick3} />}
+              </ListItemButton>
+            <Collapse in={open3} timeout="auto" unmountOnExit>
+                  <List component="div" disablePadding>
+                    
+                    <NavLink
+                      tag={RouterNavLink}
+                      to="/mercurius/voz"
+                      exact
+                      activeClassName="active-sidebar" 
+                      style={{ textDecoration: 'none' }} 
+                      >
+                      <ListItemButton sx={{ pl: 4 }} >
+                      
+                        <ListItemText primary='Voz y Tono' />
+                        
+                      </ListItemButton>
+                    </NavLink>
+                    
+                    
+                    
+                    <NavLink
+                      tag={RouterNavLink}
+                      to="/mercurius/guia"
+                      exact
+                      activeClassName="active-sidebar" 
+                      style={{ textDecoration: 'none' }} 
+                      >
+                      <ListItemButton sx={{ pl: 4 }} >
+                      
+                        <ListItemText primary='Guía de estilo' />
+                        
+                      </ListItemButton>
+                    </NavLink>
+
+                    <NavLink
+                      tag={RouterNavLink}
+                      to="/mercurius/escritura"
+                      exact
+                      activeClassName="active-sidebar" 
+                      style={{ textDecoration: 'none' }} 
+                      >
+                      <ListItemButton sx={{ pl: 4 }} >
+                      
+                        <ListItemText primary='Estilo de escritura' />
                         
                       </ListItemButton>
                     </NavLink>

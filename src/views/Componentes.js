@@ -378,10 +378,10 @@ export const Componentes = () => {
     <>
     
     <div id="colores" className="margin-sidebar background-grayscale-6">
-    <div className="padding-colores">
+    <div className="padding-marca">
     <h6 className="text-overline">Codificación</h6>
-    <h3 style={{fontSize:"36px", fontWeight:"700"}} className=" mb-3">Componentes</h3>
-    <p className="text-button-1"></p>
+    <h3 style={{fontSize:"36px", fontWeight:"700", color:"#221987"}} className=" mb-3">Componentes</h3>
+    <p className="text-button-1 text-justify">Mercurius contiene una extensa librería de componentes elaborados a la medida de Xtrim. Permiten agilizar el desarrollo, promover la consistencia y aumentar la escalabilidad de nuestras páginas web y aplicaciones.</p>
     </div>
     
     </div>

@@ -37,7 +37,7 @@ export default function PermanentDrawerLeft() {
           <ListItem key='Colores' disablePadding>
           <NavLink
               tag={RouterNavLink}
-              to="/colores"
+              to="/mercurius/colores"
               exact
               activeClassName="router-link-exact-active" 
               >
@@ -52,7 +52,7 @@ export default function PermanentDrawerLeft() {
             <ListItem key='Tipografia' disablePadding>
             <NavLink
               tag={RouterNavLink}
-              to="/tipografia"
+              to="/mercurius/tipografia"
               exact
               activeClassName="router-link-exact-active"
               >
@@ -65,7 +65,7 @@ export default function PermanentDrawerLeft() {
             <ListItem key='Espaciado' disablePadding>
             <NavLink
               tag={RouterNavLink}
-              to="/espaciado"
+              to="/mercurius/espaciado"
               exact
               activeClassName="router-link-exact-active"
               >
@@ -78,7 +78,7 @@ export default function PermanentDrawerLeft() {
             <ListItem key='Inputs' disablePadding>
             <NavLink
               tag={RouterNavLink}
-              to="/inputs"
+              to="/mercurius/inputs"
               exact
               activeClassName="router-link-exact-active"
               >
@@ -91,7 +91,7 @@ export default function PermanentDrawerLeft() {
             <ListItem key='Formularios' disablePadding>
             <NavLink
               tag={RouterNavLink}
-              to="/formularios"
+              to="/mercurius/formularios"
               exact
               activeClassName="router-link-exact-active"
               >
@@ -104,7 +104,7 @@ export default function PermanentDrawerLeft() {
             {/* <ListItem key='Botones' disablePadding>
             <NavLink
               tag={RouterNavLink}
-              to="/botones"
+              to="/mercurius/botones"
               exact
               activeClassName="router-link-exact-active"
               >

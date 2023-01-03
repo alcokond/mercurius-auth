@@ -31,6 +31,7 @@ import Guia from "./views/Guia";
 import { Fragment } from "react";
 import Escritura from "./views/Escritura";
 import Iconografia from "./views/Iconografia";
+import Intro from "./views/Intro";
 
 
 initFontAwesome();
@@ -79,6 +80,8 @@ const App = () => {
             <Route path="/mercurius/guia" component={Guia} />
             <Route path="/mercurius/escritura" component={Escritura} />
             <Route path="/mercurius/iconografia" component={Iconografia} />
+            <Route path="/mercurius/intro" component={Intro} />
+
             </Fragment>
             )}
           </Switch>

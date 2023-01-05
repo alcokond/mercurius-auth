@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { Router, Route, Switch } from "react-router-dom";
 import Loading from "./components/Loading";
 import NavBar from "./components/NavBar";
@@ -31,7 +31,8 @@ import Guia from "./views/Guia";
 import { Fragment } from "react";
 import Escritura from "./views/Escritura";
 import Iconografia from "./views/Iconografia";
-import Intro from "./views/Intro";
+import Intro from "./views/Intro.jsx";
+import IntroAlt from "./views/IntroAlt.tsx";
 
 
 initFontAwesome();
@@ -52,16 +53,19 @@ const App = () => {
     isAuthenticated,
   } = useAuth0();
   
+  const [showOtherComponent, setShowOtherComponent] = useState(true);
   return (
     <Router history={history}>
       
       <div id="app" className="d-flex flex-column h-100">
         
         <NavBar sticky="top" />
-        <div className="flex-grow-1 margin-contenido ">
+        
+        <div className="flex-grow-1 ">
         
           <Switch>
             <Route path="/mercurius" exact component={Home} />
+            <Route path="/mercurius/intro2" component={IntroAlt} />
             {isAuthenticated && (
             <Fragment>
             <Sidebar />
@@ -81,10 +85,34 @@ const App = () => {
             <Route path="/mercurius/escritura" component={Escritura} />
             <Route path="/mercurius/iconografia" component={Iconografia} />
             <Route path="/mercurius/intro" component={Intro} />
-
             </Fragment>
             )}
           </Switch>
+          {/* <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/intro2" component={IntroAlt} />
+            {isAuthenticated && (
+            <Fragment>
+            <Sidebar />
+            <Route path="/profile" component={Profile} />
+            <Route path="/componentes" component={Componentes} />
+            <Route path="/colores" component={Colores} />
+            <Route path="/guidelines" component={Guidelines} />
+            <Route path="/espaciado" component={Espaciado} />
+            <Route path="/tipografia" component={Tipografia} />
+            <Route path="/marca" component={Marca} />
+            <Route path="/voz" component={Voz} />
+            <Route path="/objetivo" component={Mision} />
+            <Route path="/promesa" component={Promesa} />
+            <Route path="/personalidad" component={Personalidad} />
+            <Route path="/contenido" component={Contenido} />
+            <Route path="/guia" component={Guia} />
+            <Route path="/escritura" component={Escritura} />
+            <Route path="/iconografia" component={Iconografia} />
+            <Route path="/intro" component={Intro} />
+            </Fragment>
+            )}
+          </Switch> */}
         
         </div>
         

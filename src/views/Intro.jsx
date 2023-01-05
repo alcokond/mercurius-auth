@@ -7,8 +7,8 @@ function Intro() {
   const ref = useRef();
 
   return (
-    <div>
-    <Parallax pages={3} >
+    <div >
+    <Parallax  >
         {/* <ParallaxLayer speed={1}>
             <h2>Welcome to my website</h2>
         </ParallaxLayer>

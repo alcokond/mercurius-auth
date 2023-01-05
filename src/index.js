@@ -23,6 +23,7 @@ const providerConfig = {
   clientId: config.clientId,
   ...(config.audience ? { audience: config.audience } : null),
   redirectUri: "https://www.xtrim.com.ec/mercurius/",
+  //redirectUri: "http://localhost:3000/",
   onRedirectCallback,
 };
 

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink as RouterNavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useLocation } from 'react-router-dom';
+
 
 import {
   Collapse,
@@ -21,7 +21,7 @@ import {
 
 import { useAuth0 } from "@auth0/auth0-react";
 
-const NavBar = () => {
+const NavBarTransparent = () => {
   const [isOpen, setIsOpen] = useState(false);
   const {
     user,
@@ -33,16 +33,14 @@ const NavBar = () => {
 
   const logoutWithRedirect = () =>
     logout({
-      returnTo: "https://www.xtrim.com.ec/mercurius/",
-      //returnTo: "http://localhost:3000/mercurius",
+      //returnTo: "https://www.xtrim.com.ec/mercurius/",
+      returnTo: "http://localhost:3000/mercurius",
     });
-  const location = useLocation();
+
   return (
     
     <div className="nav-container no-margin z-3 nav-sticky w-full">
-      <Navbar className="bg-navbar" style={{
-        opacity: location.pathname === '/mercurius' ? 0.5 : 1
-      }}  sticky="top" light expand="md">
+      <Navbar className="navbar-transparent " sticky="top" light expand="md">
       {/* {isAuthenticated && (
         <MuiSidebar />
         )} */}
@@ -198,4 +196,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default NavBarTransparent;

@@ -16,7 +16,7 @@ const ColoresPrincipal = () => (
   <>
   
   {/* <div className="box-colors-1"></div> */}
-  <div className="flex flex-col ">
+  <div className="flex flex-col margin-contenido ">
     <div id="colores" className="margin-sidebar size-colores background-grayscale-6">
     <div className="padding-paleta">
     <h6 className="text-overline">Guidelines</h6>

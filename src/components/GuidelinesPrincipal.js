@@ -5,7 +5,7 @@ import {faHeart, faRocket, faUserAstronaut, faHandHeart, faPalette, faText, faCi
 
 const GuidelinesPrincipal = () => (
     <>
-    <div className="flex flex-col margin-sidebar">
+    <div className="flex flex-col margin-sidebar margin-contenido">
     <div id="colores" className=" background-grayscale-6">
     <div className="padding-marca">
     <h3 style={{fontSize:"36px", fontWeight:"700", color:"#221987"}} className="mb-3">Guidelines</h3>

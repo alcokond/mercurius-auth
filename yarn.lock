@@ -2307,7 +2307,7 @@
     "@react-spring/shared" "~9.6.1"
     "@react-spring/types" "~9.6.1"
 
-"@react-spring/parallax@*":
+"@react-spring/parallax@^9.6.1":
   version "9.6.1"
   resolved "https://registry.npmjs.org/@react-spring/parallax/-/parallax-9.6.1.tgz"
   integrity sha512-Q3zzLQbM5sVwjLzGpfR9/betn4Ir6czdOnqbj5gQeu1oCd6P4j4l4WF6xptexs4iwa+rQECpfbFsbtzxlrNyvQ==
@@ -2326,6 +2326,16 @@
   integrity sha512-PBFBXabxFEuF8enNLkVqMC9h5uLRBo6GQhRMQT/nRTnemVENimgRd+0ZT4yFnAQ0AxWNiJfX3qux+bW2LbG6Bw==
   dependencies:
     "@react-spring/rafz" "~9.6.1"
+    "@react-spring/types" "~9.6.1"
+
+"@react-spring/three@*":
+  version "9.6.1"
+  resolved "https://registry.npmjs.org/@react-spring/three/-/three-9.6.1.tgz"
+  integrity sha512-Tyw2YhZPKJAX3t2FcqvpLRb71CyTe1GvT3V+i+xJzfALgpk10uPGdGaQQ5Xrzmok1340DAeg2pR/MCfaW7b8AA==
+  dependencies:
+    "@react-spring/animated" "~9.6.1"
+    "@react-spring/core" "~9.6.1"
+    "@react-spring/shared" "~9.6.1"
     "@react-spring/types" "~9.6.1"
 
 "@react-spring/types@~9.6.1":

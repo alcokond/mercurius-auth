@@ -50,16 +50,7 @@ export default function Sidebar() {
         <Toolbar className='alto'/>
         
         <List>
-        <ListItemButton >
-              <ListItemText>
-                <NavLink
-                to="/mercurius/intro"
-                exact
-                activeClassName="active-sidebar" 
-                style={{ textDecoration: 'none' }}
-                >Introducción</NavLink>
-              </ListItemText>
-              </ListItemButton>
+        
         <ListItemButton >
               <ListItemText>
                 <NavLink

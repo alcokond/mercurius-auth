@@ -7,7 +7,6 @@ import { NavLink as RouterNavLink } from "react-router-dom";
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 
 (function() {
-    // Tutorial: https://medium.com/@patrickwestwood/how-to-make-multi-layered-parallax-illustration-with-css-javascript-2b56883c3f27
     window.addEventListener('scroll', function(event) {
       var depth, i, layer, layers, len, movement, topDistance, translate3d;
       topDistance = this.scrollY;
@@ -30,12 +29,12 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 const ParallaxPrueba = () => (
   <>
     <div id='hero'>
-  <div class='layer-bg layer' data-depth='0.10' data-type='parallax'></div>
-  <div class='layer-1 layer' data-depth='0.20' data-type='parallax'></div>
-  <div class='layer-2 layer' data-depth='0.50' data-type='parallax'></div>
-  <div class='layer-3 layer' data-depth='0.80' data-type='parallax'></div>
-  <div class='layer-overlay layer' data-depth='0.85' data-type='parallax'></div>
-  <div class='layer-4 layer' data-depth='1.00' data-type='parallax'></div>
+  <div className='layer-bg layer' data-depth='0.10' data-type='parallax'></div>
+  <div className='layer-1 layer' data-depth='0.20' data-type='parallax'></div>
+  <div className='layer-2 layer' data-depth='0.50' data-type='parallax'></div>
+  <div className='layer-3 layer' data-depth='0.80' data-type='parallax'></div>
+  <div className='layer-overlay layer' data-depth='0.85' data-type='parallax'></div>
+  <div className='layer-4 layer' data-depth='1.00' data-type='parallax'></div>
 </div>
 <div id='hero-mobile'></div>
 <div id='content'>

@@ -88,31 +88,7 @@ const App = () => {
             </Fragment>
             )}
           </Switch>
-          {/* <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/intro2" component={IntroAlt} />
-            {isAuthenticated && (
-            <Fragment>
-            <Sidebar />
-            <Route path="/profile" component={Profile} />
-            <Route path="/componentes" component={Componentes} />
-            <Route path="/colores" component={Colores} />
-            <Route path="/guidelines" component={Guidelines} />
-            <Route path="/espaciado" component={Espaciado} />
-            <Route path="/tipografia" component={Tipografia} />
-            <Route path="/marca" component={Marca} />
-            <Route path="/voz" component={Voz} />
-            <Route path="/objetivo" component={Mision} />
-            <Route path="/promesa" component={Promesa} />
-            <Route path="/personalidad" component={Personalidad} />
-            <Route path="/contenido" component={Contenido} />
-            <Route path="/guia" component={Guia} />
-            <Route path="/escritura" component={Escritura} />
-            <Route path="/iconografia" component={Iconografia} />
-            <Route path="/intro" component={Intro} />
-            </Fragment>
-            )}
-          </Switch> */}
+          
         
         </div>
         

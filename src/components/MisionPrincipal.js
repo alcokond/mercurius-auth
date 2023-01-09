@@ -17,7 +17,7 @@ const MisionPrincipal = () => (
   <>
     
   {/* <div className="box-colors-1"></div> */}
-  <div className="flex flex-col margin-sidebar">
+  <div className="flex flex-col margin-sidebar margin-contenido">
     <div id="colores" className=" background-grayscale-6">
     <div className="padding-marca">
     <h6 className="text-overline">Marca</h6>

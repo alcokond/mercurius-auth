@@ -5,7 +5,7 @@ import PermanentDrawerLeft from "./PermanentDrawerLeft.js";
 const TipografiaPrincipal = () => (
     <>
     <div className="flex flex-col flex-wrap">
-    <div id="colores" className="margin-sidebar size-colores background-grayscale-6">
+    <div id="colores" className="margin-sidebar size-colores background-grayscale-6 margin-contenido">
     <div className="padding-marca">
     <h6 className="text-overline">Guidelines</h6>
     <h3 style={{fontSize:"36px", fontWeight:"700", color:"#221987"}} className=" mb-3">Tipografía</h3>

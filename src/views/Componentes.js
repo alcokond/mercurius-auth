@@ -377,7 +377,7 @@ export const Componentes = () => {
   return (
     <>
     
-    <div id="colores" className="margin-sidebar background-grayscale-6">
+    <div id="colores" className="margin-sidebar background-grayscale-6 margin-contenido">
     <div className="padding-marca">
     <h6 className="text-overline">Codificación</h6>
     <h3 style={{fontSize:"36px", fontWeight:"700", color:"#221987"}} className=" mb-3">Componentes</h3>

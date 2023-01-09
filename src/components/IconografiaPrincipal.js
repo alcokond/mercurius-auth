@@ -4,13 +4,12 @@ import {faCameraHome, faHeart, faIcons, faPalette, faPenNib, faTypewriter } from
 import {faArrowRight, facircleuser, faUserCircle, faRocket, faUserAstronaut, faHandHeart } from "@fortawesome/pro-light-svg-icons";
 
 const IconografiaPrincipal = () => (
+  
   <>
-  <head>
-  <script src="https://kit.fontawesome.com/c2c6803cc4.js" crossorigin="anonymous"></script>
-  </head>
+  
     
   {/* <div className="box-colors-1"></div> */}
-  <div className="flex flex-col margin-sidebar">
+  <div className="flex flex-col margin-sidebar margin-contenido">
     <div id="colores" className=" background-grayscale-6">
     <div className="padding-marca">
     <h6 className="text-overline">Guidelines</h6>
@@ -22,12 +21,12 @@ const IconografiaPrincipal = () => (
     <div className="padding-marca">
         <div className="mb-3">El uso de iconos facilita la comprensión y nos permite utilizar una cantidad menor de texto, además, los iconos nos permiten llamar la atención de los usuarios sobre una acción o interacción. </div>        
         <div style={{justifyContent: "center", padding:"5%", gap:"10%", marginLeft:"20%", marginRight:"20%"}} className="flex flex-row background-grayscale-4 mb-3">
-            <div style={{fontSize: "48px"}}><i class="fak fa-camera-dome-outline"></i></div>
-            <div style={{fontSize: "48px"}}><i class="fak fa-camera-dome-filled"></i></div>
+            <div style={{fontSize: "48px"}}><i className="fak fa-camera-dome-outline"></i></div>
+            <div style={{fontSize: "48px"}}><i className="fak fa-camera-dome-filled"></i></div>
 
         </div>
         <div>Nuestros iconos son ligeros, poseen variaciones que les permiten desempeñar funciones de acuerdo a la acción solicitada, se encuentran ordenados según las acciones que se llevaran a cabo. Puedes encontrar nuestros iconos en nuestra librería de Font Awesome.</div>
-        <div style={{fontSize: 31, fontWeight: 600, }}>Tamaño</div>
+        {/* <div style={{fontSize: 31, fontWeight: 600, }}>Tamaño</div> */}
     </div>
     
 

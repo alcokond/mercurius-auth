@@ -55,7 +55,17 @@ export const Componentes = () => {
     console.log(document.getElementById("number").value);
   }
 
-
+  const slideValue = document.querySelector("span");
+      const inputSlider = document.querySelector("input");
+      inputSlider.oninput = (()=>{
+        let value = inputSlider.value;
+        slideValue.textContent = value;
+        slideValue.style.left = (value/2) + "%";
+        slideValue.classList.add("show");
+      });
+      inputSlider.onblur = (()=>{
+        slideValue.classList.remove("show");
+      });
   
   const [code, setCode] = React.useState(
     `function add(a, b) {\n  return a + b;\n}`
@@ -74,6 +84,7 @@ export const Componentes = () => {
   const [isShownSquareNeutral, setIsShownSquareNeutral] = useState(false);
   const [isShownContador, setIsShownContador] = useState(false);
   const [isShownTextarea1, setIsShownTextarea1] = useState(false);
+  const [isShownToggle, setIsShownToggle] = useState(false);
 
   const [isMostrarPrimary1, setIsMostrarPrimary1] = useState(true);
   const [isMostrarSecondary1, setIsMostrarSecondary1] = useState(true);
@@ -93,7 +104,7 @@ export const Componentes = () => {
   const [isMostrarOutstanding3, setIsMostrarOutstanding3] = useState(false);
   const [isMostrarPink3, setIsMostrarPink3] = useState(false);
   const [isMostrarPinkSecondary3, setIsMostrarPinkSecondary3] = useState(false);
-  const [isMostrarSquare, setIsMostrarSquare] = useState(false);
+
 
   
 
@@ -371,6 +382,10 @@ export const Componentes = () => {
   };
   const handleClickTextarea1 = event => {
     setIsShownTextarea1(current => !current);
+
+  };
+  const handleClickToggle = event => {
+    setIsShownToggle(current => !current);
 
   };
  
@@ -1151,6 +1166,45 @@ function decrementCounter() {
      <CopyBlock 
           language="html"
           text={`<textarea className="textarea" placeholder="Placeholder"></textarea>`}
+          codeBlock
+          theme={dracula}
+          showLineNumbers={false}
+        
+        />
+        </div>
+    </div> } 
+    </div>
+    <div className=" mb-5">
+    <h5 className=' text-heading-5 mb-3'>Toggle</h5>
+    
+    {!isShownToggle && <> 
+    <div className="flex flex-col ">
+    <div style={{alignSelf: "flex-end"}}>
+    <button className=" text-color-primary text-weight-semibold" onClick={handleClickToggle}>Ver Código <FontAwesomeIcon icon={faCode} /></button>
+    </div>
+    <div className="component-content-full flex">
+        <div className="mx-auto my-auto">
+        <label class="switch">
+  <input type="checkbox"></input>
+  <span class="slider round"></span>
+</label>
+        </div>
+    </div>
+    </div>
+    
+     </>  }
+     {isShownToggle &&
+    <div className="flex flex-col ">
+    <div style={{alignSelf: "flex-end"}}>
+    <button className="text-color-primary text-weight-semibold" onClick={handleClickToggle}>Ver Componente <FontAwesomeIcon icon={faPuzzlePiece} /></button> 
+    </div>
+    <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
+     <CopyBlock 
+          language="html"
+          text={`<label class="switch">
+  <input type="checkbox"></input>
+  <span class="slider"></span>
+</label>`}
           codeBlock
           theme={dracula}
           showLineNumbers={false}

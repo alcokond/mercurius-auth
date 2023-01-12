@@ -54,22 +54,6 @@ export const Componentes = () => {
     }
     console.log(document.getElementById("number").value);
   }
-
-  const slideValue = document.querySelector("span");
-      const inputSlider = document.querySelector("input");
-      inputSlider.oninput = (()=>{
-        let value = inputSlider.value;
-        slideValue.textContent = value;
-        slideValue.style.left = (value/2) + "%";
-        slideValue.classList.add("show");
-      });
-      inputSlider.onblur = (()=>{
-        slideValue.classList.remove("show");
-      });
-  
-  const [code, setCode] = React.useState(
-    `function add(a, b) {\n  return a + b;\n}`
-  );
   const {
     isAuthenticated,
   } = useAuth0();
@@ -1184,9 +1168,9 @@ function decrementCounter() {
     </div>
     <div className="component-content-full flex">
         <div className="mx-auto my-auto">
-        <label class="switch">
+        <label className="switch">
   <input type="checkbox"></input>
-  <span class="slider round"></span>
+  <span className="slider round"></span>
 </label>
         </div>
     </div>

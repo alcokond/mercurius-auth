@@ -33,6 +33,7 @@ import Escritura from "./views/Escritura";
 import Iconografia from "./views/Iconografia";
 import Intro from "./views/Intro.jsx";
 import IntroAlt from "./views/IntroAlt.tsx";
+import Modales from "./views/Modales";
 
 
 initFontAwesome();
@@ -71,6 +72,7 @@ const App = () => {
             <Sidebar />
             <Route path="/mercurius/profile" component={Profile} />
             <Route path="/mercurius/componentes" component={Componentes} />
+            <Route path="/mercurius/modales" component={Modales} />
             <Route path="/mercurius/colores" component={Colores} />
             <Route path="/mercurius/guidelines" component={Guidelines} />
             <Route path="/mercurius/espaciado" component={Espaciado} />

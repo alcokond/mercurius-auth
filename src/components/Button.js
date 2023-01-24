@@ -26,7 +26,7 @@ const Button = () => (
     </div>
     </div>
     
-    <div className=" padding-marca">
+    <div className=" padding-marca flex flex-col">
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
       Uso
     </p>
@@ -46,8 +46,9 @@ const Button = () => (
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
       Anatomía
     </p>
-    <div></div>
-    <img src={button}></img>
+    <div style={{width:"30%", alignSelf:"center", marginTop: "4%"}}>
+    <img src={button} ></img></div>
+    
     </div>
 
     

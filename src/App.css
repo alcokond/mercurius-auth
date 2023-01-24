@@ -456,6 +456,22 @@ li a{
   padding-right: 20vw;
 }
 
+.padding-componente{
+  padding-left: 5vw;
+  padding-top: 5vh;
+  padding-right: 20vw;
+  position: relative;
+  height: 100%;
+  text-overflow: ellipsis;
+}
+
+.selector-componente{
+  position: absolute;
+  bottom: 0;
+}
+
+
+
 .padding-voz{
   padding-left: 5vw;
   padding-top: 5vh;
@@ -1005,12 +1021,14 @@ body.menu-toggled > .meta-link > span {
 .size-option{
   font-weight: 300;
   color: #999EA9;
-  border-bottom: 3px solid transparent !important;
+  border-bottom: 4px solid transparent !important;
 }
+
+
 .size-option-focused{
   font-weight: 700;
   color:#4A3CDB;
-  border-bottom: solid #F9E100 !important;
+  border-bottom: 3px solid #F9E100 !important;
 }
 
 .size-option:hover{

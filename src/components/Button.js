@@ -88,6 +88,13 @@ const Button = () => (
     <li>El texto de los botones debe ser breve y preciso. Es mejor utilizar dos palabras y en casos excepcionales un máximo de 4 palabras cuando es necesario indicar acciones complejas.</li>
     <li>Es necesario utilizar palabras relacionadas con el proceso que se està desarrollando.</li>
     </div>
+    <div>
+    <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
+    Guidelines de contenido
+    </p>
+    <br></br>
+    <p>Los botones son parte esencial de la interfaz, por esta razón es importante establecer pautas de contenido a seguir para su correcto uso.</p>
+    </div>
     
     </div>
 

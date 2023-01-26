@@ -119,7 +119,6 @@ const Dropdown = () => (
     <li>El título debe hacer alusión a la acción que se está por realizar, es decir informar al usuario.</li>
     <li>Si no son necesarios, evitar el uso de artículos, para describir las opciones de menú. Por ejemplo, usar “Agregar herramientas” en lugar de “agregar una herramienta”.</li>
     </div>
-    <div style={{alignSelf:"center"}}><img src={dont} ></img></div>
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
     Accesibilidad

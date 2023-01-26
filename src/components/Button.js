@@ -69,7 +69,7 @@ const Button = () => (
       Tamaños de Botones
     </p>
     <br></br>
-    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Tienen un tamaño determinado para diferentes acciones y según la aplicación en que se usen. En la siguiente tabla se encuentran definidos los casos de uso para cada tamaño según el botón.</p>
+    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Tienen un tamaño determinado para diferentes situaciones y según la aplicación en que se usen. En la siguiente tabla se encuentran definidos los casos de uso para cada tamaño según el botón.</p>
     <br></br>
     <div className="grid mt-2" style={{gridTemplateColumns:"30% 70%", gap:"2rem"}}>
       <div className=" justify-center flex" style={{alignItems:"center"}}>Small</div>
@@ -111,7 +111,7 @@ const Button = () => (
     
     <li>Botón primario: Señala la acción principal a ejecutar.</li>
     <li>Los botones secundarios se identifican por tener un color menos llamativo o no tener color.</li>
-    <li>Los botones tienen medidas distintas según su tamaño (pequeño - mediano - largo), hay que tener en cuenta que las medidas de la altura y largo varían según se usen en la web u aplicaciones móviles. De pequeños a largos miden 32 cm - 48cm - 64cm.</li>
+    <li>Los botones tienen medidas distintas según su tamaño (pequeño - mediano - largo), hay que tener en cuenta que las medidas de la altura y largo varían según se usen en la web u aplicaciones móviles. De pequeños a largos miden 32px - 48px - 64px.</li>
     <li>El texto de los botones debe ser breve y preciso. Es mejor utilizar dos palabras y en casos excepcionales un máximo de 4 palabras cuando es necesario indicar acciones complejas.</li>
     <li>Es necesario utilizar palabras relacionadas con el proceso que se està desarrollando.</li>
     </div>

@@ -36,6 +36,7 @@ import IntroAlt from "./views/IntroAlt.tsx";
 import Modales from "./views/Modales";
 import Button from "./components/Button";
 import Dropdown from "./components/Dropdown";
+import Input from "./components/Input";
 
 
 initFontAwesome();
@@ -91,6 +92,7 @@ const App = () => {
             <Route path="/mercurius/intro" component={Intro} />
             <Route path="/mercurius/button" component={Button} />
             <Route path="/mercurius/dropdown" component={Dropdown} />
+            <Route path="/mercurius/input" component={Input} />
 
             </Fragment>
             )}

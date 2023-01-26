@@ -4,6 +4,7 @@ import {faHeart, faIcons, faPalette, faPenNib, faTypewriter } from "@fortawesome
 import {faArrowRight, facircleuser, faUserCircle, faRocket, faUserAstronaut, faHandHeart } from "@fortawesome/pro-light-svg-icons";
 import { NavLink } from 'react-router-dom';
 import button from "../assets/button.png";
+import dont from "../assets/dont.png";
 
 const Button = () => (
   <>
@@ -43,6 +44,43 @@ const Button = () => (
     <li>Funcionan como un llamado a la acción (call to action).</li>
     <li>Suelen utilizar iconos para reforzar el significado de la acción que indica el botón.</li>
     </p>
+    <br></br>
+    </div>
+    <div>
+    <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
+      Variantes
+    </p>
+    <br></br>
+    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Los botones tienen diferente apariencia según el uso que se requiera. Es importante que cada una de las variantes se implemente de manera consistente en todos los productos.</p>
+    <div className="grid mt-2" style={{gridTemplateColumns:"30% 70%", gap:"2rem"}}>
+      <div className=" justify-center flex" style={{alignItems:"center"}}>Primario</div>
+      <div>Para hacer un llamado a la acción. Indica acciones principales.</div>
+      <div className=" justify-center flex" style={{alignItems:"center"}}>Secundario</div>
+      <div>Para indicar acciones, comúnmente negativas, en segundo plano. Suelen usarse junto a un botón principal.</div>
+      <div className=" justify-center flex" style={{alignItems:"center"}}>Subtle</div>
+      <div>Para indicar acciones en tercer plano. Por lo general se usan junto a un botón principal.</div>
+
+
+    </div>
+    <br></br>
+    </div>
+    <div>
+    <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
+      Tamaños de Botones
+    </p>
+    <br></br>
+    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Tienen un tamaño determinado para diferentes acciones y según la aplicación en que se usen. En la siguiente tabla se encuentran definidos los casos de uso para cada tamaño según el botón.</p>
+    <br></br>
+    <div className="grid mt-2" style={{gridTemplateColumns:"30% 70%", gap:"2rem"}}>
+      <div className=" justify-center flex" style={{alignItems:"center"}}>Small</div>
+      <div>Se utiliza en áreas reducidas, cuando no hay espacio suficiente para el tamaño predeterminado.</div>
+      <div className=" justify-center flex" style={{alignItems:"center"}}>Medium</div>
+      <div>Tienen un tamaño estándar por lo que son utilizados con regularidad.</div>
+      <div className=" justify-center flex" style={{alignItems:"center"}}>Large</div>
+      <div>Los utilizamos para páginas de un solo botón, landing pages y call to action.</div>
+
+
+    </div>
     <br></br>
     </div>
     <div className="flex flex-col">
@@ -95,7 +133,15 @@ const Button = () => (
     <br></br>
     <p>Los botones son parte esencial de la interfaz, por esta razón es importante establecer pautas de contenido a seguir para su correcto uso.</p>
     </div>
-    
+    <div style={{alignSelf:"center"}}><img src={dont} ></img></div>
+    <div>
+    <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
+    Accesibilidad
+    </p>
+    <br></br>
+    <li>Incluir texto alternativo en los botones de ícono.</li>
+    <li>Utilizar fuentes, tamaño y color de texto legibles.</li>
+    </div>
     </div>
 
     

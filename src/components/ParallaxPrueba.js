@@ -28,7 +28,7 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 
 const ParallaxPrueba = () => (
   <>
-{/* <div id='hero'>
+    <div id='hero'>
   <div className='layer-bg layer' data-depth='0.10' data-type='parallax'></div>
   <div className='layer-1 layer' data-depth='0.20' data-type='parallax'></div>
   <div className='layer-2 layer' data-depth='0.50' data-type='parallax'></div>
@@ -41,7 +41,11 @@ const ParallaxPrueba = () => (
 <div className=" margin-contenido">
   <img src="https://www.xtrim.com.ec/wp-content/uploads/2023/01/IMG_0037.png"></img>
 </div>
+<div id='hero-mobile'></div>
 <div id='content'>
+  <div>
+  <img src="https://www.xtrim.com.ec/wp-content/uploads/2023/01/IMG_0037.png"></img>
+  </div>
   <div>
     <div className="">
       <section style={{backgroundColor: "#F2F1FC"}} className="header relative pt-16 items-center flex pb-16">

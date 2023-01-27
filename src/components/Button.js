@@ -10,7 +10,7 @@ import TopBar  from "../components/TopBar"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faCode, faMinus, faPlus, faPuzzlePiece } from "@fortawesome/pro-light-svg-icons";
 
-export const Componentes = () => {
+export const Button = () => {
 
   const [isShownUso, setIsShownUso] = useState(true);
   const [isShownCode, setIsShownCode] = useState(false);
@@ -344,7 +344,7 @@ export const Componentes = () => {
     
     </div>
     <div className=" selector-componente" style={{borderBottom:"solid 4px #EBECF0", width:"100%"}}>
-      <div className="padding-componente flex flex-row gap-2" style={{marginBottom:"-3px"}}>
+      <div className=" flex flex-row gap-2" style={{marginBottom:"-3px", paddingLeft:"5vw"}}>
         <button className="size-component size-option-component-focused" onClick={handleClickMostrarUso} >Uso</button>
         <button className="size-component size-option-component" onClick={handleClickMostrarCode}>Código</button>
       </div>
@@ -483,6 +483,7 @@ export const Componentes = () => {
     <br></br>
     <p>Este botón con todas sus variables se usa con frecuencia en la mayoría de los productos.</p>
     <br></br>
+    <h5 className=' text-heading-5 text-color-grayscale-2 mb-3'>Botón Primary</h5>
     {/* <div className=" text-subtitle-1 mb-2">Explora otros tamaños: </div> */}
     <div className="flex flex-row items-center gap-2">
       <button className="size-1 size-option-focused" onClick={handleClickMostrarPrimary1}>Small</button>
@@ -585,7 +586,7 @@ export const Componentes = () => {
     </div> }
     </div>
     <div className=" mb-5">
-    <h5 className=' text-heading-5 mb-3'>Boton Secundario</h5>
+    <h5 className=' text-heading-5 text-color-grayscale-2 mb-3'>Botón Secondary</h5>
     <div className="flex flex-row gap-2">
       <button className="size-2 size-option-focused" onClick={handleClickMostrarSecondary1}>Small</button>
       <button className="size-2 size-option" onClick={handleClickMostrarSecondary2}>Medium</button>
@@ -688,7 +689,7 @@ export const Componentes = () => {
     
     </div>
     <div className=" mb-5">
-    <h5 className=' text-heading-5 mb-3'>Boton Subtle</h5>
+    <h5 className=' text-heading-5 text-color-grayscale-2 mb-3'>Botón Subtle</h5>
     <div className="flex flex-row gap-2">
       <button className="size-3 size-option-focused" onClick={handleClickMostrarSubtle1}>Small</button>
       <button className="size-3 size-option" onClick={handleClickMostrarSubtle2}>Medium</button>
@@ -789,7 +790,10 @@ export const Componentes = () => {
     </div> }
     </div>
     <div className=" mb-5">
-    <h5 className=' text-heading-5 mb-3'>Boton Destacado</h5>
+    <p className=" mb-5" style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
+    Botón Destacado
+    </p>
+    <h5 className=' text-heading-5 text-color-grayscale-2 mb-3'>Botón Outstanding</h5>
     <div className="flex flex-row gap-2">
       <button className="size-4 size-option-focused" onClick={handleClickMostrarOutstanding1}>Small</button>
       <button className="size-4 size-option" onClick={handleClickMostrarOutstanding2}>Medium</button>
@@ -890,7 +894,10 @@ export const Componentes = () => {
     </div> }
     </div>
     <div className=" mb-5">
-    <h5 className=' text-heading-5 mb-3'>Boton Pink</h5>
+    <p className=" mb-5" style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
+    Botón Auxiliar
+    </p>
+    <h5 className=' text-heading-5 text-color-grayscale-2 mb-3'>Botón Pink Primary</h5>
     <div className="flex flex-row gap-2">
       <button className="size-5 size-option-focused" onClick={handleClickMostrarPink1}>Small</button>
       <button className="size-5 size-option" onClick={handleClickMostrarPink2}>Medium</button>
@@ -991,7 +998,7 @@ export const Componentes = () => {
     </div> }
     </div>
     <div className=" mb-5">
-    <h5 className=' text-heading-5 mb-3'>Boton Pink Secundario</h5>
+    <h5 className=' text-heading-5 text-color-grayscale-2 mb-3'>Boton Pink Secondary</h5>
     <div className="flex flex-row gap-2">
       <button className="size-6 size-option-focused" onClick={handleClickMostrarPinkSecondary1}>Small</button>
       <button className="size-6 size-option" onClick={handleClickMostrarPinkSecondary2}>Medium</button>
@@ -1104,6 +1111,6 @@ export const Componentes = () => {
   );
 };
 
-export default withAuthenticationRequired(Componentes, {
+export default withAuthenticationRequired(Button, {
   onRedirecting: () => <Loading />,
 });

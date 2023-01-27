@@ -3,8 +3,7 @@ import {FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faHeart, faIcons, faPalette, faPenNib, faTypewriter } from "@fortawesome/pro-light-svg-icons";
 import {faArrowRight, facircleuser, faUserCircle, faRocket, faUserAstronaut, faHandHeart } from "@fortawesome/pro-light-svg-icons";
 import { NavLink } from 'react-router-dom';
-import button from "../assets/button.png";
-import dont from "../assets/dont.png";
+
 import dropdownradio from "../assets/dropdownradio.png";
 import dropdowncheck from "../assets/dropdowncheck.png";
 import dropdownelipsis from "../assets/dropdownelipsis.png";
@@ -25,7 +24,7 @@ const Dropdown = () => (
     
     </div>
     <div className=" selector-componente" style={{borderBottom:"solid 4px #EBECF0", width:"100%"}}>
-      <div className="padding-componente flex flex-row gap-2" style={{marginBottom:"-3px"}}>
+      <div className=" flex flex-row gap-2" style={{marginBottom:"-3px", paddingLeft:"5vw"}}>
         <button className="size-2 size-option-focused" >Uso</button>
         <button className="size-2 size-option">Código</button>
       </div>

@@ -1034,6 +1034,22 @@ body.menu-toggled > .meta-link > span {
 .size-option:hover{
   color:#9890eb;
 }
+.size-option-component{
+  font-weight: 300;
+  color: #999EA9;
+  border-bottom: 4px solid transparent !important;
+}
+
+
+.size-option-component-focused{
+  font-weight: 700;
+  color:#4A3CDB;
+  border-bottom: 3px solid #F9E100 !important;
+}
+
+.size-option-component:hover{
+  color:#9890eb;
+}
 
 .grid-container-marca {
   display: grid;

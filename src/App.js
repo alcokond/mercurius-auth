@@ -37,6 +37,7 @@ import Modales from "./views/Modales";
 import Button from "./components/Button";
 import Dropdown from "./components/Dropdown";
 import Input from "./components/Input";
+import Checkbox from "./components/Checkbox";
 
 
 initFontAwesome();
@@ -93,6 +94,7 @@ const App = () => {
             <Route path="/mercurius/button" component={Button} />
             <Route path="/mercurius/dropdown" component={Dropdown} />
             <Route path="/mercurius/input" component={Input} />
+            <Route path="/mercurius/checkbox" component={Checkbox} />
 
             </Fragment>
             )}

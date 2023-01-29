@@ -49,8 +49,35 @@ export const Input = () => {
   const [isMostrarPrimary4, setIsMostrarPrimary4] = useState(false);
   const [isMostrarPrimary5, setIsMostrarPrimary5] = useState(false);
   
+  const [emailSuccess, setEmailSuccess] = useState("user@mercurius.com");
+  const [emailFail, setEmailFail] = useState("usermercurius.com");
+  const [isValidSuccess, setIsValidSuccess] = useState(true);
+  const [isValidFail, setIsValidFail] = useState(false);
+
+  const handleChange = (event) => {
+    setEmailSuccess(event.target.value);
+    setEmailFail(event.target.value);
+    setIsValidSuccess(event.target.checkValidity());
+    setIsValidFail(event.target.checkValidity());
+  };
 
   const handleClickMostrarUso = event => {
+    
+    document.getElementById("email").addEventListener("input", function() {
+      let email = this.value;
+      let messagesuccess = document.getElementById("message-success");
+      let messageerror = document.getElementById("message-error");
+      
+      if (email.checkValidity()) {
+        messagesuccess.style.display = "block";
+        messageerror.style.display = "none";
+      } else {
+        messagesuccess.style.display = "none";
+        messageerror.style.display = "block";
+      }
+    });
+
+
     setIsShownUso(current => true);
     setIsShownCode(current => false);
     const ps = document.getElementsByClassName('size-component');
@@ -652,10 +679,13 @@ export const Input = () => {
     </div>
     <div className="component-content-full flex">
         <div className="mx-auto my-auto">
-              <div class="input-frame">
-                <div class="input-standard-label">Label name</div>
-                <input type="text" placeholder="Placeholder" class="input-standard" disabled ></input>
-              </div>            
+              <div className="input-frame">
+                <div className="input-standard-label">Email</div>
+                <div className="info-message-frame">
+               <div><input value="user@mercurius.com" id="email" type="email" placeholder="Ingresar correo" onChange={handleChange} className="input-standard" required ></input></div>
+                <div id="message-success" className="input-standard-successmsg" >Success message</div>
+                </div>
+              </div>    
         </div>
     </div>
     </div>
@@ -670,9 +700,29 @@ export const Input = () => {
     <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
      <CopyBlock 
           language="html"
-          text={`<div class="input-frame">
-  <div class="input-standard-label">Label name</div>
-  <input type="text" placeholder="Placeholder" class="input-standard" disabled ></input>
+          text={`<script>
+  document.getElementById("email").addEventListener("input", function() {
+    let email = document.getElementById("email");
+    let messagesuccess = document.getElementById("messagesuccess");
+    let messageerror = document.getElementById("messageerror");
+          
+    if (email.checkValidity()) {
+      messagesuccess.style.display = "block";
+      messageerror.style.display = "none";
+    } else {
+      messagesuccess.style.display = "none";
+      messageerror.style.display = "block";
+    }
+  });
+</script>
+
+<div class="input-frame">
+  <div class="input-standard-label">Email</div>
+  <div class="info-message-frame">
+    <div><input id="email" type="email" placeholder="Ingresar correo" class="input-standard" required ></input></div>
+    <div id="messagesuccess" class="input-standard-successmsg" style="display:none">Success message</div>
+    <div id="messageerror" class="input-standard-errormsg" style="display:none">Error message</div>
+  </div>
 </div>`}
           codeBlock
           theme={dracula}
@@ -689,13 +739,13 @@ export const Input = () => {
     </div>
     <div className="component-content-full flex">
         <div className="mx-auto my-auto">
-        <div class="input-frame">
-                <div class="input-standard-label">Email</div>
-                <div class="info-message-frame">
-               <input type="email" placeholder="Placeholder" class="input-standard" required ></input>
-              <div class="input-standard-successmsg">Success message</div> 
+        <div className="input-frame">
+                <div className="input-standard-label">Email</div>
+                <div className="info-message-frame">
+               <div><input value="usermercurius.com" id="email" type="email" placeholder="Ingresar correo" className="input-standard" required ></input></div>
+                <div id="message-error" className="input-standard-errormsg" >Error message</div> 
                 </div>
-              </div>            
+              </div>  
         </div>
     </div>
     </div>
@@ -725,520 +775,7 @@ export const Input = () => {
         </div>
     </div> }
     </div>
-    <div className=" mb-5">
-    <h5 className=' text-heading-5 text-color-grayscale-2 mb-3'>Botón Secondary</h5>
-    <div className="flex flex-row gap-2">
-      <button className="size-2 size-option-focused" onClick={handleClickMostrarSecondary1}>Small</button>
-      <button className="size-2 size-option" onClick={handleClickMostrarSecondary2}>Medium</button>
-      <button className="size-2 size-option" onClick={handleClickMostrarSecondary3}>Large</button>
-    </div>
-    {isMostrarSecondary1 && 
-    !isShownSecondary && <> 
     
-    <div className="flex flex-col ">
-    <div style={{alignSelf: "flex-end"}}>
-    <button className=" text-color-primary text-weight-semibold" onClick={handleClickSecondary}>Ver Código <FontAwesomeIcon icon={faCode} /></button>
-    </div>
-    <div className="component-content-full flex">
-        <div className="mx-auto my-auto">
-          <button className="button-main-secondary-small ">Button</button>            
-        </div>
-    </div>
-    </div>
-    
-     </>  }
-     {isMostrarSecondary1 && 
-    isShownSecondary &&
-    <div className="flex flex-col ">
-    <div style={{alignSelf: "flex-end"}}>
-    <button className=" text-color-primary text-weight-semibold" onClick={handleClickSecondary}>Ver Componente <FontAwesomeIcon icon={faPuzzlePiece} /></button> 
-    </div>
-    <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
-     <CopyBlock 
-          language="html"
-          text={`<button class="button-main-secondary-small ">Button</button>`}
-          codeBlock
-          theme={dracula}
-          showLineNumbers={false}
-        
-        />
-        </div>
-    </div> }
-    {isMostrarSecondary2 && 
-    !isShownSecondary && <> 
-    <div className="flex flex-col ">
-    <div style={{alignSelf: "flex-end"}}>
-    <button className=" text-color-primary text-weight-semibold" onClick={handleClickSecondary}>Ver Código <FontAwesomeIcon icon={faCode} /></button>
-    </div>
-    <div className="component-content-full flex">
-        <div className="mx-auto my-auto">
-          <button className="button-main-secondary-medium ">Button</button>            
-        </div>
-    </div>
-    </div>
-    
-     </>  }
-     {isMostrarSecondary2 && 
-    isShownSecondary &&
-    <div className="flex flex-col ">
-    <div style={{alignSelf: "flex-end"}}>
-    <button className=" text-color-primary text-weight-semibold" onClick={handleClickSecondary}>Ver Componente <FontAwesomeIcon icon={faPuzzlePiece} /></button> 
-    </div>
-    <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
-     <CopyBlock 
-          language="html"
-          text={`<button class="button-main-secondary-medium ">Button</button>`}
-          codeBlock
-          theme={dracula}
-          showLineNumbers={false}
-        
-        />
-        </div>
-    </div> }
-    {isMostrarSecondary3 && 
-    !isShownSecondary && <> 
-    <div className="flex flex-col ">
-    <div style={{alignSelf: "flex-end"}}>
-    <button className=" text-color-primary text-weight-semibold" onClick={handleClickSecondary}>Ver Código <FontAwesomeIcon icon={faCode} /></button>
-    </div>
-    <div className="component-content-full flex">
-        <div className="mx-auto my-auto">
-          <button className="button-main-secondary-large ">Button</button>            
-        </div>
-    </div>
-    </div>
-    
-     </>  }
-     {isMostrarSecondary3 && 
-    isShownSecondary &&
-    <div className="flex flex-col ">
-    <div style={{alignSelf: "flex-end"}}>
-    <button className=" text-color-primary text-weight-semibold" onClick={handleClickSecondary}>Ver Componente <FontAwesomeIcon icon={faPuzzlePiece} /></button> 
-    </div>
-    <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
-     <CopyBlock 
-          language="html"
-          text={`<button class="button-main-secondary-large ">Button</button>`}
-          codeBlock
-          theme={dracula}
-          showLineNumbers={false}
-        
-        />
-        </div>
-    </div> }
-    
-    </div>
-    <div className=" mb-5">
-    <h5 className=' text-heading-5 text-color-grayscale-2 mb-3'>Botón Subtle</h5>
-    <div className="flex flex-row gap-2">
-      <button className="size-3 size-option-focused" onClick={handleClickMostrarSubtle1}>Small</button>
-      <button className="size-3 size-option" onClick={handleClickMostrarSubtle2}>Medium</button>
-      <button className="size-3 size-option" onClick={handleClickMostrarSubtle3}>Large</button>
-    </div>
-    {isMostrarSubtle1 && 
-    !isShownSubtle && <> 
-    <div className="flex flex-col ">
-    <div style={{alignSelf: "flex-end"}}>
-    <button className=" text-color-primary text-weight-semibold" onClick={handleClickSubtle}>Ver Código <FontAwesomeIcon icon={faCode} /></button>
-    </div>
-    <div className="component-content-full flex">
-        <div className="mx-auto my-auto">
-          <button className="button-main-subtle-small ">Button</button>            
-        </div>
-    </div>
-    </div>
-    
-     </>  }
-     {isMostrarSubtle1 && 
-    isShownSubtle &&
-    <div className="flex flex-col ">
-    <div style={{alignSelf: "flex-end"}}>
-    <button className=" text-color-primary text-weight-semibold" onClick={handleClickSubtle}>Ver Componente <FontAwesomeIcon icon={faPuzzlePiece} /></button> 
-    </div>
-    <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
-     <CopyBlock 
-          language="html"
-          text={`<button class="button-main-subtle-small ">Button</button>`}
-          codeBlock
-          theme={dracula}
-          showLineNumbers={false}
-        
-        />
-        </div>
-    </div> }
-    {isMostrarSubtle2 && 
-    !isShownSubtle && <> 
-    <div className="flex flex-col ">
-    <div style={{alignSelf: "flex-end"}}>
-    <button className=" text-color-primary text-weight-semibold" onClick={handleClickSubtle}>Ver Código <FontAwesomeIcon icon={faCode} /></button>
-    </div>
-    <div className="component-content-full flex">
-        <div className="mx-auto my-auto">
-          <button className="button-main-subtle-medium ">Button</button>            
-        </div>
-    </div>
-    </div>
-    
-     </>  }
-     {isMostrarSubtle2 && 
-    isShownSubtle &&
-    <div className="flex flex-col ">
-    <div style={{alignSelf: "flex-end"}}>
-    <button className=" text-color-primary text-weight-semibold" onClick={handleClickSubtle}>Ver Componente <FontAwesomeIcon icon={faPuzzlePiece} /></button> 
-    </div>
-    <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
-     <CopyBlock 
-          language="html"
-          text={`<button class="button-main-subtle-medium ">Button</button>`}
-          codeBlock
-          theme={dracula}
-          showLineNumbers={false}
-        
-        />
-        </div>
-    </div> }
-    {isMostrarSubtle3 && 
-    !isShownSubtle && <> 
-    <div className="flex flex-col ">
-    <div style={{alignSelf: "flex-end"}}>
-    <button className=" text-color-primary text-weight-semibold" onClick={handleClickSubtle}>Ver Código <FontAwesomeIcon icon={faCode} /></button>
-    </div>
-    <div className="component-content-full flex">
-        <div className="mx-auto my-auto">
-          <button className="button-main-subtle-large ">Button</button>            
-        </div>
-    </div>
-    </div>
-    
-     </>  }
-     {isMostrarSubtle3 && 
-    isShownSubtle &&
-    <div className="flex flex-col ">
-    <div style={{alignSelf: "flex-end"}}>
-    <button className=" text-color-primary text-weight-semibold" onClick={handleClickSubtle}>Ver Componente <FontAwesomeIcon icon={faPuzzlePiece} /></button> 
-    </div>
-    <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
-     <CopyBlock 
-          language="html"
-          text={`<button class="button-main-subtle-large ">Button</button>`}
-          codeBlock
-          theme={dracula}
-          showLineNumbers={false}
-        
-        />
-        </div>
-    </div> }
-    </div>
-    <div className=" mb-5">
-    <p className=" mb-5" style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
-    Botón Destacado
-    </p>
-    <h5 className=' text-heading-5 text-color-grayscale-2 mb-3'>Botón Outstanding</h5>
-    <div className="flex flex-row gap-2">
-      <button className="size-4 size-option-focused" onClick={handleClickMostrarOutstanding1}>Small</button>
-      <button className="size-4 size-option" onClick={handleClickMostrarOutstanding2}>Medium</button>
-      <button className="size-4 size-option" onClick={handleClickMostrarOutstanding3}>Large</button>
-    </div>
-    {isMostrarOutstanding1 && 
-    !isShownOutstanding && <> 
-    <div className="flex flex-col ">
-    <div style={{alignSelf: "flex-end"}}>
-    <button className=" text-color-primary text-weight-semibold" onClick={handleClickOutstanding}>Ver Código <FontAwesomeIcon icon={faCode} /></button>
-    </div>
-    <div className="component-content-full flex">
-        <div className="mx-auto my-auto">
-          <button className="button-outstanding-small ">Button</button>            
-        </div>
-    </div>
-    </div>
-    
-     </>  }
-     {isMostrarOutstanding1 && 
-    isShownOutstanding &&
-    <div className="flex flex-col ">
-    <div style={{alignSelf: "flex-end"}}>
-    <button className=" text-color-primary text-weight-semibold" onClick={handleClickOutstanding}>Ver Componente <FontAwesomeIcon icon={faPuzzlePiece} /></button> 
-    </div>
-    <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
-     <CopyBlock 
-          language="html"
-          text={`<button class="button-outstanding-small ">Button</button>`}
-          codeBlock
-          theme={dracula}
-          showLineNumbers={false}
-        
-        />
-        </div>
-    </div> }
-    {isMostrarOutstanding2 && 
-    !isShownOutstanding && <> 
-    <div className="flex flex-col ">
-    <div style={{alignSelf: "flex-end"}}>
-    <button className=" text-color-primary text-weight-semibold" onClick={handleClickOutstanding}>Ver Código <FontAwesomeIcon icon={faCode} /></button>
-    </div>
-    <div className="component-content-full flex">
-        <div className="mx-auto my-auto">
-          <button className="button-outstanding-medium ">Button</button>            
-        </div>
-    </div>
-    </div>
-    
-     </>  }
-     {isMostrarOutstanding2 && 
-    isShownOutstanding &&
-    <div className="flex flex-col ">
-    <div style={{alignSelf: "flex-end"}}>
-    <button className=" text-color-primary text-weight-semibold" onClick={handleClickOutstanding}>Ver Componente <FontAwesomeIcon icon={faPuzzlePiece} /></button> 
-    </div>
-    <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
-     <CopyBlock 
-          language="html"
-          text={`<button class="button-outstanding-medium ">Button</button>`}
-          codeBlock
-          theme={dracula}
-          showLineNumbers={false}
-        
-        />
-        </div>
-    </div> }
-    {isMostrarOutstanding3 && 
-    !isShownOutstanding && <> 
-    <div className="flex flex-col ">
-    <div style={{alignSelf: "flex-end"}}>
-    <button className=" text-color-primary text-weight-semibold" onClick={handleClickOutstanding}>Ver Código <FontAwesomeIcon icon={faCode} /></button>
-    </div>
-    <div className="component-content-full flex">
-        <div className="mx-auto my-auto">
-          <button className="button-outstanding-large ">Button</button>            
-        </div>
-    </div>
-    </div>
-    
-     </>  }
-     {isMostrarOutstanding3 && 
-    isShownOutstanding &&
-    <div className="flex flex-col ">
-    <div style={{alignSelf: "flex-end"}}>
-    <button className=" text-color-primary text-weight-semibold" onClick={handleClickOutstanding}>Ver Componente <FontAwesomeIcon icon={faPuzzlePiece} /></button> 
-    </div>
-    <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
-     <CopyBlock 
-          language="html"
-          text={`<button class="button-outstanding-large ">Button</button>`}
-          codeBlock
-          theme={dracula}
-          showLineNumbers={false}
-        
-        />
-        </div>
-    </div> }
-    </div>
-    <div className=" mb-5">
-    <p className=" mb-5" style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
-    Botón Auxiliar
-    </p>
-    <h5 className=' text-heading-5 text-color-grayscale-2 mb-3'>Botón Pink Primary</h5>
-    <div className="flex flex-row gap-2">
-      <button className="size-5 size-option-focused" onClick={handleClickMostrarPink1}>Small</button>
-      <button className="size-5 size-option" onClick={handleClickMostrarPink2}>Medium</button>
-      <button className="size-5 size-option" onClick={handleClickMostrarPink3}>Large</button>
-    </div>
-    {isMostrarPink1 && 
-    !isShownPink && <> 
-    <div className="flex flex-col ">
-    <div style={{alignSelf: "flex-end"}}>
-    <button className=" text-color-primary text-weight-semibold" onClick={handleClickPink}>Ver Código <FontAwesomeIcon icon={faCode} /></button>
-    </div>
-    <div className="component-content-full flex">
-        <div className="mx-auto my-auto">
-          <button className="button-pink-primary-small ">Button</button>            
-        </div>
-    </div>
-    </div>
-    
-     </>  }
-     {isMostrarPink1 && 
-    isShownPink &&
-    <div className="flex flex-col ">
-    <div style={{alignSelf: "flex-end"}}>
-    <button className=" text-color-primary text-weight-semibold" onClick={handleClickPink}>Ver Componente <FontAwesomeIcon icon={faPuzzlePiece} /></button> 
-    </div>
-    <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
-     <CopyBlock 
-          language="html"
-          text={`<button class="button-pink-primary-small ">Button</button>`}
-          codeBlock
-          theme={dracula}
-          showLineNumbers={false}
-        
-        />
-        </div>
-    </div> }
-    {isMostrarPink2 && 
-    !isShownPink && <> 
-    <div className="flex flex-col ">
-    <div style={{alignSelf: "flex-end"}}>
-    <button className=" text-color-primary text-weight-semibold" onClick={handleClickPink}>Ver Código <FontAwesomeIcon icon={faCode} /></button>
-    </div>
-    <div className="component-content-full flex">
-        <div className="mx-auto my-auto">
-          <button className="button-pink-primary-medium ">Button</button>            
-        </div>
-    </div>
-    </div>
-    
-     </>  }
-     {isMostrarPink2 && 
-    isShownPink &&
-    <div className="flex flex-col ">
-    <div style={{alignSelf: "flex-end"}}>
-    <button className=" text-color-primary text-weight-semibold" onClick={handleClickPink}>Ver Componente <FontAwesomeIcon icon={faPuzzlePiece} /></button> 
-    </div>
-    <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
-     <CopyBlock 
-          language="html"
-          text={`<button class="button-pink-primary-medium ">Button</button>`}
-          codeBlock
-          theme={dracula}
-          showLineNumbers={false}
-        
-        />
-        </div>
-    </div> }
-    {isMostrarPink3 && 
-    !isShownPink && <> 
-    <div className="flex flex-col ">
-    <div style={{alignSelf: "flex-end"}}>
-    <button className=" text-color-primary text-weight-semibold" onClick={handleClickPink}>Ver Código <FontAwesomeIcon icon={faCode} /></button>
-    </div>
-    <div className="component-content-full flex">
-        <div className="mx-auto my-auto">
-          <button className="button-pink-primary-large ">Button</button>            
-        </div>
-    </div>
-    </div>
-    
-     </>  }
-     {isMostrarPink3 && 
-    isShownPink &&
-    <div className="flex flex-col ">
-    <div style={{alignSelf: "flex-end"}}>
-    <button className=" text-color-primary text-weight-semibold" onClick={handleClickPink}>Ver Componente <FontAwesomeIcon icon={faPuzzlePiece} /></button> 
-    </div>
-    <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
-     <CopyBlock 
-          language="html"
-          text={`<button class="button-pink-primary-large ">Button</button>`}
-          codeBlock
-          theme={dracula}
-          showLineNumbers={false}
-        
-        />
-        </div>
-    </div> }
-    </div>
-    <div className=" mb-5">
-    <h5 className=' text-heading-5 text-color-grayscale-2 mb-3'>Boton Pink Secondary</h5>
-    <div className="flex flex-row gap-2">
-      <button className="size-6 size-option-focused" onClick={handleClickMostrarPinkSecondary1}>Small</button>
-      <button className="size-6 size-option" onClick={handleClickMostrarPinkSecondary2}>Medium</button>
-      <button className="size-6 size-option" onClick={handleClickMostrarPinkSecondary3}>Large</button>
-    </div>
-    {isMostrarPinkSecondary1 && 
-    !isShownPinkSecondary && <> 
-    <div className="flex flex-col ">
-    <div style={{alignSelf: "flex-end"}}>
-    <button className=" text-color-primary text-weight-semibold" onClick={handleClickPinkSecondary}>Ver Código <FontAwesomeIcon icon={faCode} /></button>
-    </div>
-    <div className="component-content-full flex">
-        <div className="mx-auto my-auto">
-          <button className="button-pink-secondary-small ">Button</button>            
-        </div>
-    </div>
-    </div>
-    
-     </>  }
-     {isMostrarPinkSecondary1 && 
-    isShownPinkSecondary &&
-    <div className="flex flex-col ">
-    <div style={{alignSelf: "flex-end"}}>
-    <button className=" text-color-primary text-weight-semibold" onClick={handleClickPinkSecondary}>Ver Componente <FontAwesomeIcon icon={faPuzzlePiece} /></button> 
-    </div>
-    <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
-     <CopyBlock 
-          language="html"
-          text={`<button class="button-pink-secondary-small ">Button</button>`}
-          codeBlock
-          theme={dracula}
-          showLineNumbers={false}
-        
-        />
-        </div>
-    </div> }
-    {isMostrarPinkSecondary2 && 
-    !isShownPinkSecondary && <> 
-    <div className="flex flex-col ">
-    <div style={{alignSelf: "flex-end"}}>
-    <button className=" text-color-primary text-weight-semibold" onClick={handleClickPinkSecondary}>Ver Código <FontAwesomeIcon icon={faCode} /></button>
-    </div>
-    <div className="component-content-full flex">
-        <div className="mx-auto my-auto">
-          <button className="button-pink-secondary-medium ">Button</button>            
-        </div>
-    </div>
-    </div>
-    
-     </>  }
-     {isMostrarPinkSecondary2 && 
-    isShownPinkSecondary &&
-    <div className="flex flex-col ">
-    <div style={{alignSelf: "flex-end"}}>
-    <button className=" text-color-primary text-weight-semibold" onClick={handleClickPinkSecondary}>Ver Componente <FontAwesomeIcon icon={faPuzzlePiece} /></button> 
-    </div>
-    <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
-     <CopyBlock 
-          language="html"
-          text={`<button class="button-pink-secondary-medium ">Button</button>`}
-          codeBlock
-          theme={dracula}
-          showLineNumbers={false}
-        
-        />
-        </div>
-    </div> }
-    {isMostrarPinkSecondary3 && 
-    !isShownPinkSecondary && <> 
-    <div className="flex flex-col ">
-    <div style={{alignSelf: "flex-end"}}>
-    <button className=" text-color-primary text-weight-semibold" onClick={handleClickPinkSecondary}>Ver Código <FontAwesomeIcon icon={faCode} /></button>
-    </div>
-    <div className="component-content-full flex">
-        <div className="mx-auto my-auto">
-          <button className="button-pink-secondary-large ">Button</button>            
-        </div>
-    </div>
-    </div>
-    
-     </>  }
-     {isMostrarPinkSecondary3 && 
-    isShownPinkSecondary &&
-    <div className="flex flex-col ">
-    <div style={{alignSelf: "flex-end"}}>
-    <button className=" text-color-primary text-weight-semibold" onClick={handleClickPinkSecondary}>Ver Componente <FontAwesomeIcon icon={faPuzzlePiece} /></button> 
-    </div>
-    <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
-     <CopyBlock 
-          language="html"
-          text={`<button class="button-pink-secondary-large ">Button</button>`}
-          codeBlock
-          theme={dracula}
-          showLineNumbers={false}
-        
-        />
-        </div>
-    </div> }
-    
-    </div>
         </div>
     }
   </div>

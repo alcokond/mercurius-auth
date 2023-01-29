@@ -70,7 +70,7 @@ const Dropdown = () => (
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
       Anatomía
     </p>
-    <div style={{width:"20%", alignSelf:"center", marginTop: "4%"}}>
+    <div style={{width:"30%", alignSelf:"center", marginTop: "4%"}}>
     <img src={dropdown} ></img></div>
     <div className=" mt-4"></div>
     <p><strong>Título:</strong> Actúa como indicador ya que orienta al usuario.</p>

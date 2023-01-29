@@ -3,6 +3,12 @@ import { useAuth0, withAuthenticationRequired } from "@auth0/auth0-react";
 import Loading from "./Loading";
 
 import button from "../assets/button.png";
+import aceptarbien from "../assets/aceptar bien.png";
+import aceptarmal from "../assets/aceptar mal.png";
+import editarbien from "../assets/editar bien.png";
+import editarmal from "../assets/editar mal.png";
+import iniciarbien from "../assets/iniciar bien.png";
+import iniciarmal from "../assets/iniciar mal.png";
 import dont from "../assets/dont.png";
 
 import { CopyBlock, dracula } from "react-code-blocks";
@@ -458,8 +464,15 @@ export const Button = () => {
     <br></br>
     <p>Los botones son parte esencial de la interfaz, por esta razón es importante establecer pautas de contenido a seguir para su correcto uso.</p>
     </div>
-    <div style={{alignSelf:"center"}}><img src={dont} ></img></div>
-    <div>
+    <div className="mb-5" style={{height:"100%",alignSelf:"center", display:"grid", gridTemplateColumns:"1fr 1fr", gap:"3%"}}>
+      <img src={aceptarbien}></img>
+      <img src={aceptarmal}></img>
+      <img src={editarbien}></img>
+      <img src={editarmal}></img>
+      <img src={iniciarbien}></img>
+      <img src={iniciarmal}></img>
+    </div>
+    <div style={{display: "block",position:"relative"}}>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
     Accesibilidad
     </p>

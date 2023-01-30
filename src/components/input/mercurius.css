@@ -2592,5 +2592,104 @@ input:checked + .slider:before {
   gap: inherit;
 }
 
+.dropinput {
+  border: none;
+  outline: 0 !important;
+  text-decoration: none;
+  pointer-events: none;
+  user-select: none;
+  background-color: transparent;
+  outline: none;
+  font-family: 'Montserrat', sans-serif;
+}
+.dropbtn {
+  background-color: #FFFFFF;
+  color: #6A7180;
+  padding: 8px 16px;
+  min-width: 225px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1.5px solid #B1B5BD;
+  border-radius: 8px;
+  text-align:left;
+  font-family: Montserrat;
+  line-height:140%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropdown-clicked{
+  border: 1.5px solid #4A3CDB!important;
+}
+
+.icon-blue{
+  color: "#4A3CDB";
+}
+.dropbtn:disabled {
+  background: #EBECF0;
+  border: 0;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: calc(100% + 0.5em);
+  min-width: 259px;
+  left: 0;
+  display: none;
+  position: absolute;
+  background-color: #FFFFFF;
+  color: #6A7180;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  filter: drop-shadow(0px 0px 4px #717C96);
+  border-radius: 8px;
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content-react {
+  position: absolute;
+  top: calc(100% + 0.5em);
+  min-width: 259px;
+  left: 0;
+  position: absolute;
+  background-color: #FFFFFF;
+  color: #6A7180;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  filter: drop-shadow(0px 0px 4px #717C96);
+  border-radius: 8px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-content-react a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-icon {
+  -ms-flex-align: end;
+  align-self: center
+}
+
+.dropdown a:hover {background-color: #F2F1FC;}
+
+.show {display: block;}
 
 

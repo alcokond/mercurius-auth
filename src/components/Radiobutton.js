@@ -4,7 +4,7 @@ import Loading from "./Loading";
 
 import toggle from "../assets/toggle.png";
 import radiobutton from "../assets/radiobutton.png";
-import checkbox from "../assets/checkbox.png";
+
 import { CopyBlock, dracula } from "react-code-blocks";
 import TopBar  from "./TopBar"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -345,13 +345,13 @@ export const Dropdown = () => {
     <div id="colores" className=" background-grayscale-6" style={{position:"relative"}} >
     <div className="padding-componente flex flex-col">
     <h6 className="text-overline">Acciones</h6>
-    <h3 style={{fontSize:"36px", fontWeight:"700", color:"#221987"}} className="mb-3">Checkbox</h3>
-    <p className="text-button-1 text-justify">Los checkbox son inputs que facilitan al usuario la selección de varias opciones. Se pueden seleccionar opciones que se encuentre agrupadas en categorías diferentes.</p>
+    <h3 style={{fontSize:"36px", fontWeight:"700", color:"#221987"}} className="mb-3">Radio Button</h3>
+    <p className="text-button-1 text-justify">Los radio buttons permiten a los usuarios seleccionar solo una opción a la vez entre varias. Al seleccionar otra opción la primera se deselecciona.</p>
     
     </div>
     <div className=" selector-componente" style={{borderBottom:"solid 4px #EBECF0", width:"100%"}}>
-      <div className="padding-componente flex flex-row gap-2" style={{marginBottom:"-3px"}}>
-        <button className="size-component size-option-component-focused" onClick={handleClickMostrarUso} >Uso</button>
+      <div className=" flex flex-row gap-2" style={{marginBottom:"-3px", paddingLeft:"5vw"}}>
+        <button className="size-component size-option-component-focused" onClick={handleClickMostrarUso}>Uso</button>
         <button className="size-component size-option-component" onClick={handleClickMostrarCode}>Código</button>
       </div>
       
@@ -364,76 +364,93 @@ export const Dropdown = () => {
       Uso
     </p>
     <br></br>
-    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Los checkbox se usan cuando hay varios elementos en el menú. Permite seleccionar desde cero a múltiples opciones.</p>
+    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Se utilizan cuando dentro del menú hay grupo de opciones mutuamente excluyentes o en opciones de menú donde la acción sea cambiar de una configuración a otra. Por lo general se usan para seleccionar opciones de una solo elección.</p>
     <br></br>
-    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Son comúnmente usados en casillas de verificación, formularios, en términos y condiciones. se usan en formularios, que pueden encontrarse dentro de páginas completas y modales.</p>
+    
     </div>
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
-    Variantes
+      Variantes
     </p>
-    <br></br>
-    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Los estados de check y uncheck definen si una opción esta selecciona o no. Al realizar la selección los estados varian.</p>
-    <br></br>
+    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Los estados de on y off indican cuando una de las opciones del menú se encuentra seleccionada y cuando no lo está.</p>
+    <br />
     <div className="grid mt-2" style={{gridTemplateColumns:"30% 70%", gap:"2rem"}}>
       <div className=" justify-center flex" style={{alignItems:"center"}}>Initial</div>
-      <div>Cuando la información es una sola línea de texto.</div>
+      <div>Muestra el estado normal del radio button. Se encuentra en on cuando la interacción ha sido realizada y en off cuando no se ha iniciado la interacción con el botón.</div>
       <div className=" justify-center flex" style={{alignItems:"center"}}>Hover</div>
-      <div>Para que el usuario ingrese consultas de búsqueda.</div>
+      <div>Cuando el cursor se encuentra encima del radio button sin seleccionar la opción.</div>
       <div className=" justify-center flex" style={{alignItems:"center"}}>Focus</div>
-      <div>Para ingresar y editar direcciones de correo electrónico.</div>
+      <div>Cuando el usuario mantiene presionado el radio button mientras está en hover.</div>
       <div className=" justify-center flex" style={{alignItems:"center"}}>Disable</div>
-      <div>Se muestra cuando el checkbox está deshabilitado.</div>
+      <div>Indica que el radio button está deshabilitado.</div>
 
 
     </div>
-    <br></br>
+    </div>
+    <div>
+    <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
+      Estilo
+    </p>
+    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>El radio button tienes dos estilos que determinan su apariencia e indican cuando una opción ha sido seleccionada y en qué estado se encuentra.</p>
+    <br />
+    <div className="grid mt-2" style={{gridTemplateColumns:"30% 70%", gap:"2rem"}}>
+      <div className=" justify-center flex" style={{alignItems:"center"}}>On</div>
+      <div>Indica selección, muestra cuando una opción ha sido elegida.</div>
+      <div className=" justify-center flex" style={{alignItems:"center"}}>Off</div>
+      <div>Muestra el estado normal del radio button.</div>
+      
+
+
+    </div>
     </div>
     <div className="flex flex-col">
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
       Anatomía
     </p>
-    <div style={{width:"40%", alignSelf:"center", marginTop: "4%"}}>
-    <img src={checkbox} ></img></div>
+    <div style={{width:"30%", alignSelf:"center", marginTop: "4%"}}>
+    <img src={radiobutton} ></img></div>
     <div className=" mt-4"></div>
     <p><strong>Casilla:</strong> Control de selección.</p>
-    <p><strong>Texto:</strong> Indica la acción que define a cada opción.</p>
+    <p><strong>Interruptor:</strong> Determina el estado del Toggle.</p>
     </div>
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
       Comportamiento
     </p>
     <br></br>
-    <p>Los inputs pueden ser utilizados tanto para retroalimentar información tangible como para ingresar información. Son estilos aplicados sobre el HTML tag <code>&lt;input&gt;</code>, por lo que heredan sus estados y características.</p>
+    <p>Cuando se selecciona otra opción, el estado selected cambia a esa opción. Solo una opción puede estar seleccionada a la vez. Presionar el radiobutton cuando ya está seleccionado no lo deselecciona.
+    </p>
     <br></br>
-    <p>Para mostrar un input que solo deba ser leído y que muestre información que es tangible solo por el sitio web o servidor, se utiliza el modificador readonly, mientras que para bloquear el ingreso de información que si puede ser ingresada en otras situaciones, se utiliza el modificador disabled.</p>
-    <br></br>
-    <p>En caso de ser utilizado para contraseñas, el input presenta un botón para visualizar la contraseña ingresada.</p>
+    </div>
+    <div>
+    <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
+    Mejores Prácticas
+    </p>
+    <br />
+    <li>Organizar las opciones en un orden lógico.</li>
+    <li>Las opciones que presenten menor riesgo van primeras en la lista.</li>
+    <li>Las opciones que representen operaciones mas complejas van ultimas en la lista.</li>
+    <li>Deben enlistarse primero las opciones mas simples.</li>
+    <li>Deben ordenarse según la probabilidad de selección.</li>
+    <li>Agregar un estado no seleccionado con la opción “ninguno”.</li>
+    <li>Agregar la opción “otro” para permitir al usuario añadir observaciones.</li>
+    <li>Evite organizar las opciones en orden alfabético.</li>
     </div>
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
     Alineación
     </p>
-    
-    <li>Las casillas de verificación se encuentran alineadas a la izquierda, de tal modo que el texto se alinea a la derecha.</li>
-    <li>Cuando las casillas de verificación se encuentran agrupadas, se pueden distribuir vertical u horizontalmente según la estructura de la interfaz.</li>
-    <li>Es recomendable organizar los grupos de casillas de verificación verticalmente porque facilita la lectura del usuario.</li>
+    <br />
+    <li>Las casillas de verificación se encuentran alineadas a la izquierda.</li>
+    <li>El texto se encuentra alineado a la derecha del radio button.</li>
+    <li>Cuando las casillas de verificación se encuentran agrupadas, se pueden distribuir vertical u horizontalmente. Es recomendable organizar los grupos de casillas de verificación verticalmente porque facilita la lectura del usuario.</li>
     </div>
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
     Guidelines de contenido
     </p>
     <br></br>
-    <li>El texto que se encuentra junto a la casilla de verificación debe ser breve y descriptivo.</li>
-    <li>La primera letra del texto junto a la casilla de verificación debe escribirse con letra mayúscula.</li>
-    <li>El texto descriptivo no incluye punto final.</li>
-    </div>
-    <div>
-    <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
-    Accesibilidad
-    </p>
-    <br></br>
-    <li>Cuando se usan encima de un fondo con colores fuertes, la casilla de verificación utiliza un color que contraste con el fondo.</li>
+    <li>Las etiquetas deben ser breves, explicativas y proporcionar contexto acerca de la opción que funcione a modo de guía para el usuario.</li>
     </div>
     </div> }
   {isShownCode && 
@@ -442,11 +459,11 @@ export const Dropdown = () => {
     Desarrollo
     </p>
     <br></br>
-    <p>El checkbox es una variante de los <code>&lt;input type="checkbox"&gt;</code> por lo cual heredan las cualidades de los mismos.</p>
+    <p>El radiobutton de una variante de los inputs, por lo que hereda las características de los <code>&lt;input type="radio"&gt;</code> </p>
     </div>
     <div className=" mb-5">
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
-    Checkbox
+    Radiobutton
     </p>
     <br></br>
     
@@ -459,12 +476,12 @@ export const Dropdown = () => {
     <div className="component-content-full flex">
         <div className="mx-auto my-auto">
     <div>
-      <input type="checkbox" id="huey" name="drone" value="huey"></input>
+      <input type="radio" id="huey" name="drone" value="huey"></input>
       <label for="huey">Huey</label>
     </div>
 
     <div>
-      <input type="checkbox" id="dewey" name="drone" value="dewey"></input>
+      <input type="radio" id="dewey" name="drone" value="dewey"></input>
       <label for="dewey">Dewey</label>
     </div>
    
@@ -483,12 +500,12 @@ export const Dropdown = () => {
      <CopyBlock 
           language="html"
           text={`<div>
-  <input type="checkbox" id="huey" name="drone" value="huey"></input>
+  <input type="radio" id="huey" name="drone" value="huey"></input>
   <label for="huey">Huey</label>
 </div>
     
 <div>
-  <input type="checkbox" id="dewey" name="drone" value="dewey"></input>
+  <input type="radio" id="dewey" name="drone" value="dewey"></input>
   <label for="dewey">Dewey</label>
 </div>`}
           codeBlock

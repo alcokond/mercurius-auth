@@ -3,8 +3,7 @@ import { useAuth0, withAuthenticationRequired } from "@auth0/auth0-react";
 import Loading from "./Loading";
 
 import toggle from "../assets/toggle.png";
-import radiobutton from "../assets/radiobutton.png";
-import checkbox from "../assets/checkbox.png";
+
 import { CopyBlock, dracula } from "react-code-blocks";
 import TopBar  from "./TopBar"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -345,13 +344,13 @@ export const Dropdown = () => {
     <div id="colores" className=" background-grayscale-6" style={{position:"relative"}} >
     <div className="padding-componente flex flex-col">
     <h6 className="text-overline">Acciones</h6>
-    <h3 style={{fontSize:"36px", fontWeight:"700", color:"#221987"}} className="mb-3">Checkbox</h3>
-    <p className="text-button-1 text-justify">Los checkbox son inputs que facilitan al usuario la selección de varias opciones. Se pueden seleccionar opciones que se encuentre agrupadas en categorías diferentes.</p>
+    <h3 style={{fontSize:"36px", fontWeight:"700", color:"#221987"}} className="mb-3">Toggle</h3>
+    <p className="text-button-1 text-justify">Utilizamos los toggles para cambiar entre dos estados. Son comúnmente conocidos como “encendido “y “apagado” o “habilitado y “desahabilitado”.</p>
     
     </div>
     <div className=" selector-componente" style={{borderBottom:"solid 4px #EBECF0", width:"100%"}}>
-      <div className="padding-componente flex flex-row gap-2" style={{marginBottom:"-3px"}}>
-        <button className="size-component size-option-component-focused" onClick={handleClickMostrarUso} >Uso</button>
+      <div className=" flex flex-row gap-2" style={{marginBottom:"-3px", paddingLeft:"5vw"}}>
+        <button className="size-component size-option-component-focused" onClick={handleClickMostrarUso}>Uso</button>
         <button className="size-component size-option-component" onClick={handleClickMostrarCode}>Código</button>
       </div>
       
@@ -364,76 +363,95 @@ export const Dropdown = () => {
       Uso
     </p>
     <br></br>
-    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Los checkbox se usan cuando hay varios elementos en el menú. Permite seleccionar desde cero a múltiples opciones.</p>
+    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Los Toggles se utilizan para cambiar entre dos estados posibles, activar o desactivar una opción. Por ejemplo, activar el brillo automático. Se utilizan con frecuencia para denotar opciones de encendido y apagado.</p>
     <br></br>
-    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Son comúnmente usados en casillas de verificación, formularios, en términos y condiciones. se usan en formularios, que pueden encontrarse dentro de páginas completas y modales.</p>
+    
     </div>
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
-    Variantes
+      Variantes
     </p>
-    <br></br>
-    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Los estados de check y uncheck definen si una opción esta selecciona o no. Al realizar la selección los estados varian.</p>
-    <br></br>
+    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Los estados de on y off indican cuando el usuario ha iniciado la interacción con el componente.</p>
+    <br />
     <div className="grid mt-2" style={{gridTemplateColumns:"30% 70%", gap:"2rem"}}>
       <div className=" justify-center flex" style={{alignItems:"center"}}>Initial</div>
-      <div>Cuando la información es una sola línea de texto.</div>
+      <div>Muestra el estado normal del Toggle. Si se encuentra en on indica que se realizado cuando la interacción y si está en off indica que no se ha realizado ninguna la interacción.</div>
       <div className=" justify-center flex" style={{alignItems:"center"}}>Hover</div>
-      <div>Para que el usuario ingrese consultas de búsqueda.</div>
+      <div>Cuando el cursor se encuentra encima del Toggle sin seleccionar la opción.</div>
       <div className=" justify-center flex" style={{alignItems:"center"}}>Focus</div>
-      <div>Para ingresar y editar direcciones de correo electrónico.</div>
+      <div>Cuando el usuario mantiene presionado el Toggle mientras está en hover.</div>
       <div className=" justify-center flex" style={{alignItems:"center"}}>Disable</div>
-      <div>Se muestra cuando el checkbox está deshabilitado.</div>
+      <div>Indica que el Toggle está deshabilitado.</div>
 
 
     </div>
-    <br></br>
+    </div>
+    <div>
+    <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
+      Estilo
+    </p>
+    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>El Toggle tiene dos estilos On y Off que determinan su apariencia e indican el estado en que se encuentra.</p>
+    <br />
+    <div className="grid mt-2" style={{gridTemplateColumns:"30% 70%", gap:"2rem"}}>
+      <div className=" justify-center flex" style={{alignItems:"center"}}>On</div>
+      <div>Indica selección, si las opciones son encendido y apagado, el estilo “on” indicaría que está encendido o activo.</div>
+      <div className=" justify-center flex" style={{alignItems:"center"}}>Off</div>
+      <div>Muestra el estado normal o apagado del Toggle.</div>
+      
+
+
+    </div>
     </div>
     <div className="flex flex-col">
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
       Anatomía
     </p>
-    <div style={{width:"40%", alignSelf:"center", marginTop: "4%"}}>
-    <img src={checkbox} ></img></div>
+    <div style={{width:"30%", alignSelf:"center", marginTop: "4%"}}>
+    <img src={toggle} ></img></div>
     <div className=" mt-4"></div>
     <p><strong>Casilla:</strong> Control de selección.</p>
-    <p><strong>Texto:</strong> Indica la acción que define a cada opción.</p>
+    <p><strong>Interruptor:</strong> Determina el estado del Toggle.</p>
     </div>
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
       Comportamiento
     </p>
     <br></br>
-    <p>Los inputs pueden ser utilizados tanto para retroalimentar información tangible como para ingresar información. Son estilos aplicados sobre el HTML tag <code>&lt;input&gt;</code>, por lo que heredan sus estados y características.</p>
+    <p>El toggle presenta 2 estados: on y off. al ser presionado se cambian los atributos y se realiza un desplazamiento del circulo interior.</p>
     <br></br>
-    <p>Para mostrar un input que solo deba ser leído y que muestre información que es tangible solo por el sitio web o servidor, se utiliza el modificador readonly, mientras que para bloquear el ingreso de información que si puede ser ingresada en otras situaciones, se utiliza el modificador disabled.</p>
-    <br></br>
-    <p>En caso de ser utilizado para contraseñas, el input presenta un botón para visualizar la contraseña ingresada.</p>
+    </div>
+    <div>
+    <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
+    Mejores Prácticas
+    </p>
+    <br />
+    <li>Utilizar texto para informar al usuario la función del Toggle.</li>
+    <li>El Toggle cambia de un estilo a otro seleccionando la opción contraria.</li>
+    <li>El toggle debe colocarse junto al texto.</li>
+    <li>Utilizar colores fuertes para indicar que el Toggle se encuentra activado.</li>
     </div>
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
     Alineación
     </p>
-    
-    <li>Las casillas de verificación se encuentran alineadas a la izquierda, de tal modo que el texto se alinea a la derecha.</li>
-    <li>Cuando las casillas de verificación se encuentran agrupadas, se pueden distribuir vertical u horizontalmente según la estructura de la interfaz.</li>
-    <li>Es recomendable organizar los grupos de casillas de verificación verticalmente porque facilita la lectura del usuario.</li>
+    <br />
+    <li>El interruptor se colocará a la derecha cuando este encendido, activado o seleccionado.</li>
+    <li>El interruptor se colocará a la izquierda cuando este apagado, desactivado o deshabilitado.</li>
+    <li>El texto informativo se coloca a la izquierda del Toggle.</li>
     </div>
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
     Guidelines de contenido
     </p>
     <br></br>
-    <li>El texto que se encuentra junto a la casilla de verificación debe ser breve y descriptivo.</li>
-    <li>La primera letra del texto junto a la casilla de verificación debe escribirse con letra mayúscula.</li>
-    <li>El texto descriptivo no incluye punto final.</li>
+    <li>Las etiquetas deben ser breves, explicativas y proporcionar contexto acerca de la opción que funcione a modo de guía para el usuario.</li>
     </div>
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
     Accesibilidad
     </p>
     <br></br>
-    <li>Cuando se usan encima de un fondo con colores fuertes, la casilla de verificación utiliza un color que contraste con el fondo.</li>
+    <li>Incluir texto alternativo en los botones de ícono.</li>
     </div>
     </div> }
   {isShownCode && 
@@ -442,13 +460,14 @@ export const Dropdown = () => {
     Desarrollo
     </p>
     <br></br>
-    <p>El checkbox es una variante de los <code>&lt;input type="checkbox"&gt;</code> por lo cual heredan las cualidades de los mismos.</p>
+    <p>El toggle utiliza las propiedades de desplazamiento para cambiar de estado.</p>
     </div>
     <div className=" mb-5">
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
-    Checkbox
+    Toggle
     </p>
     <br></br>
+    <h5 className=' text-heading-5 text-color-grayscale-2 mb-3'>On-Off</h5>
     
     {isMostrarPrimary1 && 
     !isShownPrimary && <> 
@@ -458,20 +477,14 @@ export const Dropdown = () => {
     </div>
     <div className="component-content-full flex">
         <div className="mx-auto my-auto">
-    <div>
-      <input type="checkbox" id="huey" name="drone" value="huey"></input>
-      <label for="huey">Huey</label>
-    </div>
-
-    <div>
-      <input type="checkbox" id="dewey" name="drone" value="dewey"></input>
-      <label for="dewey">Dewey</label>
-    </div>
-   
-
+        <label className="switch">
+  <input type="checkbox"></input>
+  <span className="slider round"></span>
+</label>
         </div>
     </div>
     </div>
+    
      </>  }
      {isMostrarPrimary1 && 
     isShownPrimary &&
@@ -482,15 +495,10 @@ export const Dropdown = () => {
     <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
      <CopyBlock 
           language="html"
-          text={`<div>
-  <input type="checkbox" id="huey" name="drone" value="huey"></input>
-  <label for="huey">Huey</label>
-</div>
-    
-<div>
-  <input type="checkbox" id="dewey" name="drone" value="dewey"></input>
-  <label for="dewey">Dewey</label>
-</div>`}
+          text={`<label class="switch">
+  <input type="checkbox"></input>
+  <span class="slider"></span>
+</label>`}
           codeBlock
           theme={dracula}
           showLineNumbers={false}

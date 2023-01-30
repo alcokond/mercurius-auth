@@ -4,9 +4,14 @@ body {
   box-sizing: border-box;
 }
 
+li {
+  display: list-item; /* make container a list item */
+}
+
 li::marker {
   color: #E5E3FA;
-  font-size: 2em;
+  font-size: 1em;
+  margin: 0;
 }
 
 
@@ -764,6 +769,8 @@ button:focus{
   background-color: #EBECF0;
   border-radius: 8px;
   border: 1px solid #B1B5BD;
+  overflow: visible;
+  display: flex;
   
 }
 
@@ -1172,4 +1179,11 @@ body.menu-toggled > .meta-link > span {
 }
 .tutorial-link:hover {
   color: #ede0d5;
+}
+
+.dropbtn.selected {
+  border: 1.5px solid #4A3CDB;
+}
+.dropdown-icon.selected {
+  color: #4A3CDB;
 }

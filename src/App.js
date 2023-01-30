@@ -35,9 +35,11 @@ import Intro from "./views/Intro.jsx";
 import IntroAlt from "./views/IntroAlt.tsx";
 import Modales from "./views/Modales";
 import Button from "./components/Button";
-import Dropdown from "./components/Dropdown";
 import Input from "./components/Input";
 import Checkbox from "./components/Checkbox";
+import Dropdown from "./components/Dropdown";
+import ToggleComp from "./components/ToggleComp";
+import Radiobutton from "./components/Radiobutton";
 
 
 initFontAwesome();
@@ -95,6 +97,8 @@ const App = () => {
             <Route path="/mercurius/dropdown" component={Dropdown} />
             <Route path="/mercurius/input" component={Input} />
             <Route path="/mercurius/checkbox" component={Checkbox} />
+            <Route path="/mercurius/toggle" component={ToggleComp} />
+            <Route path="/mercurius/radiobutton" component={Radiobutton} />
 
             </Fragment>
             )}

@@ -774,6 +774,19 @@ button:focus{
   
 }
 
+.component-content-full-drop{
+  width: 100%;
+  height: 40vh;
+  background-color: #EBECF0;
+  border-radius: 8px;
+  border: 1px solid #B1B5BD;
+  overflow: visible;
+  display: flex;
+  
+}
+
+
+
 .component-content-modales{
   width: 100%;
   height: 100%;
@@ -1048,6 +1061,7 @@ body.menu-toggled > .meta-link > span {
 }
 
 
+
 .size-option-component-focused{
   font-weight: 700;
   color:#4A3CDB;
@@ -1057,6 +1071,7 @@ body.menu-toggled > .meta-link > span {
 .size-option-component:hover{
   color:#9890eb;
 }
+
 
 .grid-container-marca {
   display: grid;

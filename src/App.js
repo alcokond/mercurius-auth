@@ -40,6 +40,8 @@ import Checkbox from "./components/Checkbox";
 import Dropdown from "./components/Dropdown";
 import ToggleComp from "./components/ToggleComp";
 import Radiobutton from "./components/Radiobutton";
+import Tab from "./components/Tab";
+import Breadcrumbs from "./components/Breadcrumbs";
 
 
 initFontAwesome();
@@ -99,6 +101,8 @@ const App = () => {
             <Route path="/mercurius/checkbox" component={Checkbox} />
             <Route path="/mercurius/toggle" component={ToggleComp} />
             <Route path="/mercurius/radiobutton" component={Radiobutton} />
+            <Route path="/mercurius/tab" component={Tab} />
+            <Route path="/mercurius/breadcrumbs" component={Breadcrumbs} />
 
             </Fragment>
             )}

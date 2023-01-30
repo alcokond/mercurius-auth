@@ -2,16 +2,15 @@ import React, { useState } from "react";
 import { useAuth0, withAuthenticationRequired } from "@auth0/auth0-react";
 import Loading from "./Loading";
 
-import toggle from "../assets/toggle.png";
-import radiobutton from "../assets/radiobutton.png";
-import checkbox from "../assets/checkbox.png";
+import tabs from "../assets/tabs.png";
+
 import { CopyBlock, dracula } from "react-code-blocks";
 import TopBar  from "./TopBar"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faChevronsDown, faChevronUp, faCode, faMinus, faPlus, faPuzzlePiece } from "@fortawesome/pro-light-svg-icons";
 import { faChevronDown } from "@fortawesome/pro-duotone-svg-icons";
 
-export const Checkbox = () => {
+export const Tab = () => {
 
   React.useEffect(() => {
     document.addEventListener("click", handleClickOutside);
@@ -49,6 +48,16 @@ export const Checkbox = () => {
   const handleClickToggle = event => {
     setIsShownToggle(current => !current);
 
+  };
+
+  const handleClickTab = event => {
+    const ps = document.getElementsByClassName('tab-select');
+    for (let item of ps) {
+      item.classList.remove('tab-focused');
+      item.classList.add('tab');
+    }
+    event.currentTarget.classList.add('tab-focused');
+    event.currentTarget.classList.remove('tab');
   };
 
 
@@ -339,19 +348,18 @@ export const Checkbox = () => {
   };
 
   return (
-    <>
     
     <div className="flex flex-col margin-sidebar margin-contenido">
     <div id="colores" className=" background-grayscale-6" style={{position:"relative"}} >
     <div className="padding-componente flex flex-col">
     <h6 className="text-overline">Acciones</h6>
-    <h3 style={{fontSize:"36px", fontWeight:"700", color:"#221987"}} className="mb-3">Checkbox</h3>
-    <p className="text-button-1 text-justify">Los checkbox son inputs que facilitan al usuario la selección de varias opciones. Se pueden seleccionar opciones que se encuentre agrupadas en categorías diferentes.</p>
+    <h3 style={{fontSize:"36px", fontWeight:"700", color:"#221987"}} className="mb-3">Tabs</h3>
+    <p className="text-button-1 text-justify">Los Tabs permiten organizar contenido relacionado, agrupando información similar en la misma página. Facilitan a los usuarios interactuar entre diversos grupos de información.</p>
     
     </div>
     <div className=" selector-componente" style={{borderBottom:"solid 4px #EBECF0", width:"100%"}}>
-      <div className="padding-componente flex flex-row gap-2" style={{marginBottom:"-3px"}}>
-        <button className="size-component size-option-component-focused" onClick={handleClickMostrarUso} >Uso</button>
+      <div className=" flex flex-row gap-2" style={{marginBottom:"-3px", paddingLeft:"5vw"}}>
+        <button className="size-component size-option-component-focused" onClick={handleClickMostrarUso}>Uso</button>
         <button className="size-component size-option-component" onClick={handleClickMostrarCode}>Código</button>
       </div>
       
@@ -364,91 +372,88 @@ export const Checkbox = () => {
       Uso
     </p>
     <br></br>
-    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Los checkbox se usan cuando hay varios elementos en el menú. Permite seleccionar desde cero a múltiples opciones.</p>
+    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Los Tabs permiten seleccionar opciones en un menú que contiene información relacionada a acción o categoría principal. Funcionan de modo que permiten ver el contenido en la misma página.</p>
     <br></br>
-    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Son comúnmente usados en casillas de verificación, formularios, en términos y condiciones. se usan en formularios, que pueden encontrarse dentro de páginas completas y modales.</p>
+    
     </div>
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
-    Variantes
+      Variantes
     </p>
     <br></br>
-    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Los estados de check y uncheck definen si una opción esta selecciona o no. Al realizar la selección los estados varian.</p>
-    <br></br>
+    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Los Tabs tienen variantes que definen en qué estado se encuentra el componente.</p>
+    <br />
     <div className="grid mt-2" style={{gridTemplateColumns:"30% 70%", gap:"2rem"}}>
-      <div className=" justify-center flex" style={{alignItems:"center"}}>Initial</div>
-      <div>Cuando la información es una sola línea de texto.</div>
+      <div className=" justify-center flex" style={{alignItems:"center"}}>Default</div>
+      <div>Muestra el estado normal de los Tabs.</div>
       <div className=" justify-center flex" style={{alignItems:"center"}}>Hover</div>
-      <div>Para que el usuario ingrese consultas de búsqueda.</div>
-      <div className=" justify-center flex" style={{alignItems:"center"}}>Focus</div>
-      <div>Para ingresar y editar direcciones de correo electrónico.</div>
-      <div className=" justify-center flex" style={{alignItems:"center"}}>Disable</div>
-      <div>Se muestra cuando el checkbox está deshabilitado.</div>
+      <div>Cuando el cursor se encuentra encima del Tab sin seleccionar el componente.</div>
+      <div className=" justify-center flex" style={{alignItems:"center"}}>Active</div>
+      <div>Este estado se muestra cuando el componente se encuentra activo.</div>
 
 
     </div>
-    <br></br>
     </div>
     <div className="flex flex-col">
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
       Anatomía
     </p>
-    <div style={{width:"40%", alignSelf:"center", marginTop: "4%"}}>
-    <img src={checkbox} ></img></div>
+    <div style={{width:"60%", alignSelf:"center", marginTop: "4%"}}>
+    <img src={tabs} ></img></div>
     <div className=" mt-4"></div>
-    <p><strong>Casilla:</strong> Control de selección.</p>
-    <p><strong>Texto:</strong> Indica la acción que define a cada opción.</p>
+    <p><strong>Seleccionado:</strong> La categoría se encuentra activa.</p>
+    <p><strong>No seleccionado:</strong> Son el resto de categorías desactivadas.</p>
+    <p><strong>Separador:</strong> Distingue las opciones del resto del contenido y separa la navegación por pestañas.</p>
     </div>
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
       Comportamiento
     </p>
     <br></br>
-    <p>Los checkbox funcionan como mecanismo para seleccionar 1, 0 o múltiples opciones entre una lista. Al seleccionar una opción, el icono inmediato a la izquierda se torna de color Ocean Blue y se muestra con el icono Check. Volver a seleccionar la opción la devuelve a su estado anterior.</p>
+    <p>Las Tabs responden al evento click y el evento hover. Cuando se selecciona una tab mediante el click, el color de fuente cambia a Ocean Blue 100%, su sección del separador se torna Yellow Pantone y se deselecciona el resto de tabs. </p>
     <br></br>
-    <p>Todos los elementos que tengan el icono Check se consideran como ‘selected’ o seleccionados.</p>
-    <br></br>
+    <p>Cuando se hace hover, el color de fuente cambia a Ocean Blue 60%.</p>
     </div>
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
-    Alineación
+    Mejores Prácticas
     </p>
-    
-    <li>Las casillas de verificación se encuentran alineadas a la izquierda, de tal modo que el texto se alinea a la derecha.</li>
-    <li>Cuando las casillas de verificación se encuentran agrupadas, se pueden distribuir vertical u horizontalmente según la estructura de la interfaz.</li>
-    <li>Es recomendable organizar los grupos de casillas de verificación verticalmente porque facilita la lectura del usuario.</li>
+    <br />
+    <li>Utilizar Tabs para agrupar información, reduce la carga cognitiva del usuario.</li>
+    <li>Utilizar Tabs facilita a los usuarios encontrar información e interactuar por la interfaz.</li>
+    <li>Los Tabs organizan contenido para que el usuario no tenga que navegar fuera para encontrar información.</li>
     </div>
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
     Guidelines de contenido
     </p>
     <br></br>
-    <li>El texto que se encuentra junto a la casilla de verificación debe ser breve y descriptivo.</li>
-    <li>La primera letra del texto junto a la casilla de verificación debe escribirse con letra mayúscula.</li>
-    <li>El texto descriptivo no incluye punto final.</li>
+    <li>El texto del menú debe proporcionar información clara y breve del contenido que contienen.</li>
+    <li>El contenido que se agrupa en los Tabs es diferente y se excluye del resto. Se clasifican de forma independiente.</li>
     </div>
-    <div>
+    {/* <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
     Accesibilidad
     </p>
     <br></br>
-    <li>Cuando se usan encima de un fondo con colores fuertes, la casilla de verificación utiliza un color que contraste con el fondo.</li>
-    </div>
-    </div> }
+    <li>Incluir texto alternativo en los botones de ícono.</li>
+    </div> */}
+    </div> 
+    
+    }
   {isShownCode && 
     <div className="padding-componente flex flex-col gap-4">
     <div><p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
     Desarrollo
     </p>
     <br></br>
-    <p>El checkbox es una variante de los <code>&lt;input type="checkbox"&gt;</code> por lo cual heredan las cualidades de los mismos.</p>
+    <p>Cada tab se contiene en un <code>div</code> y estos <code>div</code> son ingresados dentro de un flexbox. </p>
     </div>
     <div className=" mb-5">
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
-    Checkbox
+    Tab
     </p>
     <br></br>
-    
     {isMostrarPrimary1 && 
     !isShownPrimary && <> 
     <div className="flex flex-col ">
@@ -457,20 +462,15 @@ export const Checkbox = () => {
     </div>
     <div className="component-content-full flex">
         <div className="mx-auto my-auto">
-    <div className="flex flex-row gap-2 center">
-      <div><input type="checkbox" id="huey" name="drone" value="huey"></input></div>
-      <div><label for="huey">Huey</label></div>
-    </div>
-
-    <div className="flex flex-row gap-2">
-      <div><input type="checkbox" id="dewey" name="drone" value="dewey"></input></div>
-      <div><label for="dewey">Dewey</label></div>
-    </div>
-   
-
+        <div className="flex flex-row">
+          <div className="tab-focused tab-select" onClick={handleClickTab}>Planes</div>
+          <div className="tab tab-select" onClick={handleClickTab}>Planes</div>
+          <div className="tab tab-select" onClick={handleClickTab}>Planes</div>
+        </div>
         </div>
     </div>
     </div>
+    
      </>  }
      {isMostrarPrimary1 && 
     isShownPrimary &&
@@ -481,14 +481,10 @@ export const Checkbox = () => {
     <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
      <CopyBlock 
           language="html"
-          text={`<div>
-  <input type="checkbox" id="huey" name="drone" value="huey"></input>
-  <label for="huey">Huey</label>
-</div>
-    
-<div>
-  <input type="checkbox" id="dewey" name="drone" value="dewey"></input>
-  <label for="dewey">Dewey</label>
+          text={`<div class="tab-container">
+    <div class="tab tab-select" onclick="handleClickTab">Planes</div>
+    <div class="tab tab-select" onclick="handleClickTab">Planes</div>
+    <div class="tab tab-select" onclick="handleClickTab">Planes</div>
 </div>`}
           codeBlock
           theme={dracula}
@@ -508,10 +504,10 @@ export const Checkbox = () => {
 
   </div>
   
-    </>
+   
   );
 };
 
-export default withAuthenticationRequired(Checkbox, {
+export default withAuthenticationRequired(Tab, {
   onRedirecting: () => <Loading />,
 });

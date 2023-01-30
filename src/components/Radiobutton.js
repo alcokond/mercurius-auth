@@ -11,7 +11,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faChevronsDown, faChevronUp, faCode, faMinus, faPlus, faPuzzlePiece } from "@fortawesome/pro-light-svg-icons";
 import { faChevronDown } from "@fortawesome/pro-duotone-svg-icons";
 
-export const Dropdown = () => {
+export const Radiobutton = () => {
 
   React.useEffect(() => {
     document.addEventListener("click", handleClickOutside);
@@ -418,9 +418,9 @@ export const Dropdown = () => {
       Comportamiento
     </p>
     <br></br>
-    <p>Cuando se selecciona otra opción, el estado selected cambia a esa opción. Solo una opción puede estar seleccionada a la vez. Presionar el radiobutton cuando ya está seleccionado no lo deselecciona.
-    </p>
+    <p>Los radio buttons funcionan como mecanismo para seleccionar 1 opción entre una lista. Al seleccionar una opción, el icono inmediato a la izquierda se torna de color blanco con un círculo color Ocean Blue.</p>
     <br></br>
+    <p>A diferencia del checkbox, solo 1 opción puede ser seleccionada, y dar click en ella nuevamente no la deselecciona.</p>
     </div>
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
@@ -530,6 +530,6 @@ export const Dropdown = () => {
   );
 };
 
-export default withAuthenticationRequired(Dropdown, {
+export default withAuthenticationRequired(Radiobutton, {
   onRedirecting: () => <Loading />,
 });

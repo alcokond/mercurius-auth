@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faChevronsDown, faChevronUp, faCode, faMinus, faPlus, faPuzzlePiece } from "@fortawesome/pro-light-svg-icons";
 import { faChevronDown } from "@fortawesome/pro-duotone-svg-icons";
 
-export const Dropdown = () => {
+export const Toggle = () => {
 
   React.useEffect(() => {
     document.addEventListener("click", handleClickOutside);
@@ -371,6 +371,7 @@ export const Dropdown = () => {
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
       Variantes
     </p>
+    <br></br>
     <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Los estados de on y off indican cuando el usuario ha iniciado la interacción con el componente.</p>
     <br />
     <div className="grid mt-2" style={{gridTemplateColumns:"30% 70%", gap:"2rem"}}>
@@ -390,6 +391,7 @@ export const Dropdown = () => {
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
       Estilo
     </p>
+    <br></br>
     <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>El Toggle tiene dos estilos On y Off que determinan su apariencia e indican el estado en que se encuentra.</p>
     <br />
     <div className="grid mt-2" style={{gridTemplateColumns:"30% 70%", gap:"2rem"}}>
@@ -417,8 +419,9 @@ export const Dropdown = () => {
       Comportamiento
     </p>
     <br></br>
-    <p>El toggle presenta 2 estados: on y off. al ser presionado se cambian los atributos y se realiza un desplazamiento del circulo interior.</p>
+    <p>El toggle reacciona a eventos de click y hover. presenta 2 estados: on y off y su actuación se da mediante clicks.  Al pasar de off a on, el switch se torna de color Ocean Blue 100% y el círculo interior se desplaza hacia la derecha.</p>
     <br></br>
+    <p>Al pasar de on a off, el switch se torna de color Light Gray y el círculo se desplaza hacia la izquierda.</p>
     </div>
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
@@ -521,6 +524,6 @@ export const Dropdown = () => {
   );
 };
 
-export default withAuthenticationRequired(Dropdown, {
+export default withAuthenticationRequired(Toggle, {
   onRedirecting: () => <Loading />,
 });

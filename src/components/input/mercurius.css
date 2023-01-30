@@ -2692,4 +2692,26 @@ input:checked + .slider:before {
 
 .show {display: block;}
 
+.tab{
+  font-weight: 300;
+  color: #999EA9;
+  border-bottom: 4px solid transparent !important;
+  margin-right: 32px;
+  margin-left: 32px;
+  margin-bottom: 12.5px;
+  margin-top: 12.5px;
+}
 
+.tab-focused{
+  font-weight: 700;
+  color:#4A3CDB;
+  border-bottom: 3px solid #F9E100 !important;
+  margin-right: 32px;
+  margin-left: 32px;
+  margin-bottom: 12.5px;
+  margin-top: 12.5px;
+}
+
+.tab:hover{
+  color:#9890eb;
+}

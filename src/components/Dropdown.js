@@ -499,11 +499,11 @@ export const Dropdown = () => {
     
     {isMostrarPrimary1 && 
     !isShownPrimary && <> 
-    <div className="flex flex-col ">
+    <div style={{display: "flex"}} className=" flex-col ">
     <div style={{alignSelf: "flex-end"}}>
     <button className=" text-color-primary text-weight-semibold" onClick={handleClickPrimary}>Ver Código <FontAwesomeIcon icon={faCode} /></button>
     </div>
-    <div className="component-content-full">
+    <div className="component-content-full-drop">
         <div className="mx-auto my-auto">
         <div className="dropdown">
           <div id="dropbtn" onClick={toggleDropdown} className={`dropbtn ${selected ? "selected" : ""}`}><input readonly class="dropinput" id="dropinput" value={selectedOption} type="text"></input><div id="dropdown-icon" class={`dropdown-icon ${selected ? "selected" : ""}`}>{!isOpen && <FontAwesomeIcon icon={faChevronDown} />}{isOpen && <FontAwesomeIcon icon={faChevronUp} />}</div></div>

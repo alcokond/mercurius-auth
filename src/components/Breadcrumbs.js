@@ -381,16 +381,9 @@ export const Breadcrumbs = () => {
     </p></div>
     
     <div className="flex flex-col gap-4">
-      <div className="flex" style={{backgroundColor:"#EBF6F2", borderBottom: "4px solid #38A57E", height:"15vh", alignItems:"center", justifyContent:"center", padding:"5%"}}>
+      <div className="flex" >
         <p>Se utilizan en páginas web que tienen mucho contenido organizado en más de dos niveles. Los breadcrumbs, contextualizan al usuario ya que le indican en que sitio o página se encuentra.</p>
- </div>
-
-    </div>
-    <div className="flex flex-col gap-4">
-      <div className="flex" style={{backgroundColor:"#F8E6EB", borderBottom: "4px solid #BD033B", height:"15vh", alignItems:"center", justifyContent:"center", padding:"5%"}}>
-        <p>
-No deben utilizarse como un menú inicial, ni en productos de un solo nivel, por ultimo los breadcrumbs nunca deben reemplazar la navegación principal.</p>
- </div>
+      </div>
 
     </div>
     <div>

@@ -375,7 +375,23 @@ export const Tab = () => {
     <br></br>
     <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Los Breadcrumbs son una alternativa que se adiciona a la navegación principal pero nunca deben reemplazarla. Se usan únicamente para orientar al usuario cuando se trata de procesos fáciles.</p>
     <p>Los elementos que contiene el Breadcrumbs funcionan como enlaces. Transportan al usuario a una nueva página, pero también les permite volver a la página anterior.</p>
-    <br></br>
+    </div>
+    <div><p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
+    Modo de Uso
+    </p></div>
+    
+    <div className="flex flex-col gap-4">
+      <div className="flex" style={{backgroundColor:"#EBF6F2", borderBottom: "4px solid #38A57E", height:"15vh", alignItems:"center", justifyContent:"center", padding:"5%"}}>
+        <p>Se utilizan en páginas web que tienen mucho contenido organizado en más de dos niveles. Los breadcrumbs, contextualizan al usuario ya que le indican en que sitio o página se encuentra.</p>
+ </div>
+
+    </div>
+    <div className="flex flex-col gap-4">
+      <div className="flex" style={{backgroundColor:"#F8E6EB", borderBottom: "4px solid #BD033B", height:"15vh", alignItems:"center", justifyContent:"center", padding:"5%"}}>
+        <p>
+No deben utilizarse como un menú inicial, ni en productos de un solo nivel, por ultimo los breadcrumbs nunca deben reemplazar la navegación principal.</p>
+ </div>
+
     </div>
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>

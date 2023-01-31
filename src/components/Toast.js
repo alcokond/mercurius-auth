@@ -7,7 +7,7 @@ import toast from "../assets/toast.png";
 import { CopyBlock, dracula } from "react-code-blocks";
 import TopBar  from "./TopBar"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft, faCheckCircle, faChevronsDown, faChevronUp, faCode, faMinus, faPlus, faPuzzlePiece } from "@fortawesome/pro-light-svg-icons";
+import { faArrowLeft, faCheckCircle, faChevronsDown, faChevronUp, faCode, faExclamationCircle, faInfoCircle, faMinus, faPlus, faPuzzlePiece, faXmarkCircle } from "@fortawesome/pro-light-svg-icons";
 import { faChevronDown } from "@fortawesome/pro-duotone-svg-icons";
 import { CheckCircle } from "@mui/icons-material";
 
@@ -378,24 +378,63 @@ export const Toast = () => {
     <p>Los toast por lo general aparecen en la parte superior de la página, se muestran por poco tiempo y luego desaparecen automáticamente.</p>
     </div>
     <br />
+    <div><p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
+    Modo de Uso
+    </p></div>
+    
+    <div className="flex flex-col gap-4">
+      <div className="flex" style={{backgroundColor:"#EBF6F2", borderBottom: "4px solid #38A57E", height:"15vh", alignItems:"center", justifyContent:"center", padding:"5%"}}>
+        <p>Se utilizan para dar información adicional sobre un proceso que por lo general indica actualizaciones o cambios en el estado del sistema. Se utilizan también para proporcionar comentarios o indicaciones cortas e instantáneos.</p>
+       </div>
+
+    </div>
+
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
       Variantes
     </p>
     <br></br>
-    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Los Tabs tienen variantes que definen en qué estado se encuentra el componente.</p>
+    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Los Toast tienen varios estados que se definen según el tipo de mensaje que se muestre. Por ejemplo:</p>
     <br />
-    <div className="grid mt-2" style={{gridTemplateColumns:"30% 70%", gap:"2rem"}}>
-      <div className=" justify-center flex" style={{alignItems:"center"}}>Información</div>
-      <div>Muestran información adicional que ayuda al usuario a conocer más sobre el proceso que esta realizando.</div>
-      <div className=" justify-center flex" style={{alignItems:"center"}}>Éxito</div>
-      <div>Cuando la acción que se ha realizado ha sido positiva y se ha podido concluir.</div>
-      <div className=" justify-center flex" style={{alignItems:"center"}}>Error</div>
-      <div>Cuando la acción que se ha realizado ha sido negativa y no se ha podido concluir, indica cual ha sido el error.</div>
-      <div className=" justify-center flex" style={{alignItems:"center"}}>Advertencia</div>
-      <div>Muestra mensajes de aviso que previenen al usuario e indican acciones no permitidas.</div>
-
-
+    <div className="flex flex-col gap-4">
+      <div>
+      <strong>Información</strong>
+    <div style={{border: "1px solid #4A3CDB", background: "#FFFFFF", borderRadius:"8px", gap:"2%", height:"79px"}} className="flex flex-row">
+          <div style={{width: "2%", backgroundColor: "#4A3CDB"}}></div>
+          <div style={{color:"#4A3CDB", alignSelf:"center", fontSize:"24px"}}><FontAwesomeIcon icon={faInfoCircle} /></div>
+          <div style={{alignSelf:"center"}}>Muestran información adicional que ayuda a conocer más 
+sobre el proceso que se está realizando.</div>
+          <div style={{alignSelf:"center", marginRight:"2%", marginLeft:"auto"}}><FontAwesomeIcon icon={faMinus} /></div>
+        </div>
+        </div> 
+    <div>
+    <strong>Éxito</strong>
+    <div style={{border: "1px solid #38A57E", background: "#FFFFFF", borderRadius:"8px", gap:"2%", height:"79px"}} className="flex flex-row">
+          <div style={{width: "2%", backgroundColor: "#38A57E"}}></div>
+          <div style={{color:"#38A57E", alignSelf:"center", fontSize:"24px"}}><FontAwesomeIcon icon={faCheckCircle} /></div>
+          <div style={{alignSelf:"center"}}>Cuando se logra concluir una acción de forma positiva.</div>
+          <div style={{alignSelf:"center", marginRight:"2%", marginLeft:"auto"}}><FontAwesomeIcon icon={faMinus} /></div>
+        </div>
+    </div>
+    <div>
+    <strong>Error</strong>
+    <div style={{border: "1px solid #BD033B", background: "#FFFFFF", borderRadius:"8px", gap:"2%", height:"79px"}} className="flex flex-row">
+          <div style={{width: "2%", backgroundColor: "#BD033B"}}></div>
+          <div style={{color:"#BD033B", alignSelf:"center", fontSize:"24px"}}><FontAwesomeIcon icon={faXmarkCircle} /></div>
+          <div style={{alignSelf:"center"}}>Indica el error de una acción que no se ha logrado concluir.</div>
+          <div style={{alignSelf:"center", marginRight:"2%", marginLeft:"auto"}}><FontAwesomeIcon icon={faMinus} /></div>
+        </div>
+    </div>
+    <div>
+    <strong>Advertencia</strong>
+    <div style={{border: "1px solid #F9B100", background: "#FFFFFF", borderRadius:"8px", gap:"2%", height:"79px"}} className="flex flex-row">
+          <div style={{width: "2%", backgroundColor: "#F9B100"}}></div>
+          <div style={{color:"#F9B100", alignSelf:"center", fontSize:"24px"}}><FontAwesomeIcon icon={faExclamationCircle} /></div>
+          <div style={{alignSelf:"center"}}>Muestra mensajes de aviso que previenen al usuario e indican acciones no permitidas.</div>
+          <div style={{alignSelf:"center", marginRight:"2%", marginLeft:"auto"}}><FontAwesomeIcon icon={faMinus} /></div>
+        </div>
+    </div>
+    
     </div>
     </div>
     <div className="flex flex-col">
@@ -466,13 +505,13 @@ export const Toast = () => {
     <div style={{alignSelf: "flex-end"}}>
     <button className=" text-color-primary text-weight-semibold" onClick={handleClickPrimary}>Ver Código <FontAwesomeIcon icon={faCode} /></button>
     </div>
-    <div className="component-content-full flex">
-        <div className="mx-auto my-auto">
-        <div style={{border: "1px solid #38A57E", background: "#FFFFFF", borderRadius:"8px", gap:"2%"}} className="flex flex-row">
+    <div className="component-content-full-noflex flex flex-col" style={{justifyContent:"center"}}>
+        <div >
+        <div style={{border: "1px solid #38A57E", background: "#FFFFFF", borderRadius:"8px", gap:"2%", height:"79px"}} className="flex flex-row">
           <div style={{width: "2%", backgroundColor: "#38A57E"}}></div>
-          <div style={{color:"#38A57E", alignSelf:"center"}}><FontAwesomeIcon icon={faCheckCircle} /></div>
+          <div style={{color:"#38A57E", alignSelf:"center", fontSize:"24px"}}><FontAwesomeIcon icon={faCheckCircle} /></div>
           <div style={{alignSelf:"center"}}>Notificación de éxito: texto con información</div>
-          <div style={{alignSelf:"center", marginRight:"2%"}}><FontAwesomeIcon icon={faMinus} /></div>
+          <div style={{alignSelf:"center", marginRight:"2%", marginLeft:"auto"}}><FontAwesomeIcon icon={faMinus} /></div>
         </div>
         </div>
     </div>
@@ -488,10 +527,11 @@ export const Toast = () => {
     <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
      <CopyBlock 
           language="html"
-          text={`<div class="tab-container">
-    <div class="tab tab-select" onclick="handleClickTab">Planes</div>
-    <div class="tab tab-select" onclick="handleClickTab">Planes</div>
-    <div class="tab tab-select" onclick="handleClickTab">Planes</div>
+          text={`<div style={{border: "1px solid #38A57E", background: "#FFFFFF", borderRadius:"8px", gap:"2%", height:"79px"}} className="flex flex-row">
+  <div style={{width: "2%", backgroundColor: "#38A57E"}}></div>
+  <div style={{color:"#38A57E", alignSelf:"center", fontSize:"24px"}}><FontAwesomeIcon icon={faCheckCircle} /></div>
+  <div style={{alignSelf:"center"}}>Notificación de éxito: texto con información</div>
+  <div style={{alignSelf:"center", marginRight:"2%", marginLeft:"auto"}}><FontAwesomeIcon icon={faMinus} /></div>
 </div>`}
           codeBlock
           theme={dracula}

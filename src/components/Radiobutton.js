@@ -427,30 +427,36 @@ export const Radiobutton = () => {
     Mejores Prácticas
     </p>
     <br />
-    <li>Organizar las opciones en un orden lógico.</li>
-    <li>Las opciones que presenten menor riesgo van primeras en la lista.</li>
-    <li>Las opciones que representen operaciones mas complejas van ultimas en la lista.</li>
-    <li>Deben enlistarse primero las opciones mas simples.</li>
-    <li>Deben ordenarse según la probabilidad de selección.</li>
-    <li>Agregar un estado no seleccionado con la opción “ninguno”.</li>
-    <li>Agregar la opción “otro” para permitir al usuario añadir observaciones.</li>
-    <li>Evite organizar las opciones en orden alfabético.</li>
+    <ul>
+    <li style={{marginBottom:"8px"}}>Organizar las opciones en un orden lógico.</li>
+    <li style={{marginBottom:"8px"}}>Las opciones que presenten menor riesgo van primeras en la lista.</li>
+    <li style={{marginBottom:"8px"}}>Las opciones que representen operaciones mas complejas van ultimas en la lista.</li>
+    <li style={{marginBottom:"8px"}}>Deben enlistarse primero las opciones mas simples.</li>
+    <li style={{marginBottom:"8px"}}>Deben ordenarse según la probabilidad de selección.</li>
+    <li style={{marginBottom:"8px"}}>Agregar un estado no seleccionado con la opción “ninguno”.</li>
+    <li style={{marginBottom:"8px"}}>Agregar la opción “otro” para permitir al usuario añadir observaciones.</li>
+    <li style={{marginBottom:"8px"}}>Evite organizar las opciones en orden alfabético.</li>
+    </ul>
     </div>
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
     Alineación
     </p>
     <br />
-    <li>Las casillas de verificación se encuentran alineadas a la izquierda.</li>
-    <li>El texto se encuentra alineado a la derecha del radio button.</li>
-    <li>Cuando las casillas de verificación se encuentran agrupadas, se pueden distribuir vertical u horizontalmente. Es recomendable organizar los grupos de casillas de verificación verticalmente porque facilita la lectura del usuario.</li>
+    <ul>
+    <li style={{marginBottom:"8px"}}>Las casillas de verificación se encuentran alineadas a la izquierda.</li>
+    <li style={{marginBottom:"8px"}}>El texto se encuentra alineado a la derecha del radio button.</li>
+    <li style={{marginBottom:"8px"}}>Cuando las casillas de verificación se encuentran agrupadas, se pueden distribuir vertical u horizontalmente. Es recomendable organizar los grupos de casillas de verificación verticalmente porque facilita la lectura del usuario.</li>
+    </ul>
     </div>
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
     Guidelines de contenido
     </p>
     <br></br>
-    <li>Las etiquetas deben ser breves, explicativas y proporcionar contexto acerca de la opción que funcione a modo de guía para el usuario.</li>
+    <ul>
+    <li style={{marginBottom:"8px"}}>Las etiquetas deben ser breves, explicativas y proporcionar contexto acerca de la opción que funcione a modo de guía para el usuario.</li>
+    </ul>
     </div>
     </div> }
   {isShownCode && 

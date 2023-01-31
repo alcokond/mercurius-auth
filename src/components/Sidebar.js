@@ -234,6 +234,135 @@ export default function Sidebar() {
                     
                   </List>
                 </Collapse>
+                <Divider />
+
+                <NavLink
+                      tag={RouterNavLink}
+                      to="/mercurius/breadcrumbs"
+                      exact
+                      activeClassName="active-sidebar" 
+                      style={{ textDecoration: 'none' }} 
+                      >
+                      <ListItemButton >
+                      
+                        <ListItemText primary='Breadcrumbs' />
+                        
+                      </ListItemButton>
+                    </NavLink>
+                    <Divider />
+                <NavLink
+                      tag={RouterNavLink}
+                      to="/mercurius/button"
+                      exact
+                      activeClassName="active-sidebar" 
+                      style={{ textDecoration: 'none' }} 
+                      >
+                      <ListItemButton >
+                      
+                        <ListItemText primary='Button' />
+                        
+                      </ListItemButton>
+                    </NavLink>
+                    <Divider />
+                <NavLink
+                      tag={RouterNavLink}
+                      to="/mercurius/checkbox"
+                      exact
+                      activeClassName="active-sidebar" 
+                      style={{ textDecoration: 'none' }} 
+                      >
+                      <ListItemButton >
+                      
+                        <ListItemText primary='Checkbox' />
+                        
+                      </ListItemButton>
+                    </NavLink>
+                    <Divider />
+                <NavLink
+                      tag={RouterNavLink}
+                      to="/mercurius/dropdown"
+                      exact
+                      activeClassName="active-sidebar" 
+                      style={{ textDecoration: 'none' }} 
+                      >
+                      <ListItemButton >
+                      
+                        <ListItemText primary='Dropdown' />
+                        
+                      </ListItemButton>
+                    </NavLink>
+                    <Divider />
+                <NavLink
+                      tag={RouterNavLink}
+                      to="/mercurius/input"
+                      exact
+                      activeClassName="active-sidebar" 
+                      style={{ textDecoration: 'none' }} 
+                      >
+                      <ListItemButton >
+                      
+                        <ListItemText primary='Input' />
+                        
+                      </ListItemButton>
+                    </NavLink>
+                    <Divider />
+                <NavLink
+                      tag={RouterNavLink}
+                      to="/mercurius/radiobutton"
+                      exact
+                      activeClassName="active-sidebar" 
+                      style={{ textDecoration: 'none' }} 
+                      >
+                      <ListItemButton >
+                      
+                        <ListItemText primary='Radiobutton' />
+                        
+                      </ListItemButton>
+                    </NavLink>
+                    <Divider />
+                <NavLink
+                      tag={RouterNavLink}
+                      to="/mercurius/toast"
+                      exact
+                      activeClassName="active-sidebar" 
+                      style={{ textDecoration: 'none' }} 
+                      >
+                      <ListItemButton >
+                      
+                        <ListItemText primary='Toast' />
+                        
+                      </ListItemButton>
+                    </NavLink>
+                    <Divider />
+                <NavLink
+                      tag={RouterNavLink}
+                      to="/mercurius/slider"
+                      exact
+                      activeClassName="active-sidebar" 
+                      style={{ textDecoration: 'none' }} 
+                      >
+                      <ListItemButton >
+                      
+                        <ListItemText primary='Slider' />
+                        
+                      </ListItemButton>
+                    </NavLink>
+                    <Divider />
+                <NavLink
+                      tag={RouterNavLink}
+                      to="/mercurius/toggle"
+                      exact
+                      activeClassName="active-sidebar" 
+                      style={{ textDecoration: 'none' }} 
+                      >
+                      <ListItemButton >
+                      
+                        <ListItemText primary='Toggle' />
+                        
+                      </ListItemButton>
+                    </NavLink>
+                    <Divider />
+
         </List>
         <Divider />
       </Drawer>

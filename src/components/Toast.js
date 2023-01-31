@@ -351,15 +351,15 @@ export const Toast = () => {
   return (
     
     <div className="flex flex-col margin-sidebar margin-contenido">
-    <div id="colores" className=" background-grayscale-6" style={{position:"relative"}} >
+    <div id="colores" className=" background-grayscale-6 flex flex-col" style={{position:"relative"}} >
     <div className="padding-componente flex flex-col">
     <h6 className="text-overline">Acciones</h6>
     <h3 style={{fontSize:"36px", fontWeight:"700", color:"#221987"}} className="mb-3">Toast</h3>
     <p className="text-button-1 text-justify"> Los toast son notificaciones que muestran al usuario información destacada en mensajes cortos, que desaparecen después de segundos.</p>
     
     </div>
-    <div className=" selector-componente" style={{borderBottom:"solid 4px #EBECF0", width:"100%"}}>
-      <div className=" flex flex-row gap-2" style={{marginBottom:"-3px", paddingLeft:"5vw"}}>
+    <div  style={{borderBottom:"solid 4px #EBECF0", width:"100%", marginTop:"auto"}}>
+      <div className=" flex flex-row gap-40" style={{marginBottom:"-3px", paddingLeft:"5vw"}}>
         <button className="size-component size-option-component-focused" onClick={handleClickMostrarUso}>Uso</button>
         <button className="size-component size-option-component" onClick={handleClickMostrarCode}>Código</button>
       </div>
@@ -454,7 +454,7 @@ sobre el proceso que se está realizando.</div>
       Comportamiento
     </p>
     <br></br>
-    <p>Los Toast tienen un boton Dismissible que sirve para cerrar el toast. Pueden mostrar texto y tienen un icono que depende de su tipo.</p>
+    <p>Los Toast tienen un boton Dismissible que sirve para cerrar el toast. Pueden mostrar texto y tienen un icono que depende de su tipo. Se renderizan como resultado de una acción de parte del usuario o como respuesta del servidor.</p>
     <br></br>
     </div>
     <div>
@@ -462,26 +462,32 @@ sobre el proceso que se está realizando.</div>
     Mejores Prácticas
     </p>
     <br />
-    <li>Las notificaciones no deben ser utilizadas de forma recurrente porque pueden interrumpir el flujo de trabajo del usuario.</li>
-    <li>La información importante debe ser visible al instante.</li>
-    <li>El texto debe ser corto y preciso, además de incluir información adicional que proporcione al usuario posibles soluciones.</li>
+    <ul>
+    <li style={{marginBottom:"8px"}}>Las notificaciones no deben ser utilizadas de forma recurrente porque pueden interrumpir el flujo de trabajo del usuario.</li>
+    <li style={{marginBottom:"8px"}}>La información importante debe ser visible al instante.</li>
+    <li style={{marginBottom:"8px"}}>El texto debe ser corto y preciso, además de incluir información adicional que proporcione al usuario posibles soluciones.</li>
+    </ul>
     </div>
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
     Guidelines de contenido
     </p>
     <br></br>
-    <li>Los Toast pueden o no incluir en la parte inferior del contenedor una marca de tiempo que muestre la hora en que se envió la notificación.</li>
-    <li>La altura de los Toast depende de la longitud del mensaje.</li>
-    <li>Los Toast aparecen en la parte superior de la pantalla y se deslizan hacia adentro y hacia afuera.</li>
+    <ul>
+    <li style={{marginBottom:"8px"}}>Los Toast pueden o no incluir en la parte inferior del contenedor una marca de tiempo que muestre la hora en que se envió la notificación.</li>
+    <li style={{marginBottom:"8px"}}>La altura de los Toast depende de la longitud del mensaje.</li>
+    <li style={{marginBottom:"8px"}}>Los Toast aparecen en la parte superior de la pantalla y se deslizan hacia adentro y hacia afuera.</li>
+    </ul>
     </div>
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
     Accesibilidad
     </p>
     <br></br>
-    <li>Los usuarios deben poder acceder a los Toast después de que estos hayan desaparecido, lo que permite al usuario acceder a esa información cuando quiera.</li>
-    <li>Agregar elementos interactivos dentro del Toast que creen accesos directos a una nueva pagina donde el usuario pueda resolver el problema fácilmente y continuar con su proceso.</li>
+    <ul>
+    <li style={{marginBottom:"8px"}}>Los usuarios deben poder acceder a los Toast después de que estos hayan desaparecido, lo que permite al usuario acceder a esa información cuando quiera.</li>
+    <li style={{marginBottom:"8px"}}>Agregar elementos interactivos dentro del Toast que creen accesos directos a una nueva pagina donde el usuario pueda resolver el problema fácilmente y continuar con su proceso.</li>
+    </ul>
     </div> 
     </div> 
     

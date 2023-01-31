@@ -2,6 +2,8 @@ body {
   font-family: 'Montserrat';
   font-style: normal;
   box-sizing: border-box;
+  color: #222D44;
+  
 }
 
 li {
@@ -548,6 +550,10 @@ li a{
 
 .gap-4{
   gap:32px;
+}
+
+.gap-40{
+  gap:40px;
 }
 
 .gap-6{
@@ -1101,7 +1107,7 @@ body.menu-toggled > .meta-link > span {
 }
 
 #colores{
-  height: 30vh;
+  min-height: 25vh;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -1155,36 +1161,72 @@ body.menu-toggled > .meta-link > span {
 
 #hero,
 .layer {
-  min-height: 800px;
-  max-width: 1900px;
-  margin: 0 auto;
+  height: 1000px;
+  margin: 4vh auto;
   overflow: hidden;
+  z-index: 1;
+
 }
 
 .layer-bg {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_bg.jpg");
+  /*background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_bg.jpg");*/
+  background-image: url("https://www.xtrim.com.ec/wp-content/uploads/2023/01/parallax-fondo.png");
+  background-size: cover;
+
 }
 
 .layer-1 {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_03.png");
-  background-position: left bottom;
+  /*background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_03.png");*/
+  background-image: url("https://www.xtrim.com.ec/wp-content/uploads/2023/01/parallax-8.png");
+  /*background-position: left bottom;*/
+  background-size: cover;
 }
 
 .layer-2 {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_02.png");
+  /*background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_02.png");*/
+  background-image: url("https://www.xtrim.com.ec/wp-content/uploads/2023/01/parallax-7.png");
+  background-size: cover;
 }
 
 .layer-3 {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_man.png");
-  background-position: right bottom;
+  /*background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_man.png");*/
+  background-image: url("https://www.xtrim.com.ec/wp-content/uploads/2023/01/parallax-6.png");
+  /*background-position: right bottom;*/
+  background-size: cover;
 }
 
 .layer-4 {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_01.png");
+  /*background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_01.png");*/
+  background-image: url("https://www.xtrim.com.ec/wp-content/uploads/2023/01/parallax-5.png");
+  background-size: cover;
 }
 
+.layer-5 {
+  background-image: url("https://www.xtrim.com.ec/wp-content/uploads/2023/01/parallax-4.png");
+  background-size: cover;
+}
+
+.layer-6 {
+  background-image: url("https://www.xtrim.com.ec/wp-content/uploads/2023/01/parallax-3.png");
+  background-size: cover;
+}
+
+.layer-7 {
+  background-image: url("https://www.xtrim.com.ec/wp-content/uploads/2023/01/parallax-2.png");
+  background-size: cover;
+}
+
+.layer-8 {
+  background-image: url("https://www.xtrim.com.ec/wp-content/uploads/2023/01/parallax-1.png");
+  background-size: cover;
+}
+
+
+
+
+
 .layer-overlay {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_overlay.png");
+  /*background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_overlay.png");*/
 }
 
 @media only screen and (max-width: 768px) {

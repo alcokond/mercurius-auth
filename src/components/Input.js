@@ -415,7 +415,7 @@ export const Input = () => {
     
     </div>
     <div className=" selector-componente" style={{borderBottom:"solid 4px #EBECF0", width:"100%"}}>
-      <div className=" flex flex-row gap-2" style={{marginBottom:"-3px", paddingLeft:"5vw"}}>
+      <div className=" flex flex-row gap-40" style={{marginBottom:"-3px", paddingLeft:"5vw"}}>
         <button className="size-component size-option-component-focused" onClick={handleClickMostrarUso} >Uso</button>
         <button className="size-component size-option-component" onClick={handleClickMostrarCode} >Código</button>
       </div>
@@ -441,13 +441,13 @@ export const Input = () => {
     <br></br>
     <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Su apariencia cambiará acorde al proceso que se vaya a realizar.</p>
     <br></br>
-    <div className="grid mt-2" style={{gridTemplateColumns:"30% 70%", gap:"2rem"}}>
-      <div className=" justify-center flex" style={{alignItems:"center"}}>Standard</div>
-      <div>Cuando la información es una sola línea de texto.</div>
-      <div className=" justify-center flex" style={{alignItems:"center"}}>Search</div>
-      <div>Para que el usuario ingrese consultas de búsqueda.</div>
-      <div className=" justify-center flex" style={{alignItems:"center"}}>Login</div>
-      <div>Para ingresar y editar direcciones de correo electrónico.</div>
+    <div className="grid mt-2" style={{gridTemplateColumns:"30% 70%"}}>
+      <div className=" justify-center flex" style={{placeSelf:"stretch", paddingTop:"2rem", paddingBottom:"2rem"}}>Standard</div>
+      <div style={{paddingTop:"2rem", paddingBottom:"2rem",placeSelf:"stretch"}}>Cuando la información es una sola línea de texto.</div>
+      <div className=" justify-center flex" style={{placeSelf:"stretch", backgroundColor:"#F9F9F9", paddingTop:"2rem", paddingBottom:"2rem"}}>Search</div>
+      <div style={{paddingTop:"2rem", paddingBottom:"2rem", backgroundColor:"#F9F9F9",placeSelf:"stretch"}}>Para que el usuario ingrese consultas de búsqueda.</div>
+      <div className=" justify-center flex" style={{placeSelf:"stretch", paddingTop:"2rem", paddingBottom:"2rem"}}>Login</div>
+      <div style={{paddingTop:"2rem", paddingBottom:"2rem", placeSelf:"stretch"}}>Para ingresar y editar direcciones de correo electrónico.</div>
 
 
     </div>
@@ -460,19 +460,19 @@ export const Input = () => {
     <br></br>
     <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Determinan el estado de la información ingresada en el input. Por ejemplo le indican al usuario si sus datos son correctos o incorectos.</p>
     <br></br>
-    <div className="grid mt-2" style={{gridTemplateColumns:"30% 70%", gap:"2rem"}}>
-      <div className=" justify-center flex" style={{alignItems:"center"}}>Default</div>
-      <div>Es el estado normal del componente que se muestra cuando el usuario no ha interactuado con él.</div>
-      <div className=" justify-center flex" style={{alignItems:"center"}}>Active</div>
-      <div>Cuando el usuario ingresa contenido dentro del componente este se muestra activo.</div>
+    <div className="grid mt-2" style={{gridTemplateColumns:"30% 70%"}}>
+      <div className=" justify-center flex" style={{placeSelf:"stretch", paddingTop:"2rem", paddingBottom:"2rem"}}>Default</div>
+      <div style={{paddingTop:"2rem", paddingBottom:"2rem",placeSelf:"stretch"}}>Es el estado normal del componente que se muestra cuando el usuario no ha interactuado con él.</div>
+      <div className=" justify-center flex" style={{placeSelf:"stretch", backgroundColor:"#F9F9F9", paddingTop:"2rem", paddingBottom:"2rem"}}>Active</div>
+      <div style={{paddingTop:"2rem", paddingBottom:"2rem", backgroundColor:"#F9F9F9",placeSelf:"stretch"}}>Cuando el usuario ingresa contenido dentro del componente este se muestra activo.</div>
       <div className=" justify-center flex" style={{alignItems:"center"}}>Block</div>
-      <div>Cuando el componente se encuentra bloqueado presenta información que no se puede editar.</div>
-      <div className=" justify-center flex" style={{alignItems:"center"}}>Disabled</div>
-      <div>Cuando el componente se encuentra desactivado y no se puede seleccionar.</div>
+      <div style={{paddingTop:"2rem", paddingBottom:"2rem",placeSelf:"stretch"}}>Cuando el componente se encuentra bloqueado presenta información que no se puede editar.</div>
+      <div className=" justify-center flex" style={{placeSelf:"stretch", backgroundColor:"#F9F9F9", paddingTop:"2rem", paddingBottom:"2rem"}}>Disabled</div>
+      <div style={{paddingTop:"2rem", paddingBottom:"2rem", backgroundColor:"#F9F9F9",placeSelf:"stretch"}}>Cuando el componente se encuentra desactivado y no se puede seleccionar.</div>
       <div className=" justify-center flex" style={{alignItems:"center"}}>Error</div>
-      <div>Cuando la información ingresada es incorrecta, el componente presenta un mensaje de error.</div>
-      <div className=" justify-center flex" style={{alignItems:"center"}}>Success</div>
-      <div>Cuando la información ingresada es correcta, el componente presenta un estado y mensaje de éxito.</div>
+      <div style={{paddingTop:"2rem", paddingBottom:"2rem",placeSelf:"stretch"}}>Cuando la información ingresada es incorrecta, el componente presenta un mensaje de error.</div>
+      <div className=" justify-center flex" style={{placeSelf:"stretch", backgroundColor:"#F9F9F9", paddingTop:"2rem", paddingBottom:"2rem"}}>Success</div>
+      <div style={{paddingTop:"2rem", paddingBottom:"2rem", backgroundColor:"#F9F9F9",placeSelf:"stretch"}}>Cuando la información ingresada es correcta, el componente presenta un estado y mensaje de éxito.</div>
 
 
     </div>
@@ -518,14 +518,13 @@ export const Input = () => {
     <li>Cuando la información ingresada sea incorrecta, se deberá proporcionar ejemplos que indiquen como ingresar los datos correctamente.</li>
     <li>La etiqueta de texto sobre el input debe ser claro y conciso; las variantes de estado deben indicar claramente si la información ingresada es válida. Por ejemplo “ingresa un correo electrónico válido”. </li>
     </div>
-    <div style={{alignSelf:"center"}}><img src={dont} ></img></div>
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
     Accesibilidad
     </p>
     <br></br>
-    <li>Incluir texto alternativo en los botones de ícono.</li>
-    <li>Utilizar fuentes, tamaño y color de texto legibles.</li>
+    <li>Iconos de información para mostrar al usuario indicaciones adicionales sin influir directamente en el formulario. El icono presenta la información al pasar el cursor por encima.</li>
+    <li>Los colores del input varían según el fondo que se use. Si el fondo es lila, utilizamos una alternativa más llamativa para captar la atención del usuario.</li>
     </div>
     </div>
     }

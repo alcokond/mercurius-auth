@@ -11,7 +11,7 @@ import { faArrowLeft, faChevronsDown, faChevronUp, faCode, faMinus, faPlus, faPu
 import { faChevronDown } from "@fortawesome/pro-duotone-svg-icons";
 
 
-export const Tab = () => {
+export const Breadcrumbs = () => {
 
   React.useEffect(() => {
     document.addEventListener("click", handleClickOutside);
@@ -359,7 +359,7 @@ export const Tab = () => {
     
     </div>
     <div className=" selector-componente" style={{borderBottom:"solid 4px #EBECF0", width:"100%"}}>
-      <div className=" flex flex-row gap-2" style={{marginBottom:"-3px", paddingLeft:"5vw"}}>
+      <div className=" flex flex-row gap-40" style={{marginBottom:"-3px", paddingLeft:"5vw"}}>
         <button className="size-component size-option-component-focused" onClick={handleClickMostrarUso}>Uso</button>
         <button className="size-component size-option-component" onClick={handleClickMostrarCode}>Código</button>
       </div>
@@ -434,24 +434,28 @@ No deben utilizarse como un menú inicial, ni en productos de un solo nivel, por
     Mejores Prácticas
     </p>
     <br />
-    <li>Utilizar Breadcrumbs en páginas web grandes que contengan varias páginas, de tal modo que los usuarios puedan entender el orden del contenido.</li>
-    <li>Los Breadcrumbs no deben sobrecargar visualmente la página</li>
-    <li>Los Breadcrumbs deben colocarse en la esquina superior izquierda de la pantalla por encima del título de la página.</li>
+    <ul>
+    <li style={{marginBottom:"8px"}}>Utilizar Breadcrumbs en páginas web grandes que contengan varias páginas, de tal modo que los usuarios puedan entender el orden del contenido.</li>
+    <li style={{marginBottom:"8px"}}>Los Breadcrumbs no deben sobrecargar visualmente la página</li>
+    <li style={{marginBottom:"8px"}}>Los Breadcrumbs deben colocarse en la esquina superior izquierda de la pantalla por encima del título de la página.</li>
+    </ul>
     </div>
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
     Guidelines de contenido
     </p>
     <br></br>
-    <li>El enlace de la ruta de navegación debe destacar y subrayarse cuando usuario se desplace sobre ella.</li>
-    <li>Utilizar el menú desplegable cuando haya opciones adicionales disponibles.</li>
+    <ul>
+    <li style={{marginBottom:"8px"}}>El enlace de la ruta de navegación debe destacar y subrayarse cuando usuario se desplace sobre ella.</li>
+    <li style={{marginBottom:"8px"}}>Utilizar el menú desplegable cuando haya opciones adicionales disponibles.</li>
+    </ul>
     </div>
     {/* <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
     Accesibilidad
     </p>
     <br></br>
-    <li>Incluir texto alternativo en los botones de ícono.</li>
+    <li style={{marginBottom:"8px"}}>>Incluir texto alternativo en los botones de ícono.</li>
     </div> */}
     </div> 
     
@@ -462,7 +466,7 @@ No deben utilizarse como un menú inicial, ni en productos de un solo nivel, por
     Desarrollo
     </p>
     <br></br>
-    <p>Los enlaces accionan el redireccionamiento y se añaden al flujo de redireccionamiento. Son ingresados en orden dentro del contenedor, en el cual el primer enlace redirecciona hacia el Home.</p>
+    <p>Cada enlace tiene un efecto de hover y un efecto de selección. El color por default de los enlaces es Slate Gray. Cuando es seleccionado un enlace, se torna de color Ocean Blue.</p>
     </div>
     <div className=" mb-5">
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
@@ -523,6 +527,6 @@ No deben utilizarse como un menú inicial, ni en productos de un solo nivel, por
   );
 };
 
-export default withAuthenticationRequired(Tab, {
+export default withAuthenticationRequired(Breadcrumbs, {
   onRedirecting: () => <Loading />,
 });

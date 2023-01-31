@@ -43,6 +43,7 @@ import Radiobutton from "./components/Radiobutton";
 import Tab from "./components/Tab";
 import Breadcrumbs from "./components/Breadcrumbs";
 import Toast from "./components/Toast";
+import Slider from "./components/Slider";
 
 
 initFontAwesome();
@@ -105,6 +106,7 @@ const App = () => {
             <Route path="/mercurius/tab" component={Tab} />
             <Route path="/mercurius/breadcrumbs" component={Breadcrumbs} />
             <Route path="/mercurius/toast" component={Toast} />
+            <Route path="/mercurius/slider" component={Slider} />
 
             </Fragment>
             )}

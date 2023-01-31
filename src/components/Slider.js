@@ -2,16 +2,16 @@ import React, { useState } from "react";
 import { useAuth0, withAuthenticationRequired } from "@auth0/auth0-react";
 import Loading from "./Loading";
 
-import toggle from "../assets/toggle.png";
-import radiobutton from "../assets/radiobutton.png";
-import checkbox from "../assets/checkbox.png";
+import breadcrumbs from "../assets/breadcrumbs.png";
+
 import { CopyBlock, dracula } from "react-code-blocks";
 import TopBar  from "./TopBar"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faChevronsDown, faChevronUp, faCode, faMinus, faPlus, faPuzzlePiece } from "@fortawesome/pro-light-svg-icons";
 import { faChevronDown } from "@fortawesome/pro-duotone-svg-icons";
 
-export const Checkbox = () => {
+
+export const Slider = () => {
 
   React.useEffect(() => {
     document.addEventListener("click", handleClickOutside);
@@ -49,6 +49,16 @@ export const Checkbox = () => {
   const handleClickToggle = event => {
     setIsShownToggle(current => !current);
 
+  };
+
+  const handleClickTab = event => {
+    const ps = document.getElementsByClassName('tab-select');
+    for (let item of ps) {
+      item.classList.remove('tab-focused');
+      item.classList.add('tab');
+    }
+    event.currentTarget.classList.add('tab-focused');
+    event.currentTarget.classList.remove('tab');
   };
 
 
@@ -339,19 +349,18 @@ export const Checkbox = () => {
   };
 
   return (
-    <>
     
     <div className="flex flex-col margin-sidebar margin-contenido">
     <div id="colores" className=" background-grayscale-6" style={{position:"relative"}} >
     <div className="padding-componente flex flex-col">
     <h6 className="text-overline">Acciones</h6>
-    <h3 style={{fontSize:"36px", fontWeight:"700", color:"#221987"}} className="mb-3">Checkbox</h3>
-    <p className="text-button-1 text-justify">Los checkbox son inputs que facilitan al usuario la selección de varias opciones. Se pueden seleccionar opciones que se encuentre agrupadas en categorías diferentes.</p>
+    <h3 style={{fontSize:"36px", fontWeight:"700", color:"#221987"}} className="mb-3">Slider</h3>
+    <p className="text-button-1 text-justify">Muestra a los usuarios su ubicación en el sitio web o aplicación en que se encuentren interactuando y les permite pasar de una pagina a otra.</p>
     
     </div>
     <div className=" selector-componente" style={{borderBottom:"solid 4px #EBECF0", width:"100%"}}>
-      <div className="padding-componente flex flex-row gap-2" style={{marginBottom:"-3px"}}>
-        <button className="size-component size-option-component-focused" onClick={handleClickMostrarUso} >Uso</button>
+      <div className=" flex flex-row gap-40" style={{marginBottom:"-3px", paddingLeft:"5vw"}}>
+        <button className="size-component size-option-component-focused" onClick={handleClickMostrarUso}>Uso</button>
         <button className="size-component size-option-component" onClick={handleClickMostrarCode}>Código</button>
       </div>
       
@@ -364,94 +373,102 @@ export const Checkbox = () => {
       Uso
     </p>
     <br></br>
-    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Los checkbox se usan cuando hay varios elementos en el menú. Permite seleccionar desde cero a múltiples opciones.</p>
-    <br></br>
-    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Son comúnmente usados en casillas de verificación, formularios, en términos y condiciones. se usan en formularios, que pueden encontrarse dentro de páginas completas y modales.</p>
+    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Los Breadcrumbs son una alternativa que se adiciona a la navegación principal pero nunca deben reemplazarla. Se usan únicamente para orientar al usuario cuando se trata de procesos fáciles.</p>
+    <p>Los elementos que contiene el Breadcrumbs funcionan como enlaces. Transportan al usuario a una nueva página, pero también les permite volver a la página anterior.</p>
+    </div>
+    <div><p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
+    Modo de Uso
+    </p></div>
+    
+    <div className="flex flex-col gap-4">
+      <div className="flex" style={{backgroundColor:"#EBF6F2", borderBottom: "4px solid #38A57E", height:"15vh", alignItems:"center", justifyContent:"center", padding:"5%"}}>
+        <p>Se utilizan en páginas web que tienen mucho contenido organizado en más de dos niveles. Los breadcrumbs, contextualizan al usuario ya que le indican en que sitio o página se encuentra.</p>
+ </div>
+
+    </div>
+    <div className="flex flex-col gap-4">
+      <div className="flex" style={{backgroundColor:"#F8E6EB", borderBottom: "4px solid #BD033B", height:"15vh", alignItems:"center", justifyContent:"center", padding:"5%"}}>
+        <p>
+No deben utilizarse como un menú inicial, ni en productos de un solo nivel, por ultimo los breadcrumbs nunca deben reemplazar la navegación principal.</p>
+ </div>
+
     </div>
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
-    Variantes
+      Variantes
     </p>
     <br></br>
-    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Los estados de check y uncheck definen si una opción esta selecciona o no. Al realizar la selección los estados varian.</p>
-    <br></br>
+    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Las variantes del Breadcrumb indican en qué estado se encuentra dependiendo de la interacción que se esté realizando.</p>
+    <br />
     <div className="grid mt-2" style={{gridTemplateColumns:"30% 70%", gap:"2rem"}}>
-      <div className=" justify-center flex" style={{alignItems:"center"}}>Initial</div>
-      <div>Cuando la información es una sola línea de texto.</div>
+      <div className=" justify-center flex" style={{alignItems:"center"}}>Default</div>
+      <div>Se muestra el estado normal del componente cuando no se ha realizado ninguna interacción con él.</div>
       <div className=" justify-center flex" style={{alignItems:"center"}}>Hover</div>
-      <div>Para que el usuario ingrese consultas de búsqueda.</div>
-      <div className=" justify-center flex" style={{alignItems:"center"}}>Focus</div>
-      <div>Para ingresar y editar direcciones de correo electrónico.</div>
+      <div>Indica que el cursor se encuentra encima de una de las opciones, sin que está sea seleccionada.</div>
       <div className=" justify-center flex" style={{alignItems:"center"}}>Disable</div>
-      <div>Se muestra cuando el checkbox está deshabilitado.</div>
+      <div>Indica que la opción se encuentra deshabilitada.</div>
 
 
     </div>
-    <br></br>
     </div>
     <div className="flex flex-col">
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
       Anatomía
     </p>
-    <div style={{width:"40%", alignSelf:"center", marginTop: "4%"}}>
-    <img src={checkbox} ></img></div>
+    <div style={{width:"60%", alignSelf:"center", marginTop: "4%"}}>
+    <img src={breadcrumbs} ></img></div>
     <div className=" mt-4"></div>
-    <p><strong>Casilla:</strong> Control de selección.</p>
-    <p><strong>Texto:</strong> Indica la acción que define a cada opción.</p>
+    <p><strong>Icono:</strong> Aporta significado e indica una acción o proceso.</p>
+    <p><strong>Nombre del elemento:</strong> Son el resto de categorías desactivadas.</p>
+    <p><strong>Separador:</strong> Separa los enlaces.</p>
     </div>
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
       Comportamiento
     </p>
     <br></br>
-    <p>Los checkbox funcionan como mecanismo para seleccionar 1, 0 o múltiples opciones entre una lista. Al seleccionar una opción, el icono inmediato a la izquierda se torna de color Ocean Blue y se muestra con el icono Check. Volver a seleccionar la opción la devuelve a su estado anterior.</p>
-    <br></br>
-    <p>Todos los elementos que tengan el icono Check se consideran como ‘selected’ o seleccionados.</p>
-    <br></br>
+    <p>Cada enlace tiene un efecto de hover y un efecto de selección. El color por default de los enlaces es Slate Gray. Cuando es seleccionado un enlace, se torna de color Ocean Blue.</p>
     </div>
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
-    Alineación
+    Mejores Prácticas
     </p>
-    <ul>
-    <li style={{marginBottom:"8px"}}>Las casillas de verificación se encuentran alineadas a la izquierda, de tal modo que el texto se alinea a la derecha.</li>
-    <li style={{marginBottom:"8px"}}>Cuando las casillas de verificación se encuentran agrupadas, se pueden distribuir vertical u horizontalmente según la estructura de la interfaz.</li>
-    <li style={{marginBottom:"8px"}}>Es recomendable organizar los grupos de casillas de verificación verticalmente porque facilita la lectura del usuario.</li>
-    </ul>
+    <br />
+    <li>Utilizar Breadcrumbs en páginas web grandes que contengan varias páginas, de tal modo que los usuarios puedan entender el orden del contenido.</li>
+    <li>Los Breadcrumbs no deben sobrecargar visualmente la página</li>
+    <li>Los Breadcrumbs deben colocarse en la esquina superior izquierda de la pantalla por encima del título de la página.</li>
     </div>
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
     Guidelines de contenido
     </p>
     <br></br>
-    <ul>
-    <li style={{marginBottom:"8px"}}>El texto que se encuentra junto a la casilla de verificación debe ser breve y descriptivo.</li>
-    <li style={{marginBottom:"8px"}}>La primera letra del texto junto a la casilla de verificación debe escribirse con letra mayúscula.</li>
-    <li style={{marginBottom:"8px"}}>El texto descriptivo no incluye punto final.</li>
-    </ul>
+    <li>El enlace de la ruta de navegación debe destacar y subrayarse cuando usuario se desplace sobre ella.</li>
+    <li>Utilizar el menú desplegable cuando haya opciones adicionales disponibles.</li>
     </div>
-    <div>
+    {/* <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
     Accesibilidad
     </p>
     <br></br>
-    <li style={{marginBottom:"8px"}}>Cuando se usan encima de un fondo con colores fuertes, la casilla de verificación utiliza un color que contraste con el fondo.</li>
-    </div>
-    </div> }
+    <li>Incluir texto alternativo en los botones de ícono.</li>
+    </div> */}
+    </div> 
+    
+    }
   {isShownCode && 
     <div className="padding-componente flex flex-col gap-4">
     <div><p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
     Desarrollo
     </p>
     <br></br>
-    <p>El checkbox es una variante de los <code>&lt;input type="checkbox"&gt;</code> por lo cual heredan las cualidades de los mismos.</p>
+    <p>Cada enlace tiene un efecto de hover y un efecto de selección. El color por default de los enlaces es Slate Gray. Cuando es seleccionado un enlace, se torna de color Ocean Blue.</p>
     </div>
     <div className=" mb-5">
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
-    Checkbox
+    Breadcrumb
     </p>
     <br></br>
-    
     {isMostrarPrimary1 && 
     !isShownPrimary && <> 
     <div className="flex flex-col ">
@@ -460,20 +477,15 @@ export const Checkbox = () => {
     </div>
     <div className="component-content-full flex">
         <div className="mx-auto my-auto">
-    <div className="flex flex-row gap-2 center">
-      <div><input type="checkbox" id="huey" name="drone" value="huey"></input></div>
-      <div><label for="huey">Huey</label></div>
-    </div>
-
-    <div className="flex flex-row gap-2">
-      <div><input type="checkbox" id="dewey" name="drone" value="dewey"></input></div>
-      <div><label for="dewey">Dewey</label></div>
-    </div>
-   
-
+        <div className="flex flex-row">
+          <div className="tab-focused tab-select" onClick={handleClickTab}>Planes</div>
+          <div className="tab tab-select" onClick={handleClickTab}>Planes</div>
+          <div className="tab tab-select" onClick={handleClickTab}>Planes</div>
+        </div>
         </div>
     </div>
     </div>
+    
      </>  }
      {isMostrarPrimary1 && 
     isShownPrimary &&
@@ -484,14 +496,10 @@ export const Checkbox = () => {
     <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
      <CopyBlock 
           language="html"
-          text={`<div>
-  <input type="checkbox" id="huey" name="drone" value="huey"></input>
-  <label for="huey">Huey</label>
-</div>
-    
-<div>
-  <input type="checkbox" id="dewey" name="drone" value="dewey"></input>
-  <label for="dewey">Dewey</label>
+          text={`<div class="tab-container">
+    <div class="tab tab-select" onclick="handleClickTab">Planes</div>
+    <div class="tab tab-select" onclick="handleClickTab">Planes</div>
+    <div class="tab tab-select" onclick="handleClickTab">Planes</div>
 </div>`}
           codeBlock
           theme={dracula}
@@ -511,10 +519,10 @@ export const Checkbox = () => {
 
   </div>
   
-    </>
+   
   );
 };
 
-export default withAuthenticationRequired(Checkbox, {
+export default withAuthenticationRequired(Slider, {
   onRedirecting: () => <Loading />,
 });

@@ -349,7 +349,7 @@ export const Toggle = () => {
     
     </div>
     <div className=" selector-componente" style={{borderBottom:"solid 4px #EBECF0", width:"100%"}}>
-      <div className=" flex flex-row gap-2" style={{marginBottom:"-3px", paddingLeft:"5vw"}}>
+      <div className=" flex flex-row gap-40" style={{marginBottom:"-3px", paddingLeft:"5vw"}}>
         <button className="size-component size-option-component-focused" onClick={handleClickMostrarUso}>Uso</button>
         <button className="size-component size-option-component" onClick={handleClickMostrarCode}>Código</button>
       </div>
@@ -428,33 +428,37 @@ export const Toggle = () => {
     Mejores Prácticas
     </p>
     <br />
-    <li>Utilizar texto para informar al usuario la función del Toggle.</li>
-    <li>El Toggle cambia de un estilo a otro seleccionando la opción contraria.</li>
-    <li>El toggle debe colocarse junto al texto.</li>
-    <li>Utilizar colores fuertes para indicar que el Toggle se encuentra activado.</li>
+    <ul>
+    <li style={{marginBottom:"8px"}}>Utilizar texto para informar al usuario la función del Toggle.</li>
+    <li style={{marginBottom:"8px"}}>El Toggle cambia de un estilo a otro seleccionando la opción contraria.</li>
+    <li style={{marginBottom:"8px"}}>El toggle debe colocarse junto al texto.</li>
+    <li style={{marginBottom:"8px"}}>Utilizar colores fuertes para indicar que el Toggle se encuentra activado.</li>
+    </ul>
     </div>
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
     Alineación
     </p>
     <br />
-    <li>El interruptor se colocará a la derecha cuando este encendido, activado o seleccionado.</li>
-    <li>El interruptor se colocará a la izquierda cuando este apagado, desactivado o deshabilitado.</li>
-    <li>El texto informativo se coloca a la izquierda del Toggle.</li>
+    <ul>
+    <li style={{marginBottom:"8px"}}>El interruptor se colocará a la derecha cuando este encendido, activado o seleccionado.</li>
+    <li style={{marginBottom:"8px"}}>El interruptor se colocará a la izquierda cuando este apagado, desactivado o deshabilitado.</li>
+    <li style={{marginBottom:"8px"}}>El texto informativo se coloca a la izquierda del Toggle.</li>
+    </ul>
     </div>
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
     Guidelines de contenido
     </p>
     <br></br>
-    <li>Las etiquetas deben ser breves, explicativas y proporcionar contexto acerca de la opción que funcione a modo de guía para el usuario.</li>
+    <li style={{marginBottom:"8px"}}>Las etiquetas deben ser breves, explicativas y proporcionar contexto acerca de la opción que funcione a modo de guía para el usuario.</li>
     </div>
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
     Accesibilidad
     </p>
     <br></br>
-    <li>Incluir texto alternativo en los botones de ícono.</li>
+    <li style={{marginBottom:"8px"}}>Incluir texto alternativo en los botones de ícono.</li>
     </div>
     </div> }
   {isShownCode && 

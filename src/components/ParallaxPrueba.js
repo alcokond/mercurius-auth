@@ -26,6 +26,7 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax';
   
   }).call(this);
 
+
 const ParallaxPrueba = () => (
   <>
     {/* <div id='hero'>
@@ -37,11 +38,31 @@ const ParallaxPrueba = () => (
   <div className='layer-4 layer' data-depth='1.00' data-type='parallax'></div>
 </div>
 <div id='hero-mobile'></div> */}
-
+{/* <div id='hero' style={{position:"relative"}} >
+  <div className='layer-bg layer' data-depth='1.00' data-type='parallax' ></div>
+  <div className='layer-1 layer' data-depth='1.00' data-type='parallax'></div>
+  <div className='layer-2 layer' data-depth='0.65' data-type='parallax'></div>
+  <div className='layer-3 layer' data-depth='0.70' data-type='parallax'></div>
+  <div className='layer-4 layer' data-depth='0.75' data-type='parallax'></div>
+  <div className='layer-5 layer' data-depth='0.80' data-type='parallax'></div>
+  <div className='layer-6 layer' data-depth='0.85' data-type='parallax'></div>
+  <div className='layer-7 layer' data-depth='0.90' data-type='parallax'></div>
+  <div className='layer-8 layer' data-depth='1.00' data-type='parallax'></div>
+</div> */}
 <div id='content'>
+{/* <div class="parallax-container">
+    <div class="parallax-layer layer-0" data-parallax-speed="0.05" data-max-scroll="565"></div>
+    <div class="parallax-layer layer-1" data-parallax-speed="0.1" data-max-scroll="565"></div>
+    <div class="parallax-layer layer-2" data-parallax-speed="0.3" data-max-scroll="565"></div>
+    <div class="parallax-layer layer-3" data-parallax-speed="0.5" data-max-scroll="565"></div>
+    <div class="parallax-layer layer-4" data-parallax-speed="0.7" data-max-scroll="565"></div>
+    <div class="parallax-layer layer-5" data-parallax-speed="0.9" data-max-scroll="565"></div>
+  </div> */}
+{/* <div id='hero-mobile'></div> */}
   <div>
   <img src="https://www.xtrim.com.ec/wp-content/uploads/2023/01/IMG_0037.png"></img>
   </div>
+  <div style={{}}></div>
   <div>
     <div className="">
       <section style={{backgroundColor: "#F2F1FC"}} className="header relative pt-16 items-center flex pb-16">

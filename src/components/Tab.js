@@ -358,7 +358,7 @@ export const Tab = () => {
     
     </div>
     <div className=" selector-componente" style={{borderBottom:"solid 4px #EBECF0", width:"100%"}}>
-      <div className=" flex flex-row gap-2" style={{marginBottom:"-3px", paddingLeft:"5vw"}}>
+      <div className=" flex flex-row gap-40" style={{marginBottom:"-3px", paddingLeft:"5vw"}}>
         <button className="size-component size-option-component-focused" onClick={handleClickMostrarUso}>Uso</button>
         <button className="size-component size-option-component" onClick={handleClickMostrarCode}>Código</button>
       </div>
@@ -419,24 +419,28 @@ export const Tab = () => {
     Mejores Prácticas
     </p>
     <br />
-    <li>Utilizar Tabs para agrupar información, reduce la carga cognitiva del usuario.</li>
-    <li>Utilizar Tabs facilita a los usuarios encontrar información e interactuar por la interfaz.</li>
-    <li>Los Tabs organizan contenido para que el usuario no tenga que navegar fuera para encontrar información.</li>
+    <ul>
+    <li style={{marginBottom:"8px"}}>Utilizar Tabs para agrupar información, reduce la carga cognitiva del usuario.</li>
+    <li style={{marginBottom:"8px"}}>Utilizar Tabs facilita a los usuarios encontrar información e interactuar por la interfaz.</li>
+    <li style={{marginBottom:"8px"}}>Los Tabs organizan contenido para que el usuario no tenga que navegar fuera para encontrar información.</li>
+    </ul>
     </div>
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
     Guidelines de contenido
     </p>
     <br></br>
-    <li>El texto del menú debe proporcionar información clara y breve del contenido que contienen.</li>
-    <li>El contenido que se agrupa en los Tabs es diferente y se excluye del resto. Se clasifican de forma independiente.</li>
+    <ul>
+      <li style={{marginBottom:"8px"}}>El texto del menú debe proporcionar información clara y breve del contenido que contienen.</li>
+      <li style={{marginBottom:"8px"}}>El contenido que se agrupa en los Tabs es diferente y se excluye del resto. Se clasifican de forma independiente.</li>
+    </ul>
     </div>
     {/* <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
     Accesibilidad
     </p>
     <br></br>
-    <li>Incluir texto alternativo en los botones de ícono.</li>
+    <li style={{marginBottom:"8px"}}>Incluir texto alternativo en los botones de ícono.</li>
     </div> */}
     </div> 
     

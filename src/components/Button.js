@@ -350,7 +350,7 @@ export const Button = () => {
     
     </div>
     <div className=" selector-componente" style={{borderBottom:"solid 4px #EBECF0", width:"100%"}}>
-      <div className=" flex flex-row gap-2" style={{marginBottom:"-3px", paddingLeft:"5vw"}}>
+      <div className=" flex flex-row gap-40" style={{marginBottom:"-3px", paddingLeft:"5vw"}}>
         <button className="size-component size-option-component-focused" onClick={handleClickMostrarUso} >Uso</button>
         <button className="size-component size-option-component" onClick={handleClickMostrarCode}>Código</button>
       </div>
@@ -368,13 +368,13 @@ export const Button = () => {
     <br></br>
     <p style={{color: "#222D44",fontWeight:600, fontSize:"16px", lineHeight:"22px"}}>¿Qué rol cumplen los botones?</p>      
     <br></br>
-    <p>
-    <li>Indican la acción que se va a realizar.</li>
-    <li>Permiten completar procesos.</li>
-    <li>Permiten al usuario avanzar y continuar moviendose por la interfaz.</li>
-    <li>Funcionan como un llamado a la acción (call to action).</li>
-    <li>Suelen utilizar iconos para reforzar el significado de la acción que indica el botón.</li>
-    </p>
+    <ul>
+    <li style={{marginBottom:"8px"}}>Indican la acción que se va a realizar.</li>
+    <li style={{marginBottom:"8px"}}>Permiten completar procesos.</li>
+    <li style={{marginBottom:"8px"}}>Permiten al usuario avanzar y continuar moviendose por la interfaz.</li>
+    <li style={{marginBottom:"8px"}}>Funcionan como un llamado a la acción (call to action).</li>
+    <li style={{marginBottom:"8px"}}>Suelen utilizar iconos para reforzar el significado de la acción que indica el botón.</li>
+    </ul>
     <br></br>
     </div>
     <div>
@@ -383,13 +383,14 @@ export const Button = () => {
     </p>
     <br></br>
     <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Los botones tienen diferente apariencia según el uso que se requiera. Es importante que cada una de las variantes se implemente de manera consistente en todos los productos.</p>
-    <div className="grid mt-2" style={{gridTemplateColumns:"30% 70%", gap:"2rem"}}>
-      <div className=" justify-center flex" style={{alignItems:"center"}}>Primario</div>
-      <div>Para hacer un llamado a la acción. Indica acciones principales.</div>
-      <div className=" justify-center flex" style={{alignItems:"center"}}>Secundario</div>
-      <div>Para indicar acciones, comúnmente negativas, en segundo plano. Suelen usarse junto a un botón principal.</div>
-      <div className=" justify-center flex" style={{alignItems:"center"}}>Subtle</div>
-      <div>Para indicar acciones en tercer plano. Por lo general se usan junto a un botón principal.</div>
+    <br></br>
+    <div className="grid mt-2" style={{gridTemplateColumns:"30% 70%"}}>
+      <div className=" justify-center flex" style={{alignItems:"center", placeSelf:"stretch", paddingTop:"2rem", paddingBottom:"2rem"}}>Primario</div>
+      <div style={{placeSelf:"stretch", paddingTop:"2rem", paddingBottom:"2rem"}}>Para hacer un llamado a la acción. Indica acciones principales.</div>
+      <div className=" justify-center flex" style={{alignItems:"center",placeSelf:"stretch", backgroundColor:"#F9F9F9", paddingTop:"2rem", paddingBottom:"2rem"}}>Secundario</div>
+      <div style={{placeSelf:"stretch", backgroundColor:"#F9F9F9", paddingTop:"2rem", paddingBottom:"2rem"}}>Para indicar acciones, comúnmente negativas, en segundo plano. Suelen usarse junto a un botón principal.</div>
+      <div className=" justify-center flex" style={{alignItems:"center",placeSelf:"stretch", paddingTop:"2rem", paddingBottom:"2rem"}}>Subtle</div>
+      <div style={{placeSelf:"stretch", paddingTop:"2rem", paddingBottom:"2rem"}}>Para indicar acciones en tercer plano. Por lo general se usan junto a un botón principal.</div>
 
 
     </div>
@@ -402,13 +403,13 @@ export const Button = () => {
     <br></br>
     <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Tienen un tamaño determinado para diferentes situaciones y según la aplicación en que se usen. En la siguiente tabla se encuentran definidos los casos de uso para cada tamaño según el botón.</p>
     <br></br>
-    <div className="grid mt-2" style={{gridTemplateColumns:"30% 70%", gap:"2rem"}}>
-      <div className=" justify-center flex" style={{alignItems:"center"}}>Small</div>
-      <div>Se utiliza en áreas reducidas, cuando no hay espacio suficiente para el tamaño predeterminado.</div>
-      <div className=" justify-center flex" style={{alignItems:"center"}}>Medium</div>
-      <div>Tienen un tamaño estándar por lo que son utilizados con regularidad.</div>
-      <div className=" justify-center flex" style={{alignItems:"center"}}>Large</div>
-      <div>Los utilizamos para páginas de un solo botón, landing pages y call to action.</div>
+    <div className="grid mt-2" style={{gridTemplateColumns:"30% 70%"}}>
+      <div className=" justify-center flex" style={{alignItems:"center",placeSelf:"stretch", paddingTop:"2rem", paddingBottom:"2rem"}}>Small</div>
+      <div style={{placeSelf:"stretch", paddingTop:"2rem", paddingBottom:"2rem"}}>Se utiliza en áreas reducidas, cuando no hay espacio suficiente para el tamaño predeterminado.</div>
+      <div className=" justify-center flex" style={{alignItems:"center",placeSelf:"stretch", backgroundColor:"#F9F9F9", paddingTop:"2rem", paddingBottom:"2rem"}}>Medium</div>
+      <div style={{placeSelf:"stretch", paddingTop:"2rem", paddingBottom:"2rem", backgroundColor:"#F9F9F9"}}>Tienen un tamaño estándar por lo que son utilizados con regularidad.</div>
+      <div className=" justify-center flex" style={{alignItems:"center",placeSelf:"stretch", paddingTop:"2rem", paddingBottom:"2rem"}}>Large</div>
+      <div style={{placeSelf:"stretch", paddingTop:"2rem", paddingBottom:"2rem"}}>Los utilizamos para páginas de un solo botón, landing pages y call to action.</div>
 
 
     </div>
@@ -439,23 +440,27 @@ export const Button = () => {
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
     Mejores Prácticas
     </p>
-    
-    <li>Botón primario: Señala la acción principal a ejecutar.</li>
-    <li>Los botones secundarios se identifican por tener un color menos llamativo o no tener color.</li>
-    <li>Los botones tienen medidas distintas según su tamaño (pequeño - mediano - largo), hay que tener en cuenta que las medidas de la altura y largo varían según se usen en la web u aplicaciones móviles. De pequeños a largos miden 32px - 48px - 64px.</li>
-    <li>El texto de los botones debe ser breve y preciso. Es mejor utilizar dos palabras y en casos excepcionales un máximo de 4 palabras cuando es necesario indicar acciones complejas.</li>
-    <li>Es necesario utilizar palabras relacionadas con el proceso que se està desarrollando.</li>
+    <br></br>
+    <ul>
+    <li style={{marginBottom:"8px"}}>Botón primario: Señala la acción principal a ejecutar.</li>
+    <li style={{marginBottom:"8px"}}>Los botones secundarios se identifican por tener un color menos llamativo o no tener color.</li>
+    <li style={{marginBottom:"8px"}}>Los botones tienen medidas distintas según su tamaño (pequeño - mediano - largo), hay que tener en cuenta que las medidas de la altura y largo varían según se usen en la web u aplicaciones móviles. De pequeños a largos miden 32px - 48px - 64px.</li>
+    <li style={{marginBottom:"8px"}}>El texto de los botones debe ser breve y preciso. Es mejor utilizar dos palabras y en casos excepcionales un máximo de 4 palabras cuando es necesario indicar acciones complejas.</li>
+    <li style={{marginBottom:"8px"}}>Es necesario utilizar palabras relacionadas con el proceso que se està desarrollando.</li>
+    </ul>
     </div>
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
     Alineación
     </p>
-    
-    <li>Cuidar el orden y la posición de los botones. Si hay pares correspondientes (“volver” y “aceptar”) el botón primario se alinea a la derecha. Es importante asegurarse que el diseño ponga énfasis en la acción principal.</li>
-    <li>Los botones de posición central se usan para indicar la acción que se está por iniciar o concluir.</li>
-    <li>Los botones pares con iconos como “volver” y “continuar” que utilizan flechas para aportar dirección, deben señalar el lado indicado según la acción a ejecutarse. Por ejemplo, si la acción es volver al menú anterior la flecha debe señalar a la izquierda.</li>
-    <li>El texto de los botones debe ser breve y preciso. Es mejor utilizar dos palabras y en casos excepcionales un máximo de 4 palabras cuando es necesario indicar acciones complejas.</li>
-    <li>Es necesario utilizar palabras relacionadas con el proceso que se està desarrollando.</li>
+    <br></br>
+    <ul>
+    <li style={{marginBottom:"8px"}}>Cuidar el orden y la posición de los botones. Si hay pares correspondientes (“volver” y “aceptar”) el botón primario se alinea a la derecha. Es importante asegurarse que el diseño ponga énfasis en la acción principal.</li>
+    <li style={{marginBottom:"8px"}}>Los botones de posición central se usan para indicar la acción que se está por iniciar o concluir.</li>
+    <li style={{marginBottom:"8px"}}>Los botones pares con iconos como “volver” y “continuar” que utilizan flechas para aportar dirección, deben señalar el lado indicado según la acción a ejecutarse. Por ejemplo, si la acción es volver al menú anterior la flecha debe señalar a la izquierda.</li>
+    <li style={{marginBottom:"8px"}}>El texto de los botones debe ser breve y preciso. Es mejor utilizar dos palabras y en casos excepcionales un máximo de 4 palabras cuando es necesario indicar acciones complejas.</li>
+    <li style={{marginBottom:"8px"}}>Es necesario utilizar palabras relacionadas con el proceso que se està desarrollando.</li>
+    </ul>
     </div>
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
@@ -477,8 +482,10 @@ export const Button = () => {
     Accesibilidad
     </p>
     <br></br>
-    <li>Incluir texto alternativo en los botones de ícono.</li>
-    <li>Utilizar fuentes, tamaño y color de texto legibles.</li>
+    <ul>
+    <li style={{marginBottom:"8px"}}>Incluir texto alternativo en los botones de ícono.</li>
+    <li style={{marginBottom:"8px"}}>Utilizar fuentes, tamaño y color de texto legibles.</li>
+    </ul>
     </div>
     </div>}
   {isShownCode && 
@@ -496,7 +503,7 @@ export const Button = () => {
     <br></br>
     <p>Este botón con todas sus variables se usa con frecuencia en la mayoría de los productos.</p>
     <br></br>
-    <h5 className=' text-heading-5 text-color-grayscale-2 mb-3'>Botón Primary</h5>
+    <h5 className=' text-heading-5 text-color-grayscale-2 mb-3'>Variante Primary</h5>
     {/* <div className=" text-subtitle-1 mb-2">Explora otros tamaños: </div> */}
     <div className="flex flex-row items-center gap-2">
       <button className="size-1 size-option-focused" onClick={handleClickMostrarPrimary1}>Small</button>
@@ -599,7 +606,7 @@ export const Button = () => {
     </div> }
     </div>
     <div className=" mb-5">
-    <h5 className=' text-heading-5 text-color-grayscale-2 mb-3'>Botón Secondary</h5>
+    <h5 className=' text-heading-5 text-color-grayscale-2 mb-3'>Variante Secondary</h5>
     <div className="flex flex-row gap-2">
       <button className="size-2 size-option-focused" onClick={handleClickMostrarSecondary1}>Small</button>
       <button className="size-2 size-option" onClick={handleClickMostrarSecondary2}>Medium</button>
@@ -803,10 +810,13 @@ export const Button = () => {
     </div> }
     </div>
     <div className=" mb-5">
-    <p className=" mb-5" style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
+    <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
     Botón Destacado
     </p>
-    <h5 className=' text-heading-5 text-color-grayscale-2 mb-3'>Botón Outstanding</h5>
+    <br></br>
+    <p>El botón de gradiente se utiliza cuando es necesario destacar una opción.</p>
+    <br></br>
+    <h5 className=' text-heading-5 text-color-grayscale-2 mb-3'>Variante Outstanding</h5>
     <div className="flex flex-row gap-2">
       <button className="size-4 size-option-focused" onClick={handleClickMostrarOutstanding1}>Small</button>
       <button className="size-4 size-option" onClick={handleClickMostrarOutstanding2}>Medium</button>

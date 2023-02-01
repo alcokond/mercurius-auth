@@ -487,9 +487,12 @@ export const Dropdown = () => {
     <br></br>
     <p>El Dropdown tiene múltiples componentes: </p>
     <br />
+    <ul>
     <li style={{marginBottom:"8px"}}>Un <code>&lt;div&gt;</code> que actúa como contenedor.</li>
     <li style={{marginBottom:"8px"}}>Un <code>&lt;div&gt;</code> que contiene el <code>&lt;input&gt;</code> donde se mostrará la información seleccionada.</li>
     <li style={{marginBottom:"8px"}}>Un <code>&lt;div&gt;</code> que se muestra al hacer click en el contenedor y que muestra las opciones. </li>
+    </ul>
+    
     </div>
     <div className=" mb-5">
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>

@@ -353,7 +353,7 @@ export const Breadcrumbs = () => {
     <div className="flex flex-col margin-sidebar margin-contenido">
     <div id="colores" className=" background-grayscale-6" style={{position:"relative"}} >
     <div className="padding-componente flex flex-col">
-    <h6 className="text-overline">Acciones</h6>
+    <h6 className="text-overline">Display</h6>
     <h3 style={{fontSize:"36px", fontWeight:"700", color:"#221987"}} className="mb-3">Breadcrumbs</h3>
     <p className="text-button-1 text-justify">Muestra a los usuarios su ubicación en el sitio web o aplicación en que se encuentren interactuando y les permite pasar de una pagina a otra.</p>
     
@@ -376,12 +376,13 @@ export const Breadcrumbs = () => {
     <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Los Breadcrumbs son una alternativa que se adiciona a la navegación principal pero nunca deben reemplazarla. Se usan únicamente para orientar al usuario cuando se trata de procesos fáciles.</p>
     <p>Los elementos que contiene el Breadcrumbs funcionan como enlaces. Transportan al usuario a una nueva página, pero también les permite volver a la página anterior.</p>
     </div>
-    <div><p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
+    <div><p style={{fontWeight:600, fontSize:"25px", lineHeight:"36px"}}>
     Modo de Uso
     </p></div>
     
     <div className="flex flex-col gap-4">
       <div className="flex" >
+      <p style={{fontWeight:600}}>Cuando se usa</p>
         <p>Se utilizan en páginas web que tienen mucho contenido organizado en más de dos niveles. Los breadcrumbs, contextualizan al usuario ya que le indican en que sitio o página se encuentra.</p>
       </div>
 

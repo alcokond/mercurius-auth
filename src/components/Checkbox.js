@@ -344,7 +344,7 @@ export const Checkbox = () => {
     <div className="flex flex-col margin-sidebar margin-contenido">
     <div id="colores" className=" background-grayscale-6" style={{position:"relative"}} >
     <div className="padding-componente flex flex-col">
-    <h6 className="text-overline">Acciones</h6>
+    <h6 className="text-overline">selector</h6>
     <h3 style={{fontSize:"36px", fontWeight:"700", color:"#221987"}} className="mb-3">Checkbox</h3>
     <p className="text-button-1 text-justify">Los checkbox son inputs que facilitan al usuario la selección de varias opciones. Se pueden seleccionar opciones que se encuentre agrupadas en categorías diferentes.</p>
     

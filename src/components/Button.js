@@ -477,7 +477,7 @@ export const Button = () => {
       <img src={iniciarbien}></img>
       <img src={iniciarmal}></img>
     </div>
-    <div style={{display: "block",position:"relative"}}>
+    <div style={{marginTop:"16px",display: "block",position:"relative"}}>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
     Accesibilidad
     </p>
@@ -917,9 +917,10 @@ export const Button = () => {
     </div> }
     </div>
     <div className=" mb-5">
-    <p className=" mb-5" style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
+    <p  style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
     Botón Auxiliar
     </p>
+    <br />
     <p>Se utiliza el botón auxiliar cuando el fondo sobre el cual se esta trabajando es lila y no queremos que se pierda.</p>
     <br />
     <h5 className=' text-heading-5 text-color-grayscale-2 mb-3'>Botón Pink Primary</h5>

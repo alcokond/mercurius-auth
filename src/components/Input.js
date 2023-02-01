@@ -584,11 +584,11 @@ export const Input = () => {
      <CopyBlock 
           language="html"
           text={`<div class="input-frame">
-    <div class="input-standard-label">Label name</div>
-    <div class="info-message-group">
-        <div><input type="text" placeholder="Placeholder" class="input-standard"></input></div>
-    </div>
-  </div>`}
+  <div class="input-standard-label">Label name</div>
+  <div class="info-message-group">
+      <div><input type="text" placeholder="Placeholder" class="input-standard"></input></div>
+  </div>
+</div>`}
           codeBlock
           theme={dracula}
           showLineNumbers={false}

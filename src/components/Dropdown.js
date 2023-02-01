@@ -447,11 +447,12 @@ export const Dropdown = () => {
     Mejores Prácticas
     </p>
     <br />
-    <li>Al organizar la lista se deben colocar primero las opciones más seleccionadas.</li>
-    <li>Se pueden utilizar distintos componentes que faciliten al usuario la elección de opciones.</li>
-    <li>Si la lista es larga, se deben incluir elementos de menú como casillas de check buttons y radio button. Por ejemplo, el “menú de perfil” que utiliza un icono de usuario como controlador.</li>
-    <li>Si existen acciones distintas dentro de un menú, estas deben agruparse por categorías.</li>
-    <li>Si utiliza Option list, debe describir cada opción con un título y descripción corto.</li>
+    <ul><li style={{marginBottom:"8px"}}>Al organizar la lista se deben colocar primero las opciones más seleccionadas.</li>
+    <li style={{marginBottom:"8px"}}>Se pueden utilizar distintos componentes que faciliten al usuario la elección de opciones.</li>
+    <li style={{marginBottom:"8px"}}>Si la lista es larga, se deben incluir elementos de menú como casillas de check buttons y radio button. Por ejemplo, el “menú de perfil” que utiliza un icono de usuario como controlador.</li>
+    <li style={{marginBottom:"8px"}}>Si existen acciones distintas dentro de un menú, estas deben agruparse por categorías.</li>
+    <li style={{marginBottom:"8px"}}>Si utiliza Option list, debe describir cada opción con un título y descripción corto.</li></ul>
+    
     </div>
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
@@ -465,16 +466,17 @@ export const Dropdown = () => {
     Guidelines de contenido
     </p>
     <br></br>
-    <li>El texto de las opciones debe ser breve para captar la atención del usuario.</li>
-    <li>El título debe hacer alusión a la acción que se está por realizar, es decir informar al usuario.</li>
-    <li>Si no son necesarios, evitar el uso de artículos, para describir las opciones de menú. Por ejemplo, usar “Agregar herramientas” en lugar de “agregar una herramienta”.</li>
+    <ul><li style={{marginBottom:"8px"}}>El texto de las opciones debe ser breve para captar la atención del usuario.</li>
+    <li style={{marginBottom:"8px"}}>El título debe hacer alusión a la acción que se está por realizar, es decir informar al usuario.</li>
+    <li style={{marginBottom:"8px"}}>Si no son necesarios, evitar el uso de artículos, para describir las opciones de menú. Por ejemplo, usar “Agregar herramientas” en lugar de “agregar una herramienta”.</li></ul>
+    
     </div>
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
     Accesibilidad
     </p>
     <br></br>
-    <li>Incluir texto alternativo en los botones de ícono.</li>
+    <li style={{marginBottom:"8px"}}>Incluir texto alternativo en los botones de ícono.</li>
     </div>
     </div> }
   {isShownCode && 
@@ -485,9 +487,9 @@ export const Dropdown = () => {
     <br></br>
     <p>El Dropdown tiene múltiples componentes: </p>
     <br />
-    <li>Un <code>&lt;div&gt;</code> que actúa como contenedor.</li>
-    <li>Un <code>&lt;div&gt;</code> que contiene el <code>&lt;input&gt;</code> donde se mostrará la información seleccionada.</li>
-    <li>Un <code>&lt;div&gt;</code> que se muestra al hacer click en el contenedor y que muestra las opciones. </li>
+    <li style={{marginBottom:"8px"}}>Un <code>&lt;div&gt;</code> que actúa como contenedor.</li>
+    <li style={{marginBottom:"8px"}}>Un <code>&lt;div&gt;</code> que contiene el <code>&lt;input&gt;</code> donde se mostrará la información seleccionada.</li>
+    <li style={{marginBottom:"8px"}}>Un <code>&lt;div&gt;</code> que se muestra al hacer click en el contenedor y que muestra las opciones. </li>
     </div>
     <div className=" mb-5">
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
@@ -505,7 +507,7 @@ export const Dropdown = () => {
     </div>
     <div className="component-content-full-drop">
         <div className="mx-auto my-auto">
-        <div className="dropdown">
+        <div className="dropdown-component">
           <div id="dropbtn" onClick={toggleDropdown} className={`dropbtn ${selected ? "selected" : ""}`}><input readonly class="dropinput" id="dropinput" value={selectedOption} type="text"></input><div id="dropdown-icon" class={`dropdown-icon ${selected ? "selected" : ""}`}>{!isOpen && <FontAwesomeIcon icon={faChevronDown} />}{isOpen && <FontAwesomeIcon icon={faChevronUp} />}</div></div>
           {isOpen &&
           <div id="myDropdown" className="dropdown-content-react">

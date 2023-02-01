@@ -373,9 +373,25 @@ export const Tab = () => {
     </p>
     <br></br>
     <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Los Tabs permiten seleccionar opciones en un menú que contiene información relacionada a acción o categoría principal. Funcionan de modo que permiten ver el contenido en la misma página.</p>
-    <br></br>
-    
     </div>
+    <div>
+    <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
+      Modo de uso
+    </p>
+    <br />
+    <p style={{fontWeight:500, lineHeight:"22px"}}>Cuando se usa</p>
+    <ul>
+      <li style={{marginBottom:"8px"}}>Se utilizan para categorizar información relacionada, evitando así la carga cognitiva.</li>
+      <li style={{marginBottom:"8px"}}>Pueden usarse en formularios y tableros para organizar contenido.</li>
+    </ul>
+    <p style={{fontWeight:500, lineHeight:"22px"}}>Cuando no se usa</p>
+    <ul>
+      <li style={{marginBottom:"8px"}}>En procesos complejos que requieran volver varias veces a la página anterior.</li>
+      <li style={{marginBottom:"8px"}}>No pueden reemplazar el menú principal.</li>
+      <li style={{marginBottom:"8px"}}>No deben usarse para indicar progreso.</li>
+    </ul>
+    </div>
+    
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
       Variantes

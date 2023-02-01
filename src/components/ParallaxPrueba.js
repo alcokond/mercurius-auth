@@ -38,17 +38,19 @@ const ParallaxPrueba = () => (
   <div className='layer-4 layer' data-depth='1.00' data-type='parallax'></div>
 </div>
 <div id='hero-mobile'></div> */}
-{/* <div id='hero' style={{position:"relative"}} >
-  <div className='layer-bg layer' data-depth='1.00' data-type='parallax' ></div>
-  <div className='layer-1 layer' data-depth='1.00' data-type='parallax'></div>
+<div id='hero' style={{position:"relative",zIndex:"0"}} >
+  <div className='layer-bg layer' data-depth='1' data-type='parallax' ></div>
+  <div className='layer-1 layer' data-depth='1' data-type='parallax'></div>
   <div className='layer-2 layer' data-depth='0.65' data-type='parallax'></div>
   <div className='layer-3 layer' data-depth='0.70' data-type='parallax'></div>
   <div className='layer-4 layer' data-depth='0.75' data-type='parallax'></div>
-  <div className='layer-5 layer' data-depth='0.80' data-type='parallax'></div>
-  <div className='layer-6 layer' data-depth='0.85' data-type='parallax'></div>
-  <div className='layer-7 layer' data-depth='0.90' data-type='parallax'></div>
-  <div className='layer-8 layer' data-depth='1.00' data-type='parallax'></div>
-</div> */}
+  {/* <div className='layer-5 layer' data-depth='0.80' data-type='parallax'></div>
+  <div className='layer-6 layer' data-depth='0.95' data-type='parallax'></div>
+  <div className='layer-7 layer' data-depth='1.10' data-type='parallax'></div>
+  <div className='layer-8 layer' data-depth='1.10' data-type='parallax'></div>
+  <div className='layer-9 layer' data-depth='1.30' data-type='parallax'></div>
+  <div className='layer-10 layer' data-depth='1.50' data-type='parallax'></div> */}
+</div>
 <div id='content'>
 {/* <div class="parallax-container">
     <div class="parallax-layer layer-0" data-parallax-speed="0.05" data-max-scroll="565"></div>
@@ -60,11 +62,11 @@ const ParallaxPrueba = () => (
   </div> */}
 {/* <div id='hero-mobile'></div> */}
   <div>
-  <img src="https://www.xtrim.com.ec/wp-content/uploads/2023/01/IMG_0037.png"></img>
+  {/* <img src="https://www.xtrim.com.ec/wp-content/uploads/2023/01/IMG_0037.png"></img> */}
   </div>
-  <div style={{}}></div>
+  
   <div>
-    <div className="">
+    <div style={{zIndex:2}}>
       <section style={{backgroundColor: "#F2F1FC"}} className="header relative pt-16 items-center flex pb-16">
         <div  className=" mx-10 items-center flex flex-wrap">
           <div className="w-full md:w-8/12 lg:w-6/12-2 xl:w-6/12-2">
@@ -73,7 +75,7 @@ const ParallaxPrueba = () => (
                 <strong>Crea y desarrolla <br></br><div style={{color:"#4A3CDB"}}>más rápido</div>  </strong>
               </h2>
               <p style={{fontSize: 20}} className="mt-4 mb-4 leading-relaxed ">
-              Mercurius, de Xtrim TVCable es un sistema de diseño que  mejora la experiencia en desarrollo e interacción digital.
+              Mercurius, de Xtrim es un sistema de diseño que  mejora la experiencia en desarrollo e interacción digital.
               </p>
               <div className="flex flex-wrap mb-4 gap-2">
                 

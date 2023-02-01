@@ -501,7 +501,7 @@ export const Button = () => {
     Botón Principal
     </p>
     <br></br>
-    <p>Este botón con todas sus variables se usa con frecuencia en la mayoría de los productos.</p>
+    <p>Este botón con todas sus variantes se usa con frecuencia en la mayoría de los productos.</p>
     <br></br>
     <h5 className=' text-heading-5 text-color-grayscale-2 mb-3'>Variante Primary</h5>
     {/* <div className=" text-subtitle-1 mb-2">Explora otros tamaños: </div> */}
@@ -814,9 +814,9 @@ export const Button = () => {
     Botón Destacado
     </p>
     <br></br>
-    <p>El botón de gradiente se utiliza cuando es necesario destacar una opción.</p>
+    <p>El botón destacado se utiliza cuando es necesario destacar una opción.</p>
     <br></br>
-    <h5 className=' text-heading-5 text-color-grayscale-2 mb-3'>Variante Outstanding</h5>
+    {/* <h5 className=' text-heading-5 text-color-grayscale-2 mb-3'>Variante Outstanding</h5> */}
     <div className="flex flex-row gap-2">
       <button className="size-4 size-option-focused" onClick={handleClickMostrarOutstanding1}>Small</button>
       <button className="size-4 size-option" onClick={handleClickMostrarOutstanding2}>Medium</button>
@@ -920,6 +920,8 @@ export const Button = () => {
     <p className=" mb-5" style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
     Botón Auxiliar
     </p>
+    <p>Se utiliza el botón auxiliar cuando el fondo sobre el cual se esta trabajando es lila y no queremos que se pierda.</p>
+    <br />
     <h5 className=' text-heading-5 text-color-grayscale-2 mb-3'>Botón Pink Primary</h5>
     <div className="flex flex-row gap-2">
       <button className="size-5 size-option-focused" onClick={handleClickMostrarPink1}>Small</button>

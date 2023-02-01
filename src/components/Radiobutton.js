@@ -372,17 +372,18 @@ export const Radiobutton = () => {
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
       Variantes
     </p>
+    <br />
     <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Los estados de on y off indican cuando una de las opciones del menú se encuentra seleccionada y cuando no lo está.</p>
     <br />
-    <div className="grid mt-2" style={{gridTemplateColumns:"30% 70%", gap:"2rem"}}>
-      <div className=" justify-center flex" style={{alignItems:"center"}}>Initial</div>
-      <div>Muestra el estado normal del radio button. Se encuentra en on cuando la interacción ha sido realizada y en off cuando no se ha iniciado la interacción con el botón.</div>
-      <div className=" justify-center flex" style={{alignItems:"center"}}>Hover</div>
-      <div>Cuando el cursor se encuentra encima del radio button sin seleccionar la opción.</div>
-      <div className=" justify-center flex" style={{alignItems:"center"}}>Focus</div>
-      <div>Cuando el usuario mantiene presionado el radio button mientras está en hover.</div>
-      <div className=" justify-center flex" style={{alignItems:"center"}}>Disable</div>
-      <div>Indica que el radio button está deshabilitado.</div>
+    <div className="grid mt-2" style={{gridTemplateColumns:"30% 70%"}}>
+      <div className=" justify-center flex" style={{placeSelf:"stretch", paddingTop:"2rem", paddingBottom:"2rem"}}>Initial</div>
+      <div style={{placeSelf:"stretch", paddingTop:"2rem", paddingBottom:"2rem"}}>Muestra el estado normal del radio button. Se encuentra en on cuando la interacción ha sido realizada y en off cuando no se ha iniciado la interacción con el botón.</div>
+      <div className=" justify-center flex" style={{placeSelf:"stretch", backgroundColor:"#F9F9F9", paddingTop:"2rem", paddingBottom:"2rem"}}>Hover</div>
+      <div style={{placeSelf:"stretch", backgroundColor:"#F9F9F9", paddingTop:"2rem", paddingBottom:"2rem"}}>Cuando el cursor se encuentra encima del radio button sin seleccionar la opción.</div>
+      <div className=" justify-center flex" style={{placeSelf:"stretch", paddingTop:"2rem", paddingBottom:"2rem"}}>Focus</div>
+      <div style={{placeSelf:"stretch", paddingTop:"2rem", paddingBottom:"2rem"}}>Cuando el usuario mantiene presionado el radio button mientras está en hover.</div>
+      <div className=" justify-center flex" style={{placeSelf:"stretch", backgroundColor:"#F9F9F9", paddingTop:"2rem", paddingBottom:"2rem"}}>Disable</div>
+      <div style={{placeSelf:"stretch", backgroundColor:"#F9F9F9", paddingTop:"2rem", paddingBottom:"2rem"}}>Indica que el radio button está deshabilitado.</div>
 
 
     </div>
@@ -391,13 +392,14 @@ export const Radiobutton = () => {
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
       Estilo
     </p>
+    <br />
     <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>El radio button tienes dos estilos que determinan su apariencia e indican cuando una opción ha sido seleccionada y en qué estado se encuentra.</p>
     <br />
-    <div className="grid mt-2" style={{gridTemplateColumns:"30% 70%", gap:"2rem"}}>
-      <div className=" justify-center flex" style={{alignItems:"center"}}>On</div>
-      <div>Indica selección, muestra cuando una opción ha sido elegida.</div>
-      <div className=" justify-center flex" style={{alignItems:"center"}}>Off</div>
-      <div>Muestra el estado normal del radio button.</div>
+    <div className="grid mt-2" style={{gridTemplateColumns:"30% 70%"}}>
+      <div className=" justify-center flex" style={{placeSelf:"stretch", paddingTop:"2rem", paddingBottom:"2rem"}}>On</div>
+      <div style={{placeSelf:"stretch", paddingTop:"2rem", paddingBottom:"2rem"}}>Indica selección, muestra cuando una opción ha sido elegida.</div>
+      <div className=" justify-center flex" style={{placeSelf:"stretch", backgroundColor:"#F9F9F9", paddingTop:"2rem", paddingBottom:"2rem"}}>Off</div>
+      <div style={{placeSelf:"stretch", backgroundColor:"#F9F9F9", paddingTop:"2rem", paddingBottom:"2rem"}}>Muestra el estado normal del radio button.</div>
       
 
 
@@ -411,7 +413,7 @@ export const Radiobutton = () => {
     <img src={radiobutton} ></img></div>
     <div className=" mt-4"></div>
     <p><strong>Casilla:</strong> Control de selección.</p>
-    <p><strong>Interruptor:</strong> Determina el estado del Toggle.</p>
+    <p><strong>Texto:</strong> Indica la acción que define a cada opción.</p>
     </div>
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>

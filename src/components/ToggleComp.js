@@ -504,7 +504,7 @@ export const Toggle = () => {
           language="html"
           text={`<label class="switch">
   <input type="checkbox"></input>
-  <span class="slider"></span>
+  <span class="slider round"></span>
 </label>`}
           codeBlock
           theme={dracula}

@@ -1170,54 +1170,62 @@ body.menu-toggled > .meta-link > span {
 
 .layer-bg {
   /*background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_bg.jpg");*/
-  background-image: url("https://www.xtrim.com.ec/wp-content/uploads/2023/01/parallax-fondo.png");
+  background-image: url("https://www.xtrim.com.ec/wp-content/uploads/2023/02/mercurius-parallax-bg.png");
   background-size: cover;
 
 }
 
 .layer-1 {
   /*background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_03.png");*/
-  background-image: url("https://www.xtrim.com.ec/wp-content/uploads/2023/01/parallax-8.png");
+  background-image: url("https://www.xtrim.com.ec/wp-content/uploads/2023/02/mercurius-parallax-1.png");
   /*background-position: left bottom;*/
   background-size: cover;
 }
 
 .layer-2 {
   /*background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_02.png");*/
-  background-image: url("https://www.xtrim.com.ec/wp-content/uploads/2023/01/parallax-7.png");
+  background-image: url("https://www.xtrim.com.ec/wp-content/uploads/2023/02/mercurius-parallax-2.png");
   background-size: cover;
 }
 
 .layer-3 {
   /*background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_man.png");*/
-  background-image: url("https://www.xtrim.com.ec/wp-content/uploads/2023/01/parallax-6.png");
+  background-image: url("https://www.xtrim.com.ec/wp-content/uploads/2023/02/mercurius-parallax-3.png");
   /*background-position: right bottom;*/
   background-size: cover;
 }
 
 .layer-4 {
   /*background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_01.png");*/
-  background-image: url("https://www.xtrim.com.ec/wp-content/uploads/2023/01/parallax-5.png");
+  background-image: url("https://www.xtrim.com.ec/wp-content/uploads/2023/02/mercurius-parallax-4.png");
   background-size: cover;
 }
 
 .layer-5 {
-  background-image: url("https://www.xtrim.com.ec/wp-content/uploads/2023/01/parallax-4.png");
+  background-image: url("https://www.xtrim.com.ec/wp-content/uploads/2023/02/mercurius-parallax-5.png");
   background-size: cover;
 }
 
 .layer-6 {
-  background-image: url("https://www.xtrim.com.ec/wp-content/uploads/2023/01/parallax-3.png");
+  background-image: url("https://www.xtrim.com.ec/wp-content/uploads/2023/02/mercurius-parallax-6.png");
   background-size: cover;
 }
 
 .layer-7 {
-  background-image: url("https://www.xtrim.com.ec/wp-content/uploads/2023/01/parallax-2.png");
+  background-image: url("https://www.xtrim.com.ec/wp-content/uploads/2023/02/mercurius-parallax-7.png");
   background-size: cover;
 }
 
 .layer-8 {
-  background-image: url("https://www.xtrim.com.ec/wp-content/uploads/2023/01/parallax-1.png");
+  background-image: url("https://www.xtrim.com.ec/wp-content/uploads/2023/02/mercurius-parallax-10.png");
+  background-size: cover;
+}
+.layer-9 {
+  background-image: url("https://www.xtrim.com.ec/wp-content/uploads/2023/02/mercurius-parallax-8.png");
+  background-size: cover;
+}
+.layer-10 {
+  background-image: url("https://www.xtrim.com.ec/wp-content/uploads/2023/02/mercurius-parallax-9.png");
   background-size: cover;
 }
 

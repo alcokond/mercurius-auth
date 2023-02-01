@@ -377,16 +377,23 @@ export const Toast = () => {
     <br></br>
     <p>Los toast por lo general aparecen en la parte superior de la página, se muestran por poco tiempo y luego desaparecen automáticamente.</p>
     </div>
-    <br />
-    <div><p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
-    Modo de Uso
-    </p></div>
     
-    <div className="flex flex-col gap-4">
-      <div className="flex" style={{backgroundColor:"#EBF6F2", borderBottom: "4px solid #38A57E", height:"15vh", alignItems:"center", justifyContent:"center", padding:"5%"}}>
-        <p>Se utilizan para dar información adicional sobre un proceso que por lo general indica actualizaciones o cambios en el estado del sistema. Se utilizan también para proporcionar comentarios o indicaciones cortas e instantáneos.</p>
-       </div>
-
+    <div>
+    <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
+      Modo de uso
+    </p>
+    <br />
+    <p style={{fontWeight:500, lineHeight:"22px"}}>Cuando se usa</p>
+    <ul>
+      <li style={{marginBottom:"8px"}}>Se utilizan para categorizar información relacionada, evitando así la carga cognitiva.</li>
+      <li style={{marginBottom:"8px"}}>Pueden usarse en formularios y tableros para organizar contenido.</li>
+    </ul>
+    <p style={{fontWeight:500, lineHeight:"22px"}}>Cuando no se usa</p>
+    <ul>
+      <li style={{marginBottom:"8px"}}>En procesos complejos que requieran volver varias veces a la página anterior.</li>
+      <li style={{marginBottom:"8px"}}>No pueden reemplazar el menú principal.</li>
+      <li style={{marginBottom:"8px"}}>No deben usarse para indicar progreso.</li>
+    </ul>
     </div>
 
     <div>
@@ -513,7 +520,7 @@ sobre el proceso que se está realizando.</div>
     </div>
     <div className="component-content-full-noflex flex flex-col" style={{justifyContent:"center"}}>
         <div >
-        <div style={{border: "1px solid #38A57E", background: "#FFFFFF", borderRadius:"8px", gap:"2%", height:"79px"}} className="flex flex-row">
+        <div style={{border: "1px solid #38A57E", background: "#FFFFFF", borderRadius:"8px", gap:"2%", height:"79px", marginLeft:"20px", marginRight:"20px"}} className="flex flex-row">
           <div style={{width: "2%", backgroundColor: "#38A57E"}}></div>
           <div style={{color:"#38A57E", alignSelf:"center", fontSize:"24px"}}><FontAwesomeIcon icon={faCheckCircle} /></div>
           <div style={{alignSelf:"center"}}>Notificación de éxito: texto con información</div>

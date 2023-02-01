@@ -2631,7 +2631,7 @@ input:checked + .slider:before {
   border: 0;
 }
 
-.dropdown {
+.dropdown-component {
   position: relative;
   display: inline-block;
 }
@@ -2689,7 +2689,7 @@ input:checked + .slider:before {
   align-self: center
 }
 
-.dropdown a:hover {background-color: #F2F1FC;}
+.dropdown-component a:hover {background-color: #F2F1FC;}
 
 .show {display: block;}
 

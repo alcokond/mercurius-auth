@@ -41,15 +41,15 @@ const ParallaxPrueba = () => (
 <div id='hero' style={{position:"relative",zIndex:"0"}} >
   <div className='layer-bg layer' data-depth='1' data-type='parallax' ></div>
   <div className='layer-1 layer' data-depth='1' data-type='parallax'></div>
-  <div className='layer-2 layer' data-depth='0.65' data-type='parallax'></div>
-  <div className='layer-3 layer' data-depth='0.70' data-type='parallax'></div>
-  <div className='layer-4 layer' data-depth='0.75' data-type='parallax'></div>
-  {/* <div className='layer-5 layer' data-depth='0.80' data-type='parallax'></div>
-  <div className='layer-6 layer' data-depth='0.95' data-type='parallax'></div>
-  <div className='layer-7 layer' data-depth='1.10' data-type='parallax'></div>
-  <div className='layer-8 layer' data-depth='1.10' data-type='parallax'></div>
-  <div className='layer-9 layer' data-depth='1.30' data-type='parallax'></div>
-  <div className='layer-10 layer' data-depth='1.50' data-type='parallax'></div> */}
+  <div className='layer-2 layer' data-depth='1' data-type='parallax'></div>
+  <div className='layer-3 layer' data-depth='-1.40' data-type='parallax'></div>
+  <div className='layer-4 layer' data-depth='-1.35' data-type='parallax'></div>
+  <div className='layer-5 layer' data-depth='-1.30' data-type='parallax'></div>
+  <div className='layer-6 layer' data-depth='-1.25' data-type='parallax'></div>
+  <div className='layer-7 layer' data-depth='-1.20' data-type='parallax'></div>
+  <div className='layer-8 layer' data-depth='-1.00' data-type='parallax'></div>
+  <div className='layer-9 layer' data-depth='-1.00' data-type='parallax'></div>
+  {/* <div className='layer-10 layer' data-depth='1.50' data-type='parallax'></div> */}
 </div>
 <div id='content'>
 {/* <div class="parallax-container">
@@ -95,8 +95,8 @@ const ParallaxPrueba = () => (
         </div>
       </section>
 
-      <section >
-      <div className=" mx-10 pt-16 items-center flex flex-wrap">
+      <section style={{zIndex:2}} >
+      <div style={{zIndex:2}} className=" mx-10 pt-16 items-center flex flex-wrap">
           <div className="w-full md:w-8/12 lg:w-6/12 xl:w-6/12">
             <div className="pt-32 sm:pt-0">
 

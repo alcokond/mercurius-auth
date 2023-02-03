@@ -25,6 +25,38 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax';
     });
   
   }).call(this);
+(function() {
+    window.addEventListener('scroll', function(event) {
+      var depth, i, layer, layers, len, movement, topDistance, translate3d;
+      topDistance = this.scrollY;
+      layers = document.querySelectorAll("[data-type='parallax-persona']");
+      for (i = 0, len = layers.length; i < len; i++) {
+        layer = layers[i];
+        depth = layer.getAttribute('data-depth');
+        movement = -(topDistance * depth);
+        if(movement <190){
+        translate3d = 'translate3d(0, ' + movement + 'px, 0)';
+        layer.style['-webkit-transform'] = translate3d;
+        layer.style['-moz-transform'] = translate3d;
+        layer.style['-ms-transform'] = translate3d;
+        layer.style['-o-transform'] = translate3d;
+        layer.style.transform = translate3d;
+      }
+      else {
+        topDistance= topDistance-350;
+        depth=1;
+        movement = -(topDistance * depth);
+        translate3d = 'translate3d(0, ' + movement + 'px, 0)';
+        layer.style['-webkit-transform'] = translate3d;
+        layer.style['-moz-transform'] = translate3d;
+        layer.style['-ms-transform'] = translate3d;
+        layer.style['-o-transform'] = translate3d;
+        layer.style.transform = translate3d;
+      }
+      }
+    });
+  
+  }).call(this);
 
 
 const ParallaxPrueba = () => (
@@ -38,7 +70,7 @@ const ParallaxPrueba = () => (
   <div className='layer-4 layer' data-depth='1.00' data-type='parallax'></div>
 </div>
 <div id='hero-mobile'></div> */}
-<div id='hero' style={{position:"relative",zIndex:"0"}} >
+<div id='hero' style={{position:"relative",zIndex:"-1"}} >
   <div className='layer-bg layer' data-depth='1' data-type='parallax' ></div>
   <div className='layer-1 layer' data-depth='1' data-type='parallax'></div>
   <div className='layer-2 layer' data-depth='1' data-type='parallax'></div>
@@ -46,7 +78,7 @@ const ParallaxPrueba = () => (
   <div className='layer-4 layer' data-depth='-1.35' data-type='parallax'></div>
   <div className='layer-5 layer' data-depth='-1.30' data-type='parallax'></div>
   <div className='layer-6 layer' data-depth='-1.25' data-type='parallax'></div>
-  <div className='layer-7 layer' data-depth='-1.20' data-type='parallax'></div>
+  <div className='layer-7 layer' data-depth='-1.20' data-type='parallax-persona'></div>
   <div className='layer-8 layer' data-depth='-1.00' data-type='parallax'></div>
   <div className='layer-9 layer' data-depth='-1.00' data-type='parallax'></div>
   {/* <div className='layer-10 layer' data-depth='1.50' data-type='parallax'></div> */}

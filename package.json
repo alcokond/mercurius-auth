@@ -61,8 +61,10 @@
     "react-code-blocks": "^0.0.9-0",
     "react-dom": "^17.0",
     "react-pro-sidebar": "^1.0.0-alpha.6",
+    "react-reveal": "^1.2.2",
     "react-router-dom": "^5.3.3",
     "react-scripts": "^5.0.1",
+    "react-scroll-fade-animation": "^0.5.4",
     "reactstrap": "^8.0",
     "styled-components": "^5.3.6",
     "typescript": "^4.8.3"

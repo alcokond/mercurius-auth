@@ -381,7 +381,7 @@ export const Breadcrumbs = () => {
     </p></div>
     
     <div className="flex flex-col gap-4">
-      <div className="flex" >
+      <div className="flex flex-col gap-1" >
       <p style={{fontWeight:600}}>Cuando se usa</p>
         <p>Se utilizan en páginas web que tienen mucho contenido organizado en más de dos niveles. Los breadcrumbs, contextualizan al usuario ya que le indican en que sitio o página se encuentra.</p>
       </div>
@@ -409,7 +409,7 @@ export const Breadcrumbs = () => {
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
       Anatomía
     </p>
-    <div style={{width:"60%", alignSelf:"center", marginTop: "4%"}}>
+    <div style={{width:"30%", alignSelf:"center", marginTop: "4%"}}>
     <img src={breadcrumbs} ></img></div>
     <div className=" mt-4"></div>
     <p><strong>Icono:</strong> Aporta significado e indica una acción o proceso.</p>
@@ -464,7 +464,7 @@ export const Breadcrumbs = () => {
     </div>
     <div className=" mb-5">
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
-    Breadcrumb
+    Breadcrumbs
     </p>
     <br></br>
     {isMostrarPrimary1 && 
@@ -475,11 +475,15 @@ export const Breadcrumbs = () => {
     </div>
     <div className="component-content-full flex">
         <div className="mx-auto my-auto">
-        <div className="flex flex-row">
-          <div className="tab-focused tab-select" onClick={handleClickTab}>Planes</div>
-          <div className="tab tab-select" onClick={handleClickTab}>Planes</div>
-          <div className="tab tab-select" onClick={handleClickTab}>Planes</div>
-        </div>
+        <nav aria-label="Breadcrumb" class="breadcrumb">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Category</a></li>
+            <li><a href="#">Sub Category</a></li>
+            <li><a href="#">Type</a></li>
+            <li><span aria-current="page">Product</span></li>
+          </ul>
+        </nav>
         </div>
     </div>
     </div>

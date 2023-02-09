@@ -262,7 +262,7 @@ export default function Sidebar() {
                       >
                       <ListItemButton sx={{ pl: 4 }} >
                       
-                        <ListItemText primary='Breadcrumb' />
+                        <ListItemText primary='Breadcrumbs' />
                         
                       </ListItemButton>
                     </NavLink>

@@ -26,6 +26,38 @@ import Fade from 'react-reveal/Fade';
     });
   
   }).call(this);
+(function() {
+    window.addEventListener('scroll', function(event) {
+      var depth, i, layer, layers, len, movement, topDistance, translate3d;
+      topDistance = this.scrollY;
+      layers = document.querySelectorAll("[data-type='parallax-persona']");
+      for (i = 0, len = layers.length; i < len; i++) {
+        layer = layers[i];
+        depth = layer.getAttribute('data-depth');
+        movement = -(topDistance * depth);
+        if(movement <190){
+        translate3d = 'translate3d(0, ' + movement + 'px, 0)';
+        layer.style['-webkit-transform'] = translate3d;
+        layer.style['-moz-transform'] = translate3d;
+        layer.style['-ms-transform'] = translate3d;
+        layer.style['-o-transform'] = translate3d;
+        layer.style.transform = translate3d;
+      }
+      else {
+        topDistance= topDistance-350;
+        depth=1;
+        movement = -(topDistance * depth);
+        translate3d = 'translate3d(0, ' + movement + 'px, 0)';
+        layer.style['-webkit-transform'] = translate3d;
+        layer.style['-moz-transform'] = translate3d;
+        layer.style['-ms-transform'] = translate3d;
+        layer.style['-o-transform'] = translate3d;
+        layer.style.transform = translate3d;
+      }
+      }
+    });
+  
+  }).call(this);
 
 
 const ParallaxPrueba = () => (
@@ -39,20 +71,20 @@ const ParallaxPrueba = () => (
   <div className='layer-4 layer' data-depth='1.00' data-type='parallax'></div>
 </div>
 <div id='hero-mobile'></div> */}
-<div id='hero' style={{position:"relative",zIndex:"0"}} >
+<div id='hero' style={{position:"relative",zIndex:"-1"}} >
   <div className='layer-bg layer' data-depth='1' data-type='parallax' ></div>
-  <div className='layer-1 layer' data-depth='1' data-type='parallax'></div>
+  {/* <div className='layer-1 layer' data-depth='1' data-type='parallax'></div> */}
   <div className='layer-2 layer' data-depth='1' data-type='parallax'></div>
-  <div className='layer-3 layer' data-depth='-1.40' data-type='parallax'></div>
-  <div className='layer-4 layer' data-depth='-1.35' data-type='parallax'></div>
-  <div className='layer-5 layer' data-depth='-1.30' data-type='parallax'></div>
-  <div className='layer-6 layer' data-depth='-1.25' data-type='parallax'></div>
-  <div className='layer-7 layer' data-depth='-1.20' data-type='parallax'></div>
+  <div className='layer-3 layer' data-depth='-2.90' data-type='parallax'></div>
+  <div className='layer-4 layer' data-depth='-2.35' data-type='parallax'></div>
+  <div className='layer-5 layer' data-depth='-2.00' data-type='parallax'></div>
+  <div className='layer-6 layer' data-depth='-1.65' data-type='parallax'></div>
+  <div className='layer-7 layer' data-depth='-1.30' data-type='parallax-persona'></div>
   <div className='layer-8 layer' data-depth='-1.00' data-type='parallax'></div>
   <div className='layer-9 layer' data-depth='-1.00' data-type='parallax'></div>
   {/* <div className='layer-10 layer' data-depth='1.50' data-type='parallax'></div> */}
 </div>
-<div id='content'>
+<div id='content' >
 {/* <div class="parallax-container">
     <div class="parallax-layer layer-0" data-parallax-speed="0.05" data-max-scroll="565"></div>
     <div class="parallax-layer layer-1" data-parallax-speed="0.1" data-max-scroll="565"></div>
@@ -69,7 +101,7 @@ const ParallaxPrueba = () => (
   <div>
     <div style={{zIndex:2}}>
     <Fade left>
-    <section style={{backgroundColor: "#F2F1FC"}} className="header relative pt-16 items-center flex pb-16">
+      <section style={{backgroundColor: "#F2F1FC"}} className="header relative pt-16 items-center flex pb-16">
         <div  className=" mx-10 items-center flex flex-wrap">
           <div className="w-full md:w-8/12 lg:w-6/12-2 xl:w-6/12-2">
             <div className="pt-32 sm:pt-0">
@@ -97,9 +129,9 @@ const ParallaxPrueba = () => (
         </div>
       </section>
     </Fade>
-      
-    <Fade left>
+    
       <section style={{zIndex:2}} >
+      <Fade left>
       <div style={{zIndex:2}} className=" mx-10 pt-16 items-center flex flex-wrap">
           <div className="w-full md:w-8/12 lg:w-6/12 xl:w-6/12">
             <div className="pt-32 sm:pt-0">
@@ -158,6 +190,8 @@ const ParallaxPrueba = () => (
                     <div style={{fontSize: 20, fontWeight: 700, color: "#6A7180"}} className="pt-2">Radiobutton</div>
                 </div>
             </div>
+            </Fade>
+      <Fade left>
       <div className=" mx-10 pt-16 items-center flex flex-wrap">
           <div className="w-full md:w-8/12 lg:w-6/12 xl:w-6/12">
             <div className="pt-32 sm:pt-0">
@@ -200,11 +234,10 @@ const ParallaxPrueba = () => (
                     <div style={{fontSize: 20, fontWeight: 700, color: "#6A7180"}} className="pt-2">Formulario</div>
                 </div>
             </div>
-
+            </Fade>
       </section>
-      </Fade>
-      <Fade right>
-      <section className=" mb-24">
+      
+      {/* <section className=" mb-24">
         <div className="margin-hero pt-16">
             <div style={{gridTemplateColumns: "33.33333333333333% auto auto auto", columnGap:"1%", rowGap:"2%"}} className="grid">
                 
@@ -349,27 +382,46 @@ const ParallaxPrueba = () => (
                 </NavLink>
               </div>
                   </div>
-                  <div className="flex flex-col icon-card gap-2">
+                  
+                  <NavLink
+                      tag={RouterNavLink}
+                      to="/mercurius/colores"
+                      exact
+                      style={{ textDecoration: 'none' }}
+                      className="flex flex-col icon-card gap-2"
+                      >
                     <div style={{color: "#80780F" }} className="icon-box background-complementary"> <FontAwesomeIcon icon={faPalette} /></div>
                     <div style={{fontWeight: "700", color: "#525A6C", fontSize: "20px"}}>Colores</div>
                     <div style={{fontSize: 14, fontWeight: 400}}>Nuestros colores nos representan y distinguen nuestra marca.</div>
-                  </div>
-                  <div className="flex flex-col icon-card gap-2">
+                    </NavLink>
+                  
+                    <NavLink
+                      tag={RouterNavLink}
+                      to="/mercurius/tipografia"
+                      exact
+                      style={{ textDecoration: 'none' }}
+                      className="flex flex-col icon-card gap-2"
+                      >
                     <div style={{color: "#80780F" }} className="icon-box background-complementary"> <FontAwesomeIcon icon={faText} /></div>
                     <div style={{fontWeight: "700", color: "#525A6C", fontSize: "20px"}}>Tipografía</div>
                     <div style={{fontSize: 14, fontWeight: 400}}>Nuestra tipografía nos define. Como escribimos permite identificar lo que somos. </div>
-                  </div>
-                  <div className="flex flex-col icon-card gap-2">
+                  </NavLink>
+                  <NavLink
+                      tag={RouterNavLink}
+                      to="/mercurius/iconografia"
+                      exact
+                      style={{ textDecoration: 'none' }}
+                      className="flex flex-col icon-card gap-2"
+                      >
                     <div style={{color: "#80780F" }} className="icon-box background-complementary"> <FontAwesomeIcon icon={faCircleStar} /></div>
                     <div style={{fontWeight: "700", color: "#525A6C", fontSize: "20px"}}>Iconografía</div>
                     <div style={{fontSize: 14, fontWeight: 400}}>Nuestros iconos reflejan la personalidad de Xtrim y como nos comunicamos con los usuarios.</div>
-                  </div>
+                  </NavLink>
                 
                 
             </div>
         </div>
-      </section>
-      </Fade>
+      </section> */}
       </div>
   </div>
 </div>

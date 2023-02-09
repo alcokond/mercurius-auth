@@ -44,6 +44,7 @@ import Tab from "./components/Tab";
 import Breadcrumbs from "./components/Breadcrumbs";
 import Toast from "./components/Toast";
 import Slider from "./components/Slider";
+import ScrollToTop from "./components/ScrollToTop";
 
 
 initFontAwesome();
@@ -67,7 +68,7 @@ const App = () => {
   const [showOtherComponent, setShowOtherComponent] = useState(true);
   return (
     <Router history={history}>
-      
+      <ScrollToTop />
       <div id="app" className="d-flex flex-column h-100">
         
         <NavBar sticky="top" />

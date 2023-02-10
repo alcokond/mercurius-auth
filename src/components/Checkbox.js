@@ -461,18 +461,21 @@ export const Checkbox = () => {
     </div>
     <div className="component-content-full flex">
         <div className="mx-auto my-auto">
-    <div className="flex flex-row gap-2 center">
-      <div><input type="checkbox" id="huey" name="drone" value="huey"></input></div>
-      <div><label for="huey">Huey</label></div>
-    </div>
-
-    <div className="flex flex-row gap-2">
-      <div><input type="checkbox" id="dewey" name="drone" value="dewey"></input></div>
-      <div><label for="dewey">Dewey</label></div>
-    </div>
-   
-
+        <div className="flex flex-col">
+        <label className="checkbox">
+    <input className="checkbox-input" type="checkbox" ></input>
+    <div className="checkbox-box"></div>
+    <div className="checkbox-text">One</div>
+    </label>
+    <label className="checkbox">
+    <input className="checkbox-input" type="checkbox"></input>
+    <div className="checkbox-box"></div>
+    <div className="checkbox-text">Two</div>
+    </label>
         </div>
+    
+    
+    </div>
     </div>
     </div>
      </>  }

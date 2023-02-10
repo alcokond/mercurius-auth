@@ -393,10 +393,10 @@ export const Dropdown = () => {
     <br></br>
     <p style={{color: "#222D44",fontWeight:600, fontSize:"16px", lineHeight:"22px"}}>¿Cuántas clases de dropdown existen?</p>      
     <p>Existen dos clases:</p>
-    <p>
+    
     <p>1. Los que permiten seleccionar una sola opción</p>
     <p>2. Los que permiten seleccionar varias opciones</p>
-    </p>
+    
     <br></br>
     <p>1. Menú de radio button: permiten seleccionar una sola opción </p>
     <br />

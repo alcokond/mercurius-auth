@@ -2267,7 +2267,7 @@ line-height: 24px;
   margin-right: 8px;
 }
 
-.checkbox input:checked ~ .checkbox-box:after{
+.checkbox input:checked ~ .checkbox-box:before{
   width: 28px;
   height: 28px;
   border-radius: 2px;
@@ -2277,7 +2277,7 @@ line-height: 24px;
   align-items: center;
   justify-content: center;
   color:#ffffff;
-  font-family: "Font Awesome Kit"; font-weight: 400; content: "\e007";
+  font-family: FontAwesome; font-weight: 400; content: "\f00c";
 }
 
 .checkbox:hover input ~ .checkbox-box {

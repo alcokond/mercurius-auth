@@ -482,7 +482,7 @@ export const Radiobutton = () => {
     <button className=" text-color-primary text-weight-semibold" onClick={handleClickPrimary}>Ver Código <FontAwesomeIcon icon={faCode} /></button>
     </div>
     <div className="component-content-full flex">
-        <div className="mx-auto my-auto" style={{backgroundColor:"#ffffff", padding: "16px"}}>
+        <div className="mx-auto my-auto" style={{backgroundColor:"#ffffff", padding: "16px", borderRadius:"8px"}}>
         <label className="label-radiobutton">
     <input type="radio" name="genero" value="hombre" checked disabled></input>
     <span class="design-radiobutton"></span>

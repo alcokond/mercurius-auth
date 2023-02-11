@@ -482,16 +482,22 @@ export const Radiobutton = () => {
     <button className=" text-color-primary text-weight-semibold" onClick={handleClickPrimary}>Ver Código <FontAwesomeIcon icon={faCode} /></button>
     </div>
     <div className="component-content-full flex">
-        <div className="mx-auto my-auto">
-    <div>
-      <input type="radio" id="huey" name="drone" value="huey"></input>
-      <label for="huey">Huey</label>
-    </div>
-
-    <div>
-      <input type="radio" id="dewey" name="drone" value="dewey"></input>
-      <label for="dewey">Dewey</label>
-    </div>
+        <div className="mx-auto my-auto" style={{backgroundColor:"#ffffff", padding: "16px"}}>
+        <label className="label-radiobutton">
+    <input type="radio" name="genero" value="hombre" checked disabled></input>
+    <span class="design-radiobutton"></span>
+    <span class="value-radiobutton">Hombre</span>
+  </label>
+  <label className="label-radiobutton">
+    <input type="radio" name="genero" value="mujer" disabled></input>
+    <span class="design-radiobutton"></span>
+    <span class="value-radiobutton">Mujer</span>
+  </label>
+  <label className="label-radiobutton">
+    <input type="radio" name="genero" value="otro"></input>
+    <span class="design-radiobutton"></span>
+    <span class="value-radiobutton">Otro</span>
+  </label>
    
 
         </div>
@@ -507,15 +513,21 @@ export const Radiobutton = () => {
     <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
      <CopyBlock 
           language="html"
-          text={`<div>
-  <input type="radio" id="huey" name="drone" value="huey"></input>
-  <label for="huey">Huey</label>
-</div>
-    
-<div>
-  <input type="radio" id="dewey" name="drone" value="dewey"></input>
-  <label for="dewey">Dewey</label>
-</div>`}
+          text={`<label class="label-radiobutton">
+  <input type="radio" name="genero" value="hombre" checked disabled></input>
+  <span class="design-radiobutton"></span>
+  <span class="value-radiobutton">Hombre</span>
+</label>
+<label class="label-radiobutton">
+  <input type="radio" name="genero" value="mujer" disabled></input>
+  <span class="design-radiobutton"></span>
+  <span class="value-radiobutton">Mujer</span>
+</label>
+<label class="label-radiobutton">
+  <input type="radio" name="genero" value="otro"></input>
+  <span class="design-radiobutton"></span>
+  <span class="value-radiobutton">Otro</span>
+</label>`}
           codeBlock
           theme={dracula}
           showLineNumbers={false}

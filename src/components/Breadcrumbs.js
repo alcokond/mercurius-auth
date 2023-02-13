@@ -372,31 +372,35 @@ export const Breadcrumbs = () => {
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
       Uso
     </p>
-    <br></br>
+    <br />
     <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Los Breadcrumbs son una alternativa que se adiciona a la navegación principal pero nunca deben reemplazarla. Se usan únicamente para orientar al usuario cuando se trata de procesos fáciles.</p>
     <p>Los elementos que contiene el Breadcrumbs funcionan como enlaces. Transportan al usuario a una nueva página, pero también les permite volver a la página anterior.</p>
     </div>
-    <div><p style={{fontWeight:600, fontSize:"25px", lineHeight:"36px"}}>
-    Modo de Uso
-    </p></div>
-    
-    <div className="flex flex-col gap-4">
-      <div className="flex flex-col gap-1" >
-      <p style={{fontWeight:600}}>Cuando se usa</p>
-        <p>Se utilizan en páginas web que tienen mucho contenido organizado en más de dos niveles. Los breadcrumbs, contextualizan al usuario ya que le indican en que sitio o página se encuentra.</p>
-      </div>
-
+    <div>
+    <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
+      Modo de Uso
+    </p>
+    <br />
+    <p style={{color: "#222D44",fontWeight:600, fontSize:"16px", lineHeight:"22px"}}>¿Cuándo usarlos?</p>
+    <br></br>
+    <p>Se utilizan en páginas web con mas de dos niveles. Contextualizan al usuario al indicarle en que página se encuentran. </p>
+    <br />
+    <p style={{color: "#222D44",fontWeight:600, fontSize:"16px", lineHeight:"22px"}}>¿Cuándo no usarlos?</p>
+    <br />
+    <p>Nunca deben reemplazar la navegación principal, por lo tanto no deben utilizarse como un menú inicial.  </p>
     </div>
+    
+    
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
       Variantes
     </p>
     <br></br>
-    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Las variantes del Breadcrumb indican en qué estado se encuentra dependiendo de la interacción que se esté realizando.</p>
+    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Sus variantes indican en qué estado se encuentra dependiendo de la interacción que se esté realizando.</p>
     <br />
     <div className="grid mt-2" style={{gridTemplateColumns:"30% 70%", gap:"2rem"}}>
       <div className=" justify-center flex" style={{alignItems:"center"}}>Default</div>
-      <div>Se muestra el estado normal del componente cuando no se ha realizado ninguna interacción con él.</div>
+      <div>Se muestra el estado por defecto del componente cuando no se ha realizado ninguna interacción con él.</div>
       <div className=" justify-center flex" style={{alignItems:"center"}}>Hover</div>
       <div>Indica que el cursor se encuentra encima de una de las opciones, sin que está sea seleccionada.</div>
       <div className=" justify-center flex" style={{alignItems:"center"}}>Disable</div>

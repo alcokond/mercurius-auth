@@ -364,10 +364,19 @@ export const Button = () => {
       Uso
     </p>
     <br></br>
-    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>La función de los botones es señalar acciones, permitiendo al usuario continuar navegando por la interfaz. Se utilizan también como parte de componentes que ayudan a iniciar y concluir procesos.</p>
+    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>La función principal de los botones es permitir a los usuarios realizar acciones de forma intuitiva y accesible para que puedan navegar por la interfaz de manera eficiente. Se utilizan también como parte de componentes que ayudan a iniciar y concluir procesos.
+
+
+</p>
     <br></br>
-    <p style={{color: "#222D44",fontWeight:600, fontSize:"16px", lineHeight:"22px"}}>¿Qué rol cumplen los botones?</p>      
+    <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
+    Modo de Uso
+    </p>
+    <br />
+    <p style={{color: "#222D44",fontWeight:600, fontSize:"16px", lineHeight:"22px"}}>¿Cuándo usarlos?</p>
     <br></br>
+    <p>Los botones se utilizan en una amplia variedad de sistemas y aplicaciones para permitir al usuario interactuar con el sistema de forma instintiva, además, permiten una serie de acciones:</p>
+    <br />
     <ul>
     <li style={{marginBottom:"8px"}}>Indican la acción que se va a realizar.</li>
     <li style={{marginBottom:"8px"}}>Permiten completar procesos.</li>
@@ -376,6 +385,11 @@ export const Button = () => {
     <li style={{marginBottom:"8px"}}>Suelen utilizar iconos para reforzar el significado de la acción que indica el botón.</li>
     </ul>
     <br></br>
+    <p style={{color: "#222D44",fontWeight:600, fontSize:"16px", lineHeight:"22px"}}>¿Cuándo no usarlos?</p>
+    <br />
+    <p>Cuando no se requiere interacción. Si el usuario no necesita interactuar con la aplicación o el sistema, no es necesario utilizar botones.</p>
+    <br />
+    <p>Es importante evaluar si es necesario utilizar botones en una interfaz de usuario, y considerar otras alternativas si no es necesario.</p>
     </div>
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>

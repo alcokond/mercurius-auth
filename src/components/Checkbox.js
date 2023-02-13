@@ -346,7 +346,7 @@ export const Checkbox = () => {
     <div className="padding-componente flex flex-col">
     <h6 className="text-overline">selector</h6>
     <h3 style={{fontSize:"36px", fontWeight:"700", color:"#221987"}} className="mb-3">Checkbox</h3>
-    <p className="text-button-1 text-justify">Los checkbox son inputs que facilitan al usuario la selección de varias opciones. Se pueden seleccionar opciones que se encuentre agrupadas en categorías diferentes.</p>
+    <p className="text-button-1 text-justify">Los checkbox facilitan al usuario seleccionar varias opciones al mismo tiempo. Se pueden seleccionar opciones que se encuentren agrupadas en categorías diferentes.</p>
     
     </div>
     <div className=" selector-componente" style={{borderBottom:"solid 4px #EBECF0", width:"100%"}}>
@@ -364,9 +364,28 @@ export const Checkbox = () => {
       Uso
     </p>
     <br></br>
-    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Los checkbox se usan cuando hay varios elementos en el menú. Permite seleccionar desde cero a múltiples opciones.</p>
+    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Los checkbox permiten seleccionar varios elementos del menú. Permite seleccionar desde una a múltiples opciones.</p>
     <br></br>
     <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Son comúnmente usados en casillas de verificación, formularios, en términos y condiciones. se usan en formularios, que pueden encontrarse dentro de páginas completas y modales.</p>
+    </div>
+    <div>
+    <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
+      Modo de Uso
+    </p>
+    <br />
+    <p style={{color: "#222D44",fontWeight:600, fontSize:"16px", lineHeight:"22px"}}>¿Cuándo usarlos?</p>
+    <br></br>
+    <p>Se utilizan para cambiar de forma rápidamente de un estado a otro. Solo puede cambiarse entre dos estados posibles con acciones opuestas como encender/apagar.</p>
+    <br />
+    <p style={{color: "#222D44",fontWeight:600, fontSize:"16px", lineHeight:"22px"}}>¿Cuándo no usarlos?</p>
+    <br />
+    <p>No se debe usar checkbox cuando:</p>
+    <br />
+    <ul>
+    <li style={{marginBottom:"8px"}}>Solo se permite seleccionar una opción.</li>
+    <li style={{marginBottom:"8px"}}>La información no es verificable.</li>
+    <li style={{marginBottom:"8px"}}>Se requiere realizar selecciones más complejas o para recopilar información adicional.</li>
+    </ul>
     </div>
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
@@ -375,15 +394,15 @@ export const Checkbox = () => {
     <br></br>
     <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Los estados de check y uncheck definen si una opción esta selecciona o no. Al realizar la selección los estados varian.</p>
     <br></br>
-    <div className="grid mt-2" style={{gridTemplateColumns:"30% 70%", gap:"2rem"}}>
-      <div className=" justify-center flex" style={{alignItems:"center"}}>Initial</div>
-      <div>Cuando la información es una sola línea de texto.</div>
-      <div className=" justify-center flex" style={{alignItems:"center"}}>Hover</div>
-      <div>Para que el usuario ingrese consultas de búsqueda.</div>
-      <div className=" justify-center flex" style={{alignItems:"center"}}>Focus</div>
-      <div>Para ingresar y editar direcciones de correo electrónico.</div>
-      <div className=" justify-center flex" style={{alignItems:"center"}}>Disable</div>
-      <div>Se muestra cuando el checkbox está deshabilitado.</div>
+    <div className="grid mt-2" style={{gridTemplateColumns:"30% 70%"}}>
+      <div className=" justify-center flex" style={{alignItems:"center",placeSelf:"stretch", paddingTop:"2rem", paddingBottom:"2rem"}}>Default</div>
+      <div style={{placeSelf:"stretch", paddingTop:"2rem", paddingBottom:"2rem"}}>Refleja el estado normal del checkbox. Tiene dos estilos Check cuando la interacción ha iniciado y uncheck cuando la interacción no se ha realizado.</div>
+      <div className=" justify-center flex" style={{alignItems:"center",placeSelf:"stretch", backgroundColor:"#F9F9F9", paddingTop:"2rem", paddingBottom:"2rem"}}>Hover</div>
+      <div style={{placeSelf:"stretch", backgroundColor:"#F9F9F9", paddingTop:"2rem", paddingBottom:"2rem"}}>Cuando no se ha seleccionado la opción, pero el cursor esta encima del checkbox.</div>
+      <div className=" justify-center flex" style={{alignItems:"center",placeSelf:"stretch", paddingTop:"2rem", paddingBottom:"2rem"}}>Focus</div>
+      <div style={{placeSelf:"stretch", paddingTop:"2rem", paddingBottom:"2rem"}}>Cuando el usuario mantiene presionado el checkbox mientras estaba hover.</div>
+      <div className=" justify-center flex" style={{alignItems:"center",placeSelf:"stretch", backgroundColor:"#F9F9F9", paddingTop:"2rem", paddingBottom:"2rem"}}>Disable</div>
+      <div style={{placeSelf:"stretch", backgroundColor:"#F9F9F9", paddingTop:"2rem", paddingBottom:"2rem"}}>Se muestra cuando el checkbox está deshabilitado.</div>
 
 
     </div>
@@ -393,8 +412,8 @@ export const Checkbox = () => {
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
       Anatomía
     </p>
-    <div style={{width:"40%", alignSelf:"center", marginTop: "4%"}}>
-    <img src={checkbox} ></img></div>
+    <div style={{width:"20%", alignSelf:"center", marginTop: "4%"}}>
+    <img src={checkbox} className="mb-4" ></img></div>
     <div className=" mt-4"></div>
     <p><strong>Casilla:</strong> Control de selección.</p>
     <p><strong>Texto:</strong> Indica la acción que define a cada opción.</p>
@@ -446,6 +465,8 @@ export const Checkbox = () => {
     </p>
     <br></br>
     <p>El checkbox es una variante de los <code>&lt;input type="checkbox"&gt;</code> por lo cual heredan las cualidades de los mismos.</p>
+    <br />
+    <p>Se utilizan usualmente en contenedores con la propiedad display: flex y flex-direction: column, para mostrarse en columna, uno debajo de otro.</p>
     </div>
     <div className=" mb-5">
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
@@ -488,14 +509,17 @@ export const Checkbox = () => {
     <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
      <CopyBlock 
           language="html"
-          text={`<div>
-  <input type="checkbox" id="huey" name="drone" value="huey"></input>
-  <label for="huey">Huey</label>
-</div>
-    
-<div>
-  <input type="checkbox" id="dewey" name="drone" value="dewey"></input>
-  <label for="dewey">Dewey</label>
+          text={`<div class="flex flex-col">
+  <label class="checkbox">
+    <input class="checkbox-input" type="checkbox" ></input>
+    <div class="checkbox-box"></div>
+    <div class="checkbox-text">One</div>
+  </label>
+  <label class="checkbox">
+    <input class="checkbox-input" type="checkbox"></input>
+    <div class="checkbox-box"></div>
+    <div class="checkbox-text">Two</div>
+  </label>
 </div>`}
           codeBlock
           theme={dracula}

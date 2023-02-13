@@ -483,7 +483,7 @@ export const Button = () => {
     <br></br>
     <p>Los botones son parte esencial de la interfaz, por esta razón es importante establecer pautas de contenido a seguir para su correcto uso.</p>
     </div>
-    <div className="mb-5" style={{height:"100%",alignSelf:"center", display:"grid", gridTemplateColumns:"1fr 1fr", gap:"3%"}}>
+    <div className="mb-5" style={{alignSelf:"center", display:"grid", gridTemplateColumns:"1fr 1fr", gap:"3%"}}>
       <img src={aceptarbien}></img>
       <img src={aceptarmal}></img>
       <img src={editarbien}></img>

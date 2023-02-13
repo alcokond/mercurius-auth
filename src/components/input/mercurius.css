@@ -86,6 +86,27 @@
   --bold: 700;
 }
 
+.flex {
+  display: -webkit-flex;
+  display: flex;
+  overflow: hidden;
+}
+
+.flex-row {
+  -webkit-flex-direction: row;
+          flex-direction: row;
+}
+
+.flex-col {
+  -webkit-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-wrap {
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
 
 input:focus {
     outline: none;

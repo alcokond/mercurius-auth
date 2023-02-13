@@ -7,6 +7,9 @@ import dropdowncheck from "../assets/dropdowncheck.png";
 import dropdownelipsis from "../assets/dropdownelipsis.png";
 import dropdownuser from "../assets/dropdownuser.png";
 import dropdown from "../assets/anatomiadropdown.png";
+import dropdowndo from "../assets/dropdown do.svg";
+import dropdowndont from "../assets/dropdown dont.svg";
+
 
 import { CopyBlock, dracula } from "react-code-blocks";
 import TopBar  from "./TopBar"
@@ -389,33 +392,50 @@ export const Dropdown = () => {
       Uso
     </p>
     <br></br>
-    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Los dropdown se usan cuando hay más de cinco o más opciones a elegir, su función es mostrar una lista de opciones relacionadas a una misma acción.</p>
+    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Los dropdown se usan cuando hay cinco o más opciones a elegir, su función es mostrar una lista de opciones relacionadas a una misma acción, para facilitar su elección. </p>
     <br></br>
-    <p style={{color: "#222D44",fontWeight:600, fontSize:"16px", lineHeight:"22px"}}>¿Cuántas clases de dropdown existen?</p>      
-    <p>Existen dos clases:</p>
+    <p style={{color: "#222D44",fontWeight:600, fontSize:"16px", lineHeight:"22px"}}>Existen varios tipos y se utilizan de acuerdo a la necesidad, las más comunes son:</p>      
+    <br />
     
     <p>1. Los que permiten seleccionar una sola opción</p>
     <p>2. Los que permiten seleccionar varias opciones</p>
-    
     <br></br>
-    <p>1. Menú de radio button: permiten seleccionar una sola opción </p>
+    <p>Cuando la lista de opciones es larga y existen muchas opciones iguales que se agrupan por categorías, se utilizan check buttons y radio buttons.</p>
     <br />
-    <div style={{width:"20%"}}><img src={dropdownradio} alt="" /></div>
+    <p>1. Menú de radiobutton: permiten seleccionar una sola opción </p>
+    <br />
+    <div style={{width:"20%", marginBottom:"2rem"}}><img src={dropdownradio} alt="" /></div>
     <p>2. Menú de checkbox: permiten seleccionar varias opciones</p>
     <br />
-    <div style={{width:"20%"}}><img src={dropdowncheck} alt="" /></div>
+    <div style={{width:"20%", marginBottom:"2rem"}}><img src={dropdowncheck} alt="" /></div>
     <p>Existen también otras opciones de menú que utilizan un icono como controlador.</p>
     <br />
     <p>1. Dropdowns cuyo controlador es un Icono con elipsis</p>
     <br />
-    <div style={{width:"10%"}}><img src={dropdownelipsis} alt="" /></div>
+    <div style={{width:"10%", marginBottom:"2rem"}}><img src={dropdownelipsis} alt="" /></div>
     <p>2. Dropdowns cuyo controlador es un Icono de usuario para usarse en perfiles</p>
     <br />
-    <div style={{width:"10%"}}><img src={dropdownuser} alt="" /></div>
+    <div style={{width:"10%", marginBottom:"2rem"}}><img src={dropdownuser} alt="" /></div>
     </div>
     <div>
-    
-    
+    <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
+      Modo de Uso
+    </p>
+    <br />
+    <p style={{color: "#222D44",fontWeight:600, fontSize:"16px", lineHeight:"22px"}}>¿Cuándo usarlos?</p>
+    <br></br>
+    <p>Los dropdowns se utilizan con frecuencia en formularios, menús y otras interacciones en las que es necesario seleccionar una opción de una lista predeterminada. Al utilizarlos el usuario puede elegir una opción de manera eficiente sin tener que escribir una respuesta o navegar a través de una larga lista de opciones.</p>
+    <br />
+    <p style={{color: "#222D44",fontWeight:600, fontSize:"16px", lineHeight:"22px"}}>¿Cuándo no usarlos?</p>
+    <br />
+    <p>No se deben utilizar cuando:</p>
+    <br />
+    <ul>
+    <li style={{marginBottom:"8px"}}>Solo hay una opción para seleccionar</li>
+    <li style={{marginBottom:"8px"}}>Hay demasiadas opciones, es mejor usar un sistema de búsqueda o filtrado para ayudar al usuario a encontrar la opción deseada.</li>
+    <li style={{marginBottom:"8px"}}>La selección es crítica, un dropdown puede ser poco visible o fácil de olvidar.</li>
+    <li style={{marginBottom:"8px"}}>La selección requiere una explicación.</li>
+    </ul>
     </div>
     <div className="flex flex-col">
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
@@ -444,6 +464,23 @@ export const Dropdown = () => {
     </div>
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
+    Ancho
+    </p>
+    <br />
+    <p>Los elementos del menú no pueden exceder el ancho máximo del componente. Existirán casos en que el texto de una de las opciones de la lista sea más largo que las otras, si esto sucede, el menú crecerá hasta el ancho de la opción más larga, por otro lado, si no cumple con el ancho máximo se ajustará al texto más largo.</p>
+    <br /> 
+    <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
+    Posición
+    </p>
+    <br />
+    <p>Estos componentes deben de estar alineados de forma vertical al grid, usualmente con otros componentes de tipo formulario.</p>
+    </div>
+    <div style={{alignSelf:"center", display:"grid", gridTemplateColumns:"1fr 1fr", gap:"3%"}}>
+    <img src={dropdowndo} ></img>
+    <img src={dropdowndont} ></img>
+    </div>
+    <div>
+    <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
     Mejores Prácticas
     </p>
     <br />
@@ -467,17 +504,17 @@ export const Dropdown = () => {
     </p>
     <br></br>
     <ul><li style={{marginBottom:"8px"}}>El texto de las opciones debe ser breve para captar la atención del usuario.</li>
-    <li style={{marginBottom:"8px"}}>El título debe hacer alusión a la acción que se está por realizar, es decir informar al usuario.</li>
-    <li style={{marginBottom:"8px"}}>Si no son necesarios, evitar el uso de artículos, para describir las opciones de menú. Por ejemplo, usar “Agregar herramientas” en lugar de “agregar una herramienta”.</li></ul>
+    <li style={{marginBottom:"8px"}}>El título debe hacer alusión a la acción que se está por realizar, es decir, informar al usuario.</li>
+    <li style={{marginBottom:"8px"}}>Si no son necesarios, evitar el uso de artículos para describir las opciones de menú. Por ejemplo, usar “Agregar herramientas” en lugar de “Agregar una herramienta”.</li></ul>
     
     </div>
-    <div>
+    {/* <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
     Accesibilidad
     </p>
     <br></br>
     <li style={{marginBottom:"8px"}}>Incluir texto alternativo en los botones de ícono.</li>
-    </div>
+    </div> */}
     </div> }
   {isShownCode && 
     <div className="padding-componente flex flex-col gap-4">
@@ -499,8 +536,9 @@ export const Dropdown = () => {
     Dropdown
     </p>
     <br></br>
-    <h5 className=' text-heading-5 text-color-grayscale-2 mb-3'>Dropdown List</h5>
+    <h5 className=' text-heading-5 text-color-grayscale-2 mb-3'>Dropdown indicator</h5>
     {/* <div className=" text-subtitle-1 mb-2">Explora otros tamaños: </div> */}
+    <p>Muestra un menú desplegable con una lista de opciones que se activan al seleccionar el trigger.</p>
     
     {isMostrarPrimary1 && 
     !isShownPrimary && <> 
@@ -514,9 +552,9 @@ export const Dropdown = () => {
           <div id="dropbtn" onClick={toggleDropdown} className={`dropbtn ${selected ? "selected" : ""}`}><input readonly class="dropinput" id="dropinput" value={selectedOption} type="text"></input><div id="dropdown-icon" class={`dropdown-icon ${selected ? "selected" : ""}`}>{!isOpen && <FontAwesomeIcon icon={faChevronDown} />}{isOpen && <FontAwesomeIcon icon={faChevronUp} />}</div></div>
           {isOpen &&
           <div id="myDropdown" className="dropdown-content-react">
-            <a onClick={() => setSelectedOption("Opcion 1")}>Opcion 1</a>
-            <a onClick={() => setSelectedOption("Opcion 2")}>Opcion 2</a>
-            <a onClick={() => setSelectedOption("Opcion 3")}>Opcion 3</a>
+            <a onClick={() => setSelectedOption("Opcion 1")}>Opción 1</a>
+            <a onClick={() => setSelectedOption("Opcion 2")}>Opción 2</a>
+            <a onClick={() => setSelectedOption("Opcion 3")}>Opción 3</a>
           </div> }
 </div>
         </div>
@@ -571,9 +609,9 @@ window.onclick = function(event) {
 <div class="dropdown">
   <div id="dropbtn" onclick="myFunction()" class="dropbtn"><input readonly class="dropinput" id="dropinput" placeholder="Placeholder" type="text"></input><div id="dropdown-icon" class="dropdown-icon"><i id="chevron-down" class="fa-solid fa-chevron-down" ></i><i id="chevron-up" class="fa-solid fa-chevron-up" style="display:none"></i></div></div>
   <div id="myDropdown" class="dropdown-content">
-    <a onclick="updateInputValue(this)">Opcion 1</a>
-    <a onclick="updateInputValue(this)">Opcion 2</a>
-    <a onclick="updateInputValue(this)">Opcion 3</a>
+    <a onclick="updateInputValue(this)">Opción 1</a>
+    <a onclick="updateInputValue(this)">Opción 2</a>
+    <a onclick="updateInputValue(this)">Opción 3</a>
   </div>
 </div>`}
           codeBlock

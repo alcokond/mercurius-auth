@@ -13,6 +13,30 @@ import { faChevronDown } from "@fortawesome/pro-duotone-svg-icons";
 
 export const Slider = () => {
 
+  const [rangeOneValue, setRangeOneValue] = useState(10);
+  const [rangeTwoValue, setRangeTwoValue] = useState(90);
+
+  const handleRangeOneChange = (e) => {
+    setRangeOneValue(e.target.value);
+  };
+
+  const handleRangeTwoChange = (e) => {
+    setRangeTwoValue(e.target.value);
+  };
+
+  const inclRangeStyle = {
+    width: Math.abs(rangeOneValue - rangeTwoValue) / 100 * 100 + '%',
+    left: rangeOneValue < rangeTwoValue ? rangeOneValue / 100 * 100 + '%' : rangeTwoValue / 100 * 100 + '%',
+  };
+
+  const outputOneStyle = {
+    left: rangeOneValue / 100 * 100 + '%',
+  };
+
+  const outputTwoStyle = {
+    left: rangeTwoValue / 100 * 100 + '%',
+  };
+
   React.useEffect(() => {
     document.addEventListener("click", handleClickOutside);
     return () => {
@@ -31,7 +55,7 @@ export const Slider = () => {
   const [selected, setSelected] = useState(false);
   const [isShownToggle, setIsShownToggle] = useState(false);
 
-
+  
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
     setSelected(!selected);
@@ -355,7 +379,7 @@ export const Slider = () => {
     <div className="padding-componente flex flex-col">
     <h6 className="text-overline">Acciones</h6>
     <h3 style={{fontSize:"36px", fontWeight:"700", color:"#221987"}} className="mb-3">Slider</h3>
-    <p className="text-button-1 text-justify">Muestra a los usuarios su ubicación en el sitio web o aplicación en que se encuentren interactuando y les permite pasar de una pagina a otra.</p>
+    <p className="text-button-1 text-justify">El slider conocido como control deslizante, es un elemento que permite seleccionar un valor de un rango de valores al deslizar un controlador a lo largo de una línea o una escala.</p>
     
     </div>
     <div className=" selector-componente" style={{borderBottom:"solid 4px #EBECF0", width:"100%"}}>
@@ -373,43 +397,51 @@ export const Slider = () => {
       Uso
     </p>
     <br></br>
-    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Los Breadcrumbs son una alternativa que se adiciona a la navegación principal pero nunca deben reemplazarla. Se usan únicamente para orientar al usuario cuando se trata de procesos fáciles.</p>
-    <p>Los elementos que contiene el Breadcrumbs funcionan como enlaces. Transportan al usuario a una nueva página, pero también les permite volver a la página anterior.</p>
+    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Los sliders se pueden utilizar para controlar diversas características, como el volumen, la velocidad y la luminosidad. Permiten a los usuarios seleccionar un valor entre un mínimo y un máximo dentro de un rango determinado, utilizando un mando o palanca que se mueve horizontalmente.</p>
     </div>
     <div><p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
     Modo de Uso
-    </p></div>
-    
-    <div className="flex flex-col gap-4">
-      <div className="flex" style={{backgroundColor:"#EBF6F2", borderBottom: "4px solid #38A57E", height:"15vh", alignItems:"center", justifyContent:"center", padding:"5%"}}>
-        <p>Se utilizan en páginas web que tienen mucho contenido organizado en más de dos niveles. Los breadcrumbs, contextualizan al usuario ya que le indican en que sitio o página se encuentra.</p>
- </div>
-
-    </div>
-    <div className="flex flex-col gap-4">
-      <div className="flex" style={{backgroundColor:"#F8E6EB", borderBottom: "4px solid #BD033B", height:"15vh", alignItems:"center", justifyContent:"center", padding:"5%"}}>
-        <p>
-No deben utilizarse como un menú inicial, ni en productos de un solo nivel, por ultimo los breadcrumbs nunca deben reemplazar la navegación principal.</p>
- </div>
-
+    </p>
+    <br />
+    <p style={{color: "#222D44",fontWeight:600, fontSize:"16px", lineHeight:"22px"}}>¿Cuándo usarlos?</p>
+    <br></br>
+    <p>Debe usarse para aumentar o disminuir una entrada. Por ejemplo, aumentar el brillo en una pantalla. el usuario desliza el controlador hacia la derecha o hacia la izquierda para aumentar o disminuir el valor seleccionado.</p>
+    <br />
+    <p style={{color: "#222D44",fontWeight:600, fontSize:"16px", lineHeight:"22px"}}>¿Cuándo no usarlos?</p>
+    <br />
+    <p>No debe usarse si los valores disponibles son conocidos y limitados.
+Cuando la selección es compleja, es decir, si es necesario seleccionar valores con una precisión específica, un componente slider puede no ser la mejor opción.</p>
     </div>
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
       Variantes
     </p>
     <br></br>
-    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Las variantes del Breadcrumb indican en qué estado se encuentra dependiendo de la interacción que se esté realizando.</p>
+    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Las variantes del Slider indican en qué estado se encuentra.</p>
     <br />
-    <div className="grid mt-2" style={{gridTemplateColumns:"30% 70%", gap:"2rem"}}>
-      <div className=" justify-center flex" style={{alignItems:"center"}}>Default</div>
-      <div>Se muestra el estado normal del componente cuando no se ha realizado ninguna interacción con él.</div>
-      <div className=" justify-center flex" style={{alignItems:"center"}}>Hover</div>
-      <div>Indica que el cursor se encuentra encima de una de las opciones, sin que está sea seleccionada.</div>
-      <div className=" justify-center flex" style={{alignItems:"center"}}>Disable</div>
-      <div>Indica que la opción se encuentra deshabilitada.</div>
-
-
+    <div className="grid mt-2" style={{gridTemplateColumns:"30% 70%"}}>
+      <div className=" justify-center flex" style={{alignItems:"center", placeSelf:"stretch", paddingTop:"2rem", paddingBottom:"2rem"}}>Initial</div>
+      <div style={{placeSelf:"stretch", paddingTop:"2rem", paddingBottom:"2rem"}}>Muestra el estado por defecto del Slider.</div>
+      <div className=" justify-center flex" style={{alignItems:"center",placeSelf:"stretch", backgroundColor:"#F9F9F9", paddingTop:"2rem", paddingBottom:"2rem"}}>Hover</div>
+      <div style={{placeSelf:"stretch", backgroundColor:"#F9F9F9", paddingTop:"2rem", paddingBottom:"2rem"}}>Cuando el cursor se encuentra encima del Slider sin seleccionarlo.</div>
+      <div className=" justify-center flex" style={{alignItems:"center",placeSelf:"stretch", paddingTop:"2rem", paddingBottom:"2rem"}}>Focus</div>
+      <div style={{placeSelf:"stretch", paddingTop:"2rem", paddingBottom:"2rem"}}>Este estado se muestra cuando el usuario pasa de mantener el cursor encima del slider a seleccionarlo.</div>
+      <div className=" justify-center flex" style={{alignItems:"center",placeSelf:"stretch", backgroundColor:"#F9F9F9", paddingTop:"2rem", paddingBottom:"2rem"}}>Sliding</div>
+      <div style={{placeSelf:"stretch", backgroundColor:"#F9F9F9", paddingTop:"2rem", paddingBottom:"2rem"}}>Muestra una etiqueta de valor actual.</div>
     </div>
+    </div>
+    <div className="flex flex-col">
+    <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
+      Estilo
+    </p>
+    <br />
+    <p>Tiene dos estilos que se distinguen según la función que se este realizando.</p>
+    <div style={{width:"60%", alignSelf:"center", marginTop: "4%"}}>
+    <img src={breadcrumbs} ></img></div>
+    <div className=" mt-4"></div>
+    <p><strong>Icono:</strong> Aporta significado e indica una acción o proceso.</p>
+    <p><strong>Nombre del elemento:</strong> Son el resto de categorías desactivadas.</p>
+    <p><strong>Separador:</strong> Separa los enlaces.</p>
     </div>
     <div className="flex flex-col">
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
@@ -477,11 +509,17 @@ No deben utilizarse como un menú inicial, ni en productos de un solo nivel, por
     </div>
     <div className="component-content-full flex">
         <div className="mx-auto my-auto">
-        <div className="flex flex-row">
-          <div className="tab-focused tab-select" onClick={handleClickTab}>Planes</div>
-          <div className="tab tab-select" onClick={handleClickTab}>Planes</div>
-          <div className="tab tab-select" onClick={handleClickTab}>Planes</div>
-        </div>
+        <div>
+      <section className="range-slider">
+        <span id="outputOne" className="output outputOne" style={outputOneStyle}>{rangeOneValue}</span>
+        <span id="outputTwo" className="output outputTwo" style={outputTwoStyle}>{rangeTwoValue}</span>
+        <span id="full-range" className="full-range"></span>
+        <span id="incl-range" className="incl-range" style={inclRangeStyle}></span>
+        <input className="range1" name="rangeOne" value={rangeOneValue} min="0" max="100" step="1" type="range" onChange={handleRangeOneChange} />
+        <input className="range1" name="rangeTwo" value={rangeTwoValue} min="0" max="100" step="1" type="range" onChange={handleRangeTwoChange} />
+      </section>
+
+    </div>
         </div>
     </div>
     </div>

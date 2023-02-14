@@ -350,7 +350,7 @@ export const Checkbox = () => {
     
     </div>
     <div className=" selector-componente" style={{borderBottom:"solid 4px #EBECF0", width:"100%"}}>
-      <div className="padding-componente flex flex-row gap-2" style={{marginBottom:"-3px"}}>
+      <div className="padding-componente flex flex-row gap-40" style={{marginBottom:"-3px"}}>
         <button className="size-component size-option-component-focused" onClick={handleClickMostrarUso} >Uso</button>
         <button className="size-component size-option-component" onClick={handleClickMostrarCode}>Código</button>
       </div>

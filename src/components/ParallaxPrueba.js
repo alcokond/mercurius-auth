@@ -6,6 +6,9 @@ import {  NavLink } from "react-router-dom";
 import { NavLink as RouterNavLink } from "react-router-dom";
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import Fade from 'react-reveal/Fade';
+import logo from "../assets/logo.png";
+import bgcohete from "../assets/bg-cohete.svg";
+import astronauta from "../assets/astronauta hero.png";
 
 (function() {
     window.addEventListener('scroll', function(event) {
@@ -100,8 +103,8 @@ const ParallaxPrueba = () => (
   
   <div>
     <div style={{zIndex:2}}>
-    <Fade left>
-      <section style={{backgroundColor: "#F2F1FC"}} className="header relative pt-16 items-center flex pb-16">
+    
+      {/* <section style={{backgroundColor: "#F2F1FC"}} className="header relative pt-16 items-center flex pb-16">
         <div  className=" mx-10 items-center flex flex-wrap">
           <div className="w-full md:w-8/12 lg:w-6/12-2 xl:w-6/12-2">
             <div className="pt-32 sm:pt-0">
@@ -127,10 +130,56 @@ const ParallaxPrueba = () => (
             </div>
           </div>
         </div>
+      </section> */}
+      <section>
+        <div style={{height:"100vh", background:"linear-gradient(180deg, #0B0A0E 0%, #151055 100%)", paddingTop:"10vh",paddingLeft:"20vw",paddingRight:"20vw"}}>
+        
+          <div style={{display:"flex",flexDirection:"column",alignItems:"center", height:"100%"}}>
+          <Fade up>
+            <p style={{color:"#B1B5BD",fontWeight:"500",fontSize:"32px",alignSelf:"center"}}>Xtrim presenta</p>
+            <img src={logo} alt="" style={{width:"25vw"}}/>
+            <p style={{fontSize:"21px",textAlign:"center",width:"40vw",marginTop:"4rem",color:"#B1B5BD"}}>Un sistema de diseño que mejora la experiencia en desarrollo e interacción digital.</p>
+          </Fade>
+            <img src={astronauta} alt="" style={{width:"50vw", marginTop:"auto", marginBottom:"-2vw"}}/>
+          </div>
+        </div>
       </section>
-    </Fade>
+      <section>
+        <div style={{height:"100vh", background:"#EBECF0", paddingTop:"10vh",paddingLeft:"20vw",paddingRight:"20vw"}}>
+        <Fade left>
+          <div style={{display:"flex",flexDirection:"column", height:"100%", justifyContent:"center"}}>
+            <div style={{color:"#222D44",fontWeight:"500",fontSize:"50px"}}> Desarrolla proyectos <br />en <span style={{color:"#4A3CDB", fontWeight:"700"}}>menos tiempo</span> <br /></div>
+            <div style={{fontSize:"32px"}}><p>Nuestra galería de componentes te ayudará a agilizar tus proyectos.</p></div>
+            
+            
+          </div>
+        </Fade>
+        </div>
+      </section>
+      <section>
+        <div style={{height:"100vh", paddingTop:"10vh",paddingLeft:"20vw",paddingRight:"20vw", backgroundImage:`url(${bgcohete})`, backgroundRepeat:"no-repeat", backgroundSize:"cover"}}>
+        <Fade up>
+          <div style={{display:"flex",flexDirection:"column", height:"100%", justifyContent:"center", alignItems:"center", filter:"drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))", textAlign:"center", gap:"2rem"}}>
+            <div style={{color:"#FFFFFF",fontWeight:"500",fontSize:"76px"}}> Descubre <span style={{color:"#F9E100", fontWeight:"700"}}>Mercurius</span></div>
+           <div style={{color:"#F9F9F9",fontSize:"25px",textShadow:"0px 4px 4px rgba(0, 0, 0, 0.25)", textAlign:"center"}}>Mercurius de Xtrim es un sistema de diseño que mejora la experiencia en desarrollo e interacción digital.</div>
+
+           <NavLink
+            tag={RouterNavLink}
+            to="/mercurius/componentes"
+            exact
+            style={{ textDecoration: 'none' }}
+            >
+            <button className="button-outstanding-large">Explorar componentes</button>
+            </NavLink>
+           
+            
+            
+          </div>
+        </Fade>
+        </div>
+      </section>
     
-      <section style={{zIndex:2}} >
+      {/* <section style={{zIndex:2}} >
       <Fade left>
       <div style={{zIndex:2}} className=" mx-10 pt-16 items-center flex flex-wrap">
           <div className="w-full md:w-8/12 lg:w-6/12 xl:w-6/12">
@@ -235,7 +284,7 @@ const ParallaxPrueba = () => (
                 </div>
             </div>
             </Fade>
-      </section>
+      </section> */}
       
       {/* <section className=" mb-24">
         <div className="margin-hero pt-16">

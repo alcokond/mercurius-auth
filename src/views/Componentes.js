@@ -12,7 +12,9 @@ import PermanentDrawerLeft from "../components/PermanentDrawerLeft.js";
 import { CopyBlock, dracula } from "react-code-blocks";
 import TopBar  from "../components/TopBar"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft, faCode, faMinus, faPlus, faPuzzlePiece } from "@fortawesome/pro-light-svg-icons";
+import { faArrowLeft, faArrowRight, faCode, faMinus, faPlus, faPuzzlePiece } from "@fortawesome/pro-light-svg-icons";
+import {  NavLink } from "react-router-dom";
+import { NavLink as RouterNavLink } from "react-router-dom";
 
 
 export const Componentes = () => {
@@ -379,19 +381,52 @@ export const Componentes = () => {
     <div id="colores" className="margin-sidebar background-grayscale-6 margin-contenido">
     <div className="padding-marca">
     <h6 className="text-overline">Codificación</h6>
-    <h3 style={{fontSize:"36px", fontWeight:"700", color:"#221987"}} className=" mb-3">Componentes</h3>
-    <p className="text-button-1 text-justify">Mercurius contiene una extensa librería de componentes elaborados a la medida de Xtrim. Permiten agilizar el desarrollo, promover la consistencia y aumentar la escalabilidad de nuestras páginas web y aplicaciones.</p>
+    <h3 style={{fontSize:"36px", fontWeight:"700", color:"#221987"}} className=" mb-3">Empieza a desarrollar</h3>
+    <p className="text-button-1 text-justify">Accede a todo el contenido de Mercurius e inicia tu próximo proyecto.</p>
     </div>
     
     </div>
     <div className=" margin-sidebar padding-paleta">
-    <div className="mb-5">
+
+    <section className="header relative items-center flex">
+        <div  >
+          <div >
+            <div >
+              
+              <p style={{}}>Adquiere las Cascade Style Sheets con el estilo y comportamientos de los componentes de Mercurius y visualízalos en acción en Figma.</p>
+              <br />
+              <div className="flex flex-wrap mb-4 gap-2">
+              <a style={{textDecoration:"none !important", color:"#fff !important"}} className=" button-main-primary-medium" href="https://xtrim.com.ec/mercuriuscss/mercurius.css" target="_blank"> Cascade Style Sheets<FontAwesomeIcon className="icon-button" icon={faArrowRight} /></a> 
+              <a style={{textDecoration:"none", color:"#fff !important"}} className="button-main-secondary-medium" href="https://www.figma.com/file/hMC9MlsjacrgewN5yBKhZG/Mercurius-Design-System?node-id=2344%3A4663&t=6ro4CQpSIiAJvl52-1" target="_blank">Explorar Figma<FontAwesomeIcon className="icon-button" icon={faArrowRight}/></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div>
+          <p style={{fontSize:"24px", fontWeight:"600"}}>Revisa nuestra galería de componentes</p>
+          <br />
+          <div style={{display:"grid", gridTemplateColumns:"1fr 1fr 1fr"}}>
+            
+          </div>
+        </div>
+      </section>
+    {/* <div>
+    <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
+      Empieza a desarrollar
+    </p>
+    <br />
+    <p>Accede al archivo .css que contiene colores, estilos, comportamientos y efectos para </p>
+    </div> */}
+
+    {/* <div className="mb-5">
     <h5 className=' text-heading-3 '>Botones</h5>
     </div>
     <div className=" mb-5">
     <h5 className=' text-heading-5 mb-3'>Boton Primario</h5>
 
-    {/* <div className=" text-subtitle-1 mb-2">Explora otros tamaños: </div> */}
+    
     <div className="flex flex-row items-center gap-2">
       <button className="size-1 size-option-focused" onClick={handleClickMostrarPrimary1}>Small</button>
       <button className="size-1 size-option" onClick={handleClickMostrarPrimary2}>Medium</button>
@@ -1196,7 +1231,7 @@ function decrementCounter() {
         />
         </div>
     </div> } 
-    </div>
+    </div> */}
     {/* <div className=" mb-5">
     <h5 className=' text-heading-5 mb-3'>Text Area</h5>
     

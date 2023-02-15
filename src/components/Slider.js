@@ -494,11 +494,11 @@ Cuando la selección es compleja, es decir, si es necesario seleccionar valores 
     Desarrollo
     </p>
     <br></br>
-    <p>Cada enlace tiene un efecto de hover y un efecto de selección. El color por default de los enlaces es Slate Gray. Cuando es seleccionado un enlace, se torna de color Ocean Blue.</p>
+    <p>Los sliders constan de 2 span que pueden ser arrastrados para definir los límites del rango. Los valores de estos son mostrados dentro de 2 </p>
     </div>
     <div className=" mb-5">
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
-    Breadcrumb
+    Slider
     </p>
     <br></br>
     {isMostrarPrimary1 && 
@@ -534,10 +534,15 @@ Cuando la selección es compleja, es decir, si es necesario seleccionar valores 
     <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
      <CopyBlock 
           language="html"
-          text={`<div class="tab-container">
-    <div class="tab tab-select" onclick="handleClickTab">Planes</div>
-    <div class="tab tab-select" onclick="handleClickTab">Planes</div>
-    <div class="tab tab-select" onclick="handleClickTab">Planes</div>
+          text={`<div>
+<section className="range-slider">
+  <span id="outputOne" className="output outputOne" style={outputOneStyle}>{rangeOneValue}</span>
+  <span id="outputTwo" className="output outputTwo" style={outputTwoStyle}>{rangeTwoValue}</span>
+  <span id="full-range" className="full-range"></span>
+  <span id="incl-range" className="incl-range" style={inclRangeStyle}></span>
+  <input className="range1" name="rangeOne" value={rangeOneValue} min="0" max="100" step="1" type="range" onChange={handleRangeOneChange} />
+  <input className="range1" name="rangeTwo" value={rangeTwoValue} min="0" max="100" step="1" type="range" onChange={handleRangeTwoChange} />
+</section>
 </div>`}
           codeBlock
           theme={dracula}

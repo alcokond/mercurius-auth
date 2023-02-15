@@ -392,8 +392,9 @@ export const Componentes = () => {
         <div  >
           <div >
             <div >
-              
-              <p style={{}}>Adquiere las Cascade Style Sheets con el estilo y comportamientos de los componentes de Mercurius y visualízalos en acción en Figma.</p>
+              <p style={{fontSize:"36px"}}>Documentación</p>
+              <br />
+              <p >Adquiere las Cascade Style Sheets con el estilo y comportamientos de los componentes de Mercurius y visualízalos en acción en Figma.</p>
               <br />
               <div className="flex flex-wrap mb-4 gap-2">
               <a style={{textDecoration:"none !important", color:"#fff !important"}} className=" button-main-primary-medium" href="https://xtrim.com.ec/mercuriuscss/mercurius.css" target="_blank"> Cascade Style Sheets<FontAwesomeIcon className="icon-button" icon={faArrowRight} /></a> 
@@ -405,10 +406,19 @@ export const Componentes = () => {
       </section>
       <section>
         <div>
-          <p style={{fontSize:"24px", fontWeight:"600"}}>Revisa nuestra galería de componentes</p>
+          <p style={{fontSize:"36px"}}>Revisa nuestra galería de componentes</p>
           <br />
           <div style={{display:"grid", gridTemplateColumns:"1fr 1fr 1fr"}}>
-            
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
           </div>
         </div>
       </section>

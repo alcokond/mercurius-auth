@@ -7,7 +7,7 @@ import breadcrumbs from "../assets/breadcrumbs.png";
 import { CopyBlock, dracula } from "react-code-blocks";
 import TopBar  from "./TopBar"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft, faChevronsDown, faChevronUp, faCode, faMinus, faPlus, faPuzzlePiece } from "@fortawesome/pro-light-svg-icons";
+import { faArrowLeft, faChevronsDown, faChevronUp, faCode, faHouseBlank, faMinus, faPlus, faPuzzlePiece } from "@fortawesome/pro-light-svg-icons";
 import { faChevronDown } from "@fortawesome/pro-duotone-svg-icons";
 
 
@@ -479,9 +479,9 @@ export const Breadcrumbs = () => {
     </div>
     <div className="component-content-full flex">
         <div className="mx-auto my-auto">
-        <nav aria-label="Breadcrumb" class="breadcrumb">
+        <nav aria-label="Breadcrumb" className="breadcrumb">
           <ul>
-            <li><a href="#">Home</a></li>
+            <li><i class="fa-light fa-house-blank"></i></li>
             <li><a href="#">Category</a></li>
             <li><a href="#">Sub Category</a></li>
             <li><a href="#">Type</a></li>
@@ -502,11 +502,15 @@ export const Breadcrumbs = () => {
     <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
      <CopyBlock 
           language="html"
-          text={`<div class="tab-container">
-    <div class="tab tab-select" onclick="handleClickTab">Planes</div>
-    <div class="tab tab-select" onclick="handleClickTab">Planes</div>
-    <div class="tab tab-select" onclick="handleClickTab">Planes</div>
-</div>`}
+          text={`<nav aria-label="Breadcrumb" class="breadcrumb">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Category</a></li>
+    <li><a href="#">Sub Category</a></li>
+    <li><a href="#">Type</a></li>
+    <li><span aria-current="page">Product</span></li>
+  </ul>
+</nav>`}
           codeBlock
           theme={dracula}
           showLineNumbers={false}

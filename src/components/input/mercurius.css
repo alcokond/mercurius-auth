@@ -2760,6 +2760,7 @@ input:checked + .slider:before {
 
 .breadcrumb {
   padding: 0 .5rem;
+  font-size: 12px;
 }
 
 .breadcrumb ul {
@@ -2768,14 +2769,14 @@ input:checked + .slider:before {
   list-style: none;
   margin: 0;
   padding: 0;
+  color: #6A7180;
 }
   
 .breadcrumb li:not(:last-child)::after {
   display: inline-block;
   margin: 0 .25rem;
-  font-family: "Font Awesome 6 Pro"; 
-  font-weight: 400; 
-  content: "\f054";
+  font-size: 8px;
+  font-family: FontAwesome; font-weight: 400; content: "\f105";
 }
 
 .label-radiobutton {
@@ -2852,7 +2853,6 @@ input[type="radio"]:checked:hover~.design-radiobutton {
   background: #221987;
 }
 
-/* https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/ */
 
 .range-slider {
   position: relative;

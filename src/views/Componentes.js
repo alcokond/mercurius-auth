@@ -408,10 +408,11 @@ export const Componentes = () => {
           <p style={{fontSize:"36px"}}>Revisa nuestra galería de componentes</p>
           <br />
           <div style={{display:"grid", gridTemplateColumns:"1fr 1fr 1fr", height:"calc(100svh - 80px)", gap:"clamp(1rem, 2.5vw, 2rem)"}}>
-              <div style={{background:"#EBECF0", borderRadius:"8px"}}>
-              <div className="mx-auto my-auto">
+              <div className="card-componente" style={{position:"relative",background:"#EBECF0", borderRadius:"8px", display:"flex", flexDirection:"column", border:"3px solid #f9f9f9", alignItems:"center"}}>
+              <div style={{display:"flex"}} className="mx-auto my-auto">
           <button className="button-main-primary-small ">Button</button>            
         </div>
+        <div className="card-componente-name" style={{width:"100%",position:"absolute", left:"auto", bottom:"0", background:"#ffffff",display:"flex", borderBottomLeftRadius:"8px", borderBottomRightRadius:"8px", color:"#222D44", fontWeight:"600", paddingTop:"0.5rem", paddingBottom:"0.5rem"}}> <p style={{ marginTop:"1rem", marginBottom:"1rem", alignSelf:"center"}} className="mx-auto my-auto">Botones</p> </div>
               </div>
               <div style={{background:"#EBECF0", borderRadius:"8px"}}></div>
               <div style={{background:"#EBECF0", borderRadius:"8px"}}></div>

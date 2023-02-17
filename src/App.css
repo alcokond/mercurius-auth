@@ -1267,3 +1267,24 @@ body.menu-toggled > .meta-link > span {
 .dropdown-icon.selected {
   color: #4A3CDB;
 }
+
+.card-componente-name{
+  
+  transition: opacity 0.5s linear, transform .5s; 
+  opacity: 0;
+}
+
+.card-componente{
+  transition: transform .5s;
+}
+
+.card-componente:hover{
+  transform: scale(1.05);
+}
+
+
+
+.card-componente:hover .card-componente-name{
+  opacity: 1;
+  
+}

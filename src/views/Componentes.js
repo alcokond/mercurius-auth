@@ -34,7 +34,6 @@ export const Componentes = () => {
   }
 
   
-
   function selectOption(option) {
     document.getElementById("inputField").value = option.innerHTML;
   }
@@ -408,17 +407,22 @@ export const Componentes = () => {
         <div>
           <p style={{fontSize:"36px"}}>Revisa nuestra galería de componentes</p>
           <br />
-          <div style={{display:"grid", gridTemplateColumns:"1fr 1fr 1fr"}}>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
+          <div style={{display:"grid", gridTemplateColumns:"1fr 1fr 1fr", height:"calc(100svh - 80px)", gap:"clamp(1rem, 2.5vw, 2rem)"}}>
+              <div style={{background:"#EBECF0", borderRadius:"8px"}}>
+              <div className="mx-auto my-auto">
+          <button className="button-main-primary-small ">Button</button>            
+        </div>
+              </div>
+              <div style={{background:"#EBECF0", borderRadius:"8px"}}></div>
+              <div style={{background:"#EBECF0", borderRadius:"8px"}}></div>
+              <div style={{background:"#EBECF0", borderRadius:"8px"}}></div>
+              <div style={{background:"#EBECF0", borderRadius:"8px"}}></div>
+              <div style={{background:"#EBECF0", borderRadius:"8px"}}></div>
+              <div style={{background:"#EBECF0", borderRadius:"8px"}}></div>
+              <div style={{background:"#EBECF0", borderRadius:"8px"}}></div>
+              <div style={{background:"#EBECF0", borderRadius:"8px"}}></div>
+              <div style={{background:"#EBECF0", borderRadius:"8px"}}></div>
+              
           </div>
         </div>
       </section>

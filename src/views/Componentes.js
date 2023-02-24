@@ -14,7 +14,17 @@ import TopBar  from "../components/TopBar"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight, faCode, faMinus, faPlus, faPuzzlePiece } from "@fortawesome/pro-light-svg-icons";
 import {  NavLink } from "react-router-dom";
-import { NavLink as RouterNavLink } from "react-router-dom";
+import { Link, NavLink as RouterNavLink } from "react-router-dom";
+import breadcrumbs from "../assets/Breadcrumbs.svg";
+import checkbox from "../assets/Checkbox.svg";
+import dropdown from "../assets/Dropdown.svg";
+import input from "../assets/Input.svg";
+import radiobutton from "../assets/Radiobutton.svg";
+import tab from "../assets/Tab.svg";
+import toast from "../assets/Toast.svg";
+import slider from "../assets/Slider.svg";
+import toggle from "../assets/Toggle.svg";
+
 
 
 export const Componentes = () => {
@@ -408,21 +418,111 @@ export const Componentes = () => {
           <p style={{fontSize:"36px"}}>Revisa nuestra galería de componentes</p>
           <br />
           <div style={{display:"grid", gridTemplateColumns:"1fr 1fr 1fr", height:"calc(100svh - 80px)", gap:"clamp(1rem, 2.5vw, 2rem)"}}>
-              <div className="card-componente" style={{position:"relative",background:"#EBECF0", borderRadius:"8px", display:"flex", flexDirection:"column", border:"3px solid #f9f9f9", alignItems:"center"}}>
+          <Link
+            tag={RouterNavLink}
+            to="/mercurius/breadcrumbs"
+            exact
+            className="card-componente" style={{position:"relative",background:"#EBECF0", borderRadius:"8px", display:"flex", flexDirection:"column", border:"3px solid #f9f9f9", alignItems:"center"}}
+            >
+            
+              <div style={{display:"flex"}} className="mx-auto my-auto">
+          <img src={breadcrumbs} alt="" />            
+        </div>
+        <div className="card-componente-name" style={{width:"100%",position:"absolute", left:"auto", bottom:"0", background:"#ffffff",display:"flex", borderBottomLeftRadius:"8px", borderBottomRightRadius:"8px", color:"#222D44", fontWeight:"600", paddingTop:"0.5rem", paddingBottom:"0.5rem"}}> <p style={{ marginTop:"1rem", marginBottom:"1rem", alignSelf:"center"}} className="mx-auto my-auto">Breadcrumbs</p> </div>
+              
+            </Link>
+        
+              <Link
+              tag={RouterNavLink}
+              to="/mercurius/button"
+              exact
+               className="card-componente" style={{position:"relative",background:"#EBECF0", borderRadius:"8px", display:"flex", flexDirection:"column", border:"3px solid #f9f9f9", alignItems:"center"}}>
               <div style={{display:"flex"}} className="mx-auto my-auto">
           <button className="button-main-primary-small ">Button</button>            
         </div>
         <div className="card-componente-name" style={{width:"100%",position:"absolute", left:"auto", bottom:"0", background:"#ffffff",display:"flex", borderBottomLeftRadius:"8px", borderBottomRightRadius:"8px", color:"#222D44", fontWeight:"600", paddingTop:"0.5rem", paddingBottom:"0.5rem"}}> <p style={{ marginTop:"1rem", marginBottom:"1rem", alignSelf:"center"}} className="mx-auto my-auto">Botones</p> </div>
-              </div>
-              <div style={{background:"#EBECF0", borderRadius:"8px"}}></div>
-              <div style={{background:"#EBECF0", borderRadius:"8px"}}></div>
-              <div style={{background:"#EBECF0", borderRadius:"8px"}}></div>
-              <div style={{background:"#EBECF0", borderRadius:"8px"}}></div>
-              <div style={{background:"#EBECF0", borderRadius:"8px"}}></div>
-              <div style={{background:"#EBECF0", borderRadius:"8px"}}></div>
-              <div style={{background:"#EBECF0", borderRadius:"8px"}}></div>
-              <div style={{background:"#EBECF0", borderRadius:"8px"}}></div>
-              <div style={{background:"#EBECF0", borderRadius:"8px"}}></div>
+              </Link>
+              <Link
+              tag={RouterNavLink}
+              to="/mercurius/checkbox"
+              exact 
+              className="card-componente" style={{position:"relative",background:"#EBECF0", borderRadius:"8px", display:"flex", flexDirection:"column", border:"3px solid #f9f9f9", alignItems:"center"}}>
+              <div style={{display:"flex"}} className="mx-auto my-auto">
+          <img src={checkbox} alt="" />
+        </div>
+        <div className="card-componente-name" style={{width:"100%",position:"absolute", left:"auto", bottom:"0", background:"#ffffff",display:"flex", borderBottomLeftRadius:"8px", borderBottomRightRadius:"8px", color:"#222D44", fontWeight:"600", paddingTop:"0.5rem", paddingBottom:"0.5rem"}}> <p style={{ marginTop:"1rem", marginBottom:"1rem", alignSelf:"center"}} className="mx-auto my-auto">Checkbox</p> </div>
+              </Link>
+              <Link 
+              tag={RouterNavLink}
+              to="/mercurius/dropdown"
+              exact 
+              className="card-componente" style={{position:"relative",background:"#EBECF0", borderRadius:"8px", display:"flex", flexDirection:"column", border:"3px solid #f9f9f9", alignItems:"center"}}>
+              <div style={{display:"flex"}} className="mx-auto my-auto">
+          <img src={dropdown} alt="" style={{width:"150px"}} />
+        </div>
+        <div className="card-componente-name" style={{width:"100%",position:"absolute", left:"auto", bottom:"0", background:"#ffffff",display:"flex", borderBottomLeftRadius:"8px", borderBottomRightRadius:"8px", color:"#222D44", fontWeight:"600", paddingTop:"0.5rem", paddingBottom:"0.5rem"}}> <p style={{ marginTop:"1rem", marginBottom:"1rem", alignSelf:"center"}} className="mx-auto my-auto">Dropdown</p> </div>
+              </Link>
+              <Link
+              tag={RouterNavLink}
+              to="/mercurius/input"
+              exact 
+              className="card-componente" style={{position:"relative",background:"#EBECF0", borderRadius:"8px", display:"flex", flexDirection:"column", border:"3px solid #f9f9f9", alignItems:"center"}}>
+              <div style={{display:"flex"}} className="mx-auto my-auto">
+          <img src={input} alt="" style={{width:"150px"}} /> 
+        </div>
+        <div className="card-componente-name" style={{width:"100%",position:"absolute", left:"auto", bottom:"0", background:"#ffffff",display:"flex", borderBottomLeftRadius:"8px", borderBottomRightRadius:"8px", color:"#222D44", fontWeight:"600", paddingTop:"0.5rem", paddingBottom:"0.5rem"}}> <p style={{ marginTop:"1rem", marginBottom:"1rem", alignSelf:"center"}} className="mx-auto my-auto">Input</p> </div>
+              </Link>
+              <Link 
+              tag={RouterNavLink}
+              to="/mercurius/radiobutton"
+              exact 
+              className="card-componente" style={{position:"relative",background:"#EBECF0", borderRadius:"8px", display:"flex", flexDirection:"column", border:"3px solid #f9f9f9", alignItems:"center"}}>
+              <div style={{display:"flex"}} className="mx-auto my-auto">
+          <img src={radiobutton} alt="" />
+        </div>
+        <div className="card-componente-name" style={{width:"100%",position:"absolute", left:"auto", bottom:"0", background:"#ffffff",display:"flex", borderBottomLeftRadius:"8px", borderBottomRightRadius:"8px", color:"#222D44", fontWeight:"600", paddingTop:"0.5rem", paddingBottom:"0.5rem"}}> <p style={{ marginTop:"1rem", marginBottom:"1rem", alignSelf:"center"}} className="mx-auto my-auto">Radiobutton</p> </div>
+              </Link>
+              <Link
+              tag={RouterNavLink}
+              to="/mercurius/tab"
+              exact 
+              className="card-componente" style={{position:"relative",background:"#EBECF0", borderRadius:"8px", display:"flex", flexDirection:"column", border:"3px solid #f9f9f9", alignItems:"center"}}>
+              <div style={{display:"flex"}} className="mx-auto my-auto">
+          <img src={tab} alt="" style={{width:"100px"}}/>
+        </div>
+        <div className="card-componente-name" style={{width:"100%",position:"absolute", left:"auto", bottom:"0", background:"#ffffff",display:"flex", borderBottomLeftRadius:"8px", borderBottomRightRadius:"8px", color:"#222D44", fontWeight:"600", paddingTop:"0.5rem", paddingBottom:"0.5rem"}}> <p style={{ marginTop:"1rem", marginBottom:"1rem", alignSelf:"center"}} className="mx-auto my-auto">Tab</p> </div>
+              </Link>
+              <Link
+              tag={RouterNavLink}
+              to="/mercurius/toast"
+              exact 
+              className="card-componente" style={{position:"relative",background:"#EBECF0", borderRadius:"8px", display:"flex", flexDirection:"column", border:"3px solid #f9f9f9", alignItems:"center"}}>
+              <div style={{display:"flex"}} className="mx-auto my-auto">
+          <img src={toast} alt="" />
+        </div>
+        <div className="card-componente-name" style={{width:"100%",position:"absolute", left:"auto", bottom:"0", background:"#ffffff",display:"flex", borderBottomLeftRadius:"8px", borderBottomRightRadius:"8px", color:"#222D44", fontWeight:"600", paddingTop:"0.5rem", paddingBottom:"0.5rem"}}> <p style={{ marginTop:"1rem", marginBottom:"1rem", alignSelf:"center"}} className="mx-auto my-auto">Toast</p> </div>
+              </Link>
+              <Link
+              tag={RouterNavLink}
+              to="/mercurius/slider"
+              exact 
+              className="card-componente" style={{position:"relative",background:"#EBECF0", borderRadius:"8px", display:"flex", flexDirection:"column", border:"3px solid #f9f9f9", alignItems:"center"}}>
+              <div style={{display:"flex"}} className="mx-auto my-auto">
+          <img src={slider} alt="" style={{width:"150px"}} />
+        </div>
+        <div className="card-componente-name" style={{width:"100%",position:"absolute", left:"auto", bottom:"0", background:"#ffffff",display:"flex", borderBottomLeftRadius:"8px", borderBottomRightRadius:"8px", color:"#222D44", fontWeight:"600", paddingTop:"0.5rem", paddingBottom:"0.5rem"}}> <p style={{ marginTop:"1rem", marginBottom:"1rem", alignSelf:"center"}} className="mx-auto my-auto">Slider</p> </div>
+              </Link>
+              <Link
+              tag={RouterNavLink}
+              to="/mercurius/toggle"
+              exact 
+              className="card-componente" style={{position:"relative",background:"#EBECF0", borderRadius:"8px", display:"flex", flexDirection:"column", border:"3px solid #f9f9f9", alignItems:"center"}}>
+              <div style={{display:"flex"}} className="mx-auto my-auto">
+          <img src={toggle} alt="" style={{width:"50px"}}/>
+        </div>
+        <div className="card-componente-name" style={{width:"100%",position:"absolute", left:"auto", bottom:"0", background:"#ffffff",display:"flex", borderBottomLeftRadius:"8px", borderBottomRightRadius:"8px", color:"#222D44", fontWeight:"600", paddingTop:"0.5rem", paddingBottom:"0.5rem"}}> <p style={{ marginTop:"1rem", marginBottom:"1rem", alignSelf:"center"}} className="mx-auto my-auto">Toggle</p> </div>
+              </Link>
+              
               
           </div>
         </div>

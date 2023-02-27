@@ -7,7 +7,7 @@ import breadcrumbs from "../assets/breadcrumbs.png";
 import { CopyBlock, dracula } from "react-code-blocks";
 import TopBar  from "./TopBar"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft, faChevronsDown, faChevronUp, faCode, faMinus, faPlus, faPuzzlePiece } from "@fortawesome/pro-light-svg-icons";
+import { faArrowLeft, faChevronsDown, faChevronUp, faCode, faMinus, faPlus, faPuzzlePiece, faCheckCircle, faExclamationCircle, faInfoCircle, faXmarkCircle } from "@fortawesome/pro-light-svg-icons";
 import { faChevronDown } from "@fortawesome/pro-duotone-svg-icons";
 
 
@@ -500,11 +500,19 @@ Cuando la selección es compleja, es decir, si es necesario seleccionar valores 
     }
   {isShownCode && 
     <div className="padding-componente flex flex-col gap-4">
+    <div style={{border: "1px solid #F9B100", background: "#FFFFFF", borderRadius:"8px", gap:"2%", height:"79px"}} className="flex flex-row">
+          <div style={{width: "2%", backgroundColor: "#F9B100"}}></div>
+          <div style={{color:"#F9B100", alignSelf:"center", fontSize:"24px"}}><FontAwesomeIcon icon={faExclamationCircle} /></div>
+          <div style={{alignSelf:"center"}}>Este componente se encuentra en desarrollo.</div>
+          {/* <div style={{alignSelf:"center", marginRight:"2%", marginLeft:"auto"}}><FontAwesomeIcon icon={faMinus} /></div> */}
+    </div>
     <div><p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
     Desarrollo
     </p>
     <br></br>
     <p>Los sliders constan de 2 span que pueden ser arrastrados para definir los límites del rango. Los valores de estos son mostrados dentro de 2 </p>
+    <br />
+    <p>Para acceder a los valores mínimo y máximo deberás acceder mediante el atributo value de los inputs rangOne y rangeTwo, respectivamente. </p>
     </div>
     <div className=" mb-5">
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
@@ -544,16 +552,47 @@ Cuando la selección es compleja, es decir, si es necesario seleccionar valores 
     <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
      <CopyBlock 
           language="html"
-          text={`<div>
-<section className="range-slider">
-  <span id="outputOne" className="output outputOne" style={outputOneStyle}>{rangeOneValue}</span>
-  <span id="outputTwo" className="output outputTwo" style={outputTwoStyle}>{rangeTwoValue}</span>
-  <span id="full-range" className="full-range"></span>
-  <span id="incl-range" className="incl-range" style={inclRangeStyle}></span>
-  <input className="range1" name="rangeOne" value={rangeOneValue} min="0" max="100" step="1" type="range" onChange={handleRangeOneChange} />
-  <input className="range1" name="rangeTwo" value={rangeTwoValue} min="0" max="100" step="1" type="range" onChange={handleRangeTwoChange} />
-</section>
-</div>`}
+          text={`<script>
+    var rangeOne = document.querySelector('input[name="rangeOne"]'),
+		rangeTwo = document.querySelector('input[name="rangeTwo"]'),
+		outputOne = document.querySelector('.outputOne'),
+		outputTwo = document.querySelector('.outputTwo'),
+		inclRange = document.querySelector('.incl-range'),
+		updateView = function () {
+			if (this.getAttribute('name') === 'rangeOne') {
+				outputOne.innerHTML = this.value;
+				outputOne.style.left = this.value / this.getAttribute('max') * 100 + '%';
+			} else {
+				outputTwo.style.left = this.value / this.getAttribute('max') * 100 + '%';
+				outputTwo.innerHTML = this.value
+			}
+			if (parseInt(rangeOne.value) > parseInt(rangeTwo.value)) {
+				inclRange.style.width = (rangeOne.value - rangeTwo.value) / this.getAttribute('max') * 100 + '%';
+				inclRange.style.left = rangeTwo.value / this.getAttribute('max') * 100 + '%';
+			} else {
+				inclRange.style.width = (rangeTwo.value - rangeOne.value) / this.getAttribute('max') * 100 + '%';
+				inclRange.style.left = rangeOne.value / this.getAttribute('max') * 100 + '%';
+			}
+		};
+
+	document.addEventListener('DOMContentLoaded', function () {
+		updateView.call(rangeOne);
+		updateView.call(rangeTwo);
+		$('input[type="range"]').on('mouseup', function() {
+			this.blur();
+		}).on('mousedown input', function () {
+			updateView.call(this);
+		});
+	});
+</script>
+<section class="range-slider container">
+  <span class="output outputOne"></span>
+  <span class="output outputTwo"></span>
+  <span class="full-range"></span>
+  <span class="incl-range"></span>
+  <input name="rangeOne" value="10" min="0" max="100" step="1" type="range">
+  <input name="rangeTwo" value="90" min="0" max="100" step="1" type="range">
+</section>`}
           codeBlock
           theme={dracula}
           showLineNumbers={false}

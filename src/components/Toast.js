@@ -540,11 +540,20 @@ sobre el proceso que se está realizando.</div>
     <div style={{minHeight: "25vh", backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px" }}>
      <CopyBlock 
           language="html"
-          text={`<div style={{border: "1px solid #38A57E", background: "#FFFFFF", borderRadius:"8px", gap:"2%", height:"79px"}} className="flex flex-row">
-  <div style={{width: "2%", backgroundColor: "#38A57E"}}></div>
-  <div style={{color:"#38A57E", alignSelf:"center", fontSize:"24px"}}><FontAwesomeIcon icon={faCheckCircle} /></div>
-  <div style={{alignSelf:"center"}}>Notificación de éxito: texto con información</div>
-  <div style={{alignSelf:"center", marginRight:"2%", marginLeft:"auto"}}><FontAwesomeIcon icon={faMinus} /></div>
+          text={`<script>
+const closeBtns = document.querySelectorAll('.toast__close');
+
+closeBtns.forEach((btn) => {
+  btn.addEventListener('click', (e) => {
+    e.currentTarget.parentElement.remove();
+  });
+});
+</script>
+<div class="toast">
+  <div class="toast__border"></div>
+  <div class="toast__icon"><i class="fak fa-circle-info-outline"></i></div>
+  <div class="toast__text">Notificación de éxito: texto con información</div>
+  <div class="toast__close"><i class="fak fa-circle-minus-duo"></i></div>
 </div>`}
           codeBlock
           theme={dracula}

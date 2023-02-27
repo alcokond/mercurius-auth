@@ -468,6 +468,8 @@ export const Toggle = () => {
     </p>
     <br></br>
     <p>El toggle utiliza las propiedades de desplazamiento para cambiar de estado.</p>
+    <br />
+    El estado checked del input se utiliza para validar si el toggle se encuentra On u Off.
     </div>
     <div className=" mb-5">
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>

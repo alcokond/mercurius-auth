@@ -21,7 +21,7 @@ ________                    __                     _________                  __
 /*-------------------------------------------*/
 
 
-
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900");
 :root {
   /*Colors*/
   /*primary*/
@@ -3025,5 +3025,39 @@ button .icon-button {
 }
 
 a .icon-button {
+  margin-left: auto;
+}
+
+.toast {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid #38A57E;
+  background: #FFFFFF;
+  border-radius: 8px;
+  gap: 2%;
+  height: 79px;
+  overflow: hidden;
+}
+
+.toast__border {
+  height: 100%;
+  width: 2%;
+  background-color: #38A57E;
+}
+
+.toast__icon {
+  color: #38A57E;
+  align-self: center;
+  font-size: 24px;
+}
+
+.toast__text {
+  align-self: center;
+}
+
+.toast__close {
+  align-self: center;
+  margin-right: 2%;
   margin-left: auto;
 }

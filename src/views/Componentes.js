@@ -397,21 +397,56 @@ export const Componentes = () => {
     </div>
     <div className=" margin-sidebar padding-paleta">
 
-    <section className="header relative items-center flex">
+    <section className="">
         <div  >
           <div >
             <div >
-              <p style={{fontSize:"36px"}}>Documentación</p>
+              <p style={{fontWeight:500, fontSize:"36px", lineHeight:"40px"}}>Documentación</p>
               <br />
+              <p>Agrega la librería y nuestro Kit de Font Awesome a tu proyecto para utilizar todos nuestros iconos.</p>
+              <br />
+            </div>
+            <div style={{ backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px", marginBottom:"1rem" }}>
+              <CopyBlock 
+          language="html"
+          text={`<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+crossorigin="anonymous" 
+referrerpolicy="no-referrer" />
+<script src="https://kit.fontawesome.com/c2c6803cc4.js" crossorigin="anonymous"></script>`}
+          codeBlock
+          theme={dracula}
+          showLineNumbers={false}
+          wrapLines={true}
+        
+        />
+              </div>
+            <div>
               <p >Adquiere las Cascade Style Sheets con el estilo y comportamientos de los componentes de Mercurius y visualízalos en acción en Figma.</p>
               <br />
               <div className="flex flex-wrap mb-4 gap-2">
-              <a style={{textDecoration:"none !important", color:"#fff !important"}} className=" button-main-primary-medium" href="https://xtrim.com.ec/mercuriuscss/mercurius.css" target="_blank"> Cascade Style Sheets<FontAwesomeIcon className="icon-button" icon={faArrowRight} /></a> 
               <a style={{textDecoration:"none", color:"#fff !important"}} className="button-main-secondary-medium" href="https://www.figma.com/file/hMC9MlsjacrgewN5yBKhZG/Mercurius-Design-System?node-id=2344%3A4663&t=6ro4CQpSIiAJvl52-1" target="_blank">Explorar Figma<FontAwesomeIcon className="icon-button" icon={faArrowRight}/></a>
               </div>
             </div>
           </div>
         </div>
+      </section>
+      <section>
+      <div>
+    <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
+      Modo de Uso
+    </p>
+    <br />
+    <p>Descarga o importa el siguiente archivo .css en tu proyecto.</p>
+    <br />
+    <div className="flex">
+    <a style={{textDecoration:"none !important", color:"#fff !important"}} className=" button-main-primary-medium" href="https://xtrim.com.ec/mercuriuscss/mercurius.css" target="_blank"> Cascade Style Sheets<FontAwesomeIcon className="icon-button" icon={faArrowRight} /></a>
+    </div>
+    <br />
+    <p>Explora los componentes, copia su código html e insertalo en tu proyecto.</p>
+    <br />
+    <p style={{fontSize:"12px"}}>*Muchos de nuestros componentes hacen uso de JavaScript, por lo que tendrás que adecuar las funciones con los selectores, Ids y clases que estás utilizando, el código es para ejemplizar como debe funcionar el componente.</p>
+    </div>
       </section>
       <section>
         <div>

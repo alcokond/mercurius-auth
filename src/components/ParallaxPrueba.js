@@ -162,18 +162,34 @@ const ParallaxPrueba = () => (
           <div style={{display:"flex",flexDirection:"column", height:"100%", justifyContent:"center", alignItems:"center", filter:"drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))", textAlign:"center", gap:"2rem"}}>
             <div style={{color:"#FFFFFF",fontWeight:"500",fontSize:"76px"}}> Descubre <span style={{color:"#F9E100", fontWeight:"700"}}>Mercurius</span></div>
            <div style={{color:"#F9F9F9",fontSize:"25px",textShadow:"0px 4px 4px rgba(0, 0, 0, 0.25)", textAlign:"center"}}>Mercurius de Xtrim es un sistema de diseño que mejora la experiencia en desarrollo e interacción digital.</div>
-
-           <NavLink
+            <div className="flex gap-3">
+            <NavLink
+            tag={RouterNavLink}
+            to="/mercurius/marca"
+            exact
+            style={{ textDecoration: 'none' }}
+            >
+            <button className="button-outstanding-large">Conoce Xtrim</button>
+            </NavLink>
+            <NavLink
+            tag={RouterNavLink}
+            to="/mercurius/guidelines"
+            exact
+            style={{ textDecoration: 'none' }}
+            >
+            <button className="button-pink-primary-large">Descubrir nuestros Guidelines</button>
+            </NavLink>
+            <NavLink
             tag={RouterNavLink}
             to="/mercurius/componentes"
             exact
             style={{ textDecoration: 'none' }}
             >
-            <button className="button-outstanding-large">Explorar componentes</button>
+            <button className="button-pink-secondary-large">Explorar componentes</button>
             </NavLink>
            
-            
-            
+            </div>
+           
           </div>
         </Fade>
         </div>

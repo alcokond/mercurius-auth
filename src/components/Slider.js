@@ -15,18 +15,28 @@ export const Slider = () => {
 
   const [rangeOneValue, setRangeOneValue] = useState(10);
   const [rangeTwoValue, setRangeTwoValue] = useState(90);
-
   const handleRangeOneChange = (e) => {
-    setRangeOneValue(e.target.value);
+    let value=parseInt(e.target.value);
+    if (value < rangeTwoValue){
+      setRangeOneValue(value);
+    }
+    
+
   };
 
   const handleRangeTwoChange = (e) => {
-    setRangeTwoValue(e.target.value);
+    let value=parseInt(e.target.value);
+    if (value>rangeOneValue){
+      setRangeTwoValue(value);
+    }
+    
+
   };
 
   const inclRangeStyle = {
-    width: Math.abs(rangeOneValue - rangeTwoValue) / 100 * 100 + '%',
-    left: rangeOneValue < rangeTwoValue ? rangeOneValue / 100 * 100 + '%' : rangeTwoValue / 100 * 100 + '%',
+    width: Math.abs(parseInt(rangeOneValue) - parseInt(rangeTwoValue)) / 100 * 100 + '%',
+    left: parseInt(rangeOneValue) <= parseInt(rangeTwoValue) ? parseInt(rangeOneValue) / 100 * 100 + '%' : parseInt(rangeTwoValue) / 100 * 100 + '%',
+    
   };
 
   const outputOneStyle = {

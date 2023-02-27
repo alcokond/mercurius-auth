@@ -77,7 +77,6 @@ const App = () => {
         
           <Switch>
             <Route path="/mercurius" exact component={Home} />
-            <Route path="/mercurius/intro2" component={IntroAlt} />
             {isAuthenticated && (
             <Fragment>
             <Sidebar />

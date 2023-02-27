@@ -33,16 +33,14 @@ const NavBar = () => {
 
   const logoutWithRedirect = () =>
     logout({
-      //returnTo: "https://www.xtrim.com.ec/mercurius/",
-      returnTo: "http://localhost:3000/mercurius",
+      returnTo: "https://www.xtrim.com.ec/mercurius/",
+      //returnTo: "http://localhost:3000/mercurius",
     });
   const location = useLocation();
   return (
     
     <div className="nav-container no-margin z-3 nav-sticky w-full">
-      <Navbar className="bg-navbar" style={{
-        opacity: location.pathname === '/mercurius/' ? 0.5 : 1
-      }}  sticky="top" light expand="md">
+      <Navbar className="bg-navbar"  sticky="top" light expand="md">
       {/* {isAuthenticated && (
         <MuiSidebar />
         )} */}

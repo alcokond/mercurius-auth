@@ -3,6 +3,9 @@ import { useAuth0, withAuthenticationRequired } from "@auth0/auth0-react";
 import Loading from "./Loading";
 
 import breadcrumbs from "../assets/breadcrumbs.png";
+import slideranatomia from "../assets/slider-anatomia.svg";
+import slider1 from "../assets/slider-1.svg";
+import sliderdoble from "../assets/slider-doble.svg";
 
 import { CopyBlock, dracula } from "react-code-blocks";
 import TopBar  from "./TopBar"
@@ -446,47 +449,51 @@ Cuando la selección es compleja, es decir, si es necesario seleccionar valores 
     </p>
     <br />
     <p>Tiene dos estilos que se distinguen según la función que se este realizando.</p>
-    <div style={{width:"60%", alignSelf:"center", marginTop: "4%"}}>
-    <img src={breadcrumbs} ></img></div>
+    
+    <img style={{width:"30%", alignSelf:"center", marginTop: "4%"}} src={slider1} ></img>
     <div className=" mt-4"></div>
-    <p><strong>Icono:</strong> Aporta significado e indica una acción o proceso.</p>
-    <p><strong>Nombre del elemento:</strong> Son el resto de categorías desactivadas.</p>
-    <p><strong>Separador:</strong> Separa los enlaces.</p>
-    </div>
+    <p style={{fontWeight:700}}>
+      Double
+    </p>
+    <br />
+    <img style={{width:"30%", alignSelf:"center", marginTop: "4%"}} src={sliderdoble} ></img></div>
     <div className="flex flex-col">
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
       Anatomía
     </p>
-    <div style={{width:"60%", alignSelf:"center", marginTop: "4%"}}>
-    <img src={breadcrumbs} ></img></div>
+    <img style={{width:"30%", alignSelf:"center", marginTop: "4%"}} src={slideranatomia} ></img>
     <div className=" mt-4"></div>
-    <p><strong>Icono:</strong> Aporta significado e indica una acción o proceso.</p>
-    <p><strong>Nombre del elemento:</strong> Son el resto de categorías desactivadas.</p>
-    <p><strong>Separador:</strong> Separa los enlaces.</p>
+    <p><strong>Track:</strong> Representa la cantidad.</p>
+    <p><strong>Contenedor:</strong> Contiene tanto al track como al controlador y determina su longitud dependiendo del espacio disponible.</p>
+    <p><strong>Controlador:</strong> Controla al track y permite avanzar sobre el contenedor.</p>
     </div>
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
       Comportamiento
     </p>
     <br></br>
-    <p>Cada enlace tiene un efecto de hover y un efecto de selección. El color por default de los enlaces es Slate Gray. Cuando es seleccionado un enlace, se torna de color Ocean Blue.</p>
+    <p>El controlador se mueve cuando es arrastrado, además se muestra el valor seleccionado encima del controlador dentro de una burbuja de texto cuando este es arrastrado.</p>
+    <br />
+    <p>En la variante doble, los 2 controladores cumplen la función de límites, por lo tanto, el primer controlador siempre se mantendrá a la izquierda del segundo controlador, y nunca se podrá arrastrarlo hacia su derecha y viceversa. Los valores de ambos controladores pueden accedidos.</p>
     </div>
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
     Mejores Prácticas
     </p>
     <br />
-    <li>Utilizar Breadcrumbs en páginas web grandes que contengan varias páginas, de tal modo que los usuarios puedan entender el orden del contenido.</li>
-    <li>Los Breadcrumbs no deben sobrecargar visualmente la página</li>
-    <li>Los Breadcrumbs deben colocarse en la esquina superior izquierda de la pantalla por encima del título de la página.</li>
+    <li>El controlador debe tener una etiqueta que indique a que valor se está cambiando, mientras va avanzando.</li>
+    <li>Utilizar un rango de valores para describir los valores en números.</li>
+    <li>Las etiquetas no deben contener valores extremadamente grandes.</li>
+    <li>Las etiquetas no deben contener valores excesivamente pequeños.</li>
+    <li>El controlador debe utilizarse como indicador de carga.</li>
     </div>
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
     Guidelines de contenido
     </p>
     <br></br>
-    <li>El enlace de la ruta de navegación debe destacar y subrayarse cuando usuario se desplace sobre ella.</li>
-    <li>Utilizar el menú desplegable cuando haya opciones adicionales disponibles.</li>
+    <li>El controlador se encuentra alineado a la izquierda.</li>
+    <li>Un slider puede tener características adicionales, como una escala numérica, una representación gráfica de los valores disponibles, y una etiqueta que señale el valor seleccionado.</li>
     </div>
     {/* <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>

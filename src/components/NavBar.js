@@ -33,8 +33,8 @@ const NavBar = () => {
 
   const logoutWithRedirect = () =>
     logout({
-      returnTo: "https://www.xtrim.com.ec/mercurius/",
-      //returnTo: "http://localhost:3000/mercurius",
+      //returnTo: "https://www.xtrim.com.ec/mercurius/",
+      returnTo: "http://localhost:3001/mercurius",
     });
   const location = useLocation();
   return (
@@ -56,7 +56,7 @@ const NavBar = () => {
               
               {isAuthenticated && (
                 <>
-                <NavItem>
+                {/* <NavItem>
                   <NavLink
                     tag={RouterNavLink}
                     to="/mercurius/marca"
@@ -66,7 +66,7 @@ const NavBar = () => {
                   >
                     Marca
                   </NavLink>
-                </NavItem>
+                </NavItem> */}
                 <NavItem>
                 <NavLink
                   tag={RouterNavLink}

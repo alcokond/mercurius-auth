@@ -40,7 +40,7 @@ const ColoresPrincipal = () => (
         <p><strong>NAME</strong> <br></br>
           B500 - Ocean Blue <br></br>
           <strong>HEX</strong> <br></br>
-          #4A3CDB
+          #83378F
         </p>
       </div>
     

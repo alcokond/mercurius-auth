@@ -15,7 +15,7 @@ const ColoresDisplay = () => {
         
       </div>
       <div className="background-grayscale-5 justify-center text-button-1 p-2">
-        <div >HEX: #4A3CDB
+        <div >HEX: #83378F
         </div>
         <div >RGB: 74, 60, 219
         </div>
@@ -98,7 +98,7 @@ const ColoresDisplay = () => {
       <div className=" items-start ">
         <div ><b>Ocean-Blue/60%</b>
         </div>
-        <div >#4A3CDB99
+        <div >#83378F99
         </div>
         <div >rgba(74,60,219,0.6)
         </div>
@@ -117,7 +117,7 @@ const ColoresDisplay = () => {
       <div className=" items-start text-button-1">
         <div ><b>Ocean-Blue/40%</b>
         </div>
-        <div >#4A3CDB66
+        <div >#83378F66
         </div>
         <div >rgba(74,60,219,0.4)
         </div>
@@ -136,7 +136,7 @@ const ColoresDisplay = () => {
       <div className=" items-start text-button-1">
         <div ><b>Ocean-Blue/20%</b>
         </div>
-        <div >#4A3CDB33
+        <div >#83378F33
         </div>
         <div >rgba(74,60,219,0.2)
         </div>
@@ -155,7 +155,7 @@ const ColoresDisplay = () => {
       <div className=" items-start text-button-1">
         <div ><b>Ocean-Blue/10%</b>
         </div>
-        <div >#4A3CDB1A
+        <div >#83378F1A
         </div>
         <div >rgba(74,60,219,0.1)
         </div>

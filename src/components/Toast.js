@@ -406,9 +406,9 @@ export const Toast = () => {
     <div className="flex flex-col gap-4">
       <div>
       <strong>Información</strong>
-    <div style={{border: "1px solid #4A3CDB", background: "#FFFFFF", borderRadius:"8px", gap:"2%", height:"79px"}} className="flex flex-row">
-          <div style={{width: "2%", backgroundColor: "#4A3CDB"}}></div>
-          <div style={{color:"#4A3CDB", alignSelf:"center", fontSize:"24px"}}><FontAwesomeIcon icon={faInfoCircle} /></div>
+    <div style={{border: "1px solid #83378F", background: "#FFFFFF", borderRadius:"8px", gap:"2%", height:"79px"}} className="flex flex-row">
+          <div style={{width: "2%", backgroundColor: "#83378F"}}></div>
+          <div style={{color:"#83378F", alignSelf:"center", fontSize:"24px"}}><FontAwesomeIcon icon={faInfoCircle} /></div>
           <div style={{alignSelf:"center"}}>Muestran información adicional que ayuda a conocer más 
 sobre el proceso que se está realizando.</div>
           <div style={{alignSelf:"center", marginRight:"2%", marginLeft:"auto"}}><FontAwesomeIcon icon={faMinus} /></div>

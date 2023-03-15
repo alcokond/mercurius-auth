@@ -582,7 +582,7 @@ document.getElementById("dropbtn").addEventListener("click", function() {
 
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
-  document.getElementById("dropdown-icon").style.color= "#4A3CDB";
+  document.getElementById("dropdown-icon").style.color= "#83378F";
   document.getElementById("chevron-up").style.display= "block";
   document.getElementById("chevron-down").style.display= "none";
   document.getElementById("dropbtn").style.border= "1.5px solid #B1B5BD!important";

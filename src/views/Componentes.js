@@ -1262,9 +1262,9 @@ referrerpolicy="no-referrer" />
     <div className="component-content-full flex">
         <div className="mx-auto my-auto">
         <div className="counter">
-          <button id="minus" style={{color: "#4A3CDB"}} onClick={decrementCounter}><FontAwesomeIcon icon={faMinus} /></button>
+          <button id="minus" style={{color: "#83378F"}} onClick={decrementCounter}><FontAwesomeIcon icon={faMinus} /></button>
           <input value="1" className="counter-number" id="number" readOnly />
-          <button id="plus" style={{color: "#4A3CDB"}} onClick={incrementCounter}><FontAwesomeIcon icon={faPlus} /></button>
+          <button id="plus" style={{color: "#83378F"}} onClick={incrementCounter}><FontAwesomeIcon icon={faPlus} /></button>
         </div>
         </div>
     </div>
@@ -1298,9 +1298,9 @@ function decrementCounter() {
 </script>
 
 <div className="counter">
-    <button style={{color: "#4A3CDB"}} onClick={decrementCounter()}><i class="fak fa-minus"></i></button>
+    <button style={{color: "#83378F"}} onClick={decrementCounter()}><i class="fak fa-minus"></i></button>
     <input value="0" class="counter-number" id="number" readonly>
-    <button style={{color: "#4A3CDB"}} onClick={incrementCounter()}><i class="fak fa-plus"></i></button>
+    <button style={{color: "#83378F"}} onClick={incrementCounter()}><i class="fak fa-plus"></i></button>
 </div>`}
           codeBlock
           theme={dracula}

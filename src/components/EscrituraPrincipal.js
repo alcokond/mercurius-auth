@@ -27,12 +27,12 @@ Escribir pensando en el usuario, nos permitirá generar “sentido de pertenenci
 
     <div className="flex flex-row space-evenly gap-2 flex-wrap ">
         <div className="flex flex-col icon-card-marca gap-2">
-        <div className="icon-box-2" style={{color:"#4A3CDB", backgroundColor:"#FFFFFF"}}> <FontAwesomeIcon icon={faBullhorn} /></div>
+        <div className="icon-box-2" style={{color:"#83378F", backgroundColor:"#FFFFFF"}}> <FontAwesomeIcon icon={faBullhorn} /></div>
         <div style={{fontWeight: "700", color: "#525A6C", fontSize: "20px"}}>Ser Informativo</div>
         <div>A través de nuestra marca buscamos reflejar nuestra identidad, misión, valores y principios.</div>
       </div>
        <div className="flex flex-col icon-card-marca gap-2">
-        <div className="icon-box-2" style={{color:"#4A3CDB", backgroundColor:"#FFFFFF"}}> <FontAwesomeIcon icon={faBullseyeArrow} /></div>
+        <div className="icon-box-2" style={{color:"#83378F", backgroundColor:"#FFFFFF"}}> <FontAwesomeIcon icon={faBullseyeArrow} /></div>
         <div style={{fontWeight: "700", color: "#525A6C", fontSize: "20px"}}>Ser conciso</div>
         <div>Escribir de forma directa, comunicar el mensaje en frases cortas.</div>
       </div>
@@ -40,12 +40,12 @@ Escribir pensando en el usuario, nos permitirá generar “sentido de pertenenci
     </div>
     <div className="flex flex-row space-evenly gap-2 flex-wrap ">
         <div className="flex flex-col icon-card-marca gap-2">
-        <div className="icon-box-2" style={{color:"#4A3CDB", backgroundColor:"#FFFFFF"}}> <FontAwesomeIcon icon={faMapLocationDot} /></div>
+        <div className="icon-box-2" style={{color:"#83378F", backgroundColor:"#FFFFFF"}}> <FontAwesomeIcon icon={faMapLocationDot} /></div>
         <div style={{fontWeight: "700", color: "#525A6C", fontSize: "20px"}}>Ser un guía</div>
         <div>Ser específico con las indicaciones. ​</div>
       </div>
        <div className="flex flex-col icon-card-marca gap-2">
-        <div className="icon-box-2" style={{color:"#4A3CDB", backgroundColor:"#FFFFFF"}}> <FontAwesomeIcon icon={faMessageSmile} /></div>
+        <div className="icon-box-2" style={{color:"#83378F", backgroundColor:"#FFFFFF"}}> <FontAwesomeIcon icon={faMessageSmile} /></div>
         <div style={{fontWeight: "700", color: "#525A6C", fontSize: "20px"}}>Ser claro</div>
         <div>Utilizar un lenguaje claro y explicativo que permita realizar procesos lo más rápido posible.</div>
       </div>

@@ -67,7 +67,7 @@ const Hero = () => (
           <div className="w-full md:w-8/12 lg:w-6/12-2 xl:w-6/12-2">
             <div className="pt-32 sm:pt-0">
               <h2 style={{fontSize: 61}} className="font-normal">
-                <strong>Crea y desarrolla <br></br><div style={{color:"#4A3CDB"}}>más rápido</div>  </strong>
+                <strong>Crea y desarrolla <br></br><div style={{color:"#83378F"}}>más rápido</div>  </strong>
               </h2>
               <p style={{fontSize: 20}} className="mt-4 mb-4 leading-relaxed ">
               Mercurius, de Xtrim TVCable es un sistema de diseño que  mejora la experiencia en desarrollo e interacción digital.
@@ -95,7 +95,7 @@ const Hero = () => (
           <div className="w-full md:w-8/12 lg:w-6/12 xl:w-6/12">
             <div className="pt-32 sm:pt-0">
 
-              <h2 style={{color: "#4A3CDB"}} className=" font-medium">
+              <h2 style={{color: "#83378F"}} className=" font-medium">
                 COMPONENTES
               </h2>
               <h2 style={{fontSize: "31px"}} className=" font-semibold ">
@@ -153,7 +153,7 @@ const Hero = () => (
           <div className="w-full md:w-8/12 lg:w-6/12 xl:w-6/12">
             <div className="pt-32 sm:pt-0">
 
-              <h2 style={{color: "#4A3CDB"}} className=" font-medium">
+              <h2 style={{color: "#83378F"}} className=" font-medium">
                 TEMPLATES
               </h2>
               <h2 style={{fontSize: "31px"}} className=" font-semibold ">

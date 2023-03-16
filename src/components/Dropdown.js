@@ -373,7 +373,7 @@ export const Dropdown = () => {
     <div id="colores" className=" background-grayscale-6" style={{position:"relative"}} >
     <div className="padding-componente flex flex-col">
     <h6 className="text-overline">Acciones</h6>
-    <h3 style={{fontSize:"36px", fontWeight:"700", color:"#221987"}} className="mb-3">Dropdown</h3>
+    <h3 style={{fontSize:"36px", fontWeight:"700", color:"#5D2766"}} className="mb-3">Dropdown</h3>
     <p className="text-button-1 text-justify">El dropdown permite enlistar y agrupar opciones relacionadas a un menú desplegable y mostrarlas.</p>
     
     </div>

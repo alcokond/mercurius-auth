@@ -13,7 +13,7 @@ const IconografiaPrincipal = () => (
     <div id="colores" className=" background-grayscale-6">
     <div className="padding-marca">
     <h6 className="text-overline">Guidelines</h6>
-    <h3 style={{fontSize:"36px", fontWeight:"700", color:"#221987"}} className="mb-3">Iconografía</h3>
+    <h3 style={{fontSize:"36px", fontWeight:"700", color:"#5D2766"}} className="mb-3">Iconografía</h3>
     <p className="text-button-1 text-justify">Utilizamos los iconos para representar emociones y acciones que se puedan y no se pueden efectuar a modo de advertencia, también los utilizamos para hacer que una acción sea más dinámica y reconocible.</p>
     </div>
     </div>

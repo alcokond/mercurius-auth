@@ -62,6 +62,7 @@ export default function Sidebar() {
                 exact
                 activeClassName="active-sidebar" 
                 style={{ textDecoration: 'none' }}
+                className="navlink"
                 >Marca</NavLink>
               </ListItemText>
               {open ? <ExpandLess onClick={handleClick} /> : <ExpandMore onClick={handleClick} />}
@@ -73,7 +74,8 @@ export default function Sidebar() {
                       to="/mercurius/objetivo"
                       exact
                       activeClassName="active-sidebar" 
-                      style={{ textDecoration: 'none' }} 
+                      style={{ textDecoration: 'none' }}
+                className="navlink" 
                       >
                       <ListItemButton sx={{ pl: 4 }} >
                       
@@ -86,7 +88,8 @@ export default function Sidebar() {
                       to="/mercurius/promesa"
                       exact
                       activeClassName="active-sidebar" 
-                      style={{ textDecoration: 'none' }} 
+                      style={{ textDecoration: 'none' }}
+                className="navlink" 
                       >
                       <ListItemButton sx={{ pl: 4 }} >
                       
@@ -99,7 +102,8 @@ export default function Sidebar() {
                       to="/mercurius/personalidad"
                       exact
                       activeClassName="active-sidebar" 
-                      style={{ textDecoration: 'none' }} 
+                      style={{ textDecoration: 'none' }}
+                className="navlink" 
                       >
                       <ListItemButton sx={{ pl: 4 }} >
                       
@@ -120,6 +124,7 @@ export default function Sidebar() {
                 exact
                 activeClassName="active-sidebar" 
                 style={{ textDecoration: 'none' }}
+                className="navlink"
                 >Guidelines</NavLink>
               </ListItemText>
               {open2 ? <ExpandLess onClick={handleClick2} /> : <ExpandMore onClick={handleClick2} />}
@@ -132,7 +137,8 @@ export default function Sidebar() {
                       to="/mercurius/colores"
                       exact
                       activeClassName="active-sidebar" 
-                      style={{ textDecoration: 'none' }} 
+                      style={{ textDecoration: 'none' }}
+                className="navlink" 
                       >
                       <ListItemButton sx={{ pl: 4 }} >
                       
@@ -148,7 +154,8 @@ export default function Sidebar() {
                       to="/mercurius/tipografia"
                       exact
                       activeClassName="active-sidebar" 
-                      style={{ textDecoration: 'none' }} 
+                      style={{ textDecoration: 'none' }}
+                className="navlink" 
                       >
                       <ListItemButton sx={{ pl: 4 }} >
                       
@@ -162,7 +169,8 @@ export default function Sidebar() {
                       to="/mercurius/iconografia"
                       exact
                       activeClassName="active-sidebar" 
-                      style={{ textDecoration: 'none' }} 
+                      style={{ textDecoration: 'none' }}
+                className="navlink" 
                       >
                       <ListItemButton sx={{ pl: 4 }} >
                       
@@ -183,6 +191,7 @@ export default function Sidebar() {
                 exact
                 activeClassName="active-sidebar" 
                 style={{ textDecoration: 'none' }}
+                className="navlink"
                 >Contenido</NavLink>
               </ListItemText>
               {open3 ? <ExpandLess onClick={handleClick3} /> : <ExpandMore onClick={handleClick3} />}
@@ -195,7 +204,8 @@ export default function Sidebar() {
                       to="/mercurius/voz"
                       exact
                       activeClassName="active-sidebar" 
-                      style={{ textDecoration: 'none' }} 
+                      style={{ textDecoration: 'none' }}
+                className="navlink" 
                       >
                       <ListItemButton sx={{ pl: 4 }} >
                       
@@ -211,7 +221,8 @@ export default function Sidebar() {
                       to="/mercurius/guia"
                       exact
                       activeClassName="active-sidebar" 
-                      style={{ textDecoration: 'none' }} 
+                      style={{ textDecoration: 'none' }}
+                className="navlink" 
                       >
                       <ListItemButton sx={{ pl: 4 }} >
                       
@@ -225,7 +236,8 @@ export default function Sidebar() {
                       to="/mercurius/escritura"
                       exact
                       activeClassName="active-sidebar" 
-                      style={{ textDecoration: 'none' }} 
+                      style={{ textDecoration: 'none' }}
+                className="navlink" 
                       >
                       <ListItemButton sx={{ pl: 4 }} >
                       
@@ -246,6 +258,7 @@ export default function Sidebar() {
                 exact
                 activeClassName="active-sidebar" 
                 style={{ textDecoration: 'none' }}
+                className="navlink"
                 >Componentes</NavLink>
               </ListItemText>
               {open4 ? <ExpandLess onClick={handleClick4} /> : <ExpandMore onClick={handleClick4} />}
@@ -258,7 +271,8 @@ export default function Sidebar() {
                       to="/mercurius/breadcrumbs"
                       exact
                       activeClassName="active-sidebar" 
-                      style={{ textDecoration: 'none' }} 
+                      style={{ textDecoration: 'none' }}
+                className="navlink" 
                       >
                       <ListItemButton sx={{ pl: 4 }} >
                       
@@ -274,7 +288,8 @@ export default function Sidebar() {
                       to="/mercurius/button"
                       exact
                       activeClassName="active-sidebar" 
-                      style={{ textDecoration: 'none' }} 
+                      style={{ textDecoration: 'none' }}
+                className="navlink" 
                       >
                       <ListItemButton sx={{ pl: 4 }} >
                       
@@ -288,7 +303,8 @@ export default function Sidebar() {
                       to="/mercurius/checkbox"
                       exact
                       activeClassName="active-sidebar" 
-                      style={{ textDecoration: 'none' }} 
+                      style={{ textDecoration: 'none' }}
+                className="navlink" 
                       >
                       <ListItemButton sx={{ pl: 4 }} >
                       
@@ -301,7 +317,8 @@ export default function Sidebar() {
                       to="/mercurius/dropdown"
                       exact
                       activeClassName="active-sidebar" 
-                      style={{ textDecoration: 'none' }} 
+                      style={{ textDecoration: 'none' }}
+                className="navlink" 
                       >
                       <ListItemButton sx={{ pl: 4 }} >
                       
@@ -314,7 +331,8 @@ export default function Sidebar() {
                       to="/mercurius/input"
                       exact
                       activeClassName="active-sidebar" 
-                      style={{ textDecoration: 'none' }} 
+                      style={{ textDecoration: 'none' }}
+                className="navlink" 
                       >
                       <ListItemButton sx={{ pl: 4 }} >
                       
@@ -327,7 +345,8 @@ export default function Sidebar() {
                       to="/mercurius/radiobutton"
                       exact
                       activeClassName="active-sidebar" 
-                      style={{ textDecoration: 'none' }} 
+                      style={{ textDecoration: 'none' }}
+                className="navlink" 
                       >
                       <ListItemButton sx={{ pl: 4 }} >
                       
@@ -340,7 +359,8 @@ export default function Sidebar() {
                       to="/mercurius/tab"
                       exact
                       activeClassName="active-sidebar" 
-                      style={{ textDecoration: 'none' }} 
+                      style={{ textDecoration: 'none' }}
+                className="navlink" 
                       >
                       <ListItemButton sx={{ pl: 4 }} >
                       
@@ -353,7 +373,8 @@ export default function Sidebar() {
                       to="/mercurius/toast"
                       exact
                       activeClassName="active-sidebar" 
-                      style={{ textDecoration: 'none' }} 
+                      style={{ textDecoration: 'none' }}
+                className="navlink" 
                       >
                       <ListItemButton sx={{ pl: 4 }} >
                       
@@ -366,7 +387,8 @@ export default function Sidebar() {
                       to="/mercurius/slider"
                       exact
                       activeClassName="active-sidebar" 
-                      style={{ textDecoration: 'none' }} 
+                      style={{ textDecoration: 'none' }}
+                className="navlink" 
                       >
                       <ListItemButton sx={{ pl: 4 }} >
                       
@@ -379,7 +401,8 @@ export default function Sidebar() {
                       to="/mercurius/toggle"
                       exact
                       activeClassName="active-sidebar" 
-                      style={{ textDecoration: 'none' }} 
+                      style={{ textDecoration: 'none' }}
+                className="navlink" 
                       >
                       <ListItemButton sx={{ pl: 4 }} >
                       
@@ -397,7 +420,8 @@ export default function Sidebar() {
                       to="/mercurius/toast"
                       exact
                       activeClassName="active-sidebar" 
-                      style={{ textDecoration: 'none' }} 
+                      style={{ textDecoration: 'none' }}
+                className="navlink" 
                       >
                       <ListItemButton >
                       
@@ -411,7 +435,8 @@ export default function Sidebar() {
                       to="/mercurius/button"
                       exact
                       activeClassName="active-sidebar" 
-                      style={{ textDecoration: 'none' }} 
+                      style={{ textDecoration: 'none' }}
+                className="navlink" 
                       >
                       <ListItemButton >
                       
@@ -425,7 +450,8 @@ export default function Sidebar() {
                       to="/mercurius/checkbox"
                       exact
                       activeClassName="active-sidebar" 
-                      style={{ textDecoration: 'none' }} 
+                      style={{ textDecoration: 'none' }}
+                className="navlink" 
                       >
                       <ListItemButton >
                       
@@ -439,7 +465,8 @@ export default function Sidebar() {
                       to="/mercurius/dropdown"
                       exact
                       activeClassName="active-sidebar" 
-                      style={{ textDecoration: 'none' }} 
+                      style={{ textDecoration: 'none' }}
+                className="navlink" 
                       >
                       <ListItemButton >
                       
@@ -453,7 +480,8 @@ export default function Sidebar() {
                       to="/mercurius/input"
                       exact
                       activeClassName="active-sidebar" 
-                      style={{ textDecoration: 'none' }} 
+                      style={{ textDecoration: 'none' }}
+                className="navlink" 
                       >
                       <ListItemButton >
                       
@@ -467,7 +495,8 @@ export default function Sidebar() {
                       to="/mercurius/radiobutton"
                       exact
                       activeClassName="active-sidebar" 
-                      style={{ textDecoration: 'none' }} 
+                      style={{ textDecoration: 'none' }}
+                className="navlink" 
                       >
                       <ListItemButton >
                       
@@ -481,7 +510,8 @@ export default function Sidebar() {
                       to="/mercurius/toast"
                       exact
                       activeClassName="active-sidebar" 
-                      style={{ textDecoration: 'none' }} 
+                      style={{ textDecoration: 'none' }}
+                className="navlink" 
                       >
                       <ListItemButton >
                       
@@ -495,7 +525,8 @@ export default function Sidebar() {
                       to="/mercurius/slider"
                       exact
                       activeClassName="active-sidebar" 
-                      style={{ textDecoration: 'none' }} 
+                      style={{ textDecoration: 'none' }}
+                className="navlink" 
                       >
                       <ListItemButton >
                       
@@ -509,7 +540,8 @@ export default function Sidebar() {
                       to="/mercurius/toggle"
                       exact
                       activeClassName="active-sidebar" 
-                      style={{ textDecoration: 'none' }} 
+                      style={{ textDecoration: 'none' }}
+                className="navlink" 
                       >
                       <ListItemButton >
                       

@@ -25,7 +25,7 @@ ________                    __                     _________                  __
 :root {
   /*Colors*/
   /*primary*/
-  --primary: ;
+  --primary: #83378F ;
   --primary-opacity-60: rgba(74, 60, 219, 0.6);
   --primary-opacity-40: rgba(74, 60, 219, 0.4);
   --primary-opacity-20: rgba(74, 60, 219, 0.2);
@@ -34,10 +34,10 @@ ________                    __                     _________                  __
   --primary-solid-2: #BEBAF2;
   --primary-solid-3: #E5E3FA;
   --primary-solid-4: #F2F1FC;
-  --primary-shade-1: #2F22BA;
-  --primary-shade-2: #221987;
-  --primary-shade-3: #151055;
-  --primary-shade-4: #090622;
+  --primary-shade-1: #773282;
+  --primary-shade-2: #5D2766;
+  --primary-shade-3: #481E4F;
+  --primary-shade-4: #37173C;
   /*secondary*/
   --secondary: #FF0A6C;
   --secondary-opacity-60: rgba(255, 10, 108, 0.6);
@@ -90,7 +90,7 @@ ________                    __                     _________                  __
   --warning-dark: #FDE099;
   --warning-light: #FEF7E5;
   /*neutral*/
-  --neutral-primary: #4A3CDB;
+  --neutral-primary: #83378F;
   --neutral-dark: #BEBAF2;
   --neutral-light: #F2F1FC;
   /*Text*/

@@ -390,7 +390,7 @@ export const Componentes = () => {
     <div id="colores" className="margin-sidebar background-grayscale-6 margin-contenido">
     <div className="padding-marca">
     <h6 className="text-overline">Codificación</h6>
-    <h3 style={{fontSize:"36px", fontWeight:"700", color:"#221987"}} className=" mb-3">Empieza a desarrollar</h3>
+    <h3 style={{fontSize:"36px", fontWeight:"700", color:"#5D2766"}} className=" mb-3">Empieza a desarrollar</h3>
     <p className="text-button-1 text-justify">Accede a todo el contenido de Mercurius e inicia tu próximo proyecto.</p>
     </div>
     

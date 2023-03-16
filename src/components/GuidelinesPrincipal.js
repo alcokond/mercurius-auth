@@ -8,7 +8,7 @@ const GuidelinesPrincipal = () => (
     <div className="flex flex-col margin-sidebar margin-contenido">
     <div id="colores" className=" background-grayscale-6">
     <div className="padding-marca">
-    <h3 style={{fontSize:"36px", fontWeight:"700", color:"#221987"}} className="mb-3">Guidelines</h3>
+    <h3 style={{fontSize:"36px", fontWeight:"700", color:"#5D2766"}} className="mb-3">Guidelines</h3>
     <p className="text-button-1 text-justify">Encontrarás los elementos visuales necesarios para empezar a desarrollar experiencias de usuario accesibles e intuitivas. Establecimos nuestros colores, tipografía, iconografía y accesibilidad.</p>
     </div>
     </div>

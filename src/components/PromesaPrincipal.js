@@ -9,7 +9,7 @@ const PromesaPrincipal = () => (
     <div id="colores" className=" background-grayscale-6">
     <div className="padding-marca">
     <h6 className="text-overline">Marca</h6>
-    <h3 style={{fontSize:"36px", fontWeight:"700", color:"#221987"}} className="mb-2">Promesa</h3>
+    <h3 style={{fontSize:"36px", fontWeight:"700", color:"#5D2766"}} className="mb-2">Promesa</h3>
     <p className="text-button-1 text-justify">Nuestra promesa es seguir mejorando nuestra comunicación, nuestro trabajo y nuestros canales de compra y atención. 
 <br></br>Permitir a los usuarios accesos más rápidos, fáciles y explicativos.<br></br>
 Crear interacciones memorables en comunicación y diseño procurando establecer familiaridad con los usuarios. </p>

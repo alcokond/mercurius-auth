@@ -11,7 +11,7 @@ const PersonalidadPrincipal = () => (
     <div id="colores" className=" background-grayscale-6">
     <div className="padding-marca">
     <h6 className="text-overline">Marca</h6>
-    <h3 style={{fontSize:"36px", fontWeight:"700", color:"#221987"}} className="mb-2">Personalidad</h3>
+    <h3 style={{fontSize:"36px", fontWeight:"700", color:"#5D2766"}} className="mb-2">Personalidad</h3>
     <p className="text-button-1 text-justify">Somos un equipo y trabajamos pensando en otorgar las mejores experiencias a nuestros usuarios, queremos que piensen en nosotros como entretenimiento accesible.</p>
 <p>“Convertir procesos en experiencias agradables”, nuestro compromiso con los usuarios define nuestra personalidad.</p>
     </div>

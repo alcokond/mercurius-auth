@@ -8,7 +8,7 @@ const TipografiaPrincipal = () => (
     <div id="colores" className="margin-sidebar size-colores background-grayscale-6 margin-contenido">
     <div className="padding-marca">
     <h6 className="text-overline">Guidelines</h6>
-    <h3 style={{fontSize:"36px", fontWeight:"700", color:"#221987"}} className=" mb-3">Tipografía</h3>
+    <h3 style={{fontSize:"36px", fontWeight:"700", color:"#5D2766"}} className=" mb-3">Tipografía</h3>
     <p className="text-button-1 text-justify">Usamos un estilo de fuente acorde a nuestra voz y tono, un estilo que sea legible y transmita confianza a los usuarios en cada etapa de su recorrido por nuestros canales digitales.</p>
     </div>
     </div>
@@ -79,7 +79,7 @@ const TipografiaPrincipal = () => (
             <div className="flex flex-col"></div>
         </div>
 
-        <div>Usamos la fuente Montserrat, en todos los procesos relacionados con Xtrim. Elegimos ser leales a nuestro tono y voz. Nos aseguramos de utilizar una escritura que sea legible para todos los usuarios.</div>
+        <div>Usamos la fuente Ubuntu en todos los procesos relacionados con Xtrim. Elegimos ser leales a nuestro tono y voz. Nos aseguramos de utilizar una escritura que sea legible para todos los usuarios.</div>
     </div>
       
   

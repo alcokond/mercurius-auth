@@ -354,7 +354,7 @@ export const Toast = () => {
     <div id="colores" className=" background-grayscale-6 flex flex-col" style={{position:"relative"}} >
     <div className="padding-componente flex flex-col">
     <h6 className="text-overline">Acciones</h6>
-    <h3 style={{fontSize:"36px", fontWeight:"700", color:"#221987"}} className="mb-3">Toast</h3>
+    <h3 style={{fontSize:"36px", fontWeight:"700", color:"#5D2766"}} className="mb-3">Toast</h3>
     <p className="text-button-1 text-justify"> Los toast son notificaciones que muestran al usuario información destacada en mensajes cortos, que desaparecen después de segundos.</p>
     
     </div>

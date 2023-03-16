@@ -354,7 +354,7 @@ export const Breadcrumbs = () => {
     <div id="colores" className=" background-grayscale-6" style={{position:"relative"}} >
     <div className="padding-componente flex flex-col">
     <h6 className="text-overline">Display</h6>
-    <h3 style={{fontSize:"36px", fontWeight:"700", color:"#221987"}} className="mb-3">Breadcrumbs</h3>
+    <h3 style={{fontSize:"36px", fontWeight:"700", color:"#5D2766"}} className="mb-3">Breadcrumbs</h3>
     <p className="text-button-1 text-justify">Muestra a los usuarios su ubicación en el sitio web o aplicación en que se encuentren interactuando y les permite pasar de una pagina a otra.</p>
     
     </div>

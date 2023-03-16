@@ -410,7 +410,7 @@ export const Input = () => {
     <div id="colores" className=" background-grayscale-6" style={{position:"relative"}} >
     <div className="padding-componente flex flex-col">
     <h6 className="text-overline">Acciones</h6>
-    <h3 style={{fontSize:"36px", fontWeight:"700", color:"#221987"}} className="mb-3">Inputs</h3>
+    <h3 style={{fontSize:"36px", fontWeight:"700", color:"#5D2766"}} className="mb-3">Inputs</h3>
     <p className="text-button-1 text-justify">Permite a los usuarios ingresar y editar datos de texto. Existen inputs largos, medianos y cortos según la cantidad de texto requerida.</p>
     
     </div>

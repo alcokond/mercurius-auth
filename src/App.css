@@ -1108,7 +1108,11 @@ body.menu-toggled > .meta-link > span {
 
 .active-sidebar{
   font-weight: 700 !important;
-  color: #221987 !important;
+  color: #5D2766 !important;
+}
+
+.navlink:hover{
+  color: #83378F;
 }
 
 #colores{

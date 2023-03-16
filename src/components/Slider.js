@@ -391,7 +391,7 @@ export const Slider = () => {
     <div id="colores" className=" background-grayscale-6" style={{position:"relative"}} >
     <div className="padding-componente flex flex-col">
     <h6 className="text-overline">Acciones</h6>
-    <h3 style={{fontSize:"36px", fontWeight:"700", color:"#221987"}} className="mb-3">Slider</h3>
+    <h3 style={{fontSize:"36px", fontWeight:"700", color:"#5D2766"}} className="mb-3">Slider</h3>
     <p className="text-button-1 text-justify">El slider conocido como control deslizante, es un elemento que permite seleccionar un valor de un rango de valores al deslizar un controlador a lo largo de una línea o una escala.</p>
     
     </div>

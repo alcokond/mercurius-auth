@@ -10,8 +10,8 @@ const ColoresDisplay = () => {
 
     <div className="card-paleta flex flex-col ">
       <div className=" background-primary color-card flex flex-col items-center justify-center font-semibold">
-        <h5 className=" text-button-1 text-color-grayscale-7 ">B500</h5>
-        <h5 className=" text-button-1 text-color-grayscale-7 ">Ocean Blue</h5>
+        <h5 className=" text-button-1 text-color-grayscale-7 ">P500</h5>
+        <h5 className=" text-button-1 text-color-grayscale-7 ">Eminence</h5>
         
       </div>
       <div className="background-grayscale-5 justify-center text-button-1 p-2">
@@ -329,12 +329,12 @@ const ColoresDisplay = () => {
       className="w-full align-middle"
     />
     <h5 className=' text-heading-5 '>Azules</h5>
-    <p>Los azules son refrescantes, producen armonía y facilitan la lectura. Utilizamos el color azul “Ocean Blue” para acciones, como botones, links, selectores y texto.</p>
+    <p>Los azules son refrescantes, producen armonía y facilitan la lectura. Utilizamos el color azul “Eminence” para acciones, como botones, links, selectores y texto.</p>
 
     <div style={{gridTemplateColumns: "1fr 1fr 1fr", gap: "2%"}} className="grid">
     <div className="card-paleta flex flex-col ">
       <div style={{backgroundColor: "#090622"}} className=" color-card flex flex-col items-center justify-center font-semibold">
-        <h5 className=" text-button-1 text-color-grayscale-7 ">B900</h5>
+        <h5 className=" text-button-1 text-color-grayscale-7 ">p900</h5>
         <h5 className=" text-button-1 text-color-grayscale-7 ">Xiketic</h5>
         
       </div>
@@ -348,7 +348,7 @@ const ColoresDisplay = () => {
     </div>
     <div className="card-paleta flex flex-col ">
       <div style={{backgroundColor: "#151055"}} className=" color-card flex flex-col items-center justify-center font-semibold">
-        <h5 className=" text-button-1 text-color-grayscale-7 ">B800</h5>
+        <h5 className=" text-button-1 text-color-grayscale-7 ">p800</h5>
         <h5 className=" text-button-1 text-color-grayscale-7 ">Midnight Blue</h5>
         
       </div>
@@ -362,7 +362,7 @@ const ColoresDisplay = () => {
     </div>
     <div className="card-paleta flex flex-col ">
       <div style={{backgroundColor: "#221987"}} className=" color-card flex flex-col items-center justify-center font-semibold">
-        <h5 className=" text-button-1 text-color-grayscale-7 ">B700</h5>
+        <h5 className=" text-button-1 text-color-grayscale-7 ">p700</h5>
         <h5 className=" text-button-1 text-color-grayscale-7 ">Phthalo Blue</h5>
         
       </div>
@@ -376,7 +376,7 @@ const ColoresDisplay = () => {
     </div>
     <div className="card-paleta flex flex-col ">
       <div style={{backgroundColor: "#2F22BA"}} className=" color-card flex flex-col items-center justify-center font-semibold">
-        <h5 className=" text-button-1 text-color-grayscale-7 ">B600</h5>
+        <h5 className=" text-button-1 text-color-grayscale-7 ">p600</h5>
         <h5 className=" text-button-1 text-color-grayscale-7 ">Medium Blue</h5>
         
       </div>
@@ -390,8 +390,8 @@ const ColoresDisplay = () => {
     </div>
     <div className="card-paleta flex flex-col ">
       <div style={{backgroundColor: "#2F22BA"}} className=" color-card flex flex-col items-center justify-center font-semibold">
-        <h5 className=" text-button-1 text-color-grayscale-7 ">B500</h5>
-        <h5 className=" text-button-1 text-color-grayscale-7 ">Ocean Blue</h5>
+        <h5 className=" text-button-1 text-color-grayscale-7 ">P500</h5>
+        <h5 className=" text-button-1 text-color-grayscale-7 ">Eminence</h5>
         
       </div>
       <div className="background-grayscale-5 justify-center text-button-1  flex flex-col gap-1 p-2">
@@ -404,7 +404,7 @@ const ColoresDisplay = () => {
     </div>
     <div className="card-paleta flex flex-col ">
       <div style={{backgroundColor: "#9890EB"}} className=" color-card flex flex-col items-center justify-center font-semibold">
-        <h5 className=" text-button-1 text-color-grayscale-7 ">B300</h5>
+        <h5 className=" text-button-1 text-color-grayscale-7 ">P300</h5>
         <h5 className=" text-button-1 text-color-grayscale-7 ">Maximum Blue Purple</h5>
         
       </div>
@@ -418,7 +418,7 @@ const ColoresDisplay = () => {
     </div>
     <div className="card-paleta flex flex-col ">
       <div style={{backgroundColor: "#BEBAF2"}} className=" color-card flex flex-col items-center justify-center font-semibold">
-        <h5 className=" text-button-1 text-color-grayscale-1 ">B200</h5>
+        <h5 className=" text-button-1 text-color-grayscale-1 ">P200</h5>
         <h5 className=" text-button-1 text-color-grayscale-1 ">Blue Purple</h5>
         
       </div>
@@ -432,7 +432,7 @@ const ColoresDisplay = () => {
     </div>
     <div className="card-paleta flex flex-col ">
       <div style={{backgroundColor: "#E5E3FA"}} className=" color-card flex flex-col items-center justify-center font-semibold">
-        <h5 className=" text-button-1 text-color-grayscale-1 ">B100</h5>
+        <h5 className=" text-button-1 text-color-grayscale-1 ">P100</h5>
         <h5 className=" text-button-1 text-color-grayscale-1 ">Lavender Blue</h5>
         
       </div>
@@ -446,7 +446,7 @@ const ColoresDisplay = () => {
     </div>
     <div className="card-paleta flex flex-col ">
       <div style={{backgroundColor: "#F2F1FC"}} className=" color-card flex flex-col items-center justify-center font-semibold">
-        <h5 className=" text-button-1 text-color-grayscale-1 ">B50</h5>
+        <h5 className=" text-button-1 text-color-grayscale-1 ">p50</h5>
         <h5 className=" text-button-1 text-color-grayscale-1 ">Magnolia</h5>
         
       </div>

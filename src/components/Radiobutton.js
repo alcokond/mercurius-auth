@@ -345,7 +345,7 @@ export const Radiobutton = () => {
     <div id="colores" className=" background-grayscale-6" style={{position:"relative"}} >
     <div className="padding-componente flex flex-col">
     <h6 className="text-overline">Acciones</h6>
-    <h3 style={{fontSize:"36px", fontWeight:"700", color:"#221987"}} className="mb-3">Radio Button</h3>
+    <h3 style={{fontSize:"36px", fontWeight:"700", color:"#5D2766"}} className="mb-3">Radio Button</h3>
     <p className="text-button-1 text-justify">Los radio buttons permiten a los usuarios seleccionar solo una opción a la vez entre varias. Al seleccionar otra opción la primera se deselecciona.</p>
     
     </div>

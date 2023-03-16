@@ -10,7 +10,7 @@ const VozPrincipal = () => (
     <div id="colores" className=" background-grayscale-6">
     <div className="padding-marca">
     <h6 className="text-overline">Contenido</h6>
-    <h3 style={{fontSize:"36px", fontWeight:"700", color:"#221987" }} className="mb-3">Nuestro Tono de Voz</h3>
+    <h3 style={{fontSize:"36px", fontWeight:"700", color:"#5D2766" }} className="mb-3">Nuestro Tono de Voz</h3>
     <p className="text-button-1 text-justify">A través de nuestra marca buscamos reflejar nuestra identidad, misión, valores y principios.<br></br>  
 Establecer nuestra voz y tono nos permiten mantener un estilo de comunicacion acorde a nuestra personalidad. </p>
     </div>

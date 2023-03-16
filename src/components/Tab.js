@@ -353,7 +353,7 @@ export const Tab = () => {
     <div id="colores" className=" background-grayscale-6" style={{position:"relative"}} >
     <div className="padding-componente flex flex-col">
     <h6 className="text-overline">Acciones</h6>
-    <h3 style={{fontSize:"36px", fontWeight:"700", color:"#221987"}} className="mb-3">Tabs</h3>
+    <h3 style={{fontSize:"36px", fontWeight:"700", color:"#5D2766"}} className="mb-3">Tabs</h3>
     <p className="text-button-1 text-justify">Los Tabs permiten organizar contenido relacionado, agrupando información similar en la misma página. Facilitan a los usuarios interactuar entre diversos grupos de información.</p>
     
     </div>

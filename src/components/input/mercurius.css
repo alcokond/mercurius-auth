@@ -755,7 +755,7 @@ input:focus {
   font-style: normal;
   font-weight: var( --semibold);
   font-size: 14px;
-line-height: 17px;
+  line-height: 17px;
   text-align: center;
   
 }
@@ -1352,7 +1352,7 @@ line-height: 24px;
   gap: 16px;
   min-width: 145px;
   min-height: 32px;
-  background: linear-gradient(90deg, #4A3DDB -0.18%, #E33FD9 100.05%);
+  background: linear-gradient(90deg, #AF3BB1 0%, #FFD933 100%);
   box-shadow: 0px 0px 0px ;
   border-radius: 8px;
   font-family: 'Ubuntu';
@@ -1419,7 +1419,7 @@ line-height: 24px;
   gap: 16px;
   min-width: 158px;
   min-height: 48px;
-  background: linear-gradient(90deg, #4A3DDB -0.18%, #E33FD9 100.05%);
+  background: linear-gradient(90deg, #AF3BB1 0%, #FFD933 100%);
   box-shadow: 0px 0px 0px ;
   border-radius: 8px;
   font-family: 'Ubuntu';
@@ -1489,7 +1489,7 @@ line-height: 24px;
   gap: 16px;
   min-width: 250px;
   height: 64px;
-  background: linear-gradient(90deg, #4A3DDB -0.18%, #E33FD9 100.05%);
+  background: linear-gradient(90deg, #AF3BB1 0%, #FFD933 100%);
   box-shadow: 0px 0px 0px ;
   border-radius: 8px;
   font-family: 'Ubuntu';

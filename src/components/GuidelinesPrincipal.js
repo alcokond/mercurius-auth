@@ -20,7 +20,7 @@ const GuidelinesPrincipal = () => (
                 style={{ textDecoration: 'none' }}
                 >
     <div className="flex flex-col icon-card gap-2">
-    <div className="icon-box background-primary text-color-primary-solid-4"> <FontAwesomeIcon icon={faPalette} /></div>
+    <div className="icon-box background-primary text-color-grayscale-7"> <FontAwesomeIcon icon={faPalette} /></div>
     <div style={{fontWeight: "700", color: "#525A6C", fontSize: "20px"}}>Colores</div>
     <div style={{fontWeight: "500", color: "#27344E", fontSize: "16px"}} className="text-justify">Los colores nos representan, nos distinguen y nos permiten crear una marca fuerte y reconocida.</div>
     </div>
@@ -31,7 +31,7 @@ const GuidelinesPrincipal = () => (
                 style={{ textDecoration: 'none' }}
                 >
     <div className="flex flex-col icon-card gap-2">
-    <div className="icon-box background-primary text-color-primary-solid-4"> <FontAwesomeIcon icon={faText} /></div>
+    <div className="icon-box background-primary text-color-grayscale-7"> <FontAwesomeIcon icon={faText} /></div>
     <div style={{fontWeight: "700", color: "#525A6C", fontSize: "20px"}}>Tipografía</div>
     <div style={{fontWeight: "500", color: "#27344E", fontSize: "16px"}} className="text-justify">Usamos un estilo de fuente acorde a nuestra voz y tono.</div>
     </div>
@@ -42,7 +42,7 @@ const GuidelinesPrincipal = () => (
                 style={{ textDecoration: 'none' }}
                 >
     <div className="flex flex-col icon-card gap-2">
-    <div className="icon-box background-primary text-color-primary-solid-4"> <FontAwesomeIcon icon={faCircleStar} /></div>
+    <div className="icon-box background-primary text-color-grayscale-7"> <FontAwesomeIcon icon={faCircleStar} /></div>
     <div style={{fontWeight: "700", color: "#525A6C", fontSize: "20px"}}>Iconografía</div>
     <div style={{fontWeight: "500", color: "#27344E", fontSize: "16px"}} className="text-justify">Utilizamos los iconos para representar emociones y acciones que se puedan y no se pueden efectuar.</div>
     </div>

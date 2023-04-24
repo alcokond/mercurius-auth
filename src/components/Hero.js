@@ -15,7 +15,7 @@ const Hero = () => (
                 <strong>Desarrolla, Crea e Innova</strong>
               </h2>
               <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
-              Xtrim TVCable desarrolla Mercurius, un sistema de diseño que mejora la experiencia en desarrollo e interacción digital.
+              Xtrim desarrolla Mercurius, un sistema de diseño que mejora la experiencia en desarrollo e interacción digital.
               </p>
               <h2 className="font-bold text-2xl text-blueGray-600">
                 ¡Mejoramos para ti!

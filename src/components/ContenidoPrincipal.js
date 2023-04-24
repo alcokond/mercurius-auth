@@ -22,7 +22,7 @@ const ContenidoPrincipal = () => (
                 style={{ textDecoration: 'none' }}
                 >
     <div className="flex flex-col icon-card gap-2">
-    <div className="icon-box background-primary text-color-primary-solid-4"> <FontAwesomeIcon icon={faRocket} /></div>
+    <div className="icon-box background-primary text-color-grayscale-7"> <FontAwesomeIcon icon={faRocket} /></div>
     <div style={{fontWeight: "700", color: "#525A6C", fontSize: "20px"}}>Voz y Tono</div>
     <div style={{fontWeight: "500", color: "#27344E", fontSize: "16px"}} className="text-justify">A través de nuestra marca buscamos reflejar nuestra identidad, misión, valores y principios.</div>
     </div>
@@ -33,7 +33,7 @@ const ContenidoPrincipal = () => (
                 style={{ textDecoration: 'none' }}
                 >
     <div className="flex flex-col icon-card gap-2">
-    <div className="icon-box background-primary text-color-primary-solid-4"> <FontAwesomeIcon icon={faHandHeart} /></div>
+    <div className="icon-box background-primary text-color-grayscale-7"> <FontAwesomeIcon icon={faHandHeart} /></div>
     <div style={{fontWeight: "700", color: "#525A6C", fontSize: "20px"}}>Guía de estilo</div>
     <div style={{fontWeight: "500", color: "#27344E", fontSize: "16px"}} className="text-justify">Escribir pensando en el usuario.</div>
     </div>
@@ -44,7 +44,7 @@ const ContenidoPrincipal = () => (
                 style={{ textDecoration: 'none' }}
                 >
     <div className="flex flex-col icon-card gap-2">
-    <div className="icon-box background-primary text-color-primary-solid-4"> <FontAwesomeIcon icon={faHeart} /></div>
+    <div className="icon-box background-primary text-color-grayscale-7"> <FontAwesomeIcon icon={faHeart} /></div>
     <div style={{fontWeight: "700", color: "#525A6C", fontSize: "20px"}}>Estilo de escritura</div>
     <div style={{fontWeight: "500", color: "#27344E", fontSize: "16px"}} className="text-justify">Nuestro estilo de escritura refleja el compromiso de nuestra empresa, su misión y visión, además, destaca nuestra voz y tono.</div>
     </div>

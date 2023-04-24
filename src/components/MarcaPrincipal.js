@@ -27,7 +27,7 @@ const MarcaPrincipal = () => (
                 style={{ textDecoration: 'none' }}
                 >
         <div className="flex flex-col icon-card gap-2">
-        <div className="icon-box background-primary text-color-primary-solid-4"> <FontAwesomeIcon icon={faRocket} /></div>
+        <div className="icon-box background-primary text-color-grayscale-7"> <FontAwesomeIcon icon={faRocket} /></div>
         <div style={{fontWeight: "700", color: "#525A6C", fontSize: "20px"}}>Objetivo</div>
         <div style={{fontWeight: "500", color: "#27344E", fontSize: "16px"}} className="text-justify">Diseñar productos de calidad, guiados y establecer interfaces intuitivas que permitan interacciones más fluidas.</div>
   </div>
@@ -40,7 +40,7 @@ const MarcaPrincipal = () => (
                 style={{ textDecoration: 'none' }}
                 >
         <div  className="flex flex-col icon-card gap-2">
-          <div className="icon-box background-primary text-color-primary-solid-4"> <FontAwesomeIcon icon={faHandHeart} /></div>
+          <div className="icon-box background-primary text-color-grayscale-7"> <FontAwesomeIcon icon={faHandHeart} /></div>
           <div style={{fontWeight: "700", color: "#525A6C", fontSize: "20px"}}>Promesa</div>
           <div style={{fontWeight: "500", color: "#27344E", fontSize: "16px"}} className="text-justify">Mantener un estado de mejora continua, que nos permita otorgar productos de calidad.</div>
         </div>
@@ -53,7 +53,7 @@ const MarcaPrincipal = () => (
                 style={{ textDecoration: 'none' }}
                 >
         <div  className="flex flex-col icon-card gap-2">
-          <div className="icon-box background-primary text-color-primary-solid-4"> <FontAwesomeIcon icon={faHeart} /></div>
+          <div className="icon-box background-primary text-color-grayscale-7"> <FontAwesomeIcon icon={faHeart} /></div>
           <div style={{fontWeight: "700", color: "#525A6C", fontSize: "20px"}}>Personalidad</div>
           <div style={{fontWeight: "500", color: "#27344E", fontSize: "16px"}} className="text-justify">Nuestra personalidad define el tono de nuestra comunicación. Cada proceso expresa nuestros valores.</div>
         </div>

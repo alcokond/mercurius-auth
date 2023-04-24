@@ -33,8 +33,8 @@ const NavBar = () => {
 
   const logoutWithRedirect = () =>
     logout({
-      //returnTo: "https://www.xtrim.com.ec/mercurius/",
-      returnTo: "http://localhost:3001/mercurius",
+      returnTo: "https://www.xtrim.com.ec/mercurius/",
+      //returnTo: "http://localhost:3001/mercurius",
     });
   const location = useLocation();
   return (
@@ -114,7 +114,7 @@ const NavBar = () => {
                   <Button
                     id="qsLoginBtn"
                     color="primary"
-                    className="btn-margin"
+                    className="button-main-primary-medium"
                     onClick={() => loginWithRedirect()}
                   >
                     Iniciar sesión

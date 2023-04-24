@@ -127,12 +127,12 @@ return(
             exact
             style={{ textDecoration: 'none' }}
             >
-            <button className="button-outstanding-large">Explora Componentes</button>
+            <button className="button-main-secondary-large">Explora Componentes</button>
             </NavLink>
             )}
             {!isAuthenticated && (
               
-            <button className="button-outstanding-large" onClick={() => loginWithRedirect()}>Explora Componentes</button>
+            <button className="button-main-secondary-large" onClick={() => loginWithRedirect()}>Explora Componentes</button>
             
             )}
             </div>

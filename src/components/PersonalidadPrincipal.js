@@ -20,7 +20,7 @@ const PersonalidadPrincipal = () => (
     <div className=" padding-marca">
     <div style={{fontSize:"31px", fontWeight:"600", marginBottom:"1vh", color:"#000000"}}>Nuestro autoconcepto</div>
     <div>
-    <div className="icon-box background-primary text-color-primary-solid-4 mb-1"> <FontAwesomeIcon icon={faRocket} /></div>
+    <div className="icon-box background-primary text-color-grayscale-7 mb-1"> <FontAwesomeIcon icon={faRocket} /></div>
     <div style={{fontSize:"16px", fontWeight:"500", textAlign:"justify", color:"#222D44"}}><b>Optimistas</b> <br></br>
  
  <p>Creemos en la innovación y nos mantenemos alineados al contexto actual, establecemos como meta diaria crear ambientes digitales intuitivos y de fácil acceso.</p><br></br>
@@ -32,7 +32,7 @@ const PersonalidadPrincipal = () => (
 </div>
  </div>
     <div>
-    <div className="icon-box background-primary text-color-primary-solid-4 mb-1"> <FontAwesomeIcon icon={faRocket} /></div>
+    <div className="icon-box background-primary text-color-grayscale-7 mb-1"> <FontAwesomeIcon icon={faRocket} /></div>
     <div style={{fontSize:"16px", fontWeight:"500", textAlign:"justify", color:"#222D44"}}><b>Aliado accesible</b> <br></br>
  
  <p>Acompañamos a los usuarios en cada proceso, si existen dudas estamos listos para responderlas.</p><br></br>
@@ -45,7 +45,7 @@ const PersonalidadPrincipal = () => (
 </div>
  </div>
     <div>
-    <div className="icon-box background-primary text-color-primary-solid-4 mb-1"> <FontAwesomeIcon icon={faRocket} /></div>
+    <div className="icon-box background-primary text-color-grayscale-7 mb-1"> <FontAwesomeIcon icon={faRocket} /></div>
     <div style={{fontSize:"16px", fontWeight:"500", textAlign:"justify", color:"#222D44"}}><b>Sociables</b> <br></br>
  
  <p>Somos positivos, creativos y sociables. Creemos en la cordialidad, queremos ser amigos de nuestros usuarios.

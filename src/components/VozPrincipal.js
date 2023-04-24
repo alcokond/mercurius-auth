@@ -19,12 +19,12 @@ Establecer nuestra voz y tono nos permiten mantener un estilo de comunicacion ac
     <div className="flex flex-col gap-5 padding-marca">
     <div style={{ gridTemplateColumns: "1fr 1fr", gap: "5vh"}} className="grid">
         <div className="flex flex-col icon-card gap-2">
-        <div className="icon-box background-primary text-color-primary-solid-4"> <FontAwesomeIcon icon={faRocket} /></div>
+        <div className="icon-box background-primary text-color-grayscale-7"> <FontAwesomeIcon icon={faRocket} /></div>
         <div style={{fontWeight: "700", color: "#525A6C", fontSize: "20px"}}>Voz</div>
         <div>En Xtrim pensamos en los usuarios, en otorgarles la mejor experiencia con nuestros productos y servicios.</div>
       </div>
        <div className="flex flex-col icon-card gap-2">
-        <div className="icon-box background-primary text-color-primary-solid-4"> <FontAwesomeIcon icon={faRocket} /></div>
+        <div className="icon-box background-primary text-color-grayscale-7"> <FontAwesomeIcon icon={faRocket} /></div>
         <div style={{fontWeight: "700", color: "#525A6C", fontSize: "20px"}}>Tono</div>
         <div>Nos comunicamos con un tono amigable y respetuoso, mantenemos un lenguaje claro y procuramos que su proceso en nuestras plataformas vistuales sea agradable y fácil.</div>
       </div>

@@ -823,14 +823,14 @@ export const Button = () => {
         </div>
     </div> }
     </div>
-    <div className=" mb-5">
+    {/* <div className=" mb-5">
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
     Botón Destacado
     </p>
     <br></br>
     <p>El botón destacado se utiliza cuando es necesario destacar una opción.</p>
     <br></br>
-    {/* <h5 className=' text-heading-5 text-color-grayscale-2 mb-3'>Variante Outstanding</h5> */}
+    <h5 className=' text-heading-5 text-color-grayscale-2 mb-3'>Variante Outstanding</h5> 
     <div className="flex flex-row gap-2">
       <button className="size-4 size-option-focused" onClick={handleClickMostrarOutstanding1}>Small</button>
       <button className="size-4 size-option" onClick={handleClickMostrarOutstanding2}>Medium</button>
@@ -1138,7 +1138,7 @@ export const Button = () => {
         </div>
     </div> }
     
-    </div>
+    </div> */}
 
     </div>
   }

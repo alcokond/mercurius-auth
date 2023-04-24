@@ -70,7 +70,7 @@ const Hero = () => (
                 <strong>Crea y desarrolla <br></br><div style={{color:"#83378F"}}>más rápido</div>  </strong>
               </h2>
               <p style={{fontSize: 20}} className="mt-4 mb-4 leading-relaxed ">
-              Mercurius, de Xtrim TVCable es un sistema de diseño que  mejora la experiencia en desarrollo e interacción digital.
+              Mercurius de Xtrim es un sistema de diseño que  mejora la experiencia en desarrollo e interacción digital.
               </p>
               <div className="flex flex-wrap mb-4 gap-2">
                 
@@ -102,7 +102,7 @@ const Hero = () => (
                 Hecha un vistazo a todos nuestros componentes
               </h2>
               <p className="mt-4 mb-4 text-lg leading-relaxed ">
-              Diseñados y usados en los proyectos de Xtrim TVCable. Explora nuestros componentes y personalizalos a tu gusto.
+              Diseñados y usados en los proyectos de Xtrim. Explora nuestros componentes y personalizalos a tu gusto.
               </p>
               <div className="flex flex-wrap mb-4 gap-2 ">
                 <button className=" button-main-terchiary-medium">Explorar Componentes <FontAwesomeIcon icon={faArrowRight} /></button>

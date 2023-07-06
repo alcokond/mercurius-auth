@@ -3,11 +3,13 @@ import { useAuth0, withAuthenticationRequired } from "@auth0/auth0-react";
 import Loading from "./Loading";
 
 import toast from "../assets/toast.png";
+import toast2 from "../assets/toast-2.png";
+import toaste from "../assets/toast_exitoso.png";
 
 import { CopyBlock, dracula } from "react-code-blocks";
 import TopBar  from "./TopBar"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft, faCheckCircle, faChevronsDown, faChevronUp, faCode, faExclamationCircle, faInfoCircle, faMinus, faPlus, faPuzzlePiece, faXmarkCircle } from "@fortawesome/pro-light-svg-icons";
+import { faArrowLeft, faCheckCircle, faChevronsDown, faChevronUp, faCode, faExclamationCircle, faInfoCircle, faMinus, faPlus, faPuzzlePiece, faXmarkCircle,faXmark } from "@fortawesome/pro-light-svg-icons";
 import { faChevronDown } from "@fortawesome/pro-duotone-svg-icons";
 import { CheckCircle } from "@mui/icons-material";
 
@@ -383,12 +385,12 @@ export const Toast = () => {
       Modo de uso
     </p>
     <br />
-    <p style={{fontWeight:500, lineHeight:"22px"}}>Cuando se usa</p>
+    <p style={{fontWeight:500, lineHeight:"22px"}}>¿Cuándo usarlo?</p>
     <ul>
       <li style={{marginBottom:"8px"}}>Se utilizan para categorizar información relacionada, evitando así la carga cognitiva.</li>
       <li style={{marginBottom:"8px"}}>Pueden usarse en formularios y tableros para organizar contenido.</li>
     </ul>
-    <p style={{fontWeight:500, lineHeight:"22px"}}>Cuando no se usa</p>
+    <p style={{fontWeight:500, lineHeight:"22px"}}>¿Cuándo no usarlo</p>
     <ul>
       <li style={{marginBottom:"8px"}}>En procesos complejos que requieran volver varias veces a la página anterior.</li>
       <li style={{marginBottom:"8px"}}>No pueden reemplazar el menú principal.</li>
@@ -406,21 +408,20 @@ export const Toast = () => {
     <div className="flex flex-col gap-4">
       <div>
       <strong>Información</strong>
-    <div style={{border: "1px solid #83378F", background: "#FFFFFF", borderRadius:"8px", gap:"2%", height:"79px"}} className="flex flex-row">
-          <div style={{width: "2%", backgroundColor: "#83378F"}}></div>
-          <div style={{color:"#83378F", alignSelf:"center", fontSize:"24px"}}><FontAwesomeIcon icon={faInfoCircle} /></div>
-          <div style={{alignSelf:"center"}}>Muestran información adicional que ayuda a conocer más 
-sobre el proceso que se está realizando.</div>
-          <div style={{alignSelf:"center", marginRight:"2%", marginLeft:"auto"}}><FontAwesomeIcon icon={faMinus} /></div>
+    <div style={{border: "1px solid #0D58C1", background: "#FFFFFF", borderRadius:"8px", gap:"2%", height:"79px"}} className="flex flex-row">
+          <div style={{width: "2%", backgroundColor: "#0D58C1"}}></div>
+          <div style={{color:"#0D58C1", alignSelf:"center", fontSize:"24px"}}><FontAwesomeIcon icon={faInfoCircle} /></div>
+          <div style={{alignSelf:"center"}}>Muestran información adicional que ayuda a conocer más sobre el proceso que se está realizando.</div>
+          <div style={{color:"#B1B5BD",alignSelf:"center", marginRight:"4%", marginLeft:"auto", fontSize:"26px"}}><FontAwesomeIcon icon={faXmark} /></div>
         </div>
         </div> 
     <div>
     <strong>Éxito</strong>
-    <div style={{border: "1px solid #38A57E", background: "#FFFFFF", borderRadius:"8px", gap:"2%", height:"79px"}} className="flex flex-row">
-          <div style={{width: "2%", backgroundColor: "#38A57E"}}></div>
-          <div style={{color:"#38A57E", alignSelf:"center", fontSize:"24px"}}><FontAwesomeIcon icon={faCheckCircle} /></div>
+    <div style={{border: "1px solid #019155", background: "#FFFFFF", borderRadius:"8px", gap:"2%", height:"79px"}} className="flex flex-row">
+          <div style={{width: "2%", backgroundColor: "#019155"}}></div>
+          <div style={{color:"#019155", alignSelf:"center", fontSize:"24px"}}><FontAwesomeIcon icon={faCheckCircle} /></div>
           <div style={{alignSelf:"center"}}>Cuando se logra concluir una acción de forma positiva.</div>
-          <div style={{alignSelf:"center", marginRight:"2%", marginLeft:"auto"}}><FontAwesomeIcon icon={faMinus} /></div>
+          <div style={{color:"#B1B5BD",alignSelf:"center", marginRight:"4%", marginLeft:"auto", fontSize:"26px"}}><FontAwesomeIcon icon={faXmark} /></div>
         </div>
     </div>
     <div>
@@ -429,7 +430,7 @@ sobre el proceso que se está realizando.</div>
           <div style={{width: "2%", backgroundColor: "#BD033B"}}></div>
           <div style={{color:"#BD033B", alignSelf:"center", fontSize:"24px"}}><FontAwesomeIcon icon={faXmarkCircle} /></div>
           <div style={{alignSelf:"center"}}>Indica el error de una acción que no se ha logrado concluir.</div>
-          <div style={{alignSelf:"center", marginRight:"2%", marginLeft:"auto"}}><FontAwesomeIcon icon={faMinus} /></div>
+          <div style={{color:"#B1B5BD",alignSelf:"center", marginRight:"4%", marginLeft:"auto", fontSize:"26px"}}><FontAwesomeIcon icon={faXmark} /></div>
         </div>
     </div>
     <div>
@@ -438,7 +439,7 @@ sobre el proceso que se está realizando.</div>
           <div style={{width: "2%", backgroundColor: "#F9B100"}}></div>
           <div style={{color:"#F9B100", alignSelf:"center", fontSize:"24px"}}><FontAwesomeIcon icon={faExclamationCircle} /></div>
           <div style={{alignSelf:"center"}}>Muestra mensajes de aviso que previenen al usuario e indican acciones no permitidas.</div>
-          <div style={{alignSelf:"center", marginRight:"2%", marginLeft:"auto"}}><FontAwesomeIcon icon={faMinus} /></div>
+          <div style={{color:"#B1B5BD",alignSelf:"center", marginRight:"4%", marginLeft:"auto", fontSize:"26px"}}><FontAwesomeIcon icon={faXmark} /></div>
         </div>
     </div>
     
@@ -449,13 +450,38 @@ sobre el proceso que se está realizando.</div>
       Anatomía
     </p>
     <div style={{width:"60%", alignSelf:"center", marginTop: "4%"}}>
-    <img src={toast} ></img></div>
+    <img src={toast2} ></img></div>
     <div className=" mt-4"></div>
     <p><strong>Icono:</strong> Representan el estado del mensaje, aportan significado.</p>
     <p><strong>Mensaje:</strong> Es la información que se muestra. Debe ser breve y aportar ayuda para guiar al usuario.</p>
     <p><strong>Dismissible:</strong> Permite al usuario cerrar el toast.</p>
     <p><strong>Contenedor:</strong> Contiene el mensaje y muestra su estado mediante el uso de colores.</p>
     </div>
+
+    <div>
+    <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
+      Elementos Principales
+    </p>
+    <br></br>
+    <p style={{fontWeight:500, lineHeight:"22px"}}>Mensaje</p>
+    <p>Debe ser descriptivo y mostrar la información con pocas palabras. Utilizar el título para informar el mensaje. </p>
+    <br></br>
+    <p style={{fontWeight:500, lineHeight:"22px"}}>Dismissible</p>
+    <ul>
+      <li style={{marginBottom:"8px"}}>Permite cerrar la notificación antes del tiempo establecido.</li>
+      <li style={{marginBottom:"8px"}}>Se considera un elemente interactivo que junto a los enlaces son parte de las notificaciones, procesables (aquellas que contienen maerial inactivo).</li>
+      <li style={{marginBottom:"8px"}}>Su uso es opcional, puede no incluirse dentro del Toast.</li>
+    </ul>
+    <div style={{width:"60%", alignSelf:"center", marginTop: "4%"}}>
+    <img src={toaste} ></img></div>
+    <br></br>
+    <p style={{fontWeight:500, lineHeight:"22px"}}>Contenedor</p>
+    <ul>
+      <li style={{marginBottom:"8px"}}>Use colores para contextualizar el mensaje, estos colores identifican los estados del componente   </li>
+    </ul>
+    <br></br>
+    </div>
+
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
       Comportamiento

@@ -5,6 +5,7 @@ import Loading from "./Loading";
 import toggle from "../assets/toggle.png";
 import radiobutton from "../assets/radiobutton.png";
 import checkbox from "../assets/checkbox.png";
+import checkbox2 from "../assets/checkbox2.png";
 import { CopyBlock, dracula } from "react-code-blocks";
 import TopBar  from "./TopBar"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -413,7 +414,7 @@ export const Checkbox = () => {
       Anatomía
     </p>
     <div style={{width:"20%", alignSelf:"center", marginTop: "4%"}}>
-    <img src={checkbox} className="mb-4" ></img></div>
+    <img src={checkbox2} className="mb-4" ></img></div>
     <div className=" mt-4"></div>
     <p><strong>Casilla:</strong> Control de selección.</p>
     <p><strong>Texto:</strong> Indica la acción que define a cada opción.</p>

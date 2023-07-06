@@ -3,12 +3,19 @@ import { useAuth0, withAuthenticationRequired } from "@auth0/auth0-react";
 import Loading from "./Loading";
 
 import dropdownradio from "../assets/dropdownradio.png";
+import dropdownradio2 from "../assets/dropdownradio-2.png";
 import dropdowncheck from "../assets/dropdowncheck.png";
+import dropdowncheck2 from "../assets/dropdowncheck-2.png";
 import dropdownelipsis from "../assets/dropdownelipsis.png";
+import dropdownelipsis2 from "../assets/dropdownelipsis-2.png";
 import dropdownuser from "../assets/dropdownuser.png";
+import dropdownuser2 from "../assets/dropdownuser-2.png";
 import dropdown from "../assets/anatomiadropdown.png";
+import dropdown2 from "../assets/anatomiadropdown-2.png";
 import dropdowndo from "../assets/dropdown do.svg";
+import dropdowndo2 from "../assets/dropdown do-2.svg";
 import dropdowndont from "../assets/dropdown dont.svg";
+import dropdowndont2 from "../assets/dropdown dont-2.svg";
 
 
 import { CopyBlock, dracula } from "react-code-blocks";
@@ -404,18 +411,18 @@ export const Dropdown = () => {
     <br />
     <p>1. Menú de radiobutton: permiten seleccionar una sola opción </p>
     <br />
-    <div style={{width:"20%", marginBottom:"2rem"}}><img src={dropdownradio} alt="" /></div>
+    <div style={{width:"20%", marginBottom:"2rem"}}><img src={dropdownradio2} alt="" /></div>
     <p>2. Menú de checkbox: permiten seleccionar varias opciones</p>
     <br />
-    <div style={{width:"20%", marginBottom:"2rem"}}><img src={dropdowncheck} alt="" /></div>
+    <div style={{width:"20%", marginBottom:"2rem"}}><img src={dropdowncheck2} alt="" /></div>
     <p>Existen también otras opciones de menú que utilizan un icono como controlador.</p>
     <br />
     <p>1. Dropdowns cuyo controlador es un Icono con elipsis</p>
     <br />
-    <div style={{width:"10%", marginBottom:"2rem"}}><img src={dropdownelipsis} alt="" /></div>
+    <div style={{width:"10%", marginBottom:"2rem"}}><img src={dropdownelipsis2} alt="" /></div>
     <p>2. Dropdowns cuyo controlador es un Icono de usuario para usarse en perfiles</p>
     <br />
-    <div style={{width:"10%", marginBottom:"2rem"}}><img src={dropdownuser} alt="" /></div>
+    <div style={{width:"10%", marginBottom:"2rem"}}><img src={dropdownuser2} alt="" /></div>
     </div>
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
@@ -442,7 +449,7 @@ export const Dropdown = () => {
       Anatomía
     </p>
     <div style={{width:"30%", alignSelf:"center", marginTop: "4%"}}>
-    <img src={dropdown} ></img></div>
+    <img src={dropdown2} ></img></div>
     <div className=" mt-4"></div>
     <p><strong>Título:</strong> Actúa como indicador ya que orienta al usuario.</p>
     <p><strong>Icono de ayuda:</strong> Otorga significado a la acción.</p>
@@ -476,8 +483,8 @@ export const Dropdown = () => {
     <p>Estos componentes deben de estar alineados de forma vertical al grid, usualmente con otros componentes de tipo formulario.</p>
     </div>
     <div style={{alignSelf:"center", display:"grid", gridTemplateColumns:"1fr 1fr", gap:"3%"}}>
-    <img src={dropdowndo} ></img>
-    <img src={dropdowndont} ></img>
+    <img src={dropdowndo2} ></img>
+    <img src={dropdowndont2} ></img>
     </div>
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>

@@ -3,12 +3,19 @@ import { useAuth0, withAuthenticationRequired } from "@auth0/auth0-react";
 import Loading from "./Loading";
 
 import button from "../assets/button.png";
+import button2 from "../assets/button-2.png";
 import aceptarbien from "../assets/aceptar bien.png";
+import aceptarbien2 from "../assets/aceptar bien-2.png";
 import aceptarmal from "../assets/aceptar mal.png";
+import aceptarmal2 from "../assets/aceptar mal-2.png";
 import editarbien from "../assets/editar bien.png";
+import editarbien2 from "../assets/editar bien-2.png";
 import editarmal from "../assets/editar mal.png";
+import editarmal2 from "../assets/editar mal-2.png";
 import iniciarbien from "../assets/iniciar bien.png";
+import iniciarbien2 from "../assets/iniciar bien-2.png";
 import iniciarmal from "../assets/iniciar mal.png";
+import iniciarmal2 from "../assets/iniciar mal-2.png";
 import dont from "../assets/dont.png";
 
 import { CopyBlock, dracula } from "react-code-blocks";
@@ -434,7 +441,7 @@ export const Button = () => {
       Anatomía
     </p>
     <div style={{width:"20%", alignSelf:"center", marginTop: "4%"}}>
-    <img src={button} ></img></div>
+    <img src={button2} ></img></div>
     <div className=" mt-4"></div>
     <p><strong>Icono:</strong> Representa la acción a realizar.</p>
     <p><strong>Label:</strong> Es el texto que indica la acción que realiza el botón.</p>
@@ -484,12 +491,12 @@ export const Button = () => {
     <p>Los botones son parte esencial de la interfaz, por esta razón es importante establecer pautas de contenido a seguir para su correcto uso.</p>
     </div>
     <div className="mb-5" style={{alignSelf:"center", display:"grid", gridTemplateColumns:"1fr 1fr", gap:"3%"}}>
-      <img src={aceptarbien}></img>
-      <img src={aceptarmal}></img>
-      <img src={editarbien}></img>
-      <img src={editarmal}></img>
-      <img src={iniciarbien}></img>
-      <img src={iniciarmal}></img>
+      <img src={aceptarbien2}></img>
+      <img src={aceptarmal2}></img>
+      <img src={iniciarbien2}></img>
+      <img src={iniciarmal2}></img>
+      <img src={editarbien2}></img>
+      <img src={editarmal2}></img>
     </div>
     <div style={{marginTop:"16px",display: "block",position:"relative"}}>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>

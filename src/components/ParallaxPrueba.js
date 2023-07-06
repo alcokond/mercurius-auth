@@ -8,7 +8,9 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import Fade from 'react-reveal/Fade';
 import logo from "../assets/logo.png";
 import bgcohete from "../assets/bg-cohete-2.svg";
+import cohete2 from "../assets/cohete.png";
 import astronauta from "../assets/astronauta hero.png";
+import astronauta2 from "../assets/inFO-ASTRO.png"
 import { useAuth0 } from "@auth0/auth0-react";
 
 
@@ -97,7 +99,7 @@ return(
             <img src={logo} alt="" style={{width:"25vw"}}/>
             <p style={{fontSize:"21px",textAlign:"center",width:"40vw",marginTop:"4rem",color:"#B1B5BD"}}>Un sistema de diseño que mejora la experiencia en desarrollo e interacción digital.</p>
           </Fade>
-            <img src={astronauta} alt="" style={{width:"50vw", marginTop:"auto", marginBottom:"-2vw"}}/>
+            <img src={astronauta2} alt="" style={{width:"50vw", marginTop:"auto", marginBottom:"-3vw"}}/>
           </div>
         </div>
       </section>
@@ -114,7 +116,8 @@ return(
         </div>
       </section>
       <section>
-        <div style={{height:"100vh", paddingTop:"10vh",paddingLeft:"20vw",paddingRight:"20vw", backgroundImage:`url(${bgcohete})`, backgroundRepeat:"no-repeat", backgroundSize:"cover"}}>
+        <div style={{ backgroundImage: "linear-gradient(0deg, #773282 0%, #AF3BB1 100%)", backgroundRepeat:"no-repeat", backgroundSize:"cover"}}>
+        <div style={{height:"100vh", paddingTop:"10vh",paddingLeft:"20vw",paddingRight:"20vw",backgroundImage:`url(${cohete2})`,backgroundRepeat:"no-repeat", backgroundSize:"cover"}}>
         <Fade up>
           <div style={{display:"flex",flexDirection:"column", height:"100%", justifyContent:"center", alignItems:"center", filter:"drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))", textAlign:"center", gap:"2rem"}}>
             <h1 style={{color:"#FFFFFF",fontWeight:"500",fontSize:"76px"}}> Descubre <span style={{color:"#F9E100", fontWeight:"700"}}>Mercurius</span></h1>
@@ -127,18 +130,19 @@ return(
             exact
             style={{ textDecoration: 'none' }}
             >
-            <button className="button-main-secondary-large">Explora Componentes</button>
+            <button className="button-main-secondary-large">Explorar Componentes</button>
             </NavLink>
             )}
             {!isAuthenticated && (
               
-            <button className="button-main-secondary-large" onClick={() => loginWithRedirect()}>Explora Componentes</button>
+            <button className="button-main-secondary-large" onClick={() => loginWithRedirect()}>Explorar Componentes</button>
             
             )}
             </div>
            
           </div>
         </Fade>
+        </div>
         </div>
       </section>
     

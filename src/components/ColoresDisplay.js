@@ -1,6 +1,8 @@
 import React from 'react'
 import grid from "../assets/colors/Grid.png";
 import Grayscale from "../assets/colors/Grayscale.png";
+import tintes from "../assets/colors/Tintes.png";
+import tonos from "../assets/colors/Tonos.png";
 
 const ColoresDisplay = () => {
   return (
@@ -15,14 +17,14 @@ const ColoresDisplay = () => {
         
       </div>
       <div className="background-grayscale-5 justify-center text-button-1 p-2">
-        <div >HEX: #83378F
-        </div>
-        <div >RGB: 74, 60, 219
-        </div>
+        <div className='hex_cmyk'>HEX: #83378F</div>
+        <div>CMYK: 8, 62, 0, 44</div>
+        <div className='rgb_pantone'>RGB: 131, 55, 143, 1</div>
+        <div>Pantone: 527 C</div>
         
       </div>
     </div>
-    <div className="card-paleta flex flex-col ">
+    {/* <div className="card-paleta flex flex-col ">
       <div className=" background-secondary color-card flex flex-col items-center justify-center font-semibold">
         <h5 className=" text-button-1 text-color-grayscale-7 ">P500</h5>
         <h5 className=" text-button-1 text-color-grayscale-7 ">Winter Sky</h5>
@@ -35,18 +37,19 @@ const ColoresDisplay = () => {
         </div>
         
       </div>
-    </div>
+    </div> */}
     <div className="card-paleta flex flex-col ">
       <div className=" background-complementary color-card flex flex-col items-center justify-center font-semibold">
         <h5 className=" text-button-1 text-color-grayscale-1 ">Y500</h5>
-        <h5 className=" text-button-1 text-color-grayscale-1 ">Yellow Pantone</h5>
+        <h5 className=" text-button-1 text-color-grayscale-1 ">Jonquil</h5>
         
       </div>
       <div className="background-grayscale-5 justify-center text-button-1 p-2">
-        <div >HEX: #F9E100
-        </div>
-        <div >RGB: 249, 225, 0
-        </div>
+        <div className='hex_cmyk'>HEX: #FFCF00</div>
+        <div>CMYK: 0, 19, 100, 0</div>
+        <div className='rgb_pantone'>RGB: 255, 207, 0, 1</div>
+        <div>Pantone: 7405 C</div>
+        
         
       </div>
     </div>
@@ -58,10 +61,10 @@ const ColoresDisplay = () => {
         
       </div>
       <div className="background-grayscale-5 justify-center text-button-1 p-2">
-        <div >HEX: #222D44
-        </div>
-        <div >RGB: 34, 45, 68
-        </div>
+        <div className='hex_cmyk'>HEX: #222D44</div>
+        <div>CMYK: 50,34,0,73</div>
+        <div className='rgb_pantone'>RGB: 34, 45, 68</div>
+        <div>Pantone: 533 C</div>
         
       </div>
     </div>
@@ -72,10 +75,10 @@ const ColoresDisplay = () => {
         
       </div>
       <div className="background-grayscale-5 justify-center text-button-1 p-2">
-        <div >HEX: #FFFFFF
-        </div>
-        <div >RGB: 255, 255, 255
-        </div>
+        <div className='hex_cmyk'>HEX: #FFFFFF</div>
+        <div>CMYK: 0, 0, 0, 0</div>
+        <div className='rgb_pantone'>RGB: 255, 255, 255</div>
+        <div>Pantone: 7436 C</div>
         
       </div>
     </div>
@@ -91,18 +94,18 @@ const ColoresDisplay = () => {
     <div className=" ">
     <div className='bg'>
   <svg viewBox='0 0 100 100' preserveAspectRatio='none'>
-    <path d='M0,0 L0,100 100,0z' id='ob-60-1' />
-    <path d='M0,100 L100,100 100,0z' id='ob-60-2' />
+    <path d='M0,0 L0,100 100,0z' id='pe-60-1' />
+    <path d='M0,100 L100,100 100,0z' id='pe-60-2' />
   </svg>
 </div>
       <div className=" items-start ">
-        <div ><b>Ocean-Blue/60%</b>
+        <div ><b>Purple Eminence/100%</b>
         </div>
         <div >#83378F99
         </div>
-        <div >rgba(74,60,219,0.6)
+        <div >rgba(131, 55, 143, 0.6)
         </div>
-        <div >hsla(245,69,55,0.6)
+        <div >hsla(292, 44, 39, 0.6)
         </div>
         
       </div>
@@ -110,18 +113,18 @@ const ColoresDisplay = () => {
     <div className=" ">
     <div className='bg'>
   <svg viewBox='0 0 100 100' preserveAspectRatio='none'>
-    <path d='M0,0 L0,100 100,0z' id='ob-40-1' />
-    <path d='M0,100 L100,100 100,0z' id='ob-40-2' />
+    <path d='M0,0 L0,100 100,0z' id='pe-40-1' />
+    <path d='M0,100 L100,100 100,0z' id='pe-40-2' />
   </svg>
 </div>
       <div className=" items-start text-button-1">
-        <div ><b>Ocean-Blue/40%</b>
+        <div ><b>Purple-Eminence/40%</b>
         </div>
         <div >#83378F66
         </div>
-        <div >rgba(74,60,219,0.4)
+        <div >rgba(131, 55, 143, 0.4)
         </div>
-        <div >hsla(245,69,55,0.4)
+        <div >hsla(292, 44, 39, 0.4)
         </div>
         
       </div>
@@ -129,18 +132,18 @@ const ColoresDisplay = () => {
     <div className=" ">
     <div className='bg'>
   <svg viewBox='0 0 100 100' preserveAspectRatio='none'>
-    <path d='M0,0 L0,100 100,0z' id='ob-20-1' />
-    <path d='M0,100 L100,100 100,0z' id='ob-20-2' />
+    <path d='M0,0 L0,100 100,0z' id='pe-20-1' />
+    <path d='M0,100 L100,100 100,0z' id='pe-20-2' />
   </svg>
 </div>
       <div className=" items-start text-button-1">
-        <div ><b>Ocean-Blue/20%</b>
+        <div ><b>Purple-Eminence/20%</b>
         </div>
         <div >#83378F33
         </div>
-        <div >rgba(74,60,219,0.2)
+        <div >rgba(131, 55, 143, 0.2)
         </div>
-        <div >hsla(245,69,55,0.2)
+        <div >hsla(292, 44, 39, 0.2)
         </div>
         
       </div>
@@ -148,23 +151,23 @@ const ColoresDisplay = () => {
     <div className=" ">
     <div className='bg'>
   <svg viewBox='0 0 100 100' preserveAspectRatio='none'>
-    <path d='M0,0 L0,100 100,0z' id='ob-10-1' />
-    <path d='M0,100 L100,100 100,0z' id='ob-10-2' />
+    <path d='M0,0 L0,100 100,0z' id='pe-10-1' />
+    <path d='M0,100 L100,100 100,0z' id='pe-10-2' />
   </svg>
 </div>
       <div className=" items-start text-button-1">
-        <div ><b>Ocean-Blue/10%</b>
+        <div ><b>Purple-Eminence/10%</b>
         </div>
         <div >#83378F1A
         </div>
-        <div >rgba(74,60,219,0.1)
+        <div >rgba(131, 55, 143, 0.1)
         </div>
-        <div >hsla(245,69,55,0.1)
+        <div >hsla(292, 44, 39, 0.1)
         </div>
         
       </div>
     </div>
-    <div className=" ">
+    {/* <div className=" ">
     <div className='bg'>
   <svg viewBox='0 0 100 100' preserveAspectRatio='none'>
     <path d='M0,0 L0,100 100,0z' id='ws-60-1' />
@@ -238,7 +241,7 @@ const ColoresDisplay = () => {
         </div>
         
       </div>
-    </div>
+    </div> */}
     <div className=" ">
     <div className='bg'>
   <svg viewBox='0 0 100 100' preserveAspectRatio='none'>
@@ -247,13 +250,13 @@ const ColoresDisplay = () => {
   </svg>
 </div>
       <div className=" items-start text-button-1">
-        <div ><b>Yellow-Pantone/60%</b>
+        <div ><b>Yellow-Jonquil/60%</b>
         </div>
-        <div >#F9E10099
+        <div >#FFCF0099
         </div>
-        <div >rgba(249,225,0,0.6)
+        <div >rgba(255, 207, 0, 0.6)
         </div>
-        <div >hsla(54,100,49,0.6)
+        <div >hsla(49, 100, 50, 0.6)
         </div>
         
       </div>
@@ -266,13 +269,13 @@ const ColoresDisplay = () => {
   </svg>
 </div>
       <div className=" items-start text-button-1">
-        <div ><b>Yellow-Pantone/40%</b>
+        <div ><b>Yellow-Jonquil/40%</b>
         </div>
-        <div >#F9E10066
+        <div >#FFCF0066
         </div>
-        <div >rgba(249,225,0,0.4)
+        <div >rgba(255, 207, 0, 0.4)
         </div>
-        <div >hsla(54,100,49,0.4)
+        <div >hsla(49, 100, 50, 0.4)
         </div>
         
       </div>
@@ -285,13 +288,13 @@ const ColoresDisplay = () => {
   </svg>
 </div>
       <div className=" items-start text-button-1">
-        <div ><b>Yellow-Pantone/20%</b>
+        <div ><b>Yellow-Jonquil/20%</b>
         </div>
-        <div >#F9E10033 
+        <div >#FFCF0033
         </div>
-        <div >rgba(249,225,0,0.2)
+        <div >rgba(255, 207, 0, 0.2)
         </div>
-        <div >hsla(54,100,49,0.2)
+        <div >hsla(49, 100, 50, 0.2)
         </div>
         
       </div>
@@ -304,13 +307,13 @@ const ColoresDisplay = () => {
   </svg>
 </div>
       <div className=" items-start text-button-1">
-        <div ><b>Yellow-Pantone/10%</b>
+        <div ><b>Yellow-Jonquil/10%</b>
         </div>
-        <div >#F9E1001A
+        <div >#FFCF001A
         </div>
-        <div >rgba(249,225,0,0.1)
+        <div >rgba(255, 207, 0, 0.1)
         </div>
-        <div >hsla(54,100,49,0.1)
+        <div >hsla(49, 100, 50, 0.1)
         </div>
         
       </div>
@@ -320,147 +323,335 @@ const ColoresDisplay = () => {
     
 
     </div>
+
+    <h5 className=' text-heading-5 '>Tonos</h5>
+    <p>Esta paleta está constituida desde colores oscuros, colores corporativos, hasta los colores claros. Utilizamos los tonos en imputs y botones.</p>
+    <img
+      alt="..."
+      src= {tonos}
+      className="w-full align-middle"
+    />
 
     <h5 className=' text-heading-5 '>Tintes y sombras</h5>
     <p>Esta paleta está constituida desde colores oscuros, colores corporativos, hasta los colores claros. Utilizamos los tintes y sombras en imputs y botones.</p>
     <img
       alt="..."
-      src= {grid}
+      src= {tintes}
       className="w-full align-middle"
     />
-    <h5 className=' text-heading-5 '>Azules</h5>
-    <p>Los azules son refrescantes, producen armonía y facilitan la lectura. Utilizamos el color azul “Eminence” para acciones, como botones, links, selectores y texto.</p>
+    <h5 className=' text-heading-5 '>Morados</h5>
+    <p>Los morados son refrescantes, producen armonía y facilitan la lectura. Utilizamos el color morado “Eminence” para acciones, como botones, links, selectores y texto.</p>
 
     <div style={{gridTemplateColumns: "1fr 1fr 1fr", gap: "2%"}} className="grid">
     <div className="card-paleta flex flex-col ">
-      <div style={{backgroundColor: "#090622"}} className=" color-card flex flex-col items-center justify-center font-semibold">
-        <h5 className=" text-button-1 text-color-grayscale-7 ">p900</h5>
-        <h5 className=" text-button-1 text-color-grayscale-7 ">Xiketic</h5>
+      <div style={{backgroundColor: "#37173C"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+        <div className='sombra_back1'>
+              <h4 style={{fontSize:"8px"}}><span class="dot_black"></span> 1.35</h4>
+        </div>
+        <div className='sombra_back2'>
+              <h4 style={{fontSize:"8px"}}><span class="dot_white"></span> 15.55 AAA <span className='sup'>AAA</span></h4>
+        </div>
+        <h5 className=" text-button-1 text-color-grayscale-7 ">P900</h5>
+        <h5 className=" text-button-1 text-color-grayscale-7 " style={{marginBottom:"45px"}}>Dark Purple</h5>
         
       </div>
       <div className="background-grayscale-5 justify-center text-button-1  flex flex-col gap-1 p-2">
-        <div >HEX: #090622
+        <div >HEX: #37173C
         </div>
-        <div >RGB: 9, 6, 34
+        <div >RGB: 55, 23, 60
         </div>
         
       </div>
     </div>
     <div className="card-paleta flex flex-col ">
-      <div style={{backgroundColor: "#151055"}} className=" color-card flex flex-col items-center justify-center font-semibold">
-        <h5 className=" text-button-1 text-color-grayscale-7 ">p800</h5>
-        <h5 className=" text-button-1 text-color-grayscale-7 ">Midnight Blue</h5>
+      <div style={{backgroundColor: "#481E4F"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+        <div className='sombra_back1'>
+                <h4 style={{fontSize:"8px"}}><span class="dot_black"></span> 1.57</h4>
+          </div>
+        <div className='sombra_back2'>
+              <h4 style={{fontSize:"8px"}}><span class="dot_white"></span> 13.94 AAA <span className='sup'>AAA</span></h4>
+        </div>
+        <h5 className=" text-button-1 text-color-grayscale-7 ">P800</h5>
+        <h5 className=" text-button-1 text-color-grayscale-7 " style={{marginBottom:"45px"}}>Russian Violet</h5>
         
       </div>
       <div className="background-grayscale-5 justify-center text-button-1  flex flex-col gap-1 p-2">
-        <div >HEX: #151055
+        <div >HEX: #481E4F
         </div>
-        <div >RGB: 21, 16, 85
+        <div >RGB: 72, 30, 79
         </div>
         
       </div>
     </div>
     <div className="card-paleta flex flex-col ">
-      <div style={{backgroundColor: "#221987"}} className=" color-card flex flex-col items-center justify-center font-semibold">
-        <h5 className=" text-button-1 text-color-grayscale-7 ">p700</h5>
-        <h5 className=" text-button-1 text-color-grayscale-7 ">Phthalo Blue</h5>
+      <div style={{backgroundColor: "#5D2766"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+        <div className='sombra_back1'>
+                <h4 style={{fontSize:"8px"}}><span class="dot_black"></span> 1.95</h4>
+          </div>
+        <div className='sombra_back2'>
+              <h4 style={{fontSize:"8px"}}><span class="dot_white"></span> 10.78 AAA <span className='sup'>AAA</span></h4>
+        </div>
+        <h5 className=" text-button-1 text-color-grayscale-7 ">P700</h5>
+        <h5 className=" text-button-1 text-color-grayscale-7 " style={{marginBottom:"45px"}}>Finn</h5>
         
       </div>
       <div className="background-grayscale-5 justify-center text-button-1  flex flex-col gap-1 p-2">
-        <div >HEX: #221987
+        <div >HEX: #5D2766
         </div>
-        <div >RGB: 34, 25, 135
+        <div >RGB: 93, 39, 102
         </div>
         
       </div>
     </div>
     <div className="card-paleta flex flex-col ">
-      <div style={{backgroundColor: "#2F22BA"}} className=" color-card flex flex-col items-center justify-center font-semibold">
-        <h5 className=" text-button-1 text-color-grayscale-7 ">p600</h5>
-        <h5 className=" text-button-1 text-color-grayscale-7 ">Medium Blue</h5>
+      <div style={{backgroundColor: "#773282"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+        <div className='sombra_back1'>
+                  <h4 style={{fontSize:"8px"}}><span class="dot_black"></span> 2.56</h4>
+            </div>
+        <div className='sombra_back2'>
+              <h4 style={{fontSize:"8px"}}><span class="dot_white"></span>  8.19 AAA <span className='sup'>AAA</span></h4>
+        </div>
+        <h5 className=" text-button-1 text-color-grayscale-7 ">P600</h5>
+        <h5 className=" text-button-1 text-color-grayscale-7 " style={{marginBottom:"45px"}}>Eminence</h5>
         
       </div>
       <div className="background-grayscale-5 justify-center text-button-1  flex flex-col gap-1 p-2">
-        <div >HEX: #2F22BA
+        <div >HEX: #773282
         </div>
-        <div >RGB: 47, 34, 186
+        <div >RGB: 119, 50, 130
         </div>
         
       </div>
     </div>
     <div className="card-paleta flex flex-col ">
-      <div style={{backgroundColor: "#2F22BA"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+      <div style={{backgroundColor: "#83378F"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+        <div className='sombra_back1'>
+                    <h4 style={{fontSize:"8px"}}><span class="dot_black"></span> 2.91</h4>
+              </div>
+        <div className='sombra_back2'>
+              <h4 style={{fontSize:"8px"}}><span class="dot_white"></span>  7.22 AAA <span className='sup'>AAA</span></h4>
+        </div>
         <h5 className=" text-button-1 text-color-grayscale-7 ">P500</h5>
-        <h5 className=" text-button-1 text-color-grayscale-7 ">Eminence</h5>
+        <h5 className=" text-button-1 text-color-grayscale-7 " style={{marginBottom:"45px"}}> Purple Eminence</h5>
         
       </div>
       <div className="background-grayscale-5 justify-center text-button-1  flex flex-col gap-1 p-2">
-        <div >HEX: #2F22BA
+        <div >HEX: #83378F
         </div>
-        <div >RGB: 34, 45, 68
+        <div >RGB: 131, 55, 143
         </div>
         
       </div>
     </div>
     <div className="card-paleta flex flex-col ">
-      <div style={{backgroundColor: "#9890EB"}} className=" color-card flex flex-col items-center justify-center font-semibold">
-        <h5 className=" text-button-1 text-color-grayscale-7 ">P300</h5>
-        <h5 className=" text-button-1 text-color-grayscale-7 ">Maximum Blue Purple</h5>
+      <div style={{backgroundColor: "#28125E"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+        <div className='sombra_back1'>
+                      <h4 style={{fontSize:"8px"}}><span class="dot_black"></span> 1.34</h4>
+                </div>
+        <div className='sombra_back2'>
+              <h4 style={{fontSize:"8px"}}><span class="dot_white"></span> 15.69 AAA <span className='sup'>AAA</span></h4>
+        </div>
+        <h5 className=" text-button-1 text-color-grayscale-7 ">P900</h5>
+        <h5 className=" text-button-1 text-color-grayscale-7 " style={{marginBottom:"45px"}}>Federal Blue</h5>
         
       </div>
       <div className="background-grayscale-5 justify-center text-button-1  flex flex-col gap-1 p-2">
-        <div >HEX: #9890EB
+        <div >HEX: #28125E
         </div>
-        <div >RGB: 152, 144, 235
+        <div >RGB: 40, 18, 94
         </div>
         
       </div>
     </div>
     <div className="card-paleta flex flex-col ">
-      <div style={{backgroundColor: "#BEBAF2"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+      <div style={{backgroundColor: "#3F1B6A"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+        <div className='sombra_back1'>
+                        <h4 style={{fontSize:"8px"}}><span class="dot_black"></span> 1.58</h4>
+                  </div>
+        <div className='sombra_back2'>
+              <h4 style={{fontSize:"8px"}}><span class="dot_white"></span> 13.32 AAA <span className='sup'>AAA</span></h4>
+        </div>
+        <h5 className=" text-button-1 text-color-grayscale-7 ">P800</h5>
+        <h5 className=" text-button-1 text-color-grayscale-7 " style={{marginBottom:"45px"}}>Persian Indigo</h5>
+        
+      </div>
+      <div className="background-grayscale-5 justify-center text-button-1   flex flex-col gap-1 p-2">
+        <div >HEX: #3F1B6A
+        </div>
+        <div >RGB: 63, 27, 106
+        </div>
+        
+      </div>
+    </div>
+    <div className="card-paleta flex flex-col ">
+      <div style={{backgroundColor: "#562577"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+        <div className='sombra_back1'>
+                          <h4 style={{fontSize:"8px"}}><span class="dot_black"></span> 1.93</h4>
+                    </div>
+        <div className='sombra_back2'>
+              <h4 style={{fontSize:"8px"}}><span class="dot_white"></span> 10.90 AAA <span className='sup'>AAA</span></h4>
+        </div>
+        <h5 className=" text-button-1 text-color-grayscale-7 ">P700</h5>
+        <h5 className=" text-button-1 text-color-grayscale-7 " style={{marginBottom:"45px"}}>Tekhelet</h5>
+        
+      </div>
+      <div className="background-grayscale-5 justify-center text-button-1   flex flex-col gap-1 p-2">
+        <div >HEX: #562577
+        </div>
+        <div >RGB: 86, 37, 119
+        </div>
+        
+      </div>
+    </div>
+    <div className="card-paleta flex flex-col ">
+      <div style={{backgroundColor: "#6C2E83"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+        <div className='sombra_back1'>
+              <h4 style={{fontSize:"8px"}}><span class="dot_black"></span> 2.36</h4>
+        </div>
+        <div className='sombra_back2'>
+              <h4 style={{fontSize:"8px"}}><span class="dot_white"></span>  8.91 AAA <span className='sup'>AAA</span></h4>
+        </div>
+        <h5 className=" text-button-1 text-color-grayscale-7 ">P600</h5>
+        <h5 className=" text-button-1 text-color-grayscale-7 " style={{marginBottom:"45px"}}>Eminence</h5>
+        
+      </div>
+      <div className="background-grayscale-5 justify-center text-button-1   flex flex-col gap-1 p-2">
+        <div >HEX: #6C2E83
+        </div>
+        <div >RGB: 108, 46, 131
+        </div>
+        
+      </div>
+    </div>
+
+    <div className="card-paleta flex flex-col ">
+      <div style={{backgroundColor: "#83378F"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+        <div className='sombra_back1'>
+              <h4 style={{fontSize:"8px"}}><span class="dot_black"></span> 2.91</h4>
+        </div>
+        <div className='sombra_back2'>
+              <h4 style={{fontSize:"8px"}}><span class="dot_white"></span>  7.22 AAA <span className='sup'>AAA</span></h4>
+        </div>
+        <h5 className=" text-button-1 text-color-grayscale-7 ">P500</h5>
+        <h5 className=" text-button-1 text-color-grayscale-7 " style={{marginBottom:"45px"}}>Purple Eminence</h5>
+        
+      </div>
+      <div className="background-grayscale-5 justify-center text-button-1   flex flex-col gap-1 p-2">
+        <div >HEX: #83378F
+        </div>
+        <div >RGB: 131, 55, 143
+        </div>
+        
+      </div>
+    </div>
+
+    <div className="card-paleta flex flex-col ">
+      <div style={{backgroundColor: "#9F62B0"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+      <div className='sombra_backAA'>
+              <h4 style={{fontSize:"8px"}}><span class="dot_black"></span>  4.85 AAA <span className='sup'>AA</span></h4>
+        </div>
+        <div className='sombra_backAA'>
+              <h4 style={{fontSize:"8px"}}><span class="dot_white"></span>  4.33 AAA <span className='sup'>AA</span></h4>
+        </div>
+        <h5 className=" text-button-1 text-color-grayscale-7 ">P400</h5>
+        <h5 className=" text-button-1 text-color-grayscale-7 " style={{marginBottom:"45px"}}>Purpureus</h5>
+        
+      </div>
+      <div className="background-grayscale-5 justify-center text-button-1   flex flex-col gap-1 p-2">
+        <div >HEX: #9F62B0
+        </div>
+        <div >RGB: 159, 98, 176
+        </div>
+        
+      </div>
+    </div>
+
+    <div className="card-paleta flex flex-col ">
+      <div style={{backgroundColor: "#BC8ED1"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+      <div className='sombra_backAA'>
+              <h4 style={{fontSize:"8px"}}><span class="dot_black"></span>  7.93 AAA <span className='sup'>AA</span></h4>
+        </div>
+        <div className='sombra_backaa'>
+              <h4 style={{fontSize:"8px"}}><span class="dot_white"></span>  2.65 AA </h4>
+        </div>
+        <h5 className=" text-button-1 text-color-grayscale-1 ">P300</h5>
+        <h5 className=" text-button-1 text-color-grayscale-1 " style={{marginBottom:"45px"}}>African Violet</h5>
+        
+      </div>
+      <div className="background-grayscale-5 justify-center text-button-1   flex flex-col gap-1 p-2">
+        <div >HEX: #BC8ED1
+        </div>
+        <div >RGB: 188, 142, 209
+        </div>
+        
+      </div>
+    </div>
+
+    <div className="card-paleta flex flex-col ">
+      <div style={{backgroundColor: "#D8B9F2"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+      <div className='sombra_back2' style={{marginTop:"2px"}}>
+              <h4 style={{fontSize:"8px"}}><span class="dot_black"></span>  9.50 AAA <span className='sup'>AAA</span></h4>
+        </div>
+        <div className='sombra_back1' style={{marginTop:"3px", width:"36px"}}>
+              <h4 style={{fontSize:"8px"}}><span class="dot_white"></span>  2.21</h4>
+        </div>
         <h5 className=" text-button-1 text-color-grayscale-1 ">P200</h5>
-        <h5 className=" text-button-1 text-color-grayscale-1 ">Blue Purple</h5>
+        <h5 className=" text-button-1 text-color-grayscale-1 " style={{marginBottom:"45px"}}>Lilac</h5>
         
       </div>
       <div className="background-grayscale-5 justify-center text-button-1   flex flex-col gap-1 p-2">
-        <div >HEX: #BEBAF2
+        <div >HEX: #D8B9F2
         </div>
-        <div >RGB: 190, 186, 242
+        <div >RGB: 198, 163, 203 
         </div>
         
       </div>
     </div>
+
     <div className="card-paleta flex flex-col ">
-      <div style={{backgroundColor: "#E5E3FA"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+      <div style={{backgroundColor: "#E5D0F6"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+        <div className='sombra_back2' style={{marginTop:"2px"}}>
+              <h4 style={{fontSize:"8px"}}><span class="dot_black"></span> 12.61 AAA <span className='sup'>AAA</span></h4>
+        </div>
+        <div className='sombra_back1' style={{marginTop:"3px", width:"36px"}}>
+              <h4 style={{fontSize:"8px"}}><span class="dot_white"></span>  1.67</h4>
+        </div>
         <h5 className=" text-button-1 text-color-grayscale-1 ">P100</h5>
-        <h5 className=" text-button-1 text-color-grayscale-1 ">Lavender Blue</h5>
+        <h5 className=" text-button-1 text-color-grayscale-1 " style={{marginBottom:"45px"}}>Thistle</h5>
         
       </div>
       <div className="background-grayscale-5 justify-center text-button-1   flex flex-col gap-1 p-2">
-        <div >HEX: #E5E3FA
+        <div >HEX: #E5D0F6
         </div>
-        <div >RGB: 229, 227, 250
+        <div >RGB: 217, 193, 220
         </div>
         
       </div>
     </div>
+
     <div className="card-paleta flex flex-col ">
-      <div style={{backgroundColor: "#F2F1FC"}} className=" color-card flex flex-col items-center justify-center font-semibold">
-        <h5 className=" text-button-1 text-color-grayscale-1 ">p50</h5>
-        <h5 className=" text-button-1 text-color-grayscale-1 ">Magnolia</h5>
+      <div style={{backgroundColor: "#F2E8FB"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+      <div className='sombra_back2' style={{marginTop:"2px"}}>
+              <h4 style={{fontSize:"8px"}}><span class="dot_black"></span> 18.00 AAA <span className='sup'>AAA</span></h4>
+        </div>
+        <div className='sombra_back1' style={{marginTop:"3px", width:"36px"}}>
+              <h4 style={{fontSize:"8px"}}><span class="dot_white"></span>  1.17</h4>
+        </div>
+        <h5 className=" text-button-1 text-color-grayscale-1 ">P50</h5>
+        <h5 className=" text-button-1 text-color-grayscale-1 " style={{marginBottom:"45px"}}>Magnolia</h5>
         
       </div>
       <div className="background-grayscale-5 justify-center text-button-1   flex flex-col gap-1 p-2">
-        <div >HEX: #F2F1FC
+        <div >HEX: #F2E8FB
         </div>
-        <div >RGB: 242, 241, 252
+        <div >RGB: 243, 235, 244
         </div>
         
       </div>
     </div>
 
     </div>
-    <h5 className=' text-heading-5 '>Rosas</h5>
+    {/* <h5 className=' text-heading-5 '>Rosas</h5>
     <p>Utilizamos los colores rosados y fucsias para generar impacto y resaltar textos y componentes, también utilizamos los colores rosados en fondos.</p>
 
     <div style={{gridTemplateColumns: "1fr 1fr 1fr", gap: "2%"}} className="grid">
@@ -591,133 +782,208 @@ const ColoresDisplay = () => {
       </div>
     </div>
 
-    </div>
+    </div> */}
 
     <h5 className=' text-heading-5 '>Amarillos</h5>
     <p>El color amarillo representa vitalidad y nos permite crear armonía, es un color complementario que utilizamos en textos y fondos para destacar acciones.</p>
     <div style={{gridTemplateColumns: "1fr 1fr 1fr", gap: "2%"}} className="grid">
     <div className="card-paleta flex flex-col ">
-      <div style={{backgroundColor: "#80780F"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+      <div style={{backgroundColor: "#42310A"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+        <div className='sombra_back1'>
+                <h4 style={{fontSize:"8px"}}><span class="dot_black"></span> 1.68</h4>
+          </div>
+        <div className='sombra_back2'>
+              <h4 style={{fontSize:"8px"}}><span class="dot_white"></span> 12.53 AAA <span className='sup'>AAA</span></h4>
+        </div>
         <h5 className=" text-button-1 text-color-grayscale-7 ">Y900</h5>
-        <h5 className=" text-button-1 text-color-grayscale-7 ">Olive</h5>
+        <h5 className=" text-button-1 text-color-grayscale-7 " style={{marginBottom:"45px"}}>Café Noir</h5>
         
       </div>
       <div className="background-grayscale-5 justify-center text-button-1  flex flex-col gap-1 p-2">
-        <div >HEX: #80780F
+        <div >HEX: #42310A
         </div>
-        <div >RGB: 128, 120, 15
+        <div >RGB: 66, 49, 10
         </div>
         
       </div>
     </div>
     <div className="card-paleta flex flex-col ">
-      <div style={{backgroundColor: "#A2960A"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+      <div style={{backgroundColor: "#856213"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+      <div className='sombra_back1'>
+                <h4 style={{fontSize:"8px"}}><span class="dot_black"></span> 3.75</h4>
+          </div>
+        <div className='sombra_back2'>
+              <h4 style={{fontSize:"8px"}}><span class="dot_white"></span>  5.59 AAA <span className='sup'>AAA</span></h4>
+        </div>
         <h5 className=" text-button-1 text-color-grayscale-7 ">Y800</h5>
-        <h5 className=" text-button-1 text-color-grayscale-7 ">Citron</h5>
+        <h5 className=" text-button-1 text-color-grayscale-7 " style={{marginBottom:"45px"}}>Golden Brown</h5>
         
       </div>
       <div className="background-grayscale-5 justify-center text-button-1  flex flex-col gap-1 p-2">
-        <div >HEX: #A2960A
+        <div >HEX: #856213
         </div>
-        <div >RGB: 162, 150, 10
+        <div >RGB: 133, 98, 19
         </div>
         
       </div>
     </div>
     <div className="card-paleta flex flex-col ">
-      <div style={{backgroundColor: "#C3B205"}} className=" color-card flex flex-col items-center justify-center font-semibold">
-        <h5 className=" text-button-1 text-color-grayscale-7 ">Y700</h5>
-        <h5 className=" text-button-1 text-color-grayscale-7 ">Old Gold</h5>
+      <div style={{backgroundColor: "#C7931D"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+      <div className='sombra_back2' style={{marginTop:"2px"}}>
+              <h4 style={{fontSize:"8px"}}><span class="dot_black"></span>  7.62 AAA <span className='sup'>AAA</span></h4>
+        </div>
+        <div className='sombra_back1' style={{marginTop:"3px", width:"36px"}}>
+              <h4 style={{fontSize:"8px"}}><span class="dot_white"></span>  2.67</h4>
+        </div>
+        <h5 className=" text-button-1 text-color-grayscale-1 ">Y700</h5>
+        <h5 className=" text-button-1 text-color-grayscale-1 " style={{marginBottom:"45px"}}>Dark Goldenrod</h5>
         
       </div>
       <div className="background-grayscale-5 justify-center text-button-1  flex flex-col gap-1 p-2">
-        <div >HEX: #C3B205
+        <div >HEX: #C7931D
         </div>
-        <div >RGB: 175, 33, 142
+        <div >RGB: 199, 147, 29
         </div>
         
       </div>
     </div>
     <div className="card-paleta flex flex-col ">
-      <div style={{backgroundColor: "#E0CB00"}} className=" color-card flex flex-col items-center justify-center font-semibold ">
+      <div style={{backgroundColor: "#E3B10F"}} className=" color-card flex flex-col items-center justify-center font-semibold ">
+      <div className='sombra_back2' style={{marginTop:"2px"}}>
+              <h4 style={{fontSize:"8px"}}><span class="dot_black"></span> 10.56 AAA <span className='sup'>AAA</span></h4>
+        </div>
+        <div className='sombra_back1' style={{marginTop:"3px", width:"36px"}}>
+              <h4 style={{fontSize:"8px"}}><span class="dot_white"></span>  1.99</h4>
+        </div>
         <h5 className=" text-button-1 text-color-grayscale-1 ">Y600</h5>
-        <h5 className=" text-button-1 text-color-grayscale-1 ">Citrine</h5>
+        <h5 className=" text-button-1 text-color-grayscale-1 " style={{marginBottom:"45px"}}>Goldenrod</h5>
         
       </div>
       <div className="background-grayscale-5 justify-center text-button-1  flex flex-col gap-1 p-2">
-        <div >HEX: #E0CB00
+        <div >HEX: #E3B10F
         </div>
-        <div >RGB: 224, 203, 0
+        <div >RGB: 227, 177, 15
         </div>
         
       </div>
     </div>
     <div className="card-paleta flex flex-col ">
-      <div style={{backgroundColor: "#F9E100"}} className=" color-card flex flex-col items-center justify-center font-semibold ">
+      <div style={{backgroundColor: "#FFCF00"}} className=" color-card flex flex-col items-center justify-center font-semibold ">
+      <div className='sombra_back2' style={{marginTop:"2px"}}>
+              <h4 style={{fontSize:"8px"}}><span class="dot_black"></span> 14.18 AAA <span className='sup'>AAA</span></h4>
+        </div>
+        <div className='sombra_back1' style={{marginTop:"3px", width:"36px"}}>
+              <h4 style={{fontSize:"8px"}}><span class="dot_white"></span>  1.48</h4>
+        </div>
         <h5 className=" text-button-1 text-color-grayscale-1 ">Y500</h5>
-        <h5 className=" text-button-1 text-color-grayscale-1 ">Yellow Pantone</h5>
+        <h5 className=" text-button-1 text-color-grayscale-1 " style={{marginBottom:"45px"}}>Yellow Jonquil</h5>
         
       </div>
       <div className="background-grayscale-5 justify-center text-button-1  flex flex-col gap-1 p-2">
-        <div >HEX: #F9E100
+        <div >HEX: #FFCF00
         </div>
-        <div >RGB: 249, 225, 0
+        <div >RGB: 255, 207, 0
         </div>
         
       </div>
     </div>
     <div className="card-paleta flex flex-col ">
-      <div style={{backgroundColor: "#FFF06A"}} className=" color-card flex flex-col items-center justify-center text-color-grayscale-1 font-semibold">
-        <h5 className=" text-button-1 ">Y300</h5>
-        <h5 className=" text-button-1 ">Corn</h5>
+      <div style={{backgroundColor: "#FFD933"}} className=" color-card flex flex-col items-center justify-center text-color-grayscale-1 font-semibold">
+      <div className='sombra_back2' style={{marginTop:"2px"}}>
+              <h4 style={{fontSize:"8px"}}><span class="dot_black"></span> 15.22 AAA <span className='sup'>AAA</span></h4>
+        </div>
+        <div className='sombra_back1' style={{marginTop:"3px", width:"36px"}}>
+              <h4 style={{fontSize:"8px"}}><span class="dot_white"></span>  1.38</h4>
+        </div>
+        <h5 className=" text-button-1 text-color-grayscale-1 ">Y400</h5>
+        <h5 className=" text-button-1 text-color-grayscale-1 " style={{marginBottom:"45px"}}>School Bus Yellow</h5>
         
       </div>
       <div className="background-grayscale-5 justify-center text-button-1  flex flex-col gap-1 p-2">
-        <div >HEX: #FFF06A
+        <div >HEX: #FFD933
         </div>
-        <div >RGB: 255, 240, 106
+        <div >RGB: 255, 217, 51
         </div>
         
       </div>
     </div>
     <div className="card-paleta flex flex-col ">
-      <div style={{backgroundColor: "#FFF6A2"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+      <div style={{backgroundColor: "#FFDF54"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+      <div className='sombra_back2' style={{marginTop:"2px"}}>
+              <h4 style={{fontSize:"8px"}}><span class="dot_black"></span> 15.94 AAA <span className='sup'>AAA</span></h4>
+        </div>
+        <div className='sombra_back1' style={{marginTop:"3px", width:"36px"}}>
+              <h4 style={{fontSize:"8px"}}><span class="dot_white"></span>  1.32</h4>
+        </div>
+        <h5 className=" text-button-1 text-color-grayscale-1 ">Y300</h5>
+        <h5 className=" text-button-1 text-color-grayscale-1 " style={{marginBottom:"45px"}}>Mustard</h5>
+        
+      </div>
+      <div className="background-grayscale-5 justify-center text-button-1  flex flex-col gap-1 p-2">
+        <div >HEX: #FFDF54
+        </div>
+        <div >RGB: 255, 223, 84
+        </div>
+        
+      </div>
+    </div>
+    <div className="card-paleta flex flex-col ">
+      <div style={{backgroundColor: "#FFE98A"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+      <div className='sombra_back2' style={{marginTop:"2px"}}>
+              <h4 style={{fontSize:"8px"}}><span class="dot_black"></span> 17.27 AAA <span className='sup'>AAA</span></h4>
+        </div>
+        <div className='sombra_back1' style={{marginTop:"3px", width:"36px"}}>
+              <h4 style={{fontSize:"8px"}}><span class="dot_white"></span>  1.22</h4>
+        </div>
         <h5 className=" text-button-1 text-color-grayscale-1 ">Y200</h5>
-        <h5 className=" text-button-1 text-color-grayscale-1 ">Green Yellow Crayola</h5>
+        <h5 className=" text-button-1 text-color-grayscale-1 " style={{marginBottom:"45px"}}>Lemon Chiffon</h5>
         
       </div>
       <div className="background-grayscale-5 justify-center text-button-1  flex flex-col gap-1 p-2">
-        <div >HEX: #FFF6A2
+        <div >HEX: #FFE98A
         </div>
-        <div >RGB: 255, 246, 162
+        <div >RGB: 255, 233, 138
         </div>
         
       </div>
     </div>
     <div className="card-paleta flex flex-col ">
-      <div style={{backgroundColor: "#FEF9CC"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+      <div style={{backgroundColor: "#FFF0B0"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+      <div className='sombra_back2' style={{marginTop:"2px"}}>
+              <h4 style={{fontSize:"8px"}}><span class="dot_black"></span> 18.34 AAA <span className='sup'>AAA</span></h4>
+        </div>
+        <div className='sombra_back1' style={{marginTop:"3px", width:"36px"}}>
+              <h4 style={{fontSize:"8px"}}><span class="dot_white"></span>  1.14</h4>
+        </div>
         <h5 className=" text-button-1 text-color-grayscale-1 ">Y100</h5>
-        <h5 className=" text-button-1 text-color-grayscale-1 ">Lemon Chiffon</h5>
+        <h5 className=" text-button-1 text-color-grayscale-1 " style={{marginBottom:"45px"}}>Vanilla</h5>
         
       </div>
       <div className="background-grayscale-5 justify-center text-button-1  flex flex-col gap-1 p-2">
-        <div >HEX: #FEF9CC
+        <div >HEX: #FFF0B0
         </div>
-        <div >RGB: 254, 249, 204
+        <div >RGB: 255, 240, 176
         </div>
         
       </div>
     </div>
+
     <div className="card-paleta flex flex-col ">
-      <div style={{backgroundColor: "#FFFDEC"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+      <div style={{backgroundColor: "#FFFAE6"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+      <div className='sombra_back2' style={{marginTop:"2px"}}>
+              <h4 style={{fontSize:"8px"}}><span class="dot_black"></span> 20.07 AAA <span className='sup'>AAA</span></h4>
+        </div>
+        <div className='sombra_back1' style={{marginTop:"3px", width:"36px"}}>
+              <h4 style={{fontSize:"8px"}}><span class="dot_white"></span>  1.05</h4>
+        </div>
         <h5 className=" text-button-1 text-color-grayscale-1 ">Y50</h5>
-        <h5 className=" text-button-1 text-color-grayscale-1 ">Ivory</h5>
+        <h5 className=" text-button-1 text-color-grayscale-1 " style={{marginBottom:"45px"}}>Cosmic Latte</h5>
         
       </div>
       <div className="background-grayscale-5 justify-center text-button-1  flex flex-col gap-1 p-2">
-        <div >HEX: #FFFDEC
+        <div >HEX: #FFFAE6
         </div>
-        <div >RGB: 255, 253, 236
+        <div >RGB: 255, 250, 230
         </div>
         
       </div>
@@ -727,96 +993,133 @@ const ColoresDisplay = () => {
 
     <h5 className=' text-heading-5 '>Colores Semánticos</h5>
     <p>Describimos el uso que hacemos de cada color y las pautas a tomar en cuenta. El color semántico ayuda a los usuarios a identificar estados, acciones, botones, links y encontrar opciones de ayuda.</p>
+    
+    <h5 className=' text-heading-5 '>Azules</h5>
+    <p>El color azul representa una sensación de calma y fiabilidad. Por tal motivo, usamos el color azul para dar a conocer mensajes de información.</p>
+
+    <div style={{gridTemplateColumns: "1fr 1fr 1fr", gap: "2%"}} className="grid">
+    <div className="card-paleta flex flex-col ">
+      <div style={{backgroundColor: "#0D58C1"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+        <div className='sombra_back1'>
+              <h4 style={{fontSize:"8px"}}><span class="dot_black"></span> 2.21</h4>
+        </div>
+        <div className='sombra_back2'>
+              <h4 style={{fontSize:"8px"}}><span class="dot_white"></span>  6.60 AAA <span className='sup'>AAA</span></h4>
+        </div>
+        <h5 className=" text-button-1 text-color-grayscale-7 ">B500</h5>
+        <h5 className=" text-button-1 text-color-grayscale-7 " style={{marginBottom:"45px"}}>Tang Blue</h5>
+        
+      </div>
+      <div className="background-grayscale-5 justify-center text-button-1 flex flex-col gap-1 p-2">
+        <div >HEX: #0D58C1
+        </div>
+        <div >RGB: 13, 88, 193
+        </div>
+        
+      </div>
+    </div>
+    <div className="card-paleta flex flex-col ">
+      <div style={{backgroundColor: "#8AC3FB"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+      <div className='sombra_back2' style={{marginTop:"2px"}}>
+              <h4 style={{fontSize:"8px"}}><span class="dot_black"></span> 11.28 AAA <span className='sup'>AAA</span></h4>
+        </div>
+        <div className='sombra_back1' style={{marginTop:"3px", width:"36px"}}>
+              <h4 style={{fontSize:"8px"}}><span class="dot_white"></span>  1.86</h4>
+        </div>
+        <h5 className=" text-button-1 text-color-grayscale-1 ">B200</h5>
+        <h5 className=" text-button-1 text-color-grayscale-1 " style={{marginBottom:"45px"}}>Middle Blue Green</h5>
+        
+      </div>
+      <div className="background-grayscale-5 justify-center text-button-1  flex flex-col gap-1 p-2">
+        <div >HEX: #8AC3FB
+        </div>
+        <div >RGB: 138, 195, 251
+        </div>
+        
+      </div>
+    </div>
+    <div className="card-paleta flex flex-col ">
+      <div style={{backgroundColor: "#E2F0FE"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+      <div className='sombra_back2' style={{marginTop:"2px"}}>
+              <h4 style={{fontSize:"8px"}}><span class="dot_black"></span> 18.13 AAA <span className='sup'>AAA</span></h4>
+        </div>
+        <div className='sombra_back1' style={{marginTop:"3px", width:"36px"}}>
+              <h4 style={{fontSize:"8px"}}><span class="dot_white"></span>  1.16</h4>
+        </div>
+        <h5 className=" text-button-1 text-color-grayscale-1 ">B50</h5>
+        <h5 className=" text-button-1 text-color-grayscale-1 " style={{marginBottom:"45px"}}>Mint Cream</h5>
+        
+      </div>
+      <div className="background-grayscale-5 justify-center text-button-1  flex flex-col gap-1 p-2">
+        <div >HEX: #E2F0FE
+        </div>
+        <div >RGB: 226, 240, 254
+        </div>
+        
+      </div>
+    </div>
+    </div>
+    
     <h5 className=' text-heading-5 '>Verdes</h5>
     <p>El color verde representa energía, positivismo y vitalidad. Utilizamos el color verde para denotar procesos de éxito.</p>
 
     <div style={{gridTemplateColumns: "1fr 1fr 1fr", gap: "2%"}} className="grid">
     <div className="card-paleta flex flex-col ">
-      <div style={{backgroundColor: "#38A57E"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+      <div style={{backgroundColor: "#019155"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+      <div className='sombra_back1'>
+              <h4 style={{fontSize:"8px"}}><span class="dot_black"></span> 5.18</h4>
+        </div>
+        <div className='sombra_back2'>
+              <h4 style={{fontSize:"8px"}}><span class="dot_white"></span>  4.05 AAA <span className='sup'>AAA</span></h4>
+        </div>
         <h5 className=" text-button-1 text-color-grayscale-7 ">G500</h5>
-        <h5 className=" text-button-1 text-color-grayscale-7 ">Jungle Green</h5>
+        <h5 className=" text-button-1 text-color-grayscale-7 " style={{marginBottom:"45px"}}>Sea Green</h5>
         
       </div>
       <div className="background-grayscale-5 justify-center text-button-1 flex flex-col gap-1 p-2">
-        <div >HEX: #38A57E
+        <div >HEX: #019155
         </div>
-        <div >RGB: 56, 165, 126
+        <div >RGB: 1, 145, 85
         </div>
         
       </div>
     </div>
     <div className="card-paleta flex flex-col ">
-      <div style={{backgroundColor: "#AFDBCB"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+      <div style={{backgroundColor: "#99D8B5"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+      <div className='sombra_back2' style={{marginTop:"2px"}}>
+              <h4 style={{fontSize:"8px"}}><span class="dot_black"></span> 12.84 AAA <span className='sup'>AAA</span></h4>
+        </div>
+        <div className='sombra_back1' style={{marginTop:"3px", width:"36px"}}>
+              <h4 style={{fontSize:"8px"}}><span class="dot_white"></span>  1.63 </h4>
+        </div>
         <h5 className=" text-button-1 text-color-grayscale-1 ">G200</h5>
-        <h5 className=" text-button-1 text-color-grayscale-1 ">Middle Blue Green</h5>
+        <h5 className=" text-button-1 text-color-grayscale-1 " style={{marginBottom:"45px"}}>Celadon</h5>
         
       </div>
       <div className="background-grayscale-5 justify-center text-button-1  flex flex-col gap-1 p-2">
-        <div >HEX: #AFDBCB
+        <div >HEX: #99D8B5
         </div>
-        <div >RGB: 175, 219, 203
+        <div >RGB: 153, 216, 181
         </div>
         
       </div>
     </div>
     <div className="card-paleta flex flex-col ">
-      <div style={{backgroundColor: "#EBF6F2"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+      <div style={{backgroundColor: "#E5F6ED"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+      <div className='sombra_back2' style={{marginTop:"3px"}}>
+              <h4 style={{fontSize:"8px"}}><span class="dot_black"></span> 18.74 AAA <span className='sup'>AAA</span></h4>
+        </div>
+        <div className='sombra_back1' style={{marginTop:"3px"}}>
+              <h4 style={{fontSize:"8px"}}><span class="dot_white"></span>  1.12</h4>
+        </div>
         <h5 className=" text-button-1 text-color-grayscale-1 ">G50</h5>
-        <h5 className=" text-button-1 text-color-grayscale-1 ">Mint Cream</h5>
+        <h5 className=" text-button-1 text-color-grayscale-1 " style={{marginBottom:"45px"}}>Honeydew</h5>
         
       </div>
       <div className="background-grayscale-5 justify-center text-button-1  flex flex-col gap-1 p-2">
-        <div >HEX: #EBF6F2
+        <div >HEX: #E5F6ED
         </div>
-        <div >RGB: 235, 246, 242
-        </div>
-        
-      </div>
-    </div>
-    </div>
-
-    <h5 className=' text-heading-5 '>Naranja</h5>
-    <p>Nuestro color naranja es de tonalidad clara y vibrante, es difícil pasarlo desapercibido. En Xtrim lo usamos en alertas.</p>
-
-    <div style={{gridTemplateColumns: "1fr 1fr 1fr", gap: "2%"}} className="grid">
-    <div className="card-paleta flex flex-col ">
-      <div style={{backgroundColor: "#F9B100"}} className=" color-card flex flex-col items-center justify-center font-semibold">
-        <h5 className=" text-button-1 text-color-grayscale-1 ">H500</h5>
-        <h5 className=" text-button-1 text-color-grayscale-1 ">Honey Yellow</h5>
-        
-      </div>
-      <div className="background-grayscale-5 justify-center text-button-1  flex flex-col gap-1 p-2">
-        <div >HEX: #F9B100
-        </div>
-        <div >RGB: 249, 177, 0
-        </div>
-        
-      </div>
-    </div>
-    <div className="card-paleta flex flex-col ">
-      <div style={{backgroundColor: "#FDE099"}} className=" color-card flex flex-col items-center justify-center font-semibold">
-        <h5 className=" text-button-1 text-color-grayscale-1 ">H200</h5>
-        <h5 className=" text-button-1 text-color-grayscale-1 ">Jazmine</h5>
-        
-      </div>
-      <div className="background-grayscale-5 justify-center text-button-1  flex flex-col gap-1 p-2">
-        <div >HEX: #FDE099
-        </div>
-        <div >RGB: 253, 224, 153
-        </div>
-        
-      </div>
-    </div>
-    <div className="card-paleta flex flex-col ">
-      <div style={{backgroundColor: "#FEF7E5"}} className=" color-card flex flex-col items-center justify-center font-semibold">
-        <h5 className=" text-button-1 text-color-grayscale-1 ">H50</h5>
-        <h5 className=" text-button-1 text-color-grayscale-1 ">Cosmic Latte</h5>
-        
-      </div>
-      <div className="background-grayscale-5 justify-center text-button-1  flex flex-col gap-1 p-2">
-        <div >HEX: #FEF7E5
-        </div>
-        <div >RGB: 246, 223, 230
+        <div >RGB: 229, 246, 237
         </div>
         
       </div>
@@ -829,8 +1132,14 @@ const ColoresDisplay = () => {
     <div style={{gridTemplateColumns: "1fr 1fr 1fr", gap: "2%"}} className="grid">
     <div className="card-paleta flex flex-col ">
       <div style={{backgroundColor: "#BD033B"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+      <div className='sombra_back1'>
+              <h4 style={{fontSize:"8px"}}><span class="dot_black"></span> 3.24</h4>
+        </div>
+        <div className='sombra_back2'>
+              <h4 style={{fontSize:"8px"}}><span class="dot_white"></span>  6.48 AAA <span className='sup'>AAA</span></h4>
+        </div>
         <h5 className=" text-button-1 text-color-grayscale-7 ">R500</h5>
-        <h5 className=" text-button-1 text-color-grayscale-7 ">Bright Maroon</h5>
+        <h5 className=" text-button-1 text-color-grayscale-7 " style={{marginBottom:"45px"}}>Bright Maroon</h5>
         
       </div>
       <div className="background-grayscale-5 justify-center text-button-1  flex flex-col gap-1 p-2">
@@ -843,8 +1152,14 @@ const ColoresDisplay = () => {
     </div>
     <div className="card-paleta flex flex-col ">
       <div style={{backgroundColor: "#E59AB1"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+      <div className='sombra_back2' style={{marginTop:"3px"}}>
+              <h4 style={{fontSize:"8px"}}><span class="dot_black"></span>  9.59 AAA <span className='sup'>AAA</span></h4>
+        </div>
+        <div className='sombra_back1' style={{marginTop:"3px"}}>
+              <h4 style={{fontSize:"8px"}}><span class="dot_white"></span>  2.19</h4>
+        </div>
         <h5 className=" text-button-1 text-color-grayscale-1 ">R200</h5>
-        <h5 className=" text-button-1 text-color-grayscale-1 ">Amaranth Pink</h5>
+        <h5 className=" text-button-1 text-color-grayscale-1 " style={{marginBottom:"45px"}}>Amaranth Pink</h5>
         
       </div>
       <div className="background-grayscale-5 justify-center text-button-1  flex flex-col gap-1 p-2">
@@ -856,15 +1171,87 @@ const ColoresDisplay = () => {
       </div>
     </div>
     <div className="card-paleta flex flex-col ">
-      <div style={{backgroundColor: "#F6DFE6"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+      <div style={{backgroundColor: "#F8E6EB"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+      <div className='sombra_back2' style={{marginTop:"3px"}}>
+              <h4 style={{fontSize:"8px"}}><span class="dot_black"></span> 17.51 AAA <span className='sup'>AAA</span></h4>
+        </div>
+        <div className='sombra_back1' style={{marginTop:"3px"}}>
+              <h4 style={{fontSize:"8px"}}><span class="dot_white"></span>  1.20</h4>
+        </div>
         <h5 className=" text-button-1 text-color-grayscale-1 ">R50</h5>
-        <h5 className=" text-button-1 text-color-grayscale-1 ">Piggy Pink</h5>
+        <h5 className=" text-button-1 text-color-grayscale-1 " style={{marginBottom:"45px"}}>Lavander Blush</h5>
         
       </div>
       <div className="background-grayscale-5 justify-center text-button-1  flex flex-col gap-1 p-2">
-        <div >HEX: #F6DFE6
+        <div >HEX: #F8E6EB
         </div>
-        <div >RGB: 246, 223, 230
+        <div >RGB: 248, 230, 235
+        </div>
+        
+      </div>
+    </div>
+    </div>
+
+    <h5 className=' text-heading-5 '>Amarillo</h5>
+    <p>Nuestro color amarillo es de tonalidad clara y vibrante, es difícil pasarlo desapercibido. En Xtrim lo usamos en alertas.</p>
+
+    <div style={{gridTemplateColumns: "1fr 1fr 1fr", gap: "2%"}} className="grid">
+    <div className="card-paleta flex flex-col ">
+      <div style={{backgroundColor: "#F9B100"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+      <div className='sombra_back2' style={{marginTop:"3px"}}>
+              <h4 style={{fontSize:"8px"}}><span class="dot_black"></span> 11.32 AAA <span className='sup'>AAA</span></h4>
+        </div>
+        <div className='sombra_back1' style={{marginTop:"3px"}}>
+              <h4 style={{fontSize:"8px"}}><span class="dot_white"></span>  1.86</h4>
+        </div>
+        <h5 className=" text-button-1 text-color-grayscale-1 ">H500</h5>
+        <h5 className=" text-button-1 text-color-grayscale-1 " style={{marginBottom:"45px"}}>Honey Yellow</h5>
+        
+      </div>
+      <div className="background-grayscale-5 justify-center text-button-1  flex flex-col gap-1 p-2">
+        <div >HEX: #F9B100
+        </div>
+        <div >RGB: 249, 177, 0
+        </div>
+        
+      </div>
+    </div>
+    <div className="card-paleta flex flex-col ">
+      <div style={{backgroundColor: "#FDE099"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+      <div className='sombra_back2' style={{marginTop:"3px"}}>
+              <h4 style={{fontSize:"8px"}}><span class="dot_black"></span> 16.30 AAA <span className='sup'>AAA</span></h4>
+        </div>
+        <div className='sombra_back1' style={{marginTop:"3px"}}>
+              <h4 style={{fontSize:"8px"}}><span class="dot_white"></span>  1.29</h4>
+        </div>
+        <h5 className=" text-button-1 text-color-grayscale-1 ">H200</h5>
+        <h5 className=" text-button-1 text-color-grayscale-1 " style={{marginBottom:"45px"}}>Peach Yellow</h5>
+        
+      </div>
+      <div className="background-grayscale-5 justify-center text-button-1  flex flex-col gap-1 p-2">
+        <div >HEX: #FDE099
+        </div>
+        <div >RGB: 253, 224, 153
+        </div>
+        
+      </div>
+    </div>
+    <div className="card-paleta flex flex-col ">
+      <div style={{backgroundColor: "#FEF7E5"}} className=" color-card flex flex-col items-center justify-center font-semibold">
+      <div className='sombra_back2' style={{marginTop:"3px"}}>
+              <h4 style={{fontSize:"8px"}}><span class="dot_black"></span> 19.65 AAA <span className='sup'>AAA</span></h4>
+        </div>
+        <div className='sombra_back1' style={{marginTop:"3px"}}>
+              <h4 style={{fontSize:"8px"}}><span class="dot_white"></span>  1.07</h4>
+        </div>
+        <h5 className=" text-button-1 text-color-grayscale-1 ">H50</h5>
+        <h5 className=" text-button-1 text-color-grayscale-1 " style={{marginBottom:"45px"}}>Latte</h5>
+        
+      </div>
+      <div className="background-grayscale-5 justify-center text-button-1  flex flex-col gap-1 p-2">
+        <div >HEX: #FEF7E5
+        </div>
+        <div >RGB: 254, 247, 229
         </div>
         
       </div>

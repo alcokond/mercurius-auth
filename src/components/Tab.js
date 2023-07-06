@@ -3,6 +3,9 @@ import { useAuth0, withAuthenticationRequired } from "@auth0/auth0-react";
 import Loading from "./Loading";
 
 import tabs from "../assets/tabs.png";
+import tabs2 from "../assets/tabs-2.png";
+import tabslineal from "../assets/tabs-lineal.png";
+import tabsrelleno from "../assets/tabs-relleno.png";
 
 import { CopyBlock, dracula } from "react-code-blocks";
 import TopBar  from "./TopBar"
@@ -410,12 +413,30 @@ export const Tab = () => {
 
     </div>
     </div>
+
+    <div>
+    <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
+      Estilos
+    </p>
+    <br></br>
+    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Se pueden presentar en diferentes formatos: </p>
+    <br />
+    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>1.De tipo relleno.</p>
+    <div style={{alignSelf:"center", marginTop: "4%"}}>
+    <img src={tabsrelleno} ></img></div>
+    <br></br>
+    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>2.De tipo lineal.</p>
+    <div style={{alignSelf:"center", marginTop: "4%"}}>
+    <img src={tabslineal} ></img></div>
+    </div>
+
+
     <div className="flex flex-col">
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
       Anatomía
     </p>
     <div style={{width:"60%", alignSelf:"center", marginTop: "4%"}}>
-    <img src={tabs} ></img></div>
+    <img src={tabs2} ></img></div>
     <div className=" mt-4"></div>
     <p><strong>Seleccionado:</strong> La categoría se encuentra activa.</p>
     <p><strong>No seleccionado:</strong> Son el resto de categorías desactivadas.</p>

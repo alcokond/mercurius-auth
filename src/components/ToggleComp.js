@@ -3,6 +3,7 @@ import { useAuth0, withAuthenticationRequired } from "@auth0/auth0-react";
 import Loading from "./Loading";
 
 import toggle from "../assets/toggle.png";
+import toggle2 from "../assets/toggle-2.png";
 
 import { CopyBlock, dracula } from "react-code-blocks";
 import TopBar  from "./TopBar"
@@ -367,12 +368,34 @@ export const Toggle = () => {
     <br></br>
     
     </div>
+
+    <div><p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
+    Modo de Uso
+    </p>
+    <br />
+    <p style={{color: "#222D44",fontWeight:600, fontSize:"16px", lineHeight:"22px"}}>¿Cuándo usarlos?</p>
+    <br></br>
+    <p>Deben usarse para hacer la interacción intuitiva, simple y clara para el usuario. Es importante que los estados de "encendido" y "apagado" sean claros y fácilmente identificables.</p>
+    <br />
+    <p style={{color: "#222D44",fontWeight:600, fontSize:"16px", lineHeight:"22px"}}>¿Cuándo no usarlos?</p>
+    <br />
+    <p>No debe utilizarse para:</p>
+    <br />
+    <ul style={{listStylePosition:"outside"}}>
+      <li>Hacer selecciones complejas, es mejor utilizar una lista desplegable.</li>
+      <li>Presentar información confusa, es mejor utilizar otro tipo de input o agregar más contexto y descripción.</li>
+      <li>Información importante, es mejor utilizar un input que permita a los usuarios ingresar o verificar la información de manera clara y precisa.</li>
+      <li>Funciones no intuitivas, si la función representada por el toggle es confusa es mejor utilizar una descripción más clara o un input diferente.</li>
+    </ul>
+    </div>
+
+
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
       Variantes
     </p>
     <br></br>
-    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Los estados de on y off indican cuando el usuario ha iniciado la interacción con el componente.</p>
+    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Los estados selected y deselected indican cuando el usuario ha iniciado la interacción con el componente.</p>
     <br />
     <div className="grid mt-2" style={{gridTemplateColumns:"30% 70%", gap:"2rem"}}>
       <div className=" justify-center flex" style={{alignItems:"center"}}>Initial</div>
@@ -395,9 +418,9 @@ export const Toggle = () => {
     <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>El Toggle tiene dos estilos On y Off que determinan su apariencia e indican el estado en que se encuentra.</p>
     <br />
     <div className="grid mt-2" style={{gridTemplateColumns:"30% 70%", gap:"2rem"}}>
-      <div className=" justify-center flex" style={{alignItems:"center"}}>On</div>
+      <div className=" justify-center flex" style={{alignItems:"center"}}>Selected</div>
       <div>Indica selección, si las opciones son encendido y apagado, el estilo “on” indicaría que está encendido o activo.</div>
-      <div className=" justify-center flex" style={{alignItems:"center"}}>Off</div>
+      <div className=" justify-center flex" style={{alignItems:"center"}}>Deselected</div>
       <div>Muestra el estado normal o apagado del Toggle.</div>
       
 
@@ -409,10 +432,12 @@ export const Toggle = () => {
       Anatomía
     </p>
     <div style={{width:"30%", alignSelf:"center", marginTop: "4%"}}>
-    <img src={toggle} ></img></div>
+    <img src={toggle2} ></img></div>
     <div className=" mt-4"></div>
+    <p><strong>Texto:</strong> Brinda contexto sobre el proceso.</p>
     <p><strong>Casilla:</strong> Control de selección.</p>
     <p><strong>Interruptor:</strong> Determina el estado del Toggle.</p>
+    <p><strong>Label:</strong> Indica la acción que realizan.</p>
     </div>
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
@@ -451,7 +476,9 @@ export const Toggle = () => {
     Guidelines de contenido
     </p>
     <br></br>
+    <ul>
     <li style={{marginBottom:"8px"}}>Las etiquetas deben ser breves, explicativas y proporcionar contexto acerca de la opción que funcione a modo de guía para el usuario.</li>
+    </ul>
     </div>
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>

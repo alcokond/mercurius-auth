@@ -55,7 +55,7 @@ export default function Sidebar() {
         
         <List>
         
-        {/* <ListItemButton >
+        <ListItemButton >
               <ListItemText>
                 <NavLink
                 to="/mercurius/marca"
@@ -116,7 +116,7 @@ export default function Sidebar() {
                     
                   </List>
                 </Collapse>
-              <Divider /> */}
+              <Divider />
               <ListItemButton >
               <ListItemText>
                 <NavLink

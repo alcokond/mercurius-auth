@@ -5,6 +5,12 @@ import Loading from "./Loading";
 import button from "../assets/button.png";
 import dont from "../assets/dont.png";
 import input from "../assets/input.png";
+import input2 from "../assets/input-2.png";
+
+import tstandard from "../assets/Standard.png";
+import tsearch from "../assets/Search.png";
+import tlogin from "../assets/Login.png";
+import ancho from "../assets/ancho-input.png";
 
 import { CopyBlock, dracula } from "react-code-blocks";
 import TopBar  from "../components/TopBar"
@@ -429,10 +435,52 @@ export const Input = () => {
       Uso
     </p>
     <br></br>
-    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>La clase de input que se utilice deberá reflejar su longitud en función del contenido requerido. Por lo general se encuentran dentro de un formulario, y deberán usarse para permitir ingresar datos de usuario únicos.</p>
+    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>La clase de input que se utilice deberá reflejar su longitud en función del contenido requerido. Por lo general se encuentran dentro de un formulario, y deberán usarse para permitir ingresar datos únicos de usuario.</p>
     <br></br>
     <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Hay varios tipos de inputs, los más comunes son los utilizados para permitir el ingreso de nombres de usuario, correos electrónicos, direcciones, descripciones y búsqueda de texto.</p>
     
+    </div>
+
+    <div>
+    <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
+      Modo de uso
+    </p>
+    <br />
+    <p style={{fontWeight:500, lineHeight:"22px"}}>¿Cuándo usarlo?</p>
+    <br></br>
+    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Cuando la lista de opciones es larga y existen muchas opciones iguales que se agrupan por categorías, se utilizan check buttons y radio buttons.</p>
+    <br></br>
+    <p style={{fontWeight:500, lineHeight:"22px"}}>¿Cuándo no usarlo</p>
+    <br></br>
+    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Cuando solo se puede seleccionar una opción de una lista predeterminada. Es recomendable utilizar un control de selección en su lugar.</p>
+    <br></br>
+    </div>
+
+
+    <div>
+    <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
+    Variantes
+    </p>
+    <br></br>
+    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Determinan el estado de la información ingresada en el input. Por ejemplo le indican al usuario si sus datos son correctos o incorectos.</p>
+    <br></br>
+    <div className="grid mt-2" style={{gridTemplateColumns:"30% 70%"}}>
+      <div className=" justify-center flex" style={{placeSelf:"stretch", paddingTop:"2rem", paddingBottom:"2rem"}}>Default</div>
+      <div style={{paddingTop:"2rem", paddingBottom:"2rem",placeSelf:"stretch"}}>Es el estado normal del componente que se muestra cuando el usuario no ha interactuado con él.</div>
+      <div className=" justify-center flex" style={{placeSelf:"stretch", backgroundColor:"#F9F9F9", paddingTop:"2rem", paddingBottom:"2rem"}}>Active</div>
+      <div style={{paddingTop:"2rem", paddingBottom:"2rem", backgroundColor:"#F9F9F9",placeSelf:"stretch"}}>Cuando el usuario ingresa contenido dentro del componente este se muestra activo.</div>
+      <div className=" justify-center flex" style={{alignItems:"center"}}>Block</div>
+      <div style={{paddingTop:"2rem", paddingBottom:"2rem",placeSelf:"stretch"}}>Cuando el componente se encuentra bloqueado presenta información que no se puede editar.</div>
+            <div className=" justify-center flex" style={{alignItems:"center"}}>Typing</div>
+      <div style={{paddingTop:"2rem", paddingBottom:"2rem",placeSelf:"stretch"}}>El usuario se encuentra escribiendo dentro del Input.</div>
+      <div className=" justify-center flex" style={{placeSelf:"stretch", backgroundColor:"#F9F9F9", paddingTop:"2rem", paddingBottom:"2rem"}}>Disabled</div>
+      <div style={{paddingTop:"2rem", paddingBottom:"2rem", backgroundColor:"#F9F9F9",placeSelf:"stretch"}}>La casilla del Input se encuentra deshabilitada.</div>
+      <div className=" justify-center flex" style={{placeSelf:"stretch", backgroundColor:"#F9F9F9", paddingTop:"2rem", paddingBottom:"2rem"}}>Success</div>
+      <div style={{paddingTop:"2rem", paddingBottom:"2rem", backgroundColor:"#F9F9F9",placeSelf:"stretch"}}>Indica que los datos ingresados son incorrectos.</div>
+
+
+    </div>
+    <br></br>
     </div>
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
@@ -453,43 +501,73 @@ export const Input = () => {
     </div>
     <br></br>
     </div>
+
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
-    Estados
+      Estilos
     </p>
     <br></br>
-    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Determinan el estado de la información ingresada en el input. Por ejemplo le indican al usuario si sus datos son correctos o incorectos.</p>
+    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Se pueden presentar en diferentes formatos: </p>
     <br></br>
     <div className="grid mt-2" style={{gridTemplateColumns:"30% 70%"}}>
-      <div className=" justify-center flex" style={{placeSelf:"stretch", paddingTop:"2rem", paddingBottom:"2rem"}}>Default</div>
-      <div style={{paddingTop:"2rem", paddingBottom:"2rem",placeSelf:"stretch"}}>Es el estado normal del componente que se muestra cuando el usuario no ha interactuado con él.</div>
-      <div className=" justify-center flex" style={{placeSelf:"stretch", backgroundColor:"#F9F9F9", paddingTop:"2rem", paddingBottom:"2rem"}}>Active</div>
-      <div style={{paddingTop:"2rem", paddingBottom:"2rem", backgroundColor:"#F9F9F9",placeSelf:"stretch"}}>Cuando el usuario ingresa contenido dentro del componente este se muestra activo.</div>
-      <div className=" justify-center flex" style={{alignItems:"center"}}>Block</div>
-      <div style={{paddingTop:"2rem", paddingBottom:"2rem",placeSelf:"stretch"}}>Cuando el componente se encuentra bloqueado presenta información que no se puede editar.</div>
-      <div className=" justify-center flex" style={{placeSelf:"stretch", backgroundColor:"#F9F9F9", paddingTop:"2rem", paddingBottom:"2rem"}}>Disabled</div>
-      <div style={{paddingTop:"2rem", paddingBottom:"2rem", backgroundColor:"#F9F9F9",placeSelf:"stretch"}}>Cuando el componente se encuentra desactivado y no se puede seleccionar.</div>
-      <div className=" justify-center flex" style={{alignItems:"center"}}>Error</div>
-      <div style={{paddingTop:"2rem", paddingBottom:"2rem",placeSelf:"stretch"}}>Cuando la información ingresada es incorrecta, el componente presenta un mensaje de error.</div>
-      <div className=" justify-center flex" style={{placeSelf:"stretch", backgroundColor:"#F9F9F9", paddingTop:"2rem", paddingBottom:"2rem"}}>Success</div>
-      <div style={{paddingTop:"2rem", paddingBottom:"2rem", backgroundColor:"#F9F9F9",placeSelf:"stretch"}}>Cuando la información ingresada es correcta, el componente presenta un estado y mensaje de éxito.</div>
+      <div className=" justify-center flex" style={{placeSelf:"stretch", paddingTop:"2rem", paddingBottom:"2rem"}}>1. De tipo Standard</div>
+      <br/>
+      <div style={{ marginTop: "4%"}}>
+      <img src={tstandard} ></img></div>
+      <br/>
+      <div className=" justify-center flex" style={{placeSelf:"stretch", paddingTop:"2rem", paddingBottom:"2rem"}}>2. De tipo Search</div>
+      <br/>
+      <div style={{ marginTop: "4%"}}>
+      <img src={tsearch} ></img></div>
+      <br/>
+      <div className=" justify-center flex" style={{placeSelf:"stretch", paddingTop:"2rem", paddingBottom:"2rem"}}>3. De tipo Login</div>
+      <br/>
+      <div style={{  marginTop: "4%"}}>
+      <img src={tlogin} ></img></div>
 
 
     </div>
     <br></br>
     </div>
+    
+
     <div className="flex flex-col">
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
       Anatomía
     </p>
     <div style={{width:"40%", alignSelf:"center", marginTop: "4%"}}>
-    <img src={input} ></img></div>
+    <img src={input2} ></img></div>
     <div className=" mt-4"></div>
     <p><strong>Icono:</strong> Representa la acción a realizar.</p>
     <p><strong>Label:</strong> Es el texto o información que el usuario debe ingresar.</p>
     <p><strong>Icono de información:</strong> Le muestra al usuario indicaciones adicionales.</p>
     <p><strong>Texto ayuda:</strong> Indica el estado de la información, también funciona como una guía para el usuario.</p>
     </div>
+
+    <div>
+    <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
+      Elementos Principales
+    </p>
+    <br></br>
+    <p style={{fontWeight:500, lineHeight:"22px"}}><strong>Label</strong></p>
+    <ul>
+      <li style={{marginBottom:"8px"}}>Es el texto que indica que acciones ejecuta el dropdown.</li>
+      <li style={{marginBottom:"8px"}}>Debe ser breve y corto, la información debe caber en una sola línea de texto.</li>
+      <li style={{marginBottom:"8px"}}>Se encuentra en la parte superior del dropdown alineado a la izquierda.</li>
+    </ul>
+    <br></br>
+    <p style={{fontWeight:500, lineHeight:"22px"}}><strong>Ícono de información</strong></p>
+    <ul>
+      <li style={{marginBottom:"8px"}}>Muestra indicaciones adicionales que contextualizan al usuario sobre el proceso que se esta realizando.</li>
+    </ul>
+    <br></br>
+    <p style={{fontWeight:500, lineHeight:"22px"}}><strong>Texto de ayuda</strong></p>
+    <ul>
+      <li style={{marginBottom:"8px"}}>El texto de ayuda es un indicador que dice al usuario si la acción es correcta o incorrecta, en caso de ser incorrecta muestra una solución.</li>
+    </ul>
+    <br></br>
+    </div>
+
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
       Comportamiento
@@ -510,6 +588,17 @@ export const Input = () => {
     <li>Alinear el label a la izquierda, al igual que la etiqueta que va encima del input para indicar que tipo de información requiere el campo.</li>
     <li>Alinear los contenedores de campo con la cuadricula y el resto de componentes del formulario.</li>
     </div>
+
+    <div>
+      <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
+      Ancho
+      </p>
+      <br></br>
+      <p>Los anchos en la entrada de texto deben ser proporcionales a su contenido y deben estar alineados con las columnas de la cuadrícula.</p>
+      <div style={{alignSelf:"center", marginTop: "4%"}}>
+      <img src={ancho} ></img></div>
+    </div>
+
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
     Guidelines de contenido

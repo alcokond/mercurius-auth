@@ -53,7 +53,7 @@ ________                    __                     _________                  __
   --secondary-shade-3: #5F0026;
   --secondary-shade-4: #26000F;
   /*complementary*/
-  --complementary: #F9E100;
+  --complementary: #FFCF00;
   --complementary-opacity-60: rgba(249, 225, 0, 0.6);
   --complementary-opacity-40: rgba(249, 225, 0, 0.4);
   --complementary-opacity-20: rgba(249, 225, 0, 0.2);
@@ -73,7 +73,7 @@ ________                    __                     _________                  __
   /*gradients*/
   --linear-gradient-1: linear-gradient(90deg, #4A3DDB -0.18%, #A921A1 52.54%, #FF086C 100.05%);
   --linear-gradient-2: linear-gradient(90deg, #4A3DDB -0.18%, #E33FD9 100.05%);
-  --linear-gradient-3: linear-gradient(0deg, #773282 0%, #9D2685 100%);
+  --linear-gradient-3: linear-gradient(0deg, #773282 0%, #AF3BB1 100%);
   --linear-gradient-4: linear-gradient(88.89deg, var(--primary-shade-3) 7.66%, rgba(74, 60, 219, 0.8) 93.32%);
   --linear-gradient-5: linear-gradient(46.39deg, var(--primary-shade-3) 12.06%, #7064E3 87.77%);
   /*states*/
@@ -761,7 +761,7 @@ input:focus {
 }
 
 .button-main-primary-medium {
-  color: var(--grayscale-7) !important;
+  color: #562577!important;
   text-decoration: none;
   border:0;
   padding: 8px 16px;
@@ -775,8 +775,8 @@ input:focus {
   gap: 16px;
   min-width: 158px;
   min-height: 48px;
-  background: var(--linear-gradient-3);
-  box-shadow: 0px 0px 10px rgba(131, 55, 143, 0.4);
+  background-color: #FFCF00;
+  /* box-shadow: 0px 0px 10px rgba(131, 55, 143, 0.4); */
   border-radius: 8px;
   font-family: 'Ubuntu';
   font-style: normal;
@@ -793,13 +793,22 @@ input:focus {
   right: 0;
   bottom: 0;
   left: 0;
-  background: var(--primary-shade-2);
+  background: #E3B10F;
   z-index: -1;
   transition: opacity 0.5s linear;
   opacity: 0;
+  box-shadow: 0px 0px 10px 0px rgba(255, 217, 51, 0.40);
+  border: 1px solid #E3B10F;
 }
 .button-main-primary-medium:hover::before {
   opacity: 1;
+  border: 1px solid #E3B10F;
+}
+
+.button-main-primary-medium:hover {
+  color: #3F1B6A;
+  background: #E3B10F;
+  box-shadow: 0px 0px 10px 0px rgba(255, 217, 51, 0.40);
 }
 
 .button-main-primary-medium:disabled{
@@ -1180,8 +1189,8 @@ line-height: 24px;
   position: relative;
   min-width: 249px;
   min-height: 64px;
-  background: var(--grayscale-7);
-  border: 1.5px solid #83378F;
+  background: transparent;
+  border: 2.5px solid #FFCF00;
   border-radius: 8px;
   font-family: 'Ubuntu';
   font-style: normal;
@@ -1189,14 +1198,14 @@ line-height: 24px;
   font-size: 20px;
   line-height: 24px;
   text-align: center;
-  color: #83378F;
+  color: #FFCF00;
 }
 
 .button-main-secondary-large:hover {
-  color: var(--primary-shade-3);
-  border: 1.5px solid var(--primary-shade-3);
-  background: var(--grayscale-6);
+  color: #E3B10F;
+  border: 2.5px solid #E3B10F;
   transition: all 0.35s;
+  background: #00000033;
   
 }
 .button-main-secondary-large:disabled {

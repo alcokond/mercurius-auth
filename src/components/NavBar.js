@@ -56,7 +56,7 @@ const NavBar = () => {
               
               {isAuthenticated && (
                 <>
-                {/* <NavItem>
+                <NavItem>
                   <NavLink
                     tag={RouterNavLink}
                     to="/mercurius/marca"
@@ -66,18 +66,7 @@ const NavBar = () => {
                   >
                     Marca
                   </NavLink>
-                </NavItem> */}
-                <NavItem>
-                <NavLink
-                  tag={RouterNavLink}
-                  to="/mercurius/contenido"
-                  exact
-                  activeClassName="text-navbar-focused"
-                  className="text-navbar"
-                >
-                  Contenido
-                </NavLink>
-              </NavItem>
+                </NavItem>
               <NavItem>
                 <NavLink
                   tag={RouterNavLink}
@@ -89,6 +78,18 @@ const NavBar = () => {
                   Guidelines
                 </NavLink>
               </NavItem>
+                <NavItem>
+                <NavLink
+                  tag={RouterNavLink}
+                  to="/mercurius/contenido"
+                  exact
+                  activeClassName="text-navbar-focused"
+                  className="text-navbar"
+                >
+                  Contenido
+                </NavLink>
+              </NavItem>
+
               <NavItem>
                 <NavLink
                   tag={RouterNavLink}
@@ -113,7 +114,7 @@ const NavBar = () => {
                 <NavItem>
                   <Button
                     id="qsLoginBtn"
-                    color="primary"
+                    color="transparent"
                     className="button-main-primary-medium"
                     onClick={() => loginWithRedirect()}
                   >

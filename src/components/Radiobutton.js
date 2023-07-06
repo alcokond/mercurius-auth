@@ -4,6 +4,8 @@ import Loading from "./Loading";
 
 import toggle from "../assets/toggle.png";
 import radiobutton from "../assets/radiobutton.png";
+import estilo from "../assets/estilo-radiobutton.png";
+import radiobutton2 from "../assets/radiobutton-2.png";
 
 import { CopyBlock, dracula } from "react-code-blocks";
 import TopBar  from "./TopBar"
@@ -404,13 +406,17 @@ export const Radiobutton = () => {
 
 
     </div>
+    <p style={{fontWeight:400, fontSize:"16px", lineHeight:"22px"}}>Ambos estilos se pueden presentar en formato vertical y horizontal.</p>
+    <div style={{alignSelf:"center", marginTop: "4%"}}>
+    <img src={estilo} ></img></div>
+
     </div>
     <div className="flex flex-col">
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
       Anatomía
     </p>
-    <div style={{width:"30%", alignSelf:"center", marginTop: "4%"}}>
-    <img src={radiobutton} ></img></div>
+    <div style={{alignSelf:"center", marginTop: "4%"}}>
+    <img src={radiobutton2} ></img></div>
     <div className=" mt-4"></div>
     <p><strong>Casilla:</strong> Control de selección.</p>
     <p><strong>Texto:</strong> Indica la acción que define a cada opción.</p>

@@ -3,6 +3,7 @@ import { useAuth0, withAuthenticationRequired } from "@auth0/auth0-react";
 import Loading from "./Loading";
 
 import breadcrumbs from "../assets/breadcrumbs.png";
+import breadcrumbs2 from "../assets/breadcrumbs-2.png";
 
 import { CopyBlock, dracula } from "react-code-blocks";
 import TopBar  from "./TopBar"
@@ -414,7 +415,7 @@ export const Breadcrumbs = () => {
       Anatomía
     </p>
     <div style={{width:"30%", alignSelf:"center", marginTop: "4%"}}>
-    <img src={breadcrumbs} ></img></div>
+    <img src={breadcrumbs2} ></img></div>
     <div className=" mt-4"></div>
     <p><strong>Icono:</strong> Aporta significado e indica una acción o proceso.</p>
     <p><strong>Nombre del elemento:</strong> Son el resto de categorías desactivadas.</p>

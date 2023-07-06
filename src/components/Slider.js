@@ -6,6 +6,7 @@ import breadcrumbs from "../assets/breadcrumbs.png";
 import slideranatomia from "../assets/slider-anatomia.svg";
 import slider1 from "../assets/slider-1.svg";
 import sliderdoble from "../assets/slider-doble.svg";
+import sliderdoble2 from "../assets/sliderdoble-2.png";
 
 import { CopyBlock, dracula } from "react-code-blocks";
 import TopBar  from "./TopBar"
@@ -456,7 +457,7 @@ Cuando la selección es compleja, es decir, si es necesario seleccionar valores 
       Double
     </p>
     <br />
-    <img style={{width:"30%", alignSelf:"center", marginTop: "4%"}} src={sliderdoble} ></img></div>
+    <img style={{width:"30%", alignSelf:"center", marginTop: "4%"}} src={sliderdoble2} ></img></div>
     <div className="flex flex-col">
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
       Anatomía
@@ -481,19 +482,37 @@ Cuando la selección es compleja, es decir, si es necesario seleccionar valores 
     Mejores Prácticas
     </p>
     <br />
+    <ul>
     <li>El controlador debe tener una etiqueta que indique a que valor se está cambiando, mientras va avanzando.</li>
     <li>Utilizar un rango de valores para describir los valores en números.</li>
     <li>Las etiquetas no deben contener valores extremadamente grandes.</li>
     <li>Las etiquetas no deben contener valores excesivamente pequeños.</li>
     <li>El controlador debe utilizarse como indicador de carga.</li>
+    </ul>
     </div>
+    
+    <div>
+    <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
+    Alineación
+    </p>
+    <br />
+    <ul>
+    <li>El controlador se encuentra alineada a la izquierda.</li>
+    <li>En el caso de sliders dobles el controlador se encuentra centrado.</li>
+    <li>Las etiquetas de valor se colocan en el centro del controlador.</li>
+    </ul>
+    </div>
+
     <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>
     Guidelines de contenido
     </p>
     <br></br>
-    <li>El controlador se encuentra alineado a la izquierda.</li>
+    <ul style={{listStyle:"outside"}}>
+    <li>Si el proceso que debe realizar el usuario es complicado, utilice texto de ayuda para agregar información.</li>
+    <li>El tamaño del slider debe ser suficientemente grande para que el usuario pueda deslizarlo con precisión.</li>
     <li>Un slider puede tener características adicionales, como una escala numérica, una representación gráfica de los valores disponibles, y una etiqueta que señale el valor seleccionado.</li>
+    </ul>
     </div>
     {/* <div>
     <p style={{fontWeight:500, fontSize:"31px", lineHeight:"36px"}}>

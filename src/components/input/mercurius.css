@@ -71,7 +71,7 @@ ________                    __                     _________                  __
   --grayscale-6: #F9F9F9;
   --grayscale-7: #FFFFFF;
   /*gradients*/
-  --linear-gradient-1: linear-gradient(90deg, #4A3DDB -0.18%, #A921A1 52.54%, #FF086C 100.05%);
+  --linear-gradient-1: linear-gradient(90deg, #A93BAC 0%, #CE2590 100%);
   --linear-gradient-2: linear-gradient(90deg, #4A3DDB -0.18%, #E33FD9 100.05%);
   --linear-gradient-3: linear-gradient(0deg, #773282 0%, #AF3BB1 100%);
   --linear-gradient-4: linear-gradient(88.89deg, var(--primary-shade-3) 7.66%, rgba(74, 60, 219, 0.8) 93.32%);
@@ -132,6 +132,9 @@ input:focus {
     outline: none;
 }
 
+.background-primaryS{
+  background-color: #0D58C1;
+}
 
 .background-primary{
   background-color: var(--primary);
@@ -1178,6 +1181,36 @@ line-height: 24px;
   
 }
 
+.button-main-secondary-large2 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 24px;
+  gap: 16px;
+  position: relative;
+  min-width: 249px;
+  min-height: 64px;
+  background: transparent;
+  border: 2.5px solid #FFCF00;
+  border-radius: 8px;
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: var(--bold);
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFCF00;
+}
+
+.button-main-secondary-large2:hover {
+  color: #E3B10F;
+  border: 2.5px solid #E3B10F;
+  transition: all 0.35s;
+  background: #00000033;
+  
+}
 .button-main-secondary-large {
   box-sizing: border-box;
   display: flex;

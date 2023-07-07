@@ -5,11 +5,12 @@ import PermanentDrawerLeft from "./PermanentDrawerLeft.js";
 const EspaciadoPrincipal = () => (
     <>
     
-    <div className="flex flex-col margin-contenido">
-    <div id="colores" className="margin-sidebar size-colores background-grayscale-6">
-    <div className="padding-colores">
+    <div className="flex flex-col margin-sidebar margin-contenido">
+    <div id="colores" className=" background-grayscale-6">
+    <div className="padding-marca">
     <h6 className="text-overline">Guidelines</h6>
-    <h3 style={{fontSize:"36px", fontWeight:"700"}} className=" mb-3">Espaciado</h3>
+    <h3 style={{fontSize:"36px", fontWeight:"700", color:"#5D2766"}} className="mb-3">Espaciado y rejillas</h3>
+    <p className="text-button-1 text-justify">Usamos un espaciado y rejillas especifico porque son fundamentales para establecer una identidad visual única, mejorar la usabilidad, transmitir profesionalidad y calidad, y garantizar una experiencia consistente y adaptada a diferentes dispositivos.</p>
     </div>
     </div>
     <div className="margin-sidebar padding-paleta">

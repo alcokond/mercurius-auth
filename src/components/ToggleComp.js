@@ -347,8 +347,9 @@ export const Toggle = () => {
     <h6 className="text-overline">Acciones</h6>
     <h3 style={{fontSize:"36px", fontWeight:"700", color:"#5D2766"}} className="mb-3">Toggle</h3>
     <p className="text-button-1 text-justify">Utilizamos los toggles para cambiar entre dos estados. Son comúnmente conocidos como “encendido “y “apagado” o “habilitado y “desahabilitado”.</p>
-    
+    <br/>
     </div>
+    <br/>
     <div className=" selector-componente" style={{borderBottom:"solid 4px #EBECF0", width:"100%"}}>
       <div className=" flex flex-row gap-40" style={{marginBottom:"-3px", paddingLeft:"5vw"}}>
         <button className="size-component size-option-component-focused" onClick={handleClickMostrarUso}>Uso</button>

@@ -349,8 +349,9 @@ export const Radiobutton = () => {
     <h6 className="text-overline">Acciones</h6>
     <h3 style={{fontSize:"36px", fontWeight:"700", color:"#5D2766"}} className="mb-3">Radio Button</h3>
     <p className="text-button-1 text-justify">Los radio buttons permiten a los usuarios seleccionar solo una opción a la vez entre varias. Al seleccionar otra opción la primera se deselecciona.</p>
-    
+    <br/>
     </div>
+    <br/>
     <div className=" selector-componente" style={{borderBottom:"solid 4px #EBECF0", width:"100%"}}>
       <div className=" flex flex-row gap-40" style={{marginBottom:"-3px", paddingLeft:"5vw"}}>
         <button className="size-component size-option-component-focused" onClick={handleClickMostrarUso}>Uso</button>

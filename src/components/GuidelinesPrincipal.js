@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from 'react-router-dom';
 import {FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faHeart, faRocket, faUserAstronaut, faHandHeart, faPalette, faText, faCircleStar } from "@fortawesome/pro-light-svg-icons";
+import {faHeart, faRocket, faUserAstronaut, faHandHeart, faPalette, faText, faCircleStar, faDistributeSpacingVertical } from "@fortawesome/pro-light-svg-icons";
 
 const GuidelinesPrincipal = () => (
     <>
@@ -25,6 +25,19 @@ const GuidelinesPrincipal = () => (
     <div style={{fontWeight: "500", color: "#27344E", fontSize: "16px"}} className="text-justify">Los colores nos representan, nos distinguen y nos permiten crear una marca fuerte y reconocida.</div>
     </div>
     </NavLink>
+
+    <NavLink
+                to="/mercurius/espaciado"
+                exact
+                style={{ textDecoration: 'none' }}
+                >
+    <div className="flex flex-col icon-card gap-2">
+    <div className="icon-box background-primary text-color-grayscale-7"> <FontAwesomeIcon icon={faDistributeSpacingVertical} /></div>
+    <div style={{fontWeight: "700", color: "#525A6C", fontSize: "20px"}}>Espaciado y Rejillas</div>
+    <div style={{fontWeight: "500", color: "#27344E", fontSize: "16px"}} className="text-justify">Usamos espaciados y rejillas especificas para garantizar una experiencia consistente y adaptable en cualquier dispositivo.</div>
+    </div>
+    </NavLink>
+
     <NavLink
                 to="/mercurius/tipografia"
                 exact

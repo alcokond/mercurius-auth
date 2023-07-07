@@ -130,12 +130,12 @@ return(
             exact
             style={{ textDecoration: 'none' }}
             >
-            <button className="button-main-secondary-large">Explorar Componentes</button>
+            <button className="button-main-secondary-large2">Explorar Componentes</button>
             </NavLink>
             )}
             {!isAuthenticated && (
               
-            <button className="button-main-secondary-large" onClick={() => loginWithRedirect()}>Explorar Componentes</button>
+            <button className="button-main-secondary-large2" onClick={() => loginWithRedirect()}>Explorar Componentes</button>
             
             )}
             </div>

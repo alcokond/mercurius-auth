@@ -357,8 +357,9 @@ export const Breadcrumbs = () => {
     <h6 className="text-overline">Display</h6>
     <h3 style={{fontSize:"36px", fontWeight:"700", color:"#5D2766"}} className="mb-3">Breadcrumbs</h3>
     <p className="text-button-1 text-justify">Muestra a los usuarios su ubicación en el sitio web o aplicación en que se encuentren interactuando y les permite pasar de una pagina a otra.</p>
-    
+    <br/>
     </div>
+    <br/>
     <div className=" selector-componente" style={{borderBottom:"solid 4px #EBECF0", width:"100%"}}>
       <div className=" flex flex-row gap-40" style={{marginBottom:"-3px", paddingLeft:"5vw"}}>
         <button className="size-component size-option-component-focused" onClick={handleClickMostrarUso}>Uso</button>
@@ -483,9 +484,9 @@ export const Breadcrumbs = () => {
         <nav aria-label="Breadcrumb" className="breadcrumb">
           <ul>
             <li><i class="fa-light fa-house-blank"></i></li>
-            <li><a href="#">Category</a></li>
-            <li><a href="#">Sub Category</a></li>
-            <li><a href="#">Type</a></li>
+            <li><a href="#" className="ejemplo_hover_a">Category</a></li>
+            <li><a href="#" className="ejemplo_hover_a">Sub Category</a></li>
+            <li><a href="#" className="ejemplo_hover_a">Type</a></li>
             <li><span aria-current="page">Product</span></li>
           </ul>
         </nav>

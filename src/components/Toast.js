@@ -360,6 +360,7 @@ export const Toast = () => {
     <p className="text-button-1 text-justify"> Los toast son notificaciones que muestran al usuario información destacada en mensajes cortos, que desaparecen después de segundos.</p>
     
     </div>
+    <br/>
     <div  style={{borderBottom:"solid 4px #EBECF0", width:"100%", marginTop:"auto"}}>
       <div className=" flex flex-row gap-40" style={{marginBottom:"-3px", paddingLeft:"5vw"}}>
         <button className="size-component size-option-component-focused" onClick={handleClickMostrarUso}>Uso</button>

@@ -358,8 +358,9 @@ export const Tab = () => {
     <h6 className="text-overline">Acciones</h6>
     <h3 style={{fontSize:"36px", fontWeight:"700", color:"#5D2766"}} className="mb-3">Tabs</h3>
     <p className="text-button-1 text-justify">Los Tabs permiten organizar contenido relacionado, agrupando información similar en la misma página. Facilitan a los usuarios interactuar entre diversos grupos de información.</p>
-    
+    <br/>
     </div>
+    <br/>
     <div className=" selector-componente" style={{borderBottom:"solid 4px #EBECF0", width:"100%"}}>
       <div className=" flex flex-row gap-40" style={{marginBottom:"-3px", paddingLeft:"5vw"}}>
         <button className="size-component size-option-component-focused" onClick={handleClickMostrarUso}>Uso</button>

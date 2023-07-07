@@ -6,6 +6,9 @@ import tonos from "../assets/colors/Tonos.png";
 
 const ColoresDisplay = () => {
   return (
+    
+    // CORPORATIVOS
+
     <div className=' flex flex-col gap-3 margin-sidebar padding-paleta '>
     <div style={{gridTemplateColumns: "1fr 1fr 1fr", gap: "2%"}} className="grid">
     
@@ -54,7 +57,7 @@ const ColoresDisplay = () => {
       </div>
     </div>
     
-    <div className="card-paleta flex flex-col ">
+    {/* <div className="card-paleta flex flex-col ">
       <div style={{backgroundColor: "#222D44"}} className=" color-card flex flex-col items-center justify-center font-semibold">
         <h5 className=" text-button-1 text-color-grayscale-7 ">N900</h5>
         <h5 className=" text-button-1 text-color-grayscale-7 ">Space Cadet</h5>
@@ -81,12 +84,12 @@ const ColoresDisplay = () => {
         <div>Pantone: 7436 C</div>
         
       </div>
-    </div>
+    </div> */}
     
     </div>
 
     
-      <h6 style={{fontSize: 24, fontWeight: 600}} >Opacidades</h6>
+    <h5 className=' text-heading-5 '>Opacidades</h5>
       <p>Utilizamos la paleta de opacidades de los colores corporativos como sombra de botones e Imputs. Estos colores crean contraste y efectos que permiten a los usuarios identificar los botones y realizar acciones más rápidas.</p>
     
 
@@ -324,6 +327,9 @@ const ColoresDisplay = () => {
 
     </div>
 
+    {/* TINTES SOMBRAS TONOS */}
+
+    <h6 style={{fontSize: 24, fontWeight: 600}}>Paleta, de tintes, sombras y tonos</h6>
     <h5 className=' text-heading-5 '>Tonos</h5>
     <p>Esta paleta está constituida desde colores oscuros, colores corporativos, hasta los colores claros. Utilizamos los tonos en imputs y botones.</p>
     <img
@@ -991,10 +997,12 @@ const ColoresDisplay = () => {
 
     </div>
 
-    <h5 className=' text-heading-5 '>Colores Semánticos</h5>
+{/* SEMANTICOS */}
+
+    <h6 style={{fontSize: 24, fontWeight: 600}}>Colores Semánticos</h6>
     <p>Describimos el uso que hacemos de cada color y las pautas a tomar en cuenta. El color semántico ayuda a los usuarios a identificar estados, acciones, botones, links y encontrar opciones de ayuda.</p>
     
-    <h5 className=' text-heading-5 '>Azules</h5>
+    <h5 className=' text-heading-5 '>Azul</h5>
     <p>El color azul representa una sensación de calma y fiabilidad. Por tal motivo, usamos el color azul para dar a conocer mensajes de información.</p>
 
     <div style={{gridTemplateColumns: "1fr 1fr 1fr", gap: "2%"}} className="grid">
@@ -1060,7 +1068,7 @@ const ColoresDisplay = () => {
     </div>
     </div>
     
-    <h5 className=' text-heading-5 '>Verdes</h5>
+    <h5 className=' text-heading-5 '>Verde</h5>
     <p>El color verde representa energía, positivismo y vitalidad. Utilizamos el color verde para denotar procesos de éxito.</p>
 
     <div style={{gridTemplateColumns: "1fr 1fr 1fr", gap: "2%"}} className="grid">
@@ -1258,7 +1266,103 @@ const ColoresDisplay = () => {
     </div>
     </div>
 
-    <h5 style={{fontSize: 31, fontWeight: 500}}>Colores Neutrales</h5>
+<br/>
+    <div style={{gridTemplateColumns: "1fr 1fr 1fr 1fr 1fr 1fr", gap: "2%"}} className='grid'>
+<div className='circle-box self-center my-auto'><strong>Actions</strong></div>
+
+    <div className='flex flex-col'>
+    <div className='flex flex-col circle-box'>
+      <div className=' self-center circle background-primaryS'></div>
+      <div className='self-center'>Primary</div>
+    </div>
+  
+    </div>
+    <div className='flex flex-col'>
+    <div className='flex flex-col circle-box'>
+      <div className=' self-center circle background-grayscale-5'></div>
+      <div className='self-center'>Secondary</div>
+      </div>
+    
+    
+    </div>
+    <div className='flex flex-col'>
+    <div className='flex flex-col circle-box'>
+      <div className=' self-center circle background-success-primary'></div>
+      <div className='self-center'>Confirm</div>
+    </div>
+    
+    </div>
+    <div className='flex flex-col'>
+    <div className='flex flex-col circle-box'>
+      <div className=' self-center circle background-warning-primary'></div>
+      <div className='self-center'>Warning</div>
+    </div>
+  
+    </div>
+    <div className='flex flex-col circle-box'>
+      <div className=' self-center circle background-error-primary'></div>
+      <div className='self-center'>Cancel/Remove</div>
+    </div>
+    
+    <div className=' self-center circle-box my-auto'><strong>Messages</strong></div>
+<div className='flex flex-col circle-box'>
+      <div className=' self-center circle background-primaryS'></div>
+      <div className='self-center'>Primary</div>
+    </div>
+<div className='flex flex-col circle-box'>
+
+    </div>
+<div className='flex flex-col circle-box'>
+      <div className=' self-center circle background-success-primary'></div>
+      <div className='self-center'>Success</div>
+    </div>
+<div className='flex flex-col circle-box'>
+      <div className=' self-center circle background-warning-primary'></div>
+      <div className='self-center'>Warning</div>
+    </div>
+<div className='flex flex-col circle-box'>
+      <div className=' self-center circle background-error-primary'></div>
+      <div className='self-center'>Error</div>
+    </div>
+
+
+
+
+</div>
+
+{/* GRADIENTE */}
+
+<br/>
+<h6 style={{fontSize: 24, fontWeight: 600}}>Gradientes</h6>
+<p>Los Gradientes agregan profundidad, dimensión y atractivo visual a los elementos, permiten transiciones suaves entre colores, ofrecen opciones de personalización y guían la atención del usuario de manera efectiva.</p>
+<div style={{gridTemplateColumns: "1fr 1fr 1fr", gap: "2%"}} className="grid ">
+<div className="card-paleta flex flex-col ">
+  <div  className=" background-gradient-3 color-card flex flex-col items-center justify-center font-semibold">
+    
+  </div>
+  <div className="background-grayscale-5 items-center justify-center text-button-1  flex flex-col gap-1 p-3">
+    <div >Gradient 3 - Button
+    </div>
+    
+  </div>
+</div>
+
+<div className="card-paleta flex flex-col ">
+  <div className="background-gradient-1 color-card flex flex-col items-center justify-center font-semibold">
+    
+  </div>
+  <div className="background-grayscale-5 justify-center text-button-1  flex flex-col gap-1 p-3 items-center">
+    <div >Gradient 1 - Corporative
+    </div>
+    
+  </div>
+</div>
+
+</div>
+
+{/* NEUTRALES */}
+
+<h6 style={{fontSize: 24, fontWeight: 600}}>Neutrales</h6>
     <p>Dentro de esta categoría de colores se hallan el negro, el gris, el blanco y el beige, a su vez, estos se dividen en fríos y cálidos.</p>
     <div style={{gridTemplateColumns: "33% 33% ", gap: "2%"}} className="grid">
     <div style={{backgroundColor: "#222D44"}} className="card-paleta flex flex-col ">
@@ -1293,6 +1397,12 @@ const ColoresDisplay = () => {
     </div>
 
     </div>
+
+{/* GRISES */}
+
+    <br/>
+    <h6 style={{fontSize: 24, fontWeight: 600}}>Escala de Grises</h6>
+    <p>El uso de escala de grises es importante porque simplifica la apariencia visual, destaca elementos importantes y aumenta la accesibilidad.</p>
     <img
       alt="..."
       src= {Grayscale}
@@ -1410,7 +1520,6 @@ const ColoresDisplay = () => {
 <h5 className=' text-heading-5 '>Neutros Claros</h5>
     <p>Usamos los neutros claros en fondos, en texto, en interacciones e ilustraciones. Los neutros claros permiten que un diseño se vea impecable y delicado.</p>
 
-
 <div style={{gridTemplateColumns: "1fr 1fr 1fr", gap: "2%"}} className="grid">
 <div className="card-paleta flex flex-col ">
   <div style={{backgroundColor: "#D7DAE1"}} className=" color-card flex flex-col items-center justify-center font-semibold">
@@ -1469,133 +1578,8 @@ const ColoresDisplay = () => {
 </div>
 
 </div>
-<h5 className=' text-heading-5 '>Linear Gradients</h5>
-
-<div style={{gridTemplateColumns: "1fr 1fr 1fr", gap: "2%"}} className="grid ">
-<div className="card-paleta flex flex-col ">
-  <div className="background-gradient-1 color-card flex flex-col items-center justify-center font-semibold">
-    
-  </div>
-  <div className="background-grayscale-5 justify-center text-button-1  flex flex-col gap-1 p-3 items-center">
-    <div >Corporative
-    </div>
-    
-  </div>
-</div>
-<div className="card-paleta flex flex-col ">
-  <div className=" background-gradient-2 color-card flex flex-col items-center justify-center font-semibold">
-
-    
-  </div>
-  <div className="background-grayscale-5 items-center justify-center text-button-1  flex flex-col gap-1 p-3">
-    <div >Outstanding
-    </div>
-    
-  </div>
-</div>
-<div className="card-paleta flex flex-col ">
-  <div  className=" background-gradient-3 color-card flex flex-col items-center justify-center font-semibold">
-    
-  </div>
-  <div className="background-grayscale-5 items-center justify-center text-button-1  flex flex-col gap-1 p-3">
-    <div >Button
-    </div>
-    
-  </div>
-</div>
-
-<div className="card-paleta flex flex-col ">
-  <div className=" background-gradient-4 color-card-border flex flex-col items-center justify-center font-semibold">
-    
-  </div>
-  <div className="background-grayscale-5 items-center justify-center text-button-1 flex flex-col gap-1 p-3">
-    <div >Decorative - Opacity
-    </div>
-
-    
-  </div>
-</div>
-<div className="card-paleta flex flex-col ">
-  <div className=" background-gradient-5 color-card-border flex flex-col items-center justify-center font-semibold">
-    
-  </div>
-  <div className="background-grayscale-5 items-center justify-center text-button-1 flex flex-col gap-1 p-3">
-    <div >Solid
-    </div>
-
-    
-  </div>
-</div>
-
-</div>
 
 
-
-<h5 className=' text-heading-5 '>Semantic Colors</h5>
-<div style={{gridTemplateColumns: "1fr 1fr 1fr 1fr 1fr 1fr", gap: "2%"}} className='grid'>
-
-<div className='circle-box self-center my-auto'>Actions</div>
-
-    <div className='flex flex-col'>
-    <div className='flex flex-col circle-box'>
-      <div className=' self-center circle background-primary'></div>
-      <div className='self-center'>Primary</div>
-    </div>
-  
-    </div>
-    <div className='flex flex-col'>
-    <div className='flex flex-col circle-box'>
-      <div className=' self-center circle background-grayscale-5'></div>
-      <div className='self-center'>Secondary</div>
-      </div>
-    
-    
-    </div>
-    <div className='flex flex-col'>
-    <div className='flex flex-col circle-box'>
-      <div className=' self-center circle background-success-primary'></div>
-      <div className='self-center'>Confirm</div>
-    </div>
-    
-    </div>
-    <div className='flex flex-col'>
-    <div className='flex flex-col circle-box'>
-      <div className=' self-center circle background-warning-primary'></div>
-      <div className='self-center'>Warning</div>
-    </div>
-  
-    </div>
-    <div className='flex flex-col circle-box'>
-      <div className=' self-center circle background-error-primary'></div>
-      <div className='self-center'>Cancel</div>
-    </div>
-    
-    <div className=' self-center circle-box my-auto'>Messages</div>
-<div className='flex flex-col circle-box'>
-      <div className=' self-center circle background-primary'></div>
-      <div className='self-center'>Primary</div>
-    </div>
-<div className='flex flex-col circle-box'>
-      <div className=' self-center circle background-grayscale-5'></div>
-      <div className='self-center'>Secondary</div>
-    </div>
-<div className='flex flex-col circle-box'>
-      <div className=' self-center circle background-success-primary'></div>
-      <div className='self-center'>Success</div>
-    </div>
-<div className='flex flex-col circle-box'>
-      <div className=' self-center circle background-warning-primary'></div>
-      <div className='self-center'>Warning</div>
-    </div>
-<div className='flex flex-col circle-box'>
-      <div className=' self-center circle background-error-primary'></div>
-      <div className='self-center'>Error</div>
-    </div>
-
-
-
-
-</div>
 </div>
     
   )

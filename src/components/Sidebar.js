@@ -151,6 +151,21 @@ export default function Sidebar() {
                     
                     <NavLink
                       tag={RouterNavLink}
+                      to="/mercurius/espaciado"
+                      exact
+                      activeClassName="active-sidebar" 
+                      style={{ textDecoration: 'none' }}
+                className="navlink" 
+                      >
+                      <ListItemButton sx={{ pl: 4 }} >
+                      
+                        <ListItemText primary='Espaciado y rejillas' />
+                        
+                      </ListItemButton>
+                    </NavLink>
+
+                    <NavLink
+                      tag={RouterNavLink}
                       to="/mercurius/tipografia"
                       exact
                       activeClassName="active-sidebar" 

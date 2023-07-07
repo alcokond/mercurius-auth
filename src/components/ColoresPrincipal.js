@@ -25,7 +25,7 @@ const ColoresPrincipal = () => (
     </div>
     </div>
     <div id="paleta-primaria" className="margin-sidebar padding-paleta text-justify">
-      <h6 className="text-heading-5 pb-4" >Paleta Principal</h6>
+      <h6 className="text-heading-5 pb-4" style={{fontSize: 24, fontWeight: 600}}>Colores Corporativos</h6>
       <p>Nuestros colores deben actuar como guías para el usuario resaltando la información importante.</p>
     </div>
 

@@ -1402,3 +1402,7 @@ body.menu-toggled > .meta-link > span {
   bottom: 1px; 
   font-size: 80%;
 }
+
+.ejemplo_hover_a:hover{
+  color: #83378F;
+}

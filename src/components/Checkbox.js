@@ -348,8 +348,9 @@ export const Checkbox = () => {
     <h6 className="text-overline">selector</h6>
     <h3 style={{fontSize:"36px", fontWeight:"700", color:"#5D2766"}} className="mb-3">Checkbox</h3>
     <p className="text-button-1 text-justify">Los checkbox facilitan al usuario seleccionar varias opciones al mismo tiempo. Se pueden seleccionar opciones que se encuentren agrupadas en categorías diferentes.</p>
-    
+    <br/>
     </div>
+    <br/>
     <div className=" selector-componente" style={{borderBottom:"solid 4px #EBECF0", width:"100%"}}>
       <div className="padding-componente flex flex-row gap-40" style={{marginBottom:"-3px"}}>
         <button className="size-component size-option-component-focused" onClick={handleClickMostrarUso} >Uso</button>

@@ -3,6 +3,10 @@ import voz from "../assets/guides/voz.png";
 import jergas from "../assets/guides/jergas.png";
 import tecnico from "../assets/guides/tecnico.png";
 import lenguaje from "../assets/guides/lenguaje.png";
+import voz2 from "../assets/guides/voz-2.png";
+import jergas2 from "../assets/guides/jergas-2.png";
+import tecnico2 from "../assets/guides/tecnico-2.png";
+import lenguaje2 from "../assets/guides/lenguaje-2.png";
 
 const GuiaDeEstilo = () => (
   <>
@@ -14,7 +18,7 @@ const GuiaDeEstilo = () => (
     <h6 className="text-overline">Contenido</h6>
     <h3 style={{fontSize:"36px", fontWeight:"700", color:"#5D2766"}} className="mb-2">Guía de estilo</h3>
     <p className="text-button-1 text-justify">Escribir pensando en el usuario, nos permitirá generar “sentido de pertenencia”.<br></br>
-Planteamos nuestra comunicación a modo que nos permita establecer cercanía y familiaridad con el usuario. Nos identificamos con su necesidad de velocidad, por eso creamos procesos cortos y ágiles. </p>
+    Planteamos nuestra comunicación a modo que nos permita establecer cercanía y familiaridad con el usuario. Nos identificamos con su necesidad de velocidad, por eso creamos procesos cortos y ágiles.</p>
     </div>
     </div>
     
@@ -25,7 +29,7 @@ Planteamos nuestra comunicación a modo que nos permita establecer cercanía y f
     </p>
     <img
     alt="..."
-    src= {voz}
+    src= {voz2}
     className=""
     style={{marginBottom:64, maxWidth: 500, alignSelf: "center"}}
     />
@@ -34,24 +38,24 @@ Planteamos nuestra comunicación a modo que nos permita establecer cercanía y f
     </p>
     <img
     alt="..."
-    src= {jergas}
+    src= {jergas2}
     className=""
     style={{marginBottom:64, maxWidth: 500, alignSelf: "center"}}
     />
     <img
     alt="..."
-    src= {tecnico}
+    src= {tecnico2}
     className=""
     style={{marginBottom:64, maxWidth: 500, alignSelf: "center"}}
     />
     <p style={{fontSize: 31, fontWeight: 500, color: "#222D44"}}>Lenguaje claro, informativo, expositivo</p>
     <p style={{fontSize: 16, fontWeight: 500, color: "#222D44"}}>Informamos en frases cortas, con plabras precisas. El mensaje debe ser explicado en brevedad, pero sin dejar de ser explicativos:<br></br> 
-Utilizamos un titulo que advierta cual es el problema, luego en dos o tres lineas de texto nos asegurarnos que el usuario entienda el mensaje. 
+    Utilizamos un titulo que advierta cual es el problema, luego en dos o tres lineas de texto nos asegurarnos que el usuario entienda el mensaje. 
     </p>
     
     <img
     alt="..."
-    src= {lenguaje}
+    src= {lenguaje2}
     className=""
     style={{marginBottom:64, maxWidth: 500, alignSelf: "center"}}
     />

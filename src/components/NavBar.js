@@ -115,7 +115,7 @@ const NavBar = () => {
                   <Button
                     id="qsLoginBtn"
                     color="transparent"
-                    className="button-main-primary-medium"
+                    className="button-main-primary-medium2"
                     onClick={() => loginWithRedirect()}
                   >
                     Iniciar sesión

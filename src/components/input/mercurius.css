@@ -764,7 +764,7 @@ input:focus {
 }
 
 .button-main-primary-medium {
-  color: #562577!important;
+  color: var(--grayscale-7);
   text-decoration: none;
   border:0;
   padding: 8px 16px;
@@ -778,8 +778,8 @@ input:focus {
   gap: 16px;
   min-width: 158px;
   min-height: 48px;
-  background-color: #FFCF00;
-  /* box-shadow: 0px 0px 10px rgba(131, 55, 143, 0.4); */
+  background: var(--linear-gradient-3);
+  box-shadow: 0px 0px 10px rgba(131, 55, 143, 0.4);
   border-radius: 8px;
   font-family: 'Ubuntu';
   font-style: normal;
@@ -796,22 +796,22 @@ input:focus {
   right: 0;
   bottom: 0;
   left: 0;
-  background: #E3B10F;
+  background: var(--primary-shade-2);
   z-index: -1;
   transition: opacity 0.5s linear;
   opacity: 0;
-  box-shadow: 0px 0px 10px 0px rgba(255, 217, 51, 0.40);
-  border: 1px solid #E3B10F;
+  /* box-shadow: 0px 0px 10px 0px rgba(255, 217, 51, 0.40);
+  border: 1px solid #E3B10F; */
 }
 .button-main-primary-medium:hover::before {
   opacity: 1;
-  border: 1px solid #E3B10F;
+  /* border: 1px solid #E3B10F; */
 }
 
 .button-main-primary-medium:hover {
-  color: #3F1B6A;
-  background: #E3B10F;
-  box-shadow: 0px 0px 10px 0px rgba(255, 217, 51, 0.40);
+  color: var(--grayscale-7);
+  /* background: #E3B10F;
+  box-shadow: 0px 0px 10px 0px rgba(255, 217, 51, 0.40); */
 }
 
 .button-main-primary-medium:disabled{
@@ -840,6 +840,85 @@ input:focus {
   text-align: center;
   
 }
+
+.button-main-primary-medium2 {
+  color: #562577!important;
+  text-decoration: none;
+  border:0;
+  padding: 8px 16px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  min-width: 158px;
+  min-height: 48px;
+  background-color: #FFCF00;
+  /* box-shadow: 0px 0px 10px rgba(131, 55, 143, 0.4); */
+  border-radius: 8px;
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: var( --semibold);
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.button-main-primary-medium2::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #E3B10F;
+  z-index: -1;
+  transition: opacity 0.5s linear;
+  opacity: 0;
+  box-shadow: 0px 0px 10px 0px rgba(255, 217, 51, 0.40);
+  border: 1px solid #E3B10F;
+}
+.button-main-primary-medium2:hover::before {
+  opacity: 1;
+  border: 1px solid #E3B10F;
+}
+
+.button-main-primary-medium2:hover {
+  color: #3F1B6A;
+  background: #E3B10F;
+  box-shadow: 0px 0px 10px 0px rgba(255, 217, 51, 0.40);
+}
+
+.button-main-primary-medium2:disabled{
+  pointer-events: none;
+  color: var(--grayscale-7);
+  border:0;
+  padding: 8px 24px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  min-width: 158px;
+  min-height: 48px;
+  background: var(--neutral-light);
+  box-shadow: 0px 0px 0px;
+  border-radius: 8px;
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: var( --semibold);
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  
+}
+
 
 .button-main-secondary-small {
   box-sizing: border-box;

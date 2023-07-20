@@ -391,7 +391,7 @@ export const Componentes = () => {
     <div className="padding-marca">
     <h6 className="text-overline">Codificación</h6>
     <h3 style={{fontSize:"36px", fontWeight:"700", color:"#5D2766"}} className=" mb-3">Empieza a desarrollar</h3>
-    <p className="text-button-1 text-justify">Accede a todo el contenido de Mercurius e inicia tu próximo proyecto.</p>
+    <p className="text-button-1 text-justify">Simplifica el proceso de desarrollo de tu proyecto al tener acceso a todo el contenido de Mercurius. De esta manera puedes empezar tu próximo proyecto de manera rápida y eficiente.</p>
     </div>
     
     </div>
@@ -446,6 +446,24 @@ referrerpolicy="no-referrer" />
     <p>Explora los componentes, copia su código html e insertalo en tu proyecto.</p>
     <br />
     <p style={{fontSize:"12px"}}>*Muchos de nuestros componentes hacen uso de JavaScript, por lo que tendrás que adecuar las funciones con los selectores, Ids y clases que estás utilizando, el código es para ejemplizar como debe funcionar el componente.</p>
+    <br />
+    <p>También puedes utilizar los componentes directamente instalándolos en tu proyecto. Estos ya se encuentran con los diseños, y colores utilizados.<br></br> Usa el siguiente comando en la terminal de tu proyecto para instalar el paquete de componentes:</p>
+    <br />
+    <div style={{ backgroundColor:"rgb(40, 42, 54)", borderRadius:"8px", marginBottom:"1rem" }}>
+              <CopyBlock 
+          language="html"
+          text={`npm i mercurius-ang`}
+          codeBlock
+          theme={dracula}
+          showLineNumbers={false}
+          wrapLines={true}
+        
+        />
+              </div>
+    <br/>
+    <p style={{fontSize:"12px"}}>*La descarga de componentes se encuentra en desarrollo. Existen algunos componentes átomos que se encuentran listos para ser usados. Los componentes se iran actualizando eventualmente. Los componentes pueden implementar en aplicaciones desarrolladas en Angular</p>
+    <br/>
+
     </div>
       </section>
       <section>
